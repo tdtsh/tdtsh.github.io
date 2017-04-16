@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>クラウド on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89/</link>
+    <description>Recent content in クラウド on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 06 Sep 2015 12:30:56 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DropboxライクなownCloudちょっとだけレビュー</title>
+      <link>http://www.tdtsh.com/archives/3639/</link>
+      <pubDate>Sun, 06 Sep 2015 12:30:56 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3639/</guid>
+      <description>最近仕事でもDropboxに依存しまくりなので、ちょっと前に自前でなんとか出来ないかと類似したソフトウェアについて調べてました。 といってもP</description>
+    </item>
+    
+    <item>
+      <title>夏のJAWS-UG 三都物語 2014に行った話</title>
+      <link>http://www.tdtsh.com/archives/3322/</link>
+      <pubDate>Mon, 07 Jul 2014 13:00:25 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3322/</guid>
+      <description>夏のJAWS-UG 三都物語 2014に参加してきたんです。 はてなCTOの田中慎司さんから、AWSとmackerelで実践するImmutable</description>
+    </item>
+    
+    <item>
+      <title>Windows Azure のアカウント取ってみた</title>
+      <link>http://www.tdtsh.com/archives/2766/</link>
+      <pubDate>Mon, 25 Feb 2013 12:00:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2766/</guid>
+      <description>AWSみたいに楽ちんな IaaS を探しています。 root が取れるというか、CentOSが動いてSMTP送信させてくれたら結構なんでもいいです。 で、IaaS</description>
+    </item>
+    
+    <item>
+      <title>実家で暇だからherokuを弄ってみたメモ置き場</title>
+      <link>http://www.tdtsh.com/archives/2488/</link>
+      <pubDate>Sat, 10 Nov 2012 06:30:50 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2488/</guid>
+      <description>最近のナウなヤングはHeroku で Ruby on rails なんでしょう？ Herokuとは、Ruby on Railsを対象とした、Amazon Web Services（A</description>
+    </item>
+    
+    <item>
+      <title>iTunes U の ネットワーク産業論 by 夏野 剛 がなかなか良かった</title>
+      <link>http://www.tdtsh.com/archives/1796/</link>
+      <pubDate>Thu, 19 Apr 2012 21:32:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1796/</guid>
+      <description>人に教えて頂いてなんとなく見始めたんですが、めちゃめちゃイイですね。 ネットワーク産業論 2011 by 夏野 剛 ネットワーク化とコンピューター技術の進化によ</description>
+    </item>
+    
+    <item>
+      <title>スマホをPCにつなぐと自動で写真が Dropbox に保存される様になる方法</title>
+      <link>http://www.tdtsh.com/archives/1735/</link>
+      <pubDate>Wed, 14 Mar 2012 10:30:50 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1735/</guid>
+      <description>先日ベタ褒めした「いますぐインス！ au のスマートフォン で iCloud のフォトストリームみたいなアプリ (au one Photo Air)」が、近々auスマートパス(390円/</description>
+    </item>
+    
+    <item>
+      <title>GAE/J で Python の bulkloader をつかってみる</title>
+      <link>http://www.tdtsh.com/archives/1359/</link>
+      <pubDate>Tue, 16 Aug 2011 11:46:29 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1359/</guid>
+      <description>&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし</description>
+    </item>
+    
+    <item>
+      <title>さくらInternetのVPS、予想以上にイイですね</title>
+      <link>http://www.tdtsh.com/archives/1103/</link>
+      <pubDate>Wed, 09 Feb 2011 11:23:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1103/</guid>
+      <description>前から少し気になってた さくら Internet のVPSを使う機会がありました。いやいや、イイですね！ レンタルサーバでいいじゃん的な案件でも、独自SSL欲しい</description>
+    </item>
+    
+    <item>
+      <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
+      <link>http://www.tdtsh.com/archives/1095/</link>
+      <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1095/</guid>
+      <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
+    </item>
+    
+    <item>
+      <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
+      <link>http://www.tdtsh.com/archives/1076/</link>
+      <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1076/</guid>
+      <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
+    </item>
+    
+    <item>
+      <title>Salesforceのchatter.comが始まった</title>
+      <link>http://www.tdtsh.com/archives/1070/</link>
+      <pubDate>Tue, 01 Feb 2011 03:06:47 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1070/</guid>
+      <description>Salesforceの chatter.com が始まったらしいです。 Salesforce chatter.com 日本 早速登録してみました。すこぶる簡単です。 会社で1番です。でも2番は居ないかもしれません</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services のマイクロインスタンス、月額約1300円</title>
+      <link>http://www.tdtsh.com/archives/919/</link>
+      <pubDate>Fri, 10 Sep 2010 02:22:49 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/919/</guid>
+      <description>Amazon Web Services が攻勢にでています。 Amazonクラウドから、1時間あたり約1.8円（Linux/Unixの場合＄0.02、Windowsで$0.03</description>
+    </item>
+    
+    <item>
+      <title>WEBサービスを立ち上げる天の時、地の利、人の輪</title>
+      <link>http://www.tdtsh.com/archives/895/</link>
+      <pubDate>Thu, 26 Aug 2010 04:16:16 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/895/</guid>
+      <description>ほらね。今は、新しいサービスを作るには、絶好のチャンスなんですよ。わたしもトライするし、いろんな人にトライしてもらいたいなぁと思います。 こん</description>
+    </item>
+    
+    <item>
+      <title>インターネットイニシアティブ（IIJ）の月額4000円のホスティングサービス「IIJ GIO」</title>
+      <link>http://www.tdtsh.com/archives/834/</link>
+      <pubDate>Tue, 03 Aug 2010 11:06:19 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/834/</guid>
+      <description>インターネットイニシアティブ（IIJ）のマーケティング本部 GIOマーケティング部 副部長 小川晋平氏は、月額4000円、日割り課金で1日約133</description>
+    </item>
+    
+    <item>
+      <title>GoogleのデータセンターとGAEは設計思想のスケールがでかい</title>
+      <link>http://www.tdtsh.com/archives/719/</link>
+      <pubDate>Fri, 25 Jun 2010 07:28:11 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/719/</guid>
+      <description>Googleクラウドの理想型は、昼の太陽（ソーラパワー）で電気エネルギーを蓄電し、夜（月は夜の比喩）月の出ているときにデータセンターのCPU</description>
+    </item>
+    
+    <item>
+      <title>企業内コラボレーションツールがTwitter化、今度は企業向けSNSの様にはならない？</title>
+      <link>http://www.tdtsh.com/archives/705/</link>
+      <pubDate>Tue, 22 Jun 2010 05:36:19 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/705/</guid>
+      <description>「いままで企業内のコラボレーションといえば、メッセージング、スケジュール管理、電子掲示板、ドキュメント共有といった機能を備えるグループウェア</description>
+    </item>
+    
+    <item>
+      <title>日本も電波を再編しないと、将来iPhoneやAndroidが日本で使えなくなる</title>
+      <link>http://www.tdtsh.com/archives/703/</link>
+      <pubDate>Mon, 21 Jun 2010 05:38:23 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/703/</guid>
+      <description>先日、孫正義さん、池田信夫さん、夏野剛さんによる光の道討論が行われたと当ブログでも書きました。 早速テキストに書き起こしてくださった方がいます</description>
+    </item>
+    
+    <item>
+      <title>iTunesがクラウド化してiPad/iPhoneのアクティベート出来る様になるかもしれない</title>
+      <link>http://www.tdtsh.com/archives/693/</link>
+      <pubDate>Fri, 18 Jun 2010 15:08:50 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/693/</guid>
+      <description>もしiTunesがクラウド化せず、MacとPCの母艦を許したままだと、そのうちAndroid移行ソフトが出て来て、iPhoneからAndro</description>
+    </item>
+    
+    <item>
+      <title>Access 2010 では DBエンジンに SQL Azure が使える様になる</title>
+      <link>http://www.tdtsh.com/archives/679/</link>
+      <pubDate>Tue, 15 Jun 2010 02:03:26 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/679/</guid>
+      <description>マイクロソフトのAccess 2010では、ODBCを通じてクラウド上のリレーショナルデータベースであるSQL Azureに直接接続可能だと、M</description>
+    </item>
+    
+    <item>
+      <title>Force.com Free Editionのアカウント作成</title>
+      <link>http://www.tdtsh.com/archives/525/</link>
+      <pubDate>Wed, 16 Dec 2009 01:41:42 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/525/</guid>
+      <description>＠ITの連載にのっかって、Force.comをいじってみようと思います。 まずはアカウント作成。 無料で利用できるのは、「Free Edition</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定)</title>
+      <link>http://www.tdtsh.com/archives/473/</link>
+      <pubDate>Thu, 26 Nov 2009 17:00:48 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/473/</guid>
+      <description>Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID</description>
+    </item>
+    
+    <item>
+      <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす</title>
+      <link>http://www.tdtsh.com/archives/445/</link>
+      <pubDate>Fri, 30 Oct 2009 16:00:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/445/</guid>
+      <description>GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ</description>
+    </item>
+    
+    <item>
+      <title>GAE (Google App Engine) SDK for Javaで ログの取得 (改訂版)</title>
+      <link>http://www.tdtsh.com/archives/442/</link>
+      <pubDate>Thu, 29 Oct 2009 16:00:09 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/442/</guid>
+      <description>※2012年2月07日 現状にあわせて修正・加筆しました。 Google App Engineのログは、WEB上( appengine.google.com のLogs )で見る事も出来るけど、デバッグには</description>
+    </item>
+    
+    <item>
+      <title>GAE SDK for Java で update 時にcannot find javac executable based on java.home</title>
+      <link>http://www.tdtsh.com/archives/429/</link>
+      <pubDate>Wed, 28 Oct 2009 16:00:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/429/</guid>
+      <description>※開発機はWindows XPです。 Google App Engine SDK for javaを使って、コマンドラインでデプロイしようと bin\appcfg.cmd update .\war すると、javac.exeが見つからない</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine SDK for java でデプロイ</title>
+      <link>http://www.tdtsh.com/archives/427/</link>
+      <pubDate>Tue, 27 Oct 2009 16:00:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/427/</guid>
+      <description>前回インストールした、Google App Engine SDK for javaを使って、コマンドラインでデプロイしてみる。 参考サイトの例に応用をきかせて、今回は SDKと</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine SDK for java のインストール</title>
+      <link>http://www.tdtsh.com/archives/424/</link>
+      <pubDate>Mon, 26 Oct 2009 16:00:34 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/424/</guid>
+      <description>前に書いたEclipseによる開発環境構築以外に、コマンドラインでやる方法もある。 Google App Engine SDK for Java のインストール [前に書いたEclipseによる</description>
+    </item>
+    
+    <item>
+      <title>仮のWEBシステムを、脳内で GAE/J に移行してみる</title>
+      <link>http://www.tdtsh.com/archives/421/</link>
+      <pubDate>Sun, 25 Oct 2009 16:00:15 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/421/</guid>
+      <description>脳内で、月間PVが300万PV位のソーシャルメディアを、Google App Engine for Java にのせてみる。 ■ストレージ容量 無償は1GBまで。 コンテンツ、画像</description>
+    </item>
+    
+    <item>
+      <title>GAE java (Google App Engine) 上でのOpenID と まとめ</title>
+      <link>http://www.tdtsh.com/archives/346/</link>
+      <pubDate>Fri, 04 Sep 2009 13:36:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/346/</guid>
+      <description>GAE/JでOpenIDのRPを実装したい。 個人で作るWEBサービスなら兎も角、法人の場合とかはGAE上にメールアドレスとかの個人情報をぶっ</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine (java) まとめ</title>
+      <link>http://www.tdtsh.com/archives/292/</link>
+      <pubDate>Thu, 20 Aug 2009 12:20:38 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/292/</guid>
+      <description>インストール、開発環境、ほか Google App Engine for java はじめの一歩 &amp;#8211; tdtshのブログ Google App Engine SDK for java のインストール &amp;#8211; tdtshのブログ Google App Engine SDK for java でデプロイ &amp;#8211;</description>
+    </item>
+    
+    <item>
+      <title>DOA、RDB と Key Valueストア(KVS)について</title>
+      <link>http://www.tdtsh.com/archives/207/</link>
+      <pubDate>Thu, 30 Jul 2009 02:43:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/207/</guid>
+      <description>前々回、前回、に引き続き、Key Valueストア(KVS)ネタ。 データの整合性（Consistency）を重視するRDB、データの可用性（A</description>
+    </item>
+    
+    <item>
+      <title>HadoopとhBase</title>
+      <link>http://www.tdtsh.com/archives/67/</link>
+      <pubDate>Sat, 04 Jul 2009 02:12:01 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/67/</guid>
+      <description>アマゾン、ウィザードだけで使えるHadoopサービス開始 － ＠IT http://www.atmarkit.co.jp/news/200904/02/aws.html 1インスタンス当たり0.015ドルから。 HadoopとはGoogleのMa</description>
+    </item>
+    
+    <item>
+      <title>キーバリュー(Key-Value)型 データベース（データストア）とは</title>
+      <link>http://www.tdtsh.com/archives/66/</link>
+      <pubDate>Fri, 03 Jul 2009 04:57:18 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/66/</guid>
+      <description>前回、クラウドでの新しいACID特性、BASEトランザクション、CAP定理に関する記事についてコメントを書いたけど、GoogleのMapRe</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine for java はじめの一歩</title>
+      <link>http://www.tdtsh.com/archives/57/</link>
+      <pubDate>Fri, 26 Jun 2009 13:46:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/57/</guid>
+      <description>インストール、開発環境、ほか Google App Engine for java はじめの一歩 &amp;#8211; tdtshのブログ Google App Engine SDK for java のインストール &amp;#8211; tdtshのブログ Google App Engine SDK for java でデプロイ &amp;#8211;</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 EBS (Elastic Block Store)はじめの一歩</title>
+      <link>http://www.tdtsh.com/archives/26/</link>
+      <pubDate>Thu, 28 May 2009 04:31:02 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/26/</guid>
+      <description>EBSはAmazon EC2用の外付けHDDみたいなものです。 利用料金 仮想ディスク容量： $0.10 / 1GB リクエスト(I/O) ： $0.10 / 100万I/Oリクエス</description>
+    </item>
+    
+    <item>
+      <title>ACID、BASE、CAP定理</title>
+      <link>http://www.tdtsh.com/archives/25/</link>
+      <pubDate>Wed, 27 May 2009 01:19:14 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/25/</guid>
+      <description>CAP定理 システムのCAP (分散耐性と可用性と一貫性) のうち、同時には2つまでしか満たすことはできない、という (Prof. Eric Brewer (UC Berkeley)の)</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 はじめの一歩</title>
+      <link>http://www.tdtsh.com/archives/20/</link>
+      <pubDate>Thu, 21 May 2009 04:14:33 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/20/</guid>
+      <description>Amazon EC2を試してみたので、そのメモです。 環境構築とAMI起動、S3に保存までです。 クレジットカード片手に、Amazon EC2の申し込みをしま</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 を始める為に必要なURLまとめ</title>
+      <link>http://www.tdtsh.com/archives/18/</link>
+      <pubDate>Wed, 20 May 2009 11:44:52 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/18/</guid>
+      <description>EC2にアカウントを作成する。 Amazon Elastic Compute Cloud (Amazon EC2) http://aws.amazon.com/ec2/ Amazon Web Services ポータル https://aws-portal.amazon.com/gp/aws/developer/account/index.html?ie=UTF8&amp;#38;action=activity-summary Firefoxのアドオンをインストール( EC2 と S3 ) Elasticfox (Firefox Extension for Amazon EC2) http://developer.amazonwebservices.com/connect/entry.jspa?externalID=609 S3FOX (Firefox Extension for Amazon S3) http://www.s3fox.net/ :[Amazon EC2</description>
+    </item>
+    
+  </channel>
+</rss>

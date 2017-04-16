@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/android/</link>
+    <description>Recent content in Android on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 04 Nov 2016 02:40:52 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/android/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</title>
+      <link>http://www.tdtsh.com/archives/3891/</link>
+      <pubDate>Fri, 04 Nov 2016 02:40:52 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3891/</guid>
+      <description>Titanium もいつのまにか 6.0.0 の RC が出て、V8がアップデートされたから 全Androidのモジュールビルドしなおしな!という事だと聞いて。 そう言えばSDK</description>
+    </item>
+    
+    <item>
+      <title>Titanium Android module を vim で書くときの syntastic クラスパス</title>
+      <link>http://www.tdtsh.com/archives/3647/</link>
+      <pubDate>Mon, 14 Sep 2015 12:30:37 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3647/</guid>
+      <description>習慣と惰性で Vim (GVim) 使ってます。 Syntax Checkerは syntastic を使ってます。 一昔前なら赤子が元服する位のあいだ Gvim使っていますが、その割にはあまり詳し</description>
+    </item>
+    
+    <item>
+      <title>Titanium使いが JavaScriptで書けるつながりで Native Script 触ってみた</title>
+      <link>http://www.tdtsh.com/archives/3544/</link>
+      <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3544/</guid>
+      <description>クロスプラットフォームを触ってみたシリーズの第6弾は、Native Scriptです。 前回のReact Native に続き、JavaScriptで書ける繋</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 15.04 で Titanium (Appcelerator CLI)、無料でどこまでできるか試してみた</title>
+      <link>http://www.tdtsh.com/archives/3462/</link>
+      <pubDate>Tue, 23 Jun 2015 01:00:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3462/</guid>
+      <description>クロスプラットフォームを触ってみたシリーズの第4弾です。 Macbook に Ubuntu 15.04 日本語 Remix をインストールしたので、ついでにTitaniumモバイル(Andro</description>
+    </item>
+    
+    <item>
+      <title>Titanium でAndroidのapk作ったら「デバッグ可能な APK をアップロードしました」</title>
+      <link>http://www.tdtsh.com/archives/3192/</link>
+      <pubDate>Fri, 21 Feb 2014 13:10:15 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3192/</guid>
+      <description>Titanium で AndroidのSignedなapkをビルドするのに、Titanium SDK 3.2.0では苦労したと前に書きました。 今回は別のやつで、Tit</description>
+    </item>
+    
+    <item>
+      <title>Marvericksユーザの一番簡単な Genymotion &#43; Titanium インストール手順</title>
+      <link>http://www.tdtsh.com/archives/3167/</link>
+      <pubDate>Wed, 29 Jan 2014 00:12:01 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3167/</guid>
+      <description>環境は Macbook Air Marvericks + Titanium Studio/CLI/SDK 3.2.0です。 Mac OSX なら Mavericks以外も多分一緒だと思いますが。 あと一番簡単かどうかは自信ないですけど。 &amp;nbsp; JDK 多分既</description>
+    </item>
+    
+    <item>
+      <title>Titanium Studio/SDK/CLI 3.2.0 で「パッケージファイルに正しく署名されていません」</title>
+      <link>http://www.tdtsh.com/archives/3159/</link>
+      <pubDate>Thu, 23 Jan 2014 12:30:31 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3159/</guid>
+      <description>去年末にTitanium Studio と Titanium SDK / CLI を 3.2.0 にあげてから初のAndroid署名付きのDistribution な apk をビルドをしてGoogle Pla</description>
+    </item>
+    
+    <item>
+      <title>Titanium で Androidモジュール作るときのemulatorを変える</title>
+      <link>http://www.tdtsh.com/archives/3156/</link>
+      <pubDate>Wed, 22 Jan 2014 11:50:25 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3156/</guid>
+      <description>Titanium で Androidモジュール作るとき ant run.emulator した時のAndroidエミュレータがデフォルトではHVGAで小さすぎる。 なので変更します。 vi ~/Library/Application\ Support/Titanium/mobilesdk/osx/3.2.0.GA/android/builder.py #&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211; avd_skin</description>
+    </item>
+    
+    <item>
+      <title>Titanium Mobile (Alloy) で自動ユニットテストまとめ</title>
+      <link>http://www.tdtsh.com/archives/3073/</link>
+      <pubDate>Tue, 10 Dec 2013 14:50:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3073/</guid>
+      <description>&amp;nbsp; &amp;nbsp; 先生、Alloyでテスト自動化したいです。 という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine</description>
+    </item>
+    
+    <item>
+      <title>Titanium Studio で LogCat</title>
+      <link>http://www.tdtsh.com/archives/3062/</link>
+      <pubDate>Sun, 10 Nov 2013 16:30:01 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3062/</guid>
+      <description>Titanium Studio で LogCatを見たいじゃないですか。 毎回 DDMSやeclipse を同時起動するのが面倒になってきたのでメモ。 &amp;nbsp; Anrdoid ADT Plugin Titanium Studio起動</description>
+    </item>
+    
+    <item>
+      <title>Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity</title>
+      <link>http://www.tdtsh.com/archives/3049/</link>
+      <pubDate>Mon, 21 Oct 2013 13:30:58 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3049/</guid>
+      <description>その1と、その2、そして その3 で、ようやくTitanium Mobile での Android Moduleの開発準備が整いました。 今回その続きです。既存のActivit</description>
+    </item>
+    
+    <item>
+      <title>Titanium MobileのAndroid用モジュールでハマったまとめ その3 命名規則</title>
+      <link>http://www.tdtsh.com/archives/3013/</link>
+      <pubDate>Thu, 17 Oct 2013 15:30:51 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3013/</guid>
+      <description>前々回(その1)と、前回(その2)で、NDKのバージョンをr8bにし、ようやくant のビルドが通る様になり、エミュレータも起動しました。 &amp;nbsp; ハ</description>
+    </item>
+    
+    <item>
+      <title>Titanium MobileのAndroid用モジュールでハマったまとめ その2 NDK</title>
+      <link>http://www.tdtsh.com/archives/3001/</link>
+      <pubDate>Wed, 16 Oct 2013 13:25:28 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3001/</guid>
+      <description>&amp;nbsp; ハマったポイント2 Android NDK 前回(その1)でNDKのバージョンが最新である事が原因かもしれない疑惑が出てきたので、その線で調べる事にしました。 初</description>
+    </item>
+    
+    <item>
+      <title>Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2</title>
+      <link>http://www.tdtsh.com/archives/2989/</link>
+      <pubDate>Tue, 15 Oct 2013 13:00:29 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2989/</guid>
+      <description>Titanium Moblie いいですね。 特に Alloy という MVCフレームワーク的なものが標準になってから、昨今のイケてるJavaScript開発者にとっては馴染み易いスタ</description>
+    </item>
+    
+    <item>
+      <title>Android で XmlPullParser で XmlPullParserException: END_TAG expected</title>
+      <link>http://www.tdtsh.com/archives/2902/</link>
+      <pubDate>Mon, 12 Aug 2013 13:30:31 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2902/</guid>
+      <description>Androidアプリ でサーバから XMLデータを取ってきて XmlPullParser でパースする時に、XML内でタグがネストしてる所で、4系以上で XmlPullParserException: END_TAG expected が出ることがあ</description>
+    </item>
+    
+    <item>
+      <title>FBライクなスライド式メニューのライブラリ、サンプル</title>
+      <link>http://www.tdtsh.com/archives/2831/</link>
+      <pubDate>Sun, 12 May 2013 14:32:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2831/</guid>
+      <description>Facebookでお馴染みの画面が横に半スライドしてメニューが出るアレ、 小さい画面でメニューをスッキリ見せるという意味でも、縦長になったiP</description>
+    </item>
+    
+    <item>
+      <title>kindle fire HD 開封、ファーストインプレッション</title>
+      <link>http://www.tdtsh.com/archives/2741/</link>
+      <pubDate>Wed, 13 Feb 2013 21:00:41 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2741/</guid>
+      <description>とりあえず、1500円分のクーポンにつられて。(2/16迄) パーソナルドキュメントサービスをはじめ、KindleがあまりにイイのでiBook</description>
+    </item>
+    
+    <item>
+      <title>iPad mini や Android の Google Maps が カーナビとして駿逸すぎる話</title>
+      <link>http://www.tdtsh.com/archives/2646/</link>
+      <pubDate>Fri, 04 Jan 2013 14:08:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2646/</guid>
+      <description>新年明けましておめでとう御座います。 今年初のブログです。 本年も宜しくお願いします。 初出の日から大雪に見まわれテンションが上がりました。幸先の</description>
+    </item>
+    
+    <item>
+      <title>au の 法人契約 を 機種変更する場合</title>
+      <link>http://www.tdtsh.com/archives/2643/</link>
+      <pubDate>Mon, 31 Dec 2012 08:47:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2643/</guid>
+      <description>au の 法人契約、めちゃお得ですけど、スマホを機種変更する場合にどーなるんでしょうか。 auお客さまサポートによると、法人印が要るみたいな書き方に</description>
+    </item>
+    
+    <item>
+      <title>MNPして HTC-J (ISW-13HT) をGETした話</title>
+      <link>http://www.tdtsh.com/archives/2630/</link>
+      <pubDate>Sun, 30 Dec 2012 11:19:39 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2630/</guid>
+      <description>ちょうどMNPの弾が有った事もあり、念願の？ HTC-J (ISW-13HT)をゲットしました。 もしかするとこのタイミングで何故バタフライでは無いのか、</description>
+    </item>
+    
+    <item>
+      <title>iPhone 5 とか iPad とかをフッ素コートしまくる</title>
+      <link>http://www.tdtsh.com/archives/2499/</link>
+      <pubDate>Tue, 20 Nov 2012 12:34:16 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2499/</guid>
+      <description>フッ素コートです。 歯とか、クルマとかでお馴染みのアレです。アレをiPhone 5 のガラス面に塗るのです。なんならiPhone4/4Sは両面とも</description>
+    </item>
+    
+    <item>
+      <title>Galaxy Noteを購入して10日程過ぎた後の感想など</title>
+      <link>http://www.tdtsh.com/archives/2491/</link>
+      <pubDate>Mon, 12 Nov 2012 02:00:38 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2491/</guid>
+      <description>Galaxy Noteを購入して10日程過ぎました。 パケホーダイやらオプションやらをドコモショップで解約してきたので、780円/月で家の電話がわりになっ</description>
+    </item>
+    
+    <item>
+      <title>Galaxy Note の Google Play 以外のマーケットプレイス</title>
+      <link>http://www.tdtsh.com/archives/2482/</link>
+      <pubDate>Wed, 07 Nov 2012 12:15:18 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2482/</guid>
+      <description>先日Galaxy Noteを手に入れた訳でして、色々いじってみています。 特にDoCoMoとSamsungのスマホは初でして。 スマホオタクとして</description>
+    </item>
+    
+    <item>
+      <title>Galaxy Note を 一括0円 で手に入れた話</title>
+      <link>http://www.tdtsh.com/archives/2476/</link>
+      <pubDate>Sun, 04 Nov 2012 06:00:46 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2476/</guid>
+      <description>月末だし、何かあるかなと思ってショップに行ったら、Galaxy Note (SC-05D)がMNP一括0円・商品券32000円だったので、速攻ゲットし</description>
+    </item>
+    
+    <item>
+      <title>au の mamorino2 を買った話</title>
+      <link>http://www.tdtsh.com/archives/2238/</link>
+      <pubDate>Sun, 09 Sep 2012 21:00:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2238/</guid>
+      <description>ついこの間、au の iPhone 4S を買ったんですが、その時一括０円の条件として、Photo-Uでしたっけ？写真立てみたいなやつを同時に契約となってたんで</description>
+    </item>
+    
+    <item>
+      <title>グロスマなAndroid 4.0搭載の104SHを新規0円で買ったけど大いに失望した話</title>
+      <link>http://www.tdtsh.com/archives/2198/</link>
+      <pubDate>Mon, 03 Sep 2012 11:12:52 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2198/</guid>
+      <description>なにやらDoCoMoのスマホが月々サポート祭りになっているみたいなんで、iPhone 5 に刺す XiなSimをゲットできたらナァ、なんてちょこち</description>
+    </item>
+    
+    <item>
+      <title>AirDroid &amp;#8211; PCブラウザからAndroid端末のリモートデスクトップ的な</title>
+      <link>http://www.tdtsh.com/archives/2129/</link>
+      <pubDate>Mon, 06 Aug 2012 04:45:51 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2129/</guid>
+      <description>コレ、試してみました。 PCブラウザからAndroid携帯を遠隔操作できる『AirDroid』に惚れた : ライフハッカー［日本版］ Android</description>
+    </item>
+    
+    <item>
+      <title>appengine のローカル開発環境 (eclipse) をスマートフォンで見る</title>
+      <link>http://www.tdtsh.com/archives/1989/</link>
+      <pubDate>Wed, 11 Jul 2012 07:21:33 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1989/</guid>
+      <description>最近 appengine の開発はすっかり Macbook Air + eclipse + GitBox に移行しました。 一応Windows機にも eclipse と TortoiseGitを入れてスタンバってますけど全然使わなく</description>
+    </item>
+    
+    <item>
+      <title>Android の UI とマグロなユーザの話</title>
+      <link>http://www.tdtsh.com/archives/1827/</link>
+      <pubDate>Wed, 23 May 2012 12:58:11 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1827/</guid>
+      <description>最近Androidをお使いの方増えてきましたね。 操作の事とか良く聞かれる様になりました。 ただiOSに比べてAndroidってUIが直感的じゃ</description>
+    </item>
+    
+    <item>
+      <title>いますぐインス！ au のスマートフォン で iCloud のフォトストリームみたいなアプリ  (au one Photo Air)</title>
+      <link>http://www.tdtsh.com/archives/1656/</link>
+      <pubDate>Mon, 06 Feb 2012 13:30:39 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1656/</guid>
+      <description>au by KDDI の Android なスマホ（auだからスマホンと言うべきか）には iCloud が無いんで、 写真をパソコンに取り込むのが面倒だという貴兄に。 あなたの思い出をカンタ</description>
+    </item>
+    
+    <item>
+      <title>持ち出せるIP電話、050plus は MVNO と Simフリー端末を加速するか</title>
+      <link>http://www.tdtsh.com/archives/1622/</link>
+      <pubDate>Sun, 15 Jan 2012 13:30:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1622/</guid>
+      <description>スマートフォンでの音声・ビデオ通話/チャット のアプリが熱い 去年しらべた時以降に、LINE(ライン) がテレビCMまで打ってブイブイいわせている</description>
+    </item>
+    
+    <item>
+      <title>iMessage と Facetime にこめたAppleの真の意図とは</title>
+      <link>http://www.tdtsh.com/archives/1534/</link>
+      <pubDate>Tue, 29 Nov 2011 21:25:57 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1534/</guid>
+      <description>iPhone の SMS がしれっと「メッセージ」に名称変更されてしばらく経ちます。 未だに、SMSのメッセージが水色になるのなんで？とかたまに聞かれます。 iPhone が W</description>
+    </item>
+    
+    <item>
+      <title>Webブラウザ上で Android や iPhone アプリが開発できる Monaca</title>
+      <link>http://www.tdtsh.com/archives/1517/</link>
+      <pubDate>Sun, 27 Nov 2011 21:29:49 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1517/</guid>
+      <description>Jungle Java &amp;#8211; Monaca を少しだけ試してみたを見て、私もちょこっとやってみました。 要するに、HTML5から Android や iOS のネイティブアプリをビルドできる、WEBベー</description>
+    </item>
+    
+    <item>
+      <title>eo光ネット を見直したい</title>
+      <link>http://www.tdtsh.com/archives/1485/</link>
+      <pubDate>Wed, 23 Nov 2011 21:40:03 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1485/</guid>
+      <description>eo光ネットをウチにひいて2年弱が経ちました。 フレッツ光に比べて割安だし、充分以上の帯域幅だし満足しています。 というか、オーバークオリティで</description>
+    </item>
+    
+    <item>
+      <title>Bluetooth の ヘッドセット (MM-BTSH24) と iPhone が接続できない</title>
+      <link>http://www.tdtsh.com/archives/1479/</link>
+      <pubDate>Tue, 22 Nov 2011 21:00:41 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1479/</guid>
+      <description>&amp;nbsp; Bluetoothのヘッドセット (MM-BTSH24)を使い出してから1ヶ月が過ぎました。 &amp;nbsp; 最初は HTC EVO の通話用として使うつもりでしたが、ち</description>
+    </item>
+    
+    <item>
+      <title>iOS5 での iPhone/iPad/Mac の連絡先と Google Contact の同期で悩む</title>
+      <link>http://www.tdtsh.com/archives/1404/</link>
+      <pubDate>Tue, 25 Oct 2011 22:58:09 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1404/</guid>
+      <description>以前、GMailの連絡先(Google Contacts)をiPhone/iPadの連絡帳に同期する手順について書きました。 その続報なんですけ</description>
+    </item>
+    
+    <item>
+      <title>iPhone 4/4S 用の安モンバッテリー内蔵ケースまとめ (Eix Power Skin for iPhone 4)</title>
+      <link>http://www.tdtsh.com/archives/1396/</link>
+      <pubDate>Mon, 24 Oct 2011 10:24:05 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1396/</guid>
+      <description>iPhone 4用のバッテリー内蔵ケース、安モンを中心にけっこういっぱい買っていますんで、まとめ。 まずはコレ。オススメ出来ないです。 あまりに安いんで嫁と</description>
+    </item>
+    
+    <item>
+      <title>EVO と  Macbook Air が有ればマクドで仕事できますよね</title>
+      <link>http://www.tdtsh.com/archives/1370/</link>
+      <pubDate>Fri, 21 Oct 2011 15:26:16 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1370/</guid>
+      <description>いや、そんなにMac使い込んではいないですけど。 Google App Engine での開発とか、Macでブラウザとeclipse があれば、あとはWiFi か HTC EVOでテザ</description>
+    </item>
+    
+    <item>
+      <title>GALAPAGOS メディアタブレット の Android 2.3アップデートが開始</title>
+      <link>http://www.tdtsh.com/archives/1349/</link>
+      <pubDate>Fri, 12 Aug 2011 11:00:30 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1349/</guid>
+      <description>&amp;nbsp; 延期されていた GALAPAGOS メディアタブレットの Android 2.3に変更するシステムソフトが、SHARPから提供が開始された様です。 早速ガラパゴスメディアタブレ</description>
+    </item>
+    
+    <item>
+      <title>GALAPAGOS メディアタブレット の Android 2.3アップデートが延期</title>
+      <link>http://www.tdtsh.com/archives/1329/</link>
+      <pubDate>Mon, 25 Jul 2011 10:00:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1329/</guid>
+      <description>先日SHARPから、GALAPAGOSのOSをAndroid 2.3に変更するシステムソフトを提供開始との事で、7月25日からという事でしたの</description>
+    </item>
+    
+    <item>
+      <title>Android の無料 手書きアプリ</title>
+      <link>http://www.tdtsh.com/archives/1326/</link>
+      <pubDate>Thu, 21 Jul 2011 10:39:12 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1326/</guid>
+      <description>手書き系のアプリについて調べる機会があったのでメモします。 調べたのは無料のものだけです。 文字を中心に書いたり、手帳みたいに使う 手書きメモ Lite 書</description>
+    </item>
+    
+    <item>
+      <title>最近はビデオチャット関連が熱い</title>
+      <link>http://www.tdtsh.com/archives/1320/</link>
+      <pubDate>Fri, 08 Jul 2011 03:55:28 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1320/</guid>
+      <description>最近、ソーシャルメディア界隈でビデオチャットが熱いですね。 私の周りにはSkypeに常時ログインしているヒトが少ない事もあって、 PC向けWEB</description>
+    </item>
+    
+    <item>
+      <title>MOTOROLA XOOMを触ってみた</title>
+      <link>http://www.tdtsh.com/archives/1307/</link>
+      <pubDate>Fri, 17 Jun 2011 10:52:19 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1307/</guid>
+      <description>触ってみたシリーズ、前回はGALAPAGOS メディアタブレットでしたが、今回はauの？MOTOROLA XOOMです。 最近au の HTC EVOを購入</description>
+    </item>
+    
+    <item>
+      <title>au の HTC EVO に入れたアプリ</title>
+      <link>http://www.tdtsh.com/archives/1302/</link>
+      <pubDate>Wed, 01 Jun 2011 11:20:58 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1302/</guid>
+      <description>auのHTC EVOを購入して一週間が過ぎた時点での、インストール済みアプリを書いときます。 必須 Simeji ・・・デフォルトのWnnがちょっとモッサリし</description>
+    </item>
+    
+    <item>
+      <title>au の HTC EVO を一週間つかってみた感想など</title>
+      <link>http://www.tdtsh.com/archives/1295/</link>
+      <pubDate>Tue, 31 May 2011 11:30:28 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1295/</guid>
+      <description>auのHTC EVOを購入して一週間が過ぎたので、感想などを書いてみます。 事前にレンタルした期間をあわせるともうちょっと長いけど。 iPhone 4と2台持</description>
+    </item>
+    
+    <item>
+      <title>au の HTC EVO がなかなか良かった話</title>
+      <link>http://www.tdtsh.com/archives/1287/</link>
+      <pubDate>Wed, 25 May 2011 11:00:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1287/</guid>
+      <description>au の HTC EVO がなかなか良かった話 IDEOSを購入して僅か3ヶ月足らず、訳あって au の HTC EVOを導入することに。Lady GaGaのCMでおなじみのや</description>
+    </item>
+    
+    <item>
+      <title>GALAPAGOS メディアタブレットを触ってみた</title>
+      <link>http://www.tdtsh.com/archives/1247/</link>
+      <pubDate>Sat, 02 Apr 2011 11:11:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1247/</guid>
+      <description>GALAPAGOS メディアタブレット (10インチのでかいほう)を触る機会があったのでレポートします。 Appleのソレを彷彿とさせる、高級感のある箱。 なぜかす</description>
+    </item>
+    
+    <item>
+      <title>出来れば静電式の Androidタブレットがいいな</title>
+      <link>http://www.tdtsh.com/archives/1199/</link>
+      <pubDate>Fri, 11 Mar 2011 11:03:57 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1199/</guid>
+      <description>昨日も書きましたqが、中華パッドでいいから Androidタブレットが欲しい訳です。 仮に買ったとして、わたしが遊び倒した後の余生ですが、 &amp;nbsp; &amp;nbsp; 1.</description>
+    </item>
+    
+    <item>
+      <title>中華パッドとかでいいから Android なタブレットが欲しい</title>
+      <link>http://www.tdtsh.com/archives/1174/</link>
+      <pubDate>Thu, 10 Mar 2011 11:51:07 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1174/</guid>
+      <description>Android なスレート、欲しいです。 自分の中でAndroidブーム到来中なんで。 出来れば7インチ位のタブレットがいいな。 去年買った初代 iPad は息子(4歳)</description>
+    </item>
+    
+    <item>
+      <title>本屋で驚いた話と、eclipse に Android SDKを入れてみた話</title>
+      <link>http://www.tdtsh.com/archives/1161/</link>
+      <pubDate>Mon, 07 Mar 2011 10:40:20 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1161/</guid>
+      <description>最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし</description>
+    </item>
+    
+    <item>
+      <title>ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す</title>
+      <link>http://www.tdtsh.com/archives/1140/</link>
+      <pubDate>Mon, 28 Feb 2011 10:40:40 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1140/</guid>
+      <description>注文していたHUAWEI(ファーウェイ) IDEOS(イデオス)が週末にとどきました。早い。ちゃんと在庫もってる証拠ですね。 &amp;nbsp; 結局、日本通信版</description>
+    </item>
+    
+    <item>
+      <title>IDEOS注文しちゃいました</title>
+      <link>http://www.tdtsh.com/archives/1135/</link>
+      <pubDate>Fri, 25 Feb 2011 10:39:55 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1135/</guid>
+      <description>余っていた iPhone 3G を 脱○してSIｍアンロッ○した後に、同じW-CDMAだから一緒だろうと思っていたイーモバイルの赤SIMの周波数が1700MHz</description>
+    </item>
+    
+    <item>
+      <title>日本通信のIDEOSスマートフォン(Android)とb-mobile SIM で得できそうな話</title>
+      <link>http://www.tdtsh.com/archives/1122/</link>
+      <pubDate>Tue, 22 Feb 2011 10:30:23 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1122/</guid>
+      <description>先日香港でsimフリーのAndroid (HTC Wildfire)を買い損ねた流れで色々ググっていると、素敵なSimカードでおなじみの日本通信から、</description>
+    </item>
+    
+    <item>
+      <title>香港でsimフリー携帯とAndroid (HTC Wildfire)を買い損ねた話</title>
+      <link>http://www.tdtsh.com/archives/1109/</link>
+      <pubDate>Mon, 21 Feb 2011 10:31:31 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1109/</guid>
+      <description>香港に行く機会があったので、現地の携帯とかを色々みてきました。 事前に聞いてはいたけど、ホントに空港やら街のアチコチでSimカードが売ってます</description>
+    </item>
+    
+    <item>
+      <title>Galaxy S (SC-02B) へ音楽とかを同期するには？</title>
+      <link>http://www.tdtsh.com/archives/1004/</link>
+      <pubDate>Mon, 03 Jan 2011 01:06:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1004/</guid>
+      <description>DoCoMo の Galaxy S (SC-02B)を触る機会があった。 パソコンの音楽をGalaxy Sに同期させたいけど、Galaxy SをUSBケーブルでパソコン (Windows XP S</description>
+    </item>
+    
+  </channel>
+</rss>

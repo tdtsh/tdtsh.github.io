@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>データベース on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9/</link>
+    <description>Recent content in データベース on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 18 Dec 2012 20:00:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール</title>
+      <link>http://www.tdtsh.com/archives/2548/</link>
+      <pubDate>Tue, 18 Dec 2012 20:00:03 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2548/</guid>
+      <description>そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ</description>
+    </item>
+    
+    <item>
+      <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
+      <link>http://www.tdtsh.com/archives/1095/</link>
+      <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1095/</guid>
+      <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
+    </item>
+    
+    <item>
+      <title>WEBでER図 WWW SQL Designer</title>
+      <link>http://www.tdtsh.com/archives/900/</link>
+      <pubDate>Fri, 03 Sep 2010 02:44:44 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/900/</guid>
+      <description>久々にERダイアグラムを書く機会がありました。 手元にツールが無くて、何かいいのないか探してたら、よさげなもの発見。 WWW SQL Designer phpなサーバがあれ</description>
+    </item>
+    
+    <item>
+      <title>RDBMS脳では app engineのデータストアの概念で混乱する</title>
+      <link>http://www.tdtsh.com/archives/770/</link>
+      <pubDate>Sun, 04 Jul 2010 15:05:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/770/</guid>
+      <description>RDBMSを長くやっている人ほど、app engineのデータストアの概念で混乱する可能性が高いと思います。 自分もまだ時々判らなくなるので、一</description>
+    </item>
+    
+    <item>
+      <title>RDBMS脳を変えるのは難しい &amp;#8211; App Enine上でスケールするデータモデリングへの道</title>
+      <link>http://www.tdtsh.com/archives/752/</link>
+      <pubDate>Thu, 01 Jul 2010 14:00:59 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/752/</guid>
+      <description>slim3(App Engine/Java)のお勉強をしながら、良くあるパターンのブログサービス的なWEBアプリケーションを作っています。 ブログサービスの概念</description>
+    </item>
+    
+    <item>
+      <title>Access 2010 では DBエンジンに SQL Azure が使える様になる</title>
+      <link>http://www.tdtsh.com/archives/679/</link>
+      <pubDate>Tue, 15 Jun 2010 02:03:26 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/679/</guid>
+      <description>マイクロソフトのAccess 2010では、ODBCを通じてクラウド上のリレーショナルデータベースであるSQL Azureに直接接続可能だと、M</description>
+    </item>
+    
+    <item>
+      <title>DBマガジン、休刊</title>
+      <link>http://www.tdtsh.com/archives/660/</link>
+      <pubDate>Tue, 01 Jun 2010 02:51:19 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/660/</guid>
+      <description>DB マガジン、休刊 &amp;#8211; スラッシュドット・ジャパン ニッチと言えばニッチなジャンルの雑誌だっただけに仕方ないですが、良く読んでた雑誌が消えていくのは</description>
+    </item>
+    
+    <item>
+      <title>Excelでテーブル定義書を出力できるデータベース管理ツール CSE (Common SQL Environment)</title>
+      <link>http://www.tdtsh.com/archives/373/</link>
+      <pubDate>Thu, 10 Sep 2009 02:37:38 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/373/</guid>
+      <description>今まで色んなデータベース管理ツール（特に無償のん）を使ってきたけど、使用頻度といい、期間といい、圧倒的にこれがナンバーワン。 CSE(Common SQL Environment) ワタシにと</description>
+    </item>
+    
+    <item>
+      <title>Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする</title>
+      <link>http://www.tdtsh.com/archives/363/</link>
+      <pubDate>Wed, 09 Sep 2009 07:08:44 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/363/</guid>
+      <description>Spring Framework から Oracle の CLOB や BLOG を扱う事がある。 Oracle9i の頃から、LOB にはちょっと苦労させられた。 9iの頃のJDBCドライバ(Thin)では、文字数の制約で色</description>
+    </item>
+    
+    <item>
+      <title>java.sql.SQLException: 列索引が無効です。</title>
+      <link>http://www.tdtsh.com/archives/343/</link>
+      <pubDate>Fri, 04 Sep 2009 11:07:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/343/</guid>
+      <description>Spring Framework の JdbcTemplate を使ってて、こんなんでました。 java.sql.SQLException: 列索引が無効です。 [commons-dbutils] エラー：列索引が無効です。 &amp;#8211; メモ！メモ！ &amp;#8211; Yahoo!ブログ によると、 Prepa</description>
+    </item>
+    
+    <item>
+      <title>MS SQL Server 2000について、 2002年頃に書いたメモ</title>
+      <link>http://www.tdtsh.com/archives/226/</link>
+      <pubDate>Thu, 06 Aug 2009 04:28:39 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/226/</guid>
+      <description>ロックアーキティクチャ ロックの自動エスカレーション SQL Server 2000のロックは、動的にロック方法を自動判断して行われる。 行ロック・ページロック・D</description>
+    </item>
+    
+    <item>
+      <title>DOA、RDB と Key Valueストア(KVS)について</title>
+      <link>http://www.tdtsh.com/archives/207/</link>
+      <pubDate>Thu, 30 Jul 2009 02:43:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/207/</guid>
+      <description>前々回、前回、に引き続き、Key Valueストア(KVS)ネタ。 データの整合性（Consistency）を重視するRDB、データの可用性（A</description>
+    </item>
+    
+    <item>
+      <title>Oracleで、exp、impでデータ移動、複製</title>
+      <link>http://www.tdtsh.com/archives/181/</link>
+      <pubDate>Wed, 22 Jul 2009 04:06:49 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/181/</guid>
+      <description>一連のRDBMSインスタンス間のデータ移動関係シリーズ PostgreSQLのCOPYコマンド LOADでCSVファイルをMySQLデータベース</description>
+    </item>
+    
+    <item>
+      <title>pgdumpでPostgreSQLサーバ間でデータ移動、複製</title>
+      <link>http://www.tdtsh.com/archives/170/</link>
+      <pubDate>Fri, 17 Jul 2009 04:15:20 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/170/</guid>
+      <description>これも良く忘れるのでメモ。 PostgreSQLのダンプって、DDLとDMLをまんま吐いてくれるから便利。 リモートからやる場合は、Postgr</description>
+    </item>
+    
+    <item>
+      <title>LOADでCSVファイルをMySQLデータベースにインポートする</title>
+      <link>http://www.tdtsh.com/archives/166/</link>
+      <pubDate>Thu, 16 Jul 2009 12:04:30 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/166/</guid>
+      <description>前回、PostgreSQLのCOPYコマンドの方がInsertより早い、のMySQL版。 SET NAMES utf8; LOAD DATA INFILE &#39;/path/to/file/data.csv&#39; INTO TABLE tablename FIELDS TERMINATED BY &#39;,&#39;; 参考サイト http://dev.mysql.com/doc/refman/4.1/ja/mysqlimport.html http://dev.mysql.com/doc/refman/4.1/ja/load-data.html</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQLのCOPYコマンド</title>
+      <link>http://www.tdtsh.com/archives/158/</link>
+      <pubDate>Wed, 15 Jul 2009 09:33:01 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/158/</guid>
+      <description>大量のデータをInsertするより、COPYコマンドを使うほうが早い。 COPY tablename (col1,col2,col3) FROM &amp;#8216;/path/to/file/data.csv&amp;#8217; with NULL as &amp;#8221; CSV; 参考サイト http://www.postgresql.jp/document/pg833doc/html/sql-copy.html http://blog.goo.ne.jp/whitil/e/e5c21be12ab5e98a53116c048220bdbf http://www.thinkit.co.jp/cert/compare/1/5/3.htm http://okwave.jp/qa777662.html http://blog.mufu.jp/2008/08/postgresqlcopycsv.html http://yoshinba.qp.land.to/index.php?PostgreSQL</description>
+    </item>
+    
+    <item>
+      <title>キーバリュー(Key-Value)型 データベース（データストア）とは</title>
+      <link>http://www.tdtsh.com/archives/66/</link>
+      <pubDate>Fri, 03 Jul 2009 04:57:18 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/66/</guid>
+      <description>前回、クラウドでの新しいACID特性、BASEトランザクション、CAP定理に関する記事についてコメントを書いたけど、GoogleのMapRe</description>
+    </item>
+    
+    <item>
+      <title>Oracleで制御ファイルの自動バックアップ</title>
+      <link>http://www.tdtsh.com/archives/52/</link>
+      <pubDate>Tue, 23 Jun 2009 10:08:36 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/52/</guid>
+      <description>制御ファイルの自動バックアップの有効化 rman target sys/pass@hoge CONFIGURE CONTROLFILE AUTOBACKUP ON; CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK TO &amp;#8216;/path_to_backup/ctl_%F&amp;#8217; 自動バックアップからの制御ファイルのリストア set dbid = 682122420; set CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK</description>
+    </item>
+    
+    <item>
+      <title>Oracleの表領域を移動 備忘録</title>
+      <link>http://www.tdtsh.com/archives/53/</link>
+      <pubDate>Tue, 23 Jun 2009 08:01:41 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/53/</guid>
+      <description>すぐに忘れるのでメモ。 Oracle 9iで実行 ALTER TABLESPACE USERS offline; ここで表領域のデータファイルをコピーまたは移動する mv /PATH_TO_CURRENT/USERS01.DBF /PATH_TO_MOVE/USERS01.DBF ALTER TABLESPACE USERS RENAME DATAFILE &amp;#8216;/PATH_TO_CURRENT/USERS01.DBF&amp;#8217; to &amp;#8216;/PATH_TO_MOVE/USERS01.DBF&amp;#8217;; ALTER TABLESPACE USERS online;</description>
+    </item>
+    
+    <item>
+      <title>Oracleの表領域をオフライン/オンライン 備忘録</title>
+      <link>http://www.tdtsh.com/archives/54/</link>
+      <pubDate>Tue, 23 Jun 2009 08:01:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/54/</guid>
+      <description>すぐに忘れるのでメモ。 Oracle 9iで実行 ALTER TABLESPACE USERS read only; ALTER TABLESPACE USERS read write;</description>
+    </item>
+    
+    <item>
+      <title>OracleのREDOログを移動する備忘録</title>
+      <link>http://www.tdtsh.com/archives/55/</link>
+      <pubDate>Tue, 23 Jun 2009 07:57:59 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/55/</guid>
+      <description>すぐに忘れるのでメモ。 Oracle 9iで実行。 移動先にファイルが存在したら失敗するので、あるなら削除する。 del /PATH_TO_MOVE/NEWREDO01.LOG del /PATH_TO_MOVE/NEWREDO02.LOG del /PATH_TO_MOVE/NEWREDO03.LOG sqlplus &amp;#8220;sys/password@hogehoge as sysdba&amp;#8221; ALTER DATABASE ADD LOGFILE MEMBER &amp;#8216;/PATH_TO_MOVE/NEWREDO01.LOG&amp;#8217; TO GROUP 1; ALTER DATABASE ADD</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2000 の ハードウェア障害の際の予備機への復旧手順</title>
+      <link>http://www.tdtsh.com/archives/40/</link>
+      <pubDate>Wed, 10 Jun 2009 04:36:31 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/40/</guid>
+      <description>前提条件 本番機でオンラインバックアップを取得しており、そのバックアップファイルがある 本番機の *.ldf を取得できる 予備機に SQL Server2000 がインストールされてお</description>
+    </item>
+    
+    <item>
+      <title>3値論理</title>
+      <link>http://www.tdtsh.com/archives/37/</link>
+      <pubDate>Tue, 09 Jun 2009 05:49:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/37/</guid>
+      <description>NULLを許容したくないデータベース屋のわたしが、NULLを気にしないSEやプログラマに3値論理を説明しなければいけないときに使うポインタ。</description>
+    </item>
+    
+    <item>
+      <title>ACID、BASE、CAP定理</title>
+      <link>http://www.tdtsh.com/archives/25/</link>
+      <pubDate>Wed, 27 May 2009 01:19:14 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/25/</guid>
+      <description>CAP定理 システムのCAP (分散耐性と可用性と一貫性) のうち、同時には2つまでしか満たすことはできない、という (Prof. Eric Brewer (UC Berkeley)の)</description>
+    </item>
+    
+    <item>
+      <title>MDBファイルサイズを最適化する</title>
+      <link>http://www.tdtsh.com/archives/11/</link>
+      <pubDate>Mon, 18 May 2009 09:38:47 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/11/</guid>
+      <description>参考サイト http://www.relief.jp/itnote/archives/000130.php データベースの最適化を実施すれば、ファイルサイズが小さくなる。 ※Access 2003 [ツール]-[データベースユーティリティ]-[デー</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2000で、2つあるldfを1つにする</title>
+      <link>http://www.tdtsh.com/archives/10/</link>
+      <pubDate>Sun, 17 May 2009 01:00:53 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/10/</guid>
+      <description>SQL Server 2000で、2つあるldfを1つにする use [database_name] go checkpoint exec sp_dboption &amp;#8216;table_name&amp;#8217;, &amp;#8216;trunc. log on chkpt.&amp;#8217;, &amp;#8216;TRUE&amp;#8217; dbcc shrinkfile( &amp;#8216;table_name_log_d&amp;#8217; , emptyfile ) alter database [table_name] remove file &amp;#8216;table_name_log_d&amp;#8217; go &amp;lt;div style=&amp;quot;float:left;margin-left:15px;line-height:120%&amp;quot; class=&amp;quot;amazlet-info&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;margin-bottom:10px;line-height:120%&amp;quot; class=&amp;quot;amazlet-name&amp;quot;&amp;gt; &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;http://www.amazon.co.jp/exec/obidos/ASIN/4891002603/tdtsh-22/ref=nosim/&amp;quot; name=&amp;quot;amaz</description>
+    </item>
+    
+  </channel>
+</rss>

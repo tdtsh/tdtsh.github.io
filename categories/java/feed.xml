@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/java/</link>
+    <description>Recent content in Java on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 31 Jul 2012 21:23:39 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/java/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>appengine java の urlFetch で Basic認証を使う (Low Level API版)</title>
+      <link>http://www.tdtsh.com/archives/2078/</link>
+      <pubDate>Tue, 31 Jul 2012 21:23:39 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2078/</guid>
+      <description>随分と前にGAE/J の Urlフェッチについて書きましたが、 今回は、Basic認証のページをフェッチする機会があったのでメモっておきます。 Low Level</description>
+    </item>
+    
+    <item>
+      <title>Velocity小ネタ &amp;#8211; VTL で Map を key で foreach</title>
+      <link>http://www.tdtsh.com/archives/2059/</link>
+      <pubDate>Thu, 26 Jul 2012 14:30:06 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2059/</guid>
+      <description>Jakarta Velocity の VTLでのループは foreach しかありません。 WEBサービスではだいたいの場合はPOJOなBeanをListに突っ込んでクルクル回して使ってるん</description>
+    </item>
+    
+    <item>
+      <title>eclipse の viPlugin と キーバインドの変更</title>
+      <link>http://www.tdtsh.com/archives/1441/</link>
+      <pubDate>Fri, 04 Nov 2011 07:28:39 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1441/</guid>
+      <description>Windows機でテキスト書くときはgvimです。 なので、つい j とか k とか Ctrl+FとかCtrl+B とか打ってしまいます。 その点、Goog</description>
+    </item>
+    
+    <item>
+      <title>GAE/J で Python の bulkloader をつかってみる</title>
+      <link>http://www.tdtsh.com/archives/1359/</link>
+      <pubDate>Tue, 16 Aug 2011 11:46:29 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1359/</guid>
+      <description>&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine の Backends で 長時間、大規模な処理が可能に</title>
+      <link>http://www.tdtsh.com/archives/1272/</link>
+      <pubDate>Thu, 12 May 2011 02:30:19 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1272/</guid>
+      <description>Google App Engine 1.5.0 で、Backendsなるものが使える様になったそうですね。 Backends: Until now all App Engine applications have been running on short-lived dynamic instances that we spin up and down in response to application requests. This is great for building scalable web applications, but has a number</description>
+    </item>
+    
+    <item>
+      <title>openid4java で OpenID OP のサンプルを動かしてみる</title>
+      <link>http://www.tdtsh.com/archives/1208/</link>
+      <pubDate>Thu, 17 Mar 2011 10:43:01 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1208/</guid>
+      <description>openid4javaのサンプルを動かしてみる 事前にJDKとmeven2のインストールが必要です。 openid4javaのDownloads</description>
+    </item>
+    
+    <item>
+      <title>eclipse の Google App Engine プロジェクトを実行した時リモートから見たい</title>
+      <link>http://www.tdtsh.com/archives/1157/</link>
+      <pubDate>Thu, 03 Mar 2011 05:06:40 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1157/</guid>
+      <description>良く忘れるので、メモ。 eclipseを起動 プロジェクトを右クリック [実行&amp;reg;] &amp;#8211; [実行の構成(N)] をクリック 実行構成の左ペインより[</description>
+    </item>
+    
+    <item>
+      <title>slim3のバージョンアップをする (1.0.7から1.0.8に更新)</title>
+      <link>http://www.tdtsh.com/archives/1154/</link>
+      <pubDate>Wed, 02 Mar 2011 11:04:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1154/</guid>
+      <description>この手順は私が行ったことの記録として書いたものですので、誤りを含んでいる可能性があります。 実際の手順は、Slim3 日本語サイト(非公式)など</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</title>
+      <link>http://www.tdtsh.com/archives/1023/</link>
+      <pubDate>Wed, 01 Dec 2010 04:26:07 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1023/</guid>
+      <description>CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉</description>
+    </item>
+    
+    <item>
+      <title>ROMEでRSSフィードを解析して簡易RSSリーダServletを作る</title>
+      <link>http://www.tdtsh.com/archives/941/</link>
+      <pubDate>Thu, 07 Oct 2010 15:10:56 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/941/</guid>
+      <description>javaでRSSフィードを解析したい時には、ROMEプロジェクトが便利です。 インストール Project ROMEからrome-1.0.jarをダウンロード</description>
+    </item>
+    
+    <item>
+      <title>java の AntiSamyでサニタイズ、任意のHTMLタグを許可しscriptタグとかを無効化</title>
+      <link>http://www.tdtsh.com/archives/883/</link>
+      <pubDate>Tue, 24 Aug 2010 11:08:25 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/883/</guid>
+      <description>一般公開するWEBサービスを作る場合、慣れてないと手がかかるのがセキュリティへの配慮です。 Google App Engineとか使っている時点でSQLインジェ</description>
+    </item>
+    
+    <item>
+      <title>OpenID RP を Google App Engine (java) で (dyuproject)</title>
+      <link>http://www.tdtsh.com/archives/587/</link>
+      <pubDate>Thu, 18 Mar 2010 06:02:19 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/587/</guid>
+      <description>&amp;nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine for Java で Google Data (GData) API を使う 1</title>
+      <link>http://www.tdtsh.com/archives/580/</link>
+      <pubDate>Thu, 11 Mar 2010 08:04:07 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/580/</guid>
+      <description>Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data</description>
+    </item>
+    
+    <item>
+      <title>javax.imageio.ImageIO  で gif画像 の write (とリサイズ関係)</title>
+      <link>http://www.tdtsh.com/archives/569/</link>
+      <pubDate>Fri, 26 Feb 2010 00:47:23 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/569/</guid>
+      <description>たまたまImageIOを触る機会があって始めて認識した事なんですが、javax.imageio.ImageIO で gif 画像を扱う時、JDK5まで</description>
+    </item>
+    
+    <item>
+      <title>GAE/J (Google App Engine for java) で 拡張log4jを使う(日本時間)</title>
+      <link>http://www.tdtsh.com/archives/558/</link>
+      <pubDate>Thu, 04 Feb 2010 04:17:55 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/558/</guid>
+      <description>先日、GAE/J (Google App Engine for java) で log4jを使うの続きです。 こんな素敵なエントリーを発見！ GAE/Jでlog4jの日付を日本時間で出力する。- 今</description>
+    </item>
+    
+    <item>
+      <title>JADでjavaのclassファイルを逆コンパイルする</title>
+      <link>http://www.tdtsh.com/archives/529/</link>
+      <pubDate>Mon, 04 Jan 2010 07:55:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/529/</guid>
+      <description>たまーに、ソースコードが手元にないjavaのclassファイルのソースが見たい時があります。 その時の為に、開発環境には必ず逆コンパイラのJA</description>
+    </item>
+    
+    <item>
+      <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす</title>
+      <link>http://www.tdtsh.com/archives/445/</link>
+      <pubDate>Fri, 30 Oct 2009 16:00:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/445/</guid>
+      <description>GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ</description>
+    </item>
+    
+    <item>
+      <title>GAE (Google App Engine) SDK for Javaで ログの取得 (改訂版)</title>
+      <link>http://www.tdtsh.com/archives/442/</link>
+      <pubDate>Thu, 29 Oct 2009 16:00:09 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/442/</guid>
+      <description>※2012年2月07日 現状にあわせて修正・加筆しました。 Google App Engineのログは、WEB上( appengine.google.com のLogs )で見る事も出来るけど、デバッグには</description>
+    </item>
+    
+    <item>
+      <title>GAE SDK for Java で update 時にcannot find javac executable based on java.home</title>
+      <link>http://www.tdtsh.com/archives/429/</link>
+      <pubDate>Wed, 28 Oct 2009 16:00:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/429/</guid>
+      <description>※開発機はWindows XPです。 Google App Engine SDK for javaを使って、コマンドラインでデプロイしようと bin\appcfg.cmd update .\war すると、javac.exeが見つからない</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine SDK for java でデプロイ</title>
+      <link>http://www.tdtsh.com/archives/427/</link>
+      <pubDate>Tue, 27 Oct 2009 16:00:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/427/</guid>
+      <description>前回インストールした、Google App Engine SDK for javaを使って、コマンドラインでデプロイしてみる。 参考サイトの例に応用をきかせて、今回は SDKと</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine SDK for java のインストール</title>
+      <link>http://www.tdtsh.com/archives/424/</link>
+      <pubDate>Mon, 26 Oct 2009 16:00:34 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/424/</guid>
+      <description>前に書いたEclipseによる開発環境構築以外に、コマンドラインでやる方法もある。 Google App Engine SDK for Java のインストール [前に書いたEclipseによる</description>
+    </item>
+    
+    <item>
+      <title>仮のWEBシステムを、脳内で GAE/J に移行してみる</title>
+      <link>http://www.tdtsh.com/archives/421/</link>
+      <pubDate>Sun, 25 Oct 2009 16:00:15 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/421/</guid>
+      <description>脳内で、月間PVが300万PV位のソーシャルメディアを、Google App Engine for Java にのせてみる。 ■ストレージ容量 無償は1GBまで。 コンテンツ、画像</description>
+    </item>
+    
+    <item>
+      <title>GAE/J で WARNING Can not serve hoge.html directly.  You need to include it in &lt;static-files&gt; in your appengine-web.xml</title>
+      <link>http://www.tdtsh.com/archives/419/</link>
+      <pubDate>Sat, 24 Oct 2009 16:00:54 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/419/</guid>
+      <description>Google App Engine for Java (GAE/J) で、静的ファイル ( html、css、js ) を扱おうとして、 WARNING: Can not serve /hoge/hoge.nocache.js directly. You need to include it in in your appengine-web.xml. てな感じで怒られる。 appengine-web.xml の書き方が間違って</description>
+    </item>
+    
+    <item>
+      <title>GAE/J で HTML (静的ファイル) を</title>
+      <link>http://www.tdtsh.com/archives/415/</link>
+      <pubDate>Fri, 23 Oct 2009 16:00:25 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/415/</guid>
+      <description>Google App Engine for Java (GAE/J) で、まずはHTMLファイルをデプロイだ！ つまづいた事 その1 GAE/J での開発は、eclipseのプラグインで始めてます。 まず eclipse に慣れてな</description>
+    </item>
+    
+    <item>
+      <title>eclipse(Ganymede) で ArrayList は raw 型です。 総称型 ArrayList&lt;E&gt; への参照は、パラメーター化する必要があります</title>
+      <link>http://www.tdtsh.com/archives/411/</link>
+      <pubDate>Fri, 23 Oct 2009 00:00:32 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/411/</guid>
+      <description>JDK 1.4時代の古いJavaアプリケーションをeclipse(Ganymede)に持ってくると、 ArrayList は raw 型です。 総称型 ArrayList への参照は、パラメーター</description>
+    </item>
+    
+    <item>
+      <title>eclipse(Ganymede)で、シリアライズ可能クラス は long 型の static final serialVersionUID フィールドを宣言していません</title>
+      <link>http://www.tdtsh.com/archives/407/</link>
+      <pubDate>Thu, 22 Oct 2009 00:08:46 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/407/</guid>
+      <description>eclipse(Ganymede)で、 シリアライズ可能クラス Hoge は long 型の static final serialVersionUID フィールドを宣言していません と怒られた。 クラス Hoge は implements Serializable なクラス。</description>
+    </item>
+    
+    <item>
+      <title>java (5以降) の拡張forループ</title>
+      <link>http://www.tdtsh.com/archives/398/</link>
+      <pubDate>Mon, 19 Oct 2009 10:29:30 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/398/</guid>
+      <description>java5から、for文が拡張されている。 恥かしながら、最近まで Iterator 使いまくりだった。 List list = dao.findSomethingList(); for (Iterator i = list.iterator(); i.hasNext();) { Something some = (Something) i.next(); some.doSomething(); } なんて書いていたのん</description>
+    </item>
+    
+    <item>
+      <title>Tomcat 5.5.28にしたら、Cookieの値がダブルクオーテーションで囲まれる様になった</title>
+      <link>http://www.tdtsh.com/archives/386/</link>
+      <pubDate>Tue, 15 Sep 2009 11:10:33 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/386/</guid>
+      <description>数年ほったらかしだったWEBサービス(java)のミドルウェア達を、いっきにバージョンアップしてみました。 そしたら、認証関係で不具合が・・・</description>
+    </item>
+    
+    <item>
+      <title>Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする</title>
+      <link>http://www.tdtsh.com/archives/363/</link>
+      <pubDate>Wed, 09 Sep 2009 07:08:44 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/363/</guid>
+      <description>Spring Framework から Oracle の CLOB や BLOG を扱う事がある。 Oracle9i の頃から、LOB にはちょっと苦労させられた。 9iの頃のJDBCドライバ(Thin)では、文字数の制約で色</description>
+    </item>
+    
+    <item>
+      <title>GAE java (Google App Engine) 上でのOpenID と まとめ</title>
+      <link>http://www.tdtsh.com/archives/346/</link>
+      <pubDate>Fri, 04 Sep 2009 13:36:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/346/</guid>
+      <description>GAE/JでOpenIDのRPを実装したい。 個人で作るWEBサービスなら兎も角、法人の場合とかはGAE上にメールアドレスとかの個人情報をぶっ</description>
+    </item>
+    
+    <item>
+      <title>java.sql.SQLException: 列索引が無効です。</title>
+      <link>http://www.tdtsh.com/archives/343/</link>
+      <pubDate>Fri, 04 Sep 2009 11:07:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/343/</guid>
+      <description>Spring Framework の JdbcTemplate を使ってて、こんなんでました。 java.sql.SQLException: 列索引が無効です。 [commons-dbutils] エラー：列索引が無効です。 &amp;#8211; メモ！メモ！ &amp;#8211; Yahoo!ブログ によると、 Prepa</description>
+    </item>
+    
+    <item>
+      <title>charset=unicode-1-1-utf-7のメールで JavaMail が UnsupportedEncodingException</title>
+      <link>http://www.tdtsh.com/archives/327/</link>
+      <pubDate>Wed, 02 Sep 2009 10:00:45 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/327/</guid>
+      <description>Content-Type: text/plain; charset=unicode-1-1-utf-7 でバウンスメールを返されると困るんですけど、たまにいるんです。 JavaMailを使ってPOPをとるアプリケーションで、でjava.io</description>
+    </item>
+    
+    <item>
+      <title>javaでimport文を＊で略さない方がいい</title>
+      <link>http://www.tdtsh.com/archives/311/</link>
+      <pubDate>Fri, 28 Aug 2009 04:28:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/311/</guid>
+      <description>javaでimport文を書くとき、パッケージの末端とかクラス名とかを略して書くより、 ちゃんと一つずつ書いた方がいい、と言う話です。 例えば、</description>
+    </item>
+    
+    <item>
+      <title>bookmarks 2009-07-30</title>
+      <link>http://www.tdtsh.com/archives/205/</link>
+      <pubDate>Thu, 30 Jul 2009 00:39:47 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/205/</guid>
+      <description>記事の一部はこちらに移動しました。 OpenID と Google App Engine (java) まとめ Google App Engine (java) のんばっかり。 サンのオープンソース責任者、「Google App EngineのJava</description>
+    </item>
+    
+    <item>
+      <title>JavaMail の POP3S で javax.net.ssl.SSLHandshakeException</title>
+      <link>http://www.tdtsh.com/archives/200/</link>
+      <pubDate>Mon, 27 Jul 2009 07:50:55 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/200/</guid>
+      <description>JavaMailで、POP3S (POP3 over SSL) を使ってメールを受信しようとしたけど 、メールサーバの証明書が無い（または自己証明書）為に、 SSLHand</description>
+    </item>
+    
+    <item>
+      <title>bookmarks 2009-07-27 (OpenID)</title>
+      <link>http://www.tdtsh.com/archives/196/</link>
+      <pubDate>Mon, 27 Jul 2009 01:28:27 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/196/</guid>
+      <description>前回に引き続き、OpenID関連のブックマーク達。 Openid4java &amp;#8211; nigredoな日々 ～ arcanum.jpの出張所 ～ openid4java-0.9.3</description>
+    </item>
+    
+    <item>
+      <title>javaでJSchを使ってリモートにファイル転送</title>
+      <link>http://www.tdtsh.com/archives/189/</link>
+      <pubDate>Fri, 24 Jul 2009 04:26:40 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/189/</guid>
+      <description>どうしても、Javaサーブレットからリモートにファイルを転送しなくてはいけなくなりました。 色々方法はあるんですが、大掛かりというか、面倒なの</description>
+    </item>
+    
+    <item>
+      <title>Strutsでファイル( FormFile )を書いたり読んだり</title>
+      <link>http://www.tdtsh.com/archives/175/</link>
+      <pubDate>Fri, 17 Jul 2009 06:52:51 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/175/</guid>
+      <description>FormFile ( org.apache.struts.upload.FormFile ) をファイルに書き出す private void _saveFormFile(String filePath, FormFile upfile) throws Exception { InputStream is = upfile.getInputStream(); BufferedInputStream bis = new BufferedInputStream(is); FileOutputStream fos = new FileOutputStream(filePath); BufferedOutputStream bos = new BufferedOutputStream(fos); int read = 0; while ((read = bis.read()) != -1) { bos.write(read); } bos.flush(); bis.close(); bos.close(); } 書き出したファイルをA</description>
+    </item>
+    
+    <item>
+      <title>subversionコマンド備忘録</title>
+      <link>http://www.tdtsh.com/archives/153/</link>
+      <pubDate>Wed, 15 Jul 2009 04:01:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/153/</guid>
+      <description>リポジトリ作成とデーモン起動 svnadmin create &amp;#8211;fs-type fsfs testrepos svnserve -d -r c:/svn インポート svn import svn://your.domain.com/home/svn/repos -m &amp;#8220;init&amp;#8221; チェックアウト svn co https://your.domain.com/home/svn/repos svn co svn://your.domain.comp/home/svn/repos &amp;#8211;username user_name &amp;#8211;password pass_word svn co svn+ssh://user_name@your.domain.com/home/svn/repos &amp;#8211;username user_name &amp;#8211;password pass_word svn co https://your.domain.com:1443/svn/repos チェックイン svn ci repos/test.txt -m</description>
+    </item>
+    
+    <item>
+      <title>eclipseで「Your Web Application Project must be configured to use a JDK in order to use JSPs.」のエラー対処</title>
+      <link>http://www.tdtsh.com/archives/59/</link>
+      <pubDate>Sun, 28 Jun 2009 12:41:27 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/59/</guid>
+      <description>eclipseをインストールして、JDKの設定をしていなかった事が原因。 [ウィンドウ] &amp;#8211; [設定] &amp;#8211; [Java]- [インストール済みの JRE] [追加]を押下 [標</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine for java はじめの一歩</title>
+      <link>http://www.tdtsh.com/archives/57/</link>
+      <pubDate>Fri, 26 Jun 2009 13:46:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/57/</guid>
+      <description>インストール、開発環境、ほか Google App Engine for java はじめの一歩 &amp;#8211; tdtshのブログ Google App Engine SDK for java のインストール &amp;#8211; tdtshのブログ Google App Engine SDK for java でデプロイ &amp;#8211;</description>
+    </item>
+    
+    <item>
+      <title>OpenSocialコンテナとshindig</title>
+      <link>http://www.tdtsh.com/archives/51/</link>
+      <pubDate>Mon, 22 Jun 2009 02:17:55 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/51/</guid>
+      <description>日本のOpenSocialコンテナは、 インタビュー特集：Google直伝！（5）OpenSocialアプリ、開発者にとっての魅力 &amp;#8211; @IT http://www.atmarkit.co.jp/fwcr/rensai2/google_int_05/02.html による</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine for Java と RDBMS</title>
+      <link>http://www.tdtsh.com/archives/22/</link>
+      <pubDate>Sat, 23 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/22/</guid>
+      <description>先日、Google App Engine for Javaをちょこっとだけ触ってみました。 IaaSのAmazon EC2と違い、GAEはPaaSなので、開発には色々と制</description>
+    </item>
+    
+    <item>
+      <title>何故ほとんどの大規模webサイトはJavaで構築されないのか？</title>
+      <link>http://www.tdtsh.com/archives/15/</link>
+      <pubDate>Tue, 19 May 2009 11:38:15 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/15/</guid>
+      <description>InfoQ &amp;#8211; 何故ほとんどの大規模webサイトはJavaで構築されないのか？ http://www.infoq.com/jp/news/2007/10/big-java スタートアップ時に、単価の高いJava系エンジニアが参画する確率が低いか</description>
+    </item>
+    
+    <item>
+      <title>JavaフレームワークでWEB開発できる会社</title>
+      <link>http://www.tdtsh.com/archives/5/</link>
+      <pubDate>Wed, 13 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/5/</guid>
+      <description>Java、Velocity、Struts、Spring FrameworkでWebアプリケーション開発やってるお会社を探しててググッてみたけど</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine備忘録</title>
+      <link>http://www.tdtsh.com/archives/4/</link>
+      <pubDate>Tue, 12 May 2009 00:52:23 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/4/</guid>
+      <description>あんまり興味なかった Google App Engine が Java対応した事で、 自分の中で急浮上。 【TECH WORLD Java対応のクラウド・プラットフォーム「Google App En</description>
+    </item>
+    
+  </channel>
+</rss>

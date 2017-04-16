@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/1993/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>appengine java で backends で DatastoreTimeoutException - はなたんのブログ</title>
+    
+<meta name="description" content="&amp;nbsp; &amp;nbsp; 前回ちょろっと書きましたが、backends で DatastoreTimeoutException が発生して結構ハマりました。 &amp;nbsp; &amp;nbsp; コチラのまとめをブログに書いておきます。 Backends での Query で DatastoreTimeoutException &amp;#8211; Google">
+
+<meta property="og:title" content="appengine java で backends で DatastoreTimeoutException - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/1993/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="&amp;nbsp; &amp;nbsp; 前回ちょろっと書きましたが、backends で DatastoreTimeoutException が発生して結構ハマりました。 &amp;nbsp; &amp;nbsp; コチラのまとめをブログに書いておきます。 Backends での Query で DatastoreTimeoutException &amp;#8211; Google">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/1993/">
+<meta name="twitter:title" content="appengine java で backends で DatastoreTimeoutException - はなたんのブログ">
+<meta name="twitter:description" content="&amp;nbsp; &amp;nbsp; 前回ちょろっと書きましたが、backends で DatastoreTimeoutException が発生して結構ハマりました。 &amp;nbsp; &amp;nbsp; コチラのまとめをブログに書いておきます。 Backends での Query で DatastoreTimeoutException &amp;#8211; Google">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "appengine java で backends で DatastoreTimeoutException - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2012-07-18T21:05:17JST",
+    "dateModified": "2012-07-18T21:05:17JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "&nbsp; &nbsp; 前回ちょろっと書きましたが、backends で DatastoreTimeoutException が発生して結構ハマりました。 &nbsp; &nbsp; コチラのまとめをブログに書いておきます。 Backends での Query で DatastoreTimeoutException &#8211; Google"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">appengine java で backends で DatastoreTimeoutException</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-07-18T21:05:17JST">Jul 18, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">appengine java で backends で DatastoreTimeoutException</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><a href="/blog/archives/1909">前回ちょろっと書きました</a>が、backends で DatastoreTimeoutException が発生して結構ハマりました。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>コチラのまとめをブログに書いておきます。</p>
+
+<p><a href="https://groups.google.com/forum/#!topic/google-app-engine-japan/59IpdxRpWng" target="_blank">Backends での Query で DatastoreTimeoutException &#8211; Google グループ</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="環境">環境</h4>
+
+<p>Slim3 1.0.15</p>
+
+<p>appengine java sdk 1.7.0</p>
+
+<p>HRD</p>
+
+<p>BackendsのインスタンスはB8です。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="概要">概要</h4>
+
+<p>Backends で Query で100万件位を Key で取得しようとすると、 DatastoreTimeoutException が発生しました。</p>
+
+<p>kind は ほぼ Key のみで、Avarage Sizeは200Byte位で、Entityはトータルで数百万件あります。</p>
+
+<p>TaskQueue で処理するには量が多すぎるので Backends ならなんとかなるかなと思ったのですが、ログを見る限りQuery が60秒位でタイムアウトする様に見えます。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="カーソル-イテレーション">カーソル＋イテレーション</h4>
+
+<p>Pythonだと、イテレータを使ってループしていると、裏で適当な件数ずつ取得しながらイテレーションしてくれるとい情報を元に、試してみました。</p>
+
+<p>java のLow Level APIのカーソルのんにも asQueryResultIterator()メソッドがあるようですし、<a href="http://slim3.googlecode.com/svn/trunk/slim3/javadoc/org/slim3/datastore/EntityQuery.html#asQueryResultIterator()" target="_blank">slim3 にもありました</a>。</p>
+
+<p>こんな感じでやってみました。</p>
+
+<pre>MyModelMeta m = MyModelMeta.get();
+S3QueryResultIterator&lt;mymodel> i = Datastore.query(m)
+    .filter(m.key.greaterThan(fromKey))
+    .filter(m.key.lessThanOrEqual(toKey))
+    .encodedStartCursor(encodedCursor)
+    .asQueryResultIterator();
+
+while (i.hasNext())
+{
+    MyModel entity = i.next();
+    // do something....
+}
+
+&lt;/mymodel></pre>
+
+<p>やはりクエリ開始から1分位で、 DatastoreTimeoutException が発生してしまいました。</p>
+
+<p>prefetchSize と chunkSize を明示指定（1, 5000, 10000, 50000を試した）しても変わらずでした。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="カーソル">カーソル</h4>
+
+<p>こんな感じで、イテレーションを使わずにカーソルでのクエリをぐるぐる回す事で、100万件位ならいける事を確認しました。</p>
+
+<p>ただし、時折「Process terminated because the backend took too long to shutdown.」とか言われて処理が途中で止まります。</p>
+
+<pre>S3QueryResultList&lt;myclass> s3QRList = Datastore.query(meta)
+    .filter(meta.key.greaterThanOrEqual(fromKey))
+    .filter(meta.key.lessThan(toKey))
+    .prefetchSize(50000)
+    .chunkSize(50000)
+    .limit(50000)
+    .asQueryResultList();
+
+for (MyClass entity : s3QRList)
+{
+    // do something
+}
+    
+while (s3QRList.hasNext())
+{
+    String encodedCursor = s3QRList.getEncodedCursor();
+        
+    s3QRList = Datastore.query(meta)
+        .filter(meta.key.greaterThanOrEqual(fromKey))
+        .filter(meta.key.lessThan(toKey))
+        .encodedStartCursor(encodedCursor)
+        .prefetchSize(50000)
+        .chunkSize(50000)
+        .limit(50000)
+        .asQueryResultList();
+
+    for (MyClass entity : s3QRList)
+    {
+        // do something
+    }
+
+}
+&lt;/myclass></pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="まとめ">まとめ</h4>
+
+<p>今回判った事は、 (java sdk 1.7.0現在)</p>
+
+<p>1) backends で Datastore の操作が長すぎる（60秒？）と DatastoreTimeoutException が発生する</p>
+
+<p>2) java版では、イテレーションでよしなにやってくれる訳ではないかも（Low Level API は試してないので断言は出来ないです）</p>
+
+<p>3) カーソル等でDatastoreの操作を細分化する事で DatastoreTimeoutException は回避できる</p>
+
+<p>4) 時折「Process terminated because the backend took too long to shutdown.」とか言われて処理が途中で止まる事がある</p>
+
+<p>といった所です。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/google-app-engine/">Google App Engine</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

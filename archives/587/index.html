@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/587/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>OpenID RP を Google App Engine (java) で (dyuproject) - はなたんのブログ</title>
+    
+<meta name="description" content="&amp;nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動">
+
+<meta property="og:title" content="OpenID RP を Google App Engine (java) で (dyuproject) - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/587/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="&amp;nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/587/">
+<meta name="twitter:title" content="OpenID RP を Google App Engine (java) で (dyuproject) - はなたんのブログ">
+<meta name="twitter:description" content="&amp;nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "OpenID RP を Google App Engine (java) で (dyuproject) - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2010-03-18T06:02:19JST",
+    "dateModified": "2010-03-18T06:02:19JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "&nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">OpenID RP を Google App Engine (java) で (dyuproject)</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-03-18T06:02:19JST">Mar 18, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">OpenID RP を Google App Engine (java) で (dyuproject)</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>&nbsp;</p>
+
+<p><a href="/blog/archives/346">前回</a>も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。</p>
+
+<p>でも、<a href="http://code.google.com/p/dyuproject/">dyuproject</a>は動くし、<a href="http://d.hatena.ne.jp/knj77/20100211/1265884534">動かした上にコードを公開されている方</a>もいる。</p>
+
+<p>どうやらGAE/Jの URLフェッチ API を使っている模様。そりゃそれしか方法はないですよね。</p>
+
+<p>私は職業プログラマでは無いので、車輪の再開発どころか、なるべくコードは書きたくないんです。</p>
+
+<p>早速、dyprojectにトライしてみましょう。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="dyuproject-openid-1-1-6-jarjar-jar-のダウンロード">dyuproject-openid-1.1.6-jarjar.jar のダウンロード</h4>
+
+<p><a href="http://code.google.com/p/dyuproject/">dyuproject</a>の<a href="http://code.google.com/p/dyuproject/downloads/list">Downloads</a>から、<a href="http://dyuproject.googlecode.com/files/dyuproject-1.1.6.zip">dyuproject-1.1.6.zip</a>をダウンロードします。</p>
+
+<p>JavaDocとか他のライブラリとかデモが不要なら、<a href="http://dyuproject.googlecode.com/files/dyuproject-openid-1.1.6-jarjar.jar">dyuproject-openid-1.1.6-jarjar.jar</a> でもいいです。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="eclipseのgaeプロジェクトへライブラリを追加する">eclipseのGAEプロジェクトへライブラリを追加する</h4>
+
+<p>ダウンロードしたzipファイルの、/dist に、dyuproject-openid-1.1.6-jarjar.jar はあります。</p>
+
+<p>それを、eclipse の /war/WEB-INF/lib/にコピーします。</p>
+
+<p>eclipseを起動して、war/WEB-INF/lib/ の下にコピーしたjarファイルを右クリックして、[ビルド・バス(B)] &#8211; [ビルド・パスに追加(A)]をクリックします。</p>
+
+<p>念のため、プロジェクトの[参照ライブラリー]に追加されている事を確認します。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="web-inf-web-xml-に追記する">/WEB-INF/web.xml に追記する</h4>
+
+<p><a href="http://code.google.com/p/dyuproject/wiki/QuickStartOpenid">QuickStartOpenid &#8211; dyuproject</a>のんを参考にしながら書きます。</p>
+
+<p>ちょっとだけ手を加え (ログアウト用サーブレットを追加とか) ましたが、基本的に同じです。</p>
+
+<pre>&lt;filter&gt;
+    &lt;filter-name&gt;openid-filter&lt;/filter-name&gt;
+    &lt;filter-class&gt;com.dyuproject.openid.OpenIdServletFilter&lt;/filter-class&gt;
+    &lt;init-param&gt;
+        &lt;param-name&gt;forwardUri&lt;/param-name&gt;
+        &lt;param-value&gt;/&lt;/param-value&gt; 
+    &lt;/init-param&gt;
+&lt;/filter&gt; 
+
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;openid-filter&lt;/filter-name&gt;
+    &lt;url-pattern&gt;/openid-login&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;openid-filter&lt;/filter-name&gt;
+    &lt;url-pattern&gt;/openid-logout&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+
+&lt;servlet&gt;
+    &lt;servlet-name&gt;openid-servlet&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;my.package.OpenIdLoginServlet&lt;/servlet-class&gt;
+&lt;/servlet&gt;
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;openid-servlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/openid-login&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+
+&lt;servlet&gt;
+    &lt;servlet-name&gt;openid-logout&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;my.package.OpenIdLogoutServlet&lt;/servlet-class&gt;
+&lt;/servlet&gt;
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;openid-logout&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/openid-logout&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+</pre>
+
+<h4 id="ログイン用サーブレットを作る">ログイン用サーブレットを作る</h4>
+
+<p><a href="http://code.google.com/p/dyuproject/wiki/QuickStartOpenid">QuickStartOpenid &#8211; dyuproject</a>のサンプルコードにほんに少しだけ異常系を付け足しただけです。</p>
+
+<pre>package my.package;
+
+import com.dyuproject.openid.RelyingParty;
+import com.dyuproject.openid.ext.AxSchemaExtension;
+import com.dyuproject.openid.OpenIdUser;
+
+public class OpenIdLoginServlet extends HttpServlet {
+
+    static {
+        RelyingParty.getInstance()
+        .addListener(new AxSchemaExtension()
+            .addExchange("email")
+            .addExchange("nickname")
+            .addExchange("fullname")
+            .addExchange("gender")
+            .addExchange("postcode")
+            .addExchange("country")
+            .addExchange("language")
+        );
+    }
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws IOException, ServletException
+    {
+        doPost(request, response);
+    }
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+        throws IOException, ServletException
+    {
+        OpenIdUser user = (OpenIdUser) request.getAttribute(OpenIdUser.ATTR_NAME);
+        if (user != null) {
+            String identity = user.getIdentity();
+            HttpSession session = request.getSession();
+            session.setAttribute("identity", identity);
+            Map&lt;String,String> axschema = AxSchemaExtension.get(user);
+            if (axschema != null && axschema.size() > 0) {
+                session.setAttribute("email", axschema.get("email"));
+                session.setAttribute("nickname", axschema.get("nickname"));
+            } else {
+                session.setAttribute("email", "unknown");
+                session.setAttribute("nickname", identity);
+            }
+        } else {
+            //
+        }
+        response.sendRedirect(response.encodeRedirectURL(request.getParameter("redirect_url")));
+    }
+
+}
+</pre>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="ログアウト用サーブレットを作る">ログアウト用サーブレットを作る</h4>
+
+<p><a href="http://code.google.com/p/dyuproject/wiki/QuickStartOpenid">QuickStartOpenid &#8211; dyuproject</a>にはサンプルが無かったけど、ログインしっぱなしじゃ困るから、ログアウト用サーブレットも作ります。</p>
+
+<pre>package my.package;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpSession;
+import javax.servlet.RequestDispatcher;
+
+public class OpenIdLogoutServlet extends HttpServlet {
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws IOException, ServletException
+    {
+        doPost(request, response);
+    }
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+        throws IOException, ServletException
+    {
+        HttpSession session = request.getSession(false);
+        session.invalidate();
+        response.sendRedirect(response.encodeRedirectURL(request.getParameter("redirect_url")));
+
+    }
+}
+</pre>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="動かす">動かす</h4>
+
+<p>あとはHTMLでいいので、OpenIDプロバイダのURLを引数 &#8220;openid_identifier&#8221;にセットして、サーブレットに渡すAタグなり、フォームなりを書いて実行します。</p>
+
+<p>mixi OpenIDならこんな感じですね。</p>
+
+<pre>&lt;a href="openid-login?openid_identifier=https://mixi.jp"&gt;mixiでログインします&lt;/a&gt;
+</pre>
+
+<p>なんて簡単なんでしょう。</p>
+
+<p>サンプルコードでは、mixi、Google、Yahoo!、openid.ne.jp は動きました。</p>
+
+<p>hatena はうまくいきませんでした。なんでだろう。</p>
+
+<p>nickNameが取れたのはmixiだけでした。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://www.tdtsh.com/categories/java/">java</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

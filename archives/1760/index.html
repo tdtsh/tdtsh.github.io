@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/1760/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>appengine (java) のメンテナンスへの対応など - はなたんのブログ</title>
+    
+<meta name="description" content="久しぶりにGoogle Code にあった Appengine のドキュメント達を見ようとしたら、Google Developer の方にリダイレクトされました。 引越しは着々と進んでいるよう">
+
+<meta property="og:title" content="appengine (java) のメンテナンスへの対応など - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/1760/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="久しぶりにGoogle Code にあった Appengine のドキュメント達を見ようとしたら、Google Developer の方にリダイレクトされました。 引越しは着々と進んでいるよう">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/1760/">
+<meta name="twitter:title" content="appengine (java) のメンテナンスへの対応など - はなたんのブログ">
+<meta name="twitter:description" content="久しぶりにGoogle Code にあった Appengine のドキュメント達を見ようとしたら、Google Developer の方にリダイレクトされました。 引越しは着々と進んでいるよう">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "appengine (java) のメンテナンスへの対応など - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2012-04-08T21:30:41JST",
+    "dateModified": "2012-04-08T21:30:41JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "久しぶりにGoogle Code にあった Appengine のドキュメント達を見ようとしたら、Google Developer の方にリダイレクトされました。 引越しは着々と進んでいるよう"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">appengine (java) のメンテナンスへの対応など</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-04-08T21:30:41JST">Apr 8, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">appengine (java) のメンテナンスへの対応など</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p><a href="/uploads/2012/04/gd-logo.png"><img data-attachment-id="1761" data-permalink="/blog/archives/1760/gd-logo" data-orig-file="/uploads/2012/04/gd-logo.png?fit=300%2C70" data-orig-size="300,70" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="gd-logo" data-image-description="" data-medium-file="/uploads/2012/04/gd-logo.png?fit=300%2C70" data-large-file="/uploads/2012/04/gd-logo.png?fit=300%2C70" src="/uploads/2012/04/gd-logo.png?resize=300%2C70" alt="" title="gd-logo" class="aligncenter size-full wp-image-1761" data-recalc-dims="1" /></a></p>
+
+<p>久しぶりに<a href="http://code.google.com/intl/ja/" target="_blank">Google Code</a> にあった Appengine のドキュメント達を見ようとしたら、<a href="https://developers.google.com/appengine/?hl=ja" target="_blank">Google Developer</a> の方にリダイレクトされました。</p>
+
+<p>引越しは着々と進んでいるようですね。</p>
+
+<p>今更ですが、メンテナンス対策メモ。</p>
+
+<p><a href="https://developers.google.com/appengine/docs/java/howto/maintenance?hl=ja" target="_blank">定期メンテナンス中の機能の維持 &#8211; Google App Engine — Google Developers</a></p>
+
+<p>Datastoreが読み取りモードになった時に無様なエラー画面にならない様に、Datastoreの put とかは <a href="https://developers.google.com/appengine/docs/java/javadoc/com/google/apphosting/api/ApiProxy.CapabilityDisabledException" target="_blank">com.google.apphosting.api.ApiProxy.CapabilityDisabledException</a> をcatchましょう、という事です。</p>
+
+<p>上記以外にも色々スローされるので、運用としては発生したらエラー制御を追加していく感じになりましょうか。</p>
+
+<p><a href="http://blog.livedoor.jp/cbnanashi/archives/1102590.html" target="_blank">GAE/Jで運用中に発生する例外（と一部対処法） : CB NANASHI管理人ブログ</a></p>
+
+<p>Memcache も メンテ中の put とかは <a href="https://developers.google.com/appengine/docs/java/javadoc/com/google/appengine/api/memcache/MemcacheServiceException?hl=ja" target="_blank">com.google.appengine.api.memcache.MemcacheServiceException</a> がスローされるんでcatchしてね、との事です。</p>
+
+<p>特にMemcacheはメンテナンス以外でも結構な頻度でおかしくなるんで、私は不精して put に限らず get も無条件で try 〜 cache でくくってます。</p>
+
+<p>それが正しい作法かどうか疑問ですしもうちょっとスマートな方法があるのかも知れませんが、ユーザ影響は避けたいんで。</p>
+
+<p>私の環境でたまにあるのがget時の <a href="https://developers.google.com/appengine/docs/java/javadoc/com/google/appengine/api/memcache/InvalidValueException?hl=ja" target="_blank">com.google.appengine.api.memcache.InvalidValueException</a> なんですが、コレはアプリケーション側のバグの可能性が高いんですが、起こり得ると言う意味ではcatchした方がいいと思うです。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/google-app-engine/">Google App Engine</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

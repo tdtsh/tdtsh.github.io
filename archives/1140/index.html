@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/1140/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す - はなたんのブログ</title>
+    
+<meta name="description" content="注文していたHUAWEI(ファーウェイ) IDEOS(イデオス)が週末にとどきました。早い。ちゃんと在庫もってる証拠ですね。 &amp;nbsp; 結局、日本通信版">
+
+<meta property="og:title" content="ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/1140/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="注文していたHUAWEI(ファーウェイ) IDEOS(イデオス)が週末にとどきました。早い。ちゃんと在庫もってる証拠ですね。 &amp;nbsp; 結局、日本通信版">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/1140/">
+<meta name="twitter:title" content="ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す - はなたんのブログ">
+<meta name="twitter:description" content="注文していたHUAWEI(ファーウェイ) IDEOS(イデオス)が週末にとどきました。早い。ちゃんと在庫もってる証拠ですね。 &amp;nbsp; 結局、日本通信版">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2011-02-28T10:40:40JST",
+    "dateModified": "2011-02-28T10:40:40JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "注文していたHUAWEI(ファーウェイ) IDEOS(イデオス)が週末にとどきました。早い。ちゃんと在庫もってる証拠ですね。 &nbsp; 結局、日本通信版"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-02-28T10:40:40JST">Feb 28, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">ファーウェイ IDEOSでテザリングとVoIP (SkypeOut、SkypeIn)を試す</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><a href="/blog/archives/1135">注文していたHUAWEI(ファーウェイ) IDEOS(イデオス)</a>が週末にとどきました。早い。ちゃんと在庫もってる証拠ですね。</p>
+
+<p><a href="/uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg"><img data-attachment-id="1141" data-permalink="/blog/archives/1140/ideos_%e7%ae%b1" data-orig-file="/uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?fit=1530%2C2048" data-orig-size="1530,2048" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="ideos_箱" data-image-description="" data-medium-file="/uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?fit=224%2C300" data-large-file="/uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?fit=525%2C703" src="/uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?resize=224%2C300" alt="" title="ideos_箱" class="aligncenter size-medium wp-image-1141" srcset="/uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?resize=224%2C300 224w, /uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?resize=765%2C1024 765w, /uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?w=1530 1530w, /uploads/2011/02/252bd234977c68ce30bed75fbc73fae2.jpg?w=1050 1050w" sizes="(max-width: 224px) 100vw, 224px" data-recalc-dims="1" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>結局、<a href="http://www.bmobile.ne.jp/ideos/index.html" target="_blank">日本通信版のIDEOS</a>では無く、Amazonで無印のIDEOS U8150-Bを買いました。お金が勿体無かったので。</p>
+
+<p>バッテリーが小さいとのウワサなんで、予備バッテリー2個付の業者さんから購入。19,000円弱也。</p>
+
+<p>&nbsp;</p>
+
+<h4 id="イーモバイル赤simが使える">イーモバイル赤SIMが使える</h4>
+
+<p>当然Simフリーです。</p>
+
+<p>会社で貸与されているイーモバイルのデータカード(D23HW)の赤SIMを流用したいんで、1700MHzがちゃんと使えるか心配でしたが、U8150-Bは大丈夫の様です。(Bつきじゃないやつは1700MHzがダメらしい)</p>
+
+<p>APN設定してあげたら、フツーにデータ通信できます。</p>
+
+<p>関係ないけど、先日JBしUnlockしたiPhone 3GにFORMAのSIM挿すと、普通に通話できました。やっぱりSIMフリーって素敵。</p>
+
+<p>&nbsp;</p>
+
+<h4 id="ソコソコ使える">ソコソコ使える</h4>
+
+<p>日本語入力が出来ないんで、とりあえずFlickWnnをインストール。</p>
+
+<p>そしてDropBoxをインストール。最近はコレが無いと生きて行けない。</p>
+
+<p>そしてGMailを設定すると、GMail、Googleコンタクト、Googleカレンダー、Latitudeなどがいきなり使える様になるのは、感動だな。</p>
+
+<p>iPhoneみたいにチマチマアクティベートしたりiTunesで同期したりとか、そんなんが無いのはかなり楽だ。はやくiTunesもクラウド化してくれないかな。</p>
+
+<p>EvernoteとかDocuments To GoとかTwitterクライアントとかも入れてはみたものの、バッテリーを消費しそうなんで消しました。</p>
+
+<p>画面が小さいのと、CPUが遅いのは、慣れの問題というか、そういうもんだと割り切れば、マァなんとかなるかな。</p>
+
+<p>元より、テザリングでWiFiルータとして使う、つまりサブ目的だったんで。</p>
+
+<p>1台目としても、私は別にOKかな。元々電話に対する期待値が低いんで。コレとスレートがあればいいかな。</p>
+
+<p>コピーアンドペーストが使いにくいのも、IDEOSというよりAndroid 2.2のソレが原因だしな。</p>
+
+<p>ゲームとかは全然だめ。Angry Birdsさえカクカクしてまともにプレイできない。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h4 id="バッテリーが">バッテリーが・・・</h4>
+
+<p>ただ、閉口したのがバッテリーの消費っぷり。</p>
+
+<p>Advanced Task Killer Freeをインストールしてマメにプロセスをkillしたんだけど、全然だめ。</p>
+
+<p>Androidはバッテリーが持たないとは聞いていたけど、これほどとは。</p>
+
+<p>如何にAppleがハードウェアとソフトウェアを最適化してiPhoneの消費電力を抑えているかが判る。</p>
+
+<p>juicePlotterをインストールして、電力消費をグラフで見てみる。</p>
+
+<p>テザリングONにした状態では、約4時間強でバッテリーは空に・・・。</p>
+
+<p>テザリング無しの待ちうけのみで、約9時間弱でやはり空になります。</p>
+
+<p>これじゃあ会社から帰宅するまでもちません。</p>
+
+<p>バッテリー3つ有るとは言え、これじゃあなぁ・・・。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h4 id="skypeでvoip">SkypeでVoIP</h4>
+
+<p>バッテリーが持たないんで、テザリング用からいっそ通話用への案が急浮上してきた。</p>
+
+<p>でも赤SIMはデータ通信専用なんで、音声がダメ。</p>
+
+<p>日本通信版のIDEOSじゃないんで、日本通信のIPフォンは契約できない。</p>
+
+<p>ならば、SkypeOutしか無いな。</p>
+
+<p><a href="https://support.skype.com/ja/faq/FA20/gu-ding-dian-huaya-xie-dai-dian-huani-tong-huawo-fa-xinsuru-fang-fawo-jiaoetekudasai" target="_blank">最近ではSkypeOutとは言わない</a>みたい。</p>
+
+<p>とりあえず<a href="http://www.skype.com/intl/ja/prices/skype-credit/?intcmp=CS-Upsell-FA20" target="_blank">Skypeクレジット</a>を購入すれば、固定電話や携帯電話に発信できるらしいんで、300円だけチャージした。</p>
+
+<p>他、月額プランでもいいらしいけど、1500円/月もかかるんで却下。</p>
+
+<p>携帯へかけてみたけど、1秒～1分17円位。</p>
+
+<p>品質は、マァ、使えなくは無いです。OKです。</p>
+
+<p>連絡帳から発信できたり、SkypeOutがAndroidのUIと統合されてて、普通の音声通話みたいな操作感。かなりGoodです。</p>
+
+<p>発信番号も通知できる。出来ない時もあるけど。</p>
+
+<p>発信が出来たら、あとは着信だな。</p>
+
+<p>SkypeInは、最近は<a href="https://support.skype.com/ja/faq/FA256/onrain-fan-hao-SkypeIn-wo-qu-desurunihadousurebayoidesuka" target="_blank">オンライン番号</a>と言うらしい。</p>
+
+<p>コレは、3ヶ月2,250円、12ヶ月7,500円で050-xxxx-xxxxのIP電話番号が付与されるものです。</p>
+
+<p>実際には、<a href="http://www.fusioncom.co.jp/" target="_blank">フュージョン・コミュニケーションズ株式会社</a>のVoIPサービスを経由するようです。</p>
+
+<p>月額プラン契約の場合は3ヶ月1,125円(375円/月)、12ヶ月3,750円(312.50円/月)、つまり50%割引です。</p>
+
+<p>着信にはタイムラグがあるけど、フツーに音声通話が着信した時の様に操作できる。コレもGood。</p>
+
+<p>自宅のIPフォンの置き換えなら、SkypeのVoIPで充分やん。</p>
+
+<p>市外局番がアレで050だけど、それさえ我慢すればイケる。</p>
+
+<p>つーか、SMSさえ諦めれば、モバイルでもイケる。</p>
+
+<p>SkypeのSMSサービスが使える様になったら、本当に乗り換えようかな。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://click.linksynergy.com/fs-bin/click?id=Vmaas/qrpBs&amp;#038;offerid=161592.10001316&amp;#038;type=4&amp;#038;subid=0"><img alt="Mac ソフトのことなら act2.com" border="0" src="https://i1.wp.com/act2mars.com/affi/ideos/6.png?w=525" data-recalc-dims="1" /></a><img border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=Vmaas/qrpBs&#038;bids=161592.10001316&#038;type=4&#038;subid=0" /></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/android/">android</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

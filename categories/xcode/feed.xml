@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xcode on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/xcode/</link>
+    <description>Recent content in Xcode on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 12 Feb 2016 13:11:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/xcode/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</title>
+      <link>http://www.tdtsh.com/archives/3840/</link>
+      <pubDate>Fri, 12 Feb 2016 13:11:44 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/3840/</guid>
+      <description>&amp;nbsp; 相変わらず EXC_BAD_ACCESS で慌てる自分がいます。 EXC_BAD_ACCESS ググっても日本語で書いているものはかなり古い記事が多いので、誰かのために書いておきます。 環境はXCod</description>
+    </item>
+    
+    <item>
+      <title>iOS用のインスペクタ Reveal をインストール</title>
+      <link>http://www.tdtsh.com/archives/2888/</link>
+      <pubDate>Thu, 18 Jul 2013 21:00:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2888/</guid>
+      <description>iOS用のインスペクタ、Reveal がいいかんじです。 iOSアプリのViewを作る時に。 今はベータ版という事で無料なんですけど、このままでは</description>
+    </item>
+    
+    <item>
+      <title>FBライクなスライド式メニューのライブラリ、サンプル</title>
+      <link>http://www.tdtsh.com/archives/2831/</link>
+      <pubDate>Sun, 12 May 2013 14:32:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2831/</guid>
+      <description>Facebookでお馴染みの画面が横に半スライドしてメニューが出るアレ、 小さい画面でメニューをスッキリ見せるという意味でも、縦長になったiP</description>
+    </item>
+    
+    <item>
+      <title>XCode で Vim風キーバインドを実現するXVim</title>
+      <link>http://www.tdtsh.com/archives/2465/</link>
+      <pubDate>Fri, 19 Oct 2012 12:01:47 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2465/</guid>
+      <description>いやタイトルそのまんまですけど。 XVim で XCode のエディタのキーバインドを Vim風に出来るんです。 個人的にコレすごい助かります。 インストール方法などは</description>
+    </item>
+    
+    <item>
+      <title>別のMacで作った XCodeのプロジェクトで Valid signin identity not found とか怒られる</title>
+      <link>http://www.tdtsh.com/archives/2421/</link>
+      <pubDate>Mon, 15 Oct 2012 12:41:12 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2421/</guid>
+      <description>仕事用のMBAを新しくしたんで、新MBAはTimeCapsuleのバックアップから復元しました。 いやすごいですね。iPhoneみたいですね。</description>
+    </item>
+    
+    <item>
+      <title>_OBJC_CLASS_$_referenced from とか出てビルドできない</title>
+      <link>http://www.tdtsh.com/archives/2437/</link>
+      <pubDate>Thu, 11 Oct 2012 11:09:52 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2437/</guid>
+      <description>なんらかのフレームワークをヘッダーファイルでImportしておいて、プロジェクトにフレームワークの追加を忘れると「_OBJC_CLASS_$</description>
+    </item>
+    
+  </channel>
+</rss>

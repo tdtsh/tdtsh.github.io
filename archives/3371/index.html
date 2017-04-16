@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/3371/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用) - はなたんのブログ</title>
+    
+<meta name="description" content="最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば">
+
+<meta property="og:title" content="Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用) - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/3371/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/3371/">
+<meta name="twitter:title" content="Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用) - はなたんのブログ">
+<meta name="twitter:description" content="最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用) - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-02-18T13:00:30JST",
+    "dateModified": "2015-02-18T13:00:30JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用)</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-02-18T13:00:30JST">Feb 18, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用)</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。</p>
+
+<p>10年以上前からインフラ弄ってますが、思いかえせばやっている現場では手製Vagrantファイル的なものを自己流で作ったり、デプロイ用のスクリプトを書いたりしたのもです。良い時代になりましたね。</p>
+
+<h4 id="概要">概要</h4>
+
+<p>VagrantでRuby on Railsな環境を作ったメモです。</p>
+
+<p>基本的にこちらの記事を参考にさせて頂いてますが、boxが変わっているため手順が増えている感じです。</p>
+
+<p><a href="http://qiita.com/yamagh/items/61e540765fa4d2152dc4" target="_blank">Vagrant で Ruby on Rails の環境を構築するまでの手順</a></p>
+
+<p>個人的な備忘録なので不親切です。</p>
+
+<p>あとrailsは詳しくないのでgemのくだりあたりから何でそれが要るのか判らずにやっています。</p>
+
+<h4 id="環境">環境</h4>
+
+<p>ホストはMac OS X YosemiteですがVagrantのゲストOS上の話なんであんま関係ないです。</p>
+
+<p>Vagrant と Virtualbox は入っているものとしています。</p>
+
+<blockquote>
+<p>CentOS: 7.0 (x86_64)</p>
+
+<p>rbenv: rbenv 0.4.0-129-g7e0e85b</p>
+
+<p>Ruby: 2.2.0</p>
+
+<p>Rails: 4.2.0</p>
+</blockquote>
+
+<h4 id="vagrantのboxを用意">VagrantのBoxを用意</h4>
+
+<p>参考記事のboxのリンク切れだったので、<a href="https://github.com/opscode/bento" target="_blank"><a href="https://github.com/opscode/bento">https://github.com/opscode/bento</a></a>からCentOS7なboxをaddしました。</p>
+
+<blockquote>
+<p>mkdir -p ~/vagrant/rails_tutorial</p>
+
+<p>cd ~/vagrant/rails_tutorial</p>
+
+<p>vagrant box add centos7 <a href="http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box">http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box</a></p>
+
+<p>vagrant init centos7</p>
+</blockquote>
+
+<h4 id="vagrantfileを編集">Vagrantfileを編集</h4>
+
+<p>vi Vagrantfile</p>
+
+<blockquote>
+<p># -*- mode: ruby -*-</p>
+
+<p># vi: set ft=ruby :</p>
+
+<p>Vagrant.configure(2) do |config|</p>
+
+<p>config.vm.box = &#8220;centos7&#8221;</p>
+
+<p>config.vm.network &#8220;private_network&#8221;, ip: &#8220;192.168.33.10&#8221;</p>
+
+<p>config.vm.provision &#8220;shell&#8221;, inline: &lt; &lt;-EOT # iptables off systemctl stop firewalld systemctl mask firewalld yum -y update yum -y install git yum -y install gcc yum -y install openssl-devel yum -y install libffi-devel yum -y install libxml2-devel libxslt-devel yum -y install sqlite-devel yum -y install gcc-c++ yum -y install readline-devel git clone <a href="https://github.com/sstephenson/rbenv.git">https://github.com/sstephenson/rbenv.git</a> ~/.rbenv echo &lsquo;export PATH=&ldquo;$HOME/.rbenv/bin:$PATH&rdquo;&rsquo; &gt;&gt; ~/.bash_profile</p>
+
+<p>echo &#8216;eval &#8220;$(rbenv init -)&#8221;&#8216; &gt;&gt; ~/.bash_profile</p>
+
+<p>source ~/.bash_profile</p>
+
+<p>git clone <a href="https://github.com/sstephenson/ruby-build.git">https://github.com/sstephenson/ruby-build.git</a> ~/.rbenv/plugins/ruby-build</p>
+
+<p># rbenvリポジトリをclone</p>
+
+<p>cd /usr/local/</p>
+
+<p>git clone git://github.com/sstephenson/rbenv.git</p>
+
+<p>echo &#8216;export RBENV_ROOT=&#8221;/usr/local/rbenv&#8221;&#8216; &gt;&gt; /etc/profile</p>
+
+<p>echo &#8216;export PATH=&#8221;${RBENV_ROOT}/bin:${PATH}&#8221;&#8216; &gt;&gt; /etc/profile</p>
+
+<p>echo &#8216;eval &#8220;$(rbenv init -)&#8221;&#8216; &gt;&gt; /etc/profile</p>
+
+<p># ruby-buildプラグインをインストール</p>
+
+<p>mkdir -p /usr/local/rbenv/plugins</p>
+
+<p>cd /usr/local/rbenv/plugins</p>
+
+<p>git clone git://github.com/sstephenson/ruby-build.git</p>
+
+<p>EOT</p>
+
+<p>end</p>
+</blockquote>
+
+<h4 id="vagrant起動">Vagrant起動</h4>
+
+<p>vagrant up</p>
+
+<p>して暫くまって、</p>
+
+<p>vagrant ssh</p>
+
+<p>su &#8211;</p>
+
+<p>vagrant (初期パスワード)</p>
+
+<h4 id="ruby-ruby-on-railsのインストール">Ruby / Ruby on Railsのインストール</h4>
+
+<p>全てをVagrant ファイルのシェルスクリプトでやろうとしたんですがうまく行かず・・・</p>
+
+<p>仕方なく手動で投入した分がこちら。</p>
+
+<p>ホントはいくつか躓いては調べたんですけど、メモって無かったので結果だけ。</p>
+
+<blockquote>
+<p>rbenv install -l</p>
+
+<p>rbenv install 2.2.0</p>
+
+<p>rbenv global 2.2.0</p>
+
+<p>gem install multi_json -v &#8216;1.10.1&#8217;</p>
+
+<p>gem install nokogiri &#8212; &#8211;use-system-libraries</p>
+
+<p>gem install rails &#8211;no-ri &#8211;no-rdoc</p>
+
+<p>rbenv exec gem install bundler</p>
+
+<p>rbenv rehash</p>
+
+<p>source ~/.bash_profile</p>
+</blockquote>
+
+<p>プロジェクトを作成し</p>
+
+<blockquote>
+<p>rails new myproject</p>
+</blockquote>
+
+<p>Gemfileを編集し</p>
+
+<p>vi myproject/Gemfile</p>
+
+<blockquote>
+<p>gem &#8216;therubyracer&#8217;, platforms: :ruby</p>
+
+<p>echo &#8220;gem &#8216;rb-readline&rsquo;&#8221; &gt;&gt; cat/Gemfile</p>
+</blockquote>
+
+<p>Railsを起動</p>
+
+<blockquote>
+<p>myproject/bin/bundle install</p>
+
+<p>cd myproject</p>
+
+<p>rails server -b 0.0.0.0</p>
+</blockquote>
+
+<p>ブラウザで以下が見られる事を確認する</p>
+
+<p><a href="http://192.168.33.10:3000/">http://192.168.33.10:3000/</a></p>
+
+<p>こういうの。</p>
+
+<p><a href="/uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png"><img data-attachment-id="3380" data-permalink="/blog/archives/3371/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2015-02-15-14-52-55" data-orig-file="/uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png?fit=1012%2C794" data-orig-size="1012,794" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2015-02-15 14.52.55" data-image-description="" data-medium-file="/uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png?fit=300%2C235" data-large-file="/uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png?fit=525%2C412" src="/uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png?resize=300%2C235" alt="スクリーンショット 2015-02-15 14.52.55" class="aligncenter size-medium wp-image-3380" srcset="/uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png?resize=300%2C235 300w, /uploads/2015/02/673b1f7ba449818018591a4f0c1e597b.png?w=1012 1012w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>Railsは3の頃にちょろちょろ弄りだしたものの、仕事ではphpがメインなのでなかなか進まず。</p>
+
+<p>頑張って弄っていこうと思います。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a></li>
+          
+          <li><a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/">開発環境</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

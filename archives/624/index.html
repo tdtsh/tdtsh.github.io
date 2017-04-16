@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/624/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>slim3のインストール、Velocity との連携 その2 - はなたんのブログ</title>
+    
+<meta name="description" content="前回、slim3とVelocityのインストールをして、Controllerクラスを作ってみました。 その続きです。 &amp;nbsp; Modelクラスの作成 パ">
+
+<meta property="og:title" content="slim3のインストール、Velocity との連携 その2 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/624/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="前回、slim3とVelocityのインストールをして、Controllerクラスを作ってみました。 その続きです。 &amp;nbsp; Modelクラスの作成 パ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/624/">
+<meta name="twitter:title" content="slim3のインストール、Velocity との連携 その2 - はなたんのブログ">
+<meta name="twitter:description" content="前回、slim3とVelocityのインストールをして、Controllerクラスを作ってみました。 その続きです。 &amp;nbsp; Modelクラスの作成 パ">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "slim3のインストール、Velocity との連携 その2 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2010-04-15T10:45:49JST",
+    "dateModified": "2010-04-15T10:45:49JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "前回、slim3とVelocityのインストールをして、Controllerクラスを作ってみました。 その続きです。 &nbsp; Modelクラスの作成 パ"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">slim3のインストール、Velocity との連携 その2</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-04-15T10:45:49JST">Apr 15, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">slim3のインストール、Velocity との連携 その2</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><a href="/blog/archives/617">前回、slim3とVelocityのインストールをして、Controllerクラスを作って</a>みました。</p>
+
+<p>その続きです。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="modelクラスの作成">Modelクラスの作成</h4>
+
+<ul>
+<li>パッケージ・エクスプローラにてプロジェクト直下の build.xml をダブルクリックする</li>
+
+<li><p>右側のアウトライン・ビューにて、[gen-model]タスク※を右クリックする。</p>
+
+<p>※[gen-model]が複数ある場合は、◎みたいなアイコンの方</p></li>
+
+<li><p>[実行&reg;] &#8211; [1 Ant ビルド Alt+Shift+X, Q] (1番目の項目) をクリックする</p></li>
+
+<li><p>[構成の編集]ダイアログにて、[gen-controller[デフォルト]]のチェックを外し、[gen-model]にチェックを入れ、[実行&reg;]ボタンをクリックする。</p></li>
+
+<li><p>[Ant Input Request]にて、任意の文字列 (例：Member)を入力する</p></li>
+
+<li><p>下記ファイルが生成されている事を確認する。</p></p>
+
+<ul>
+<li>src/my/package/model/Member.java</li>
+<li>test/my/package/model/MemberTest.java</li>
+</ul></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>実に簡単です。</p>
+
+<p>&nbsp;</p>
+
+<ul>
+<li><p>あとは、フィールドとかゲッターとかセッターとかを必要に応じて付け足します。</p>
+
+<p>永続化するフィールドに @Persistent アノテーションは要りません。</p>
+
+<p>フィールドを永続化したくない場合は、</p>
+
+<p>@Attribute(persistent = false)</p>
+
+<p>アノテーションをつけます。</p></li>
+
+<li><p>明示的にインデックスづけを中止するアノテーションもあります。</p>
+
+<p>@Attribute(unindexed = true)</p></li>
+
+<li><p>以下のものについては、@Attribute(lob = true) アノテーションをつける事で永続化できます。インデックスは作成されません。</p></p>
+
+<ol>
+<li>シリアライズ可能( implements Serializable 的な )クラス</li>
+<li>バイト配列( byte[]な )クラス</li>
+<li>長いテキスト文字列(500バイトより大きいString型)</li>
+<li>コレクション</p>
+
+<ul>
+<li>java.util.ArrayList&lt;&hellip;&gt;</li>
+<li>java.util.LinkedList&lt;&hellip;&gt;</li>
+<li>java.util.HashSet&lt;&hellip;&gt;</li>
+<li>java.util.LinkedHashSet&lt;&hellip;&gt;</li>
+<li>java.util.TreeSet&lt;&hellip;&gt;</li>
+<li>java.util.List&lt;&hellip;&gt;</li>
+<li>java.util.Set&lt;&hellip;&gt;</li>
+<li>java.util.SortedSet&lt;&hellip;&gt;</li>
+</ul></li>
+</ol></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="1対多の-modelクラスを実装する">1対多の Modelクラスを実装する</h4>
+
+<p>さきほどこさえたMemberクラスに対し、Circleクラスをこさえて 1対多のリレーションを実現します。</p>
+
+<p>いよいよ、slim3の有難味が分かり始める予感。</p>
+
+<p><a href="http://sites.google.com/site/slim3documentja/documents/slim3-datastore/relationships">リレーションシップ (Slim3 日本語サイト(非公式))</a></p>
+
+<p>を読みながら、eclipseのエラーメッセージに従い実装していくと、結果こうなりました。</p>
+
+<pre>private ModelRef&lt;Circle> circles = new ModelRef&lt;Circle>(Circle.class);
+public ModelRef&lt;Circle> getCircles() {
+    return circles;
+}
+</pre>
+
+<p>ドキュメントによると、保存はこんな感じ。</p>
+
+<pre>Circle circle = new Circle();
+Member member = new Member();
+member.getCircles().setModel(circle);
+Datastore.put(circle, member);
+</pre>
+
+<p>参照はこんな感じ。</p>
+
+<pre>Key memberKey = ...;
+Member member = Datastore.get(Member.class, memberKey);
+Circle circle = member.getCircles().getModel();
+</pre>
+
+<p>うん。覚えやすそうです。</p>
+
+<p>関連(例では多の方のCircle)はレイジーにロードされるそうです。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="serviceクラスの作成">Serviceクラスの作成</h4>
+
+<ul>
+<li>パッケージ・エクスプローラにてプロジェクト直下の build.xml をダブルクリックする</li>
+
+<li><p>右側のアウトライン・ビューにて、[gen-service]タスク※を右クリックする。</p>
+
+<p>※[gen-service]が複数ある場合は、◎みたいなアイコンの方</p></li>
+
+<li><p>[実行&reg;] &#8211; [1 Ant ビルド Alt+Shift+X, Q] (1番目の項目) をクリックする</p></li>
+
+<li><p>[構成の編集]ダイアログにて、[gen-controller[デフォルト]]のチェックを外し、[gen-service]にチェックを入れ、[実行&reg;]ボタンをクリックする。</p></li>
+
+<li><p>[Ant Input Request]にて、任意の文字列 (例：MemberService)を入力する</p></li>
+
+<li><p>下記ファイルが生成されている事を確認する。</p></p>
+
+<ul>
+<li>src/my/package/service/MemberService.java</li>
+<li>test/my/package/service/MemberServiceTest.java</li>
+</ul></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Serviceに関する説明は、今の所<a href="http://sites.google.com/site/slim3appengine/">Slim3公式サイト</a>にも<a href="http://sites.google.com/site/slim3documentja/">Slim3 日本語サイト(非公式))</a>にもありません。</p>
+
+<p>slim3-demoをチェックアウトして、ソースコードを見てみる事をオススメします。</p>
+
+<p>実に判りやすいです。</p>
+
+<p>永続化層の操作を中心としたビジネスロジックをServiceで実装して、Controllerで利用すれば良いと思います。</p>
+
+<p>とりあえずは、slim3-demoを参考にして、CRUDを実装しときます。</p>
+
+<p>必要に応じてあとで付け足すことにします。</p>
+
+<pre>public class MemberService {
+
+    private MemberMeta mMeta = MemberMeta.get();
+
+    public Member get(Key key, Long version) {
+        return Datastore.get(mMeta, key, version);
+    }
+
+    public List&lt;Member> getAll() {
+        return Datastore.query(mMeta).asList();
+    }
+
+    public void insert(Member member) {
+        SLog.log.info("insert ("+ member.getClass().getName() + ")");
+        Transaction tx = Datastore.beginTransaction();
+        Datastore.put(tx, member);
+        Datastore.commit(tx);
+    }
+
+    public Member update(Key key, Long version, Map&lt;String, Object> input) {
+        SLog.log.info("update()");
+        Transaction tx = Datastore.beginTransaction();
+        Member member = Datastore.get(tx, mMeta, key, version);
+        BeanUtil.copy(input, member);
+        Datastore.put(tx, member);
+        Datastore.commit(tx);
+        return member;
+    }
+
+    public void delete(Key key, Long version) {
+        SLog.log.info("delete member ()");
+        Transaction tx = Datastore.beginTransaction();
+        Member member = Datastore.get(tx, mMeta, key, version);
+        Datastore.delete(tx, member.getKey());
+        Datastore.commit(tx);
+    }
+}
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<p><a href="/blog/archives/633">次回は、更新系のControllerを作りこんだり、バリデーションチェックをしたりします。</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://www.tdtsh.com/categories/slim3/">slim3</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

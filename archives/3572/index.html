@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/3572/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Node.js で Rails っぽいフレームワークの Sails.js を使ってみた - はなたんのブログ</title>
+    
+<meta name="description" content="勉強会で教えて頂いてからずっと気になっていたものの、ガッツリ触れずにいましたが、ようやく機会が訪れたので Sails を使いはじめました。 昨今、Node">
+
+<meta property="og:title" content="Node.js で Rails っぽいフレームワークの Sails.js を使ってみた - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/3572/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="勉強会で教えて頂いてからずっと気になっていたものの、ガッツリ触れずにいましたが、ようやく機会が訪れたので Sails を使いはじめました。 昨今、Node">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/3572/">
+<meta name="twitter:title" content="Node.js で Rails っぽいフレームワークの Sails.js を使ってみた - はなたんのブログ">
+<meta name="twitter:description" content="勉強会で教えて頂いてからずっと気になっていたものの、ガッツリ触れずにいましたが、ようやく機会が訪れたので Sails を使いはじめました。 昨今、Node">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "Node.js で Rails っぽいフレームワークの Sails.js を使ってみた - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-07-07T23:30:46JST",
+    "dateModified": "2015-07-07T23:30:46JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "勉強会で教えて頂いてからずっと気になっていたものの、ガッツリ触れずにいましたが、ようやく機会が訪れたので Sails を使いはじめました。 昨今、Node"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Node.js で Rails っぽいフレームワークの Sails.js を使ってみた</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-07-07T23:30:46JST">Jul 7, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Node.js で Rails っぽいフレームワークの Sails.js を使ってみた</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>勉強会で教えて頂いてからずっと気になっていたものの、ガッツリ触れずにいましたが、ようやく機会が訪れたので Sails を使いはじめました。</p>
+
+<p>昨今、Node のフレームワークとしてはなにやら Meteor がグイグイ来ている様ですが、要件的な都合と好みから自分的には Sails がフィットしそうな予感がしています。</p>
+
+<p>未だドキュメント読んでる最中なので不適切な説明あれば随時修正していきます。</p>
+
+<h4 id="sailsとは">Sailsとは</h4>
+
+<p>そもそも Sails.js とは何か。公式から引用します。</p>
+
+<blockquote>
+<p>Sails is, of course, a web framework. But take a step back. What does that mean? Sometimes, when we refer to the &#8220;web&#8221;, we mean the &#8220;front-end web.&#8221; We think of concepts like web standards, or HTML 5, or CSS 3; and frameworks like Backbone, or Angular, or jQuery. Sails is not &#8220;that kind&#8221; of a web framework. Sails works great with Angular and Backbone, but you would never use Sails instead of those libraries.</p>
+
+<p>On the other hand, sometimes when we talk about &#8220;web frameworks&#8221;, we mean the &#8220;back-end web.&#8221; This evokes concepts like REST, or HTTP, or WebSockets; and technologies like Java, or Ruby, or Node.js. A &#8220;back-end web&#8221; framework helps you do things like build APIs, serve HTML files, and handle hundreds of thousands of simultaneous users. Sails is &#8220;that kind&#8221; of web framework.</p>
+
+<p><a href="http://sailsjs.org/get-started#?getting-started-new-to-node" target="_blank">What is Sails?</a></p>
+</blockquote>
+
+<p>軽く意訳してみました。</p>
+
+<pre>Sails はもちろん「Webフレームワーク」です。
+しかし、そもそもそれはどういう意味でしょうか？
+
+我々が「Web」を考えるとき、それは「フロントエンドWeb」を意味する事があります。
+世の中にはWeb標準、またはHTML5やCSS3のような概念や、Backbone、Angular、およびjQueryなどのフレームワークがありますが、Sails はそれらの替わりになるものではありません。
+
+一方で、「Webフレームワーク」といえば、時にそれは「Webバックエンド」を意味します。
+つまりRESTやHTTP、WebSocketなどを扱う Java (Servlet)やRuby (on Rails)、またはNodeなどのサーバサイドの技術です。
+APIを構築したり、HTMLを配信したり、そして同時に数十万人の接続を制御したりする時、「Webバックエンド」のフレームワークがその助けになるでしょう。
+
+Sails も「そのような」Webフレームワークです。
+</pre>
+
+<p>Sails は Node.js 上で動く、 scaffolding や UnitTest、ORマッパなどをサポートするフルスタックなフレームワークです。</p>
+
+<p>Rails や CakePHP っぽいやつです。</p>
+
+<p>本記事内ではSEO的にあえて Sails.js の表記も混ぜてますが Sails で良いみたいです。その辺はNodeとかと同じですね。</p>
+
+<h4 id="インストールなど">インストールなど</h4>
+
+<p>npmでインストールしてからプロジェクトを作成し起動するまでです。</p>
+
+<p>rails や cake bake みたいなノリです。</p>
+
+<blockquote>
+<p>npm i -g sails</p>
+
+<p>sails new chat</p>
+
+<p>cd chat</p>
+
+<p>sails lift</p>
+</blockquote>
+
+<p>sails lift するとデフォルトで <a href="http://localhost:1337/">http://localhost:1337/</a> とかで見られる様になります。</p>
+
+<p>最初、sails lift をしないと 後述の.tmpとかを更新するタスクが走らないのかと思ってましたが、node app で起動しても特に問題無いようです。</p>
+
+<h4 id="最初まよったこと">最初まよったこと</h4>
+
+<p>まだ使い始めなんで判らない事だらけです。取り敢えず気付いた事をメモします。</p>
+
+<h5 id="コントローラとアクションどうやって作れば">コントローラとアクションどうやって作れば</h5>
+
+<p><a href="http://sailsjs.org/documentation/concepts/controllers/generating-controllers" target="_blank">sails generate</a>します。</p>
+
+<p>例えばloginアクションとlogoutアクションを持つauthコントローラを作る場合はこんな感じです。</p>
+
+<pre>sails generate controller auth login logout
+</pre>
+
+<p>その結果、api下にコントローラのファイルが作られて、</p>
+
+<pre>api/controllers/AuthController.js
+</pre>
+
+<p>/auth/login とか /auth/logout でアクセス出来るようになる様です。</p>
+
+<p>特に route を足すとかいう必要は無くて規約的にそうなる様です。</p>
+
+<p>このへんRailに乗ってる感あります。Sailだけど。</p>
+
+<h5 id="ファビコンはどこに">ファビコンはどこに</h5>
+
+<p>ここでいいみたいです。</p>
+
+<pre>assets/favicon.ico</pre>
+
+<h5 id="ブラウザタイトルはどうやって変えれば">ブラウザタイトルはどうやって変えれば</h5>
+
+<p>レイアウトのテンプレートファイルがこれっぽいです。</p>
+
+<pre>views/layout.ejs</pre>
+
+<p>他のejsはBodyだけ書く流儀らしいです。</p>
+
+<h5 id="クライアントサイドのjavascriptはどうすれば">クライアントサイドのJavaScriptはどうすれば</h5>
+
+<p>tasks/pipeline.js に下記を読み込む順序で書いて、assetsの下におけけば良いらしい。</p>
+
+<p>そうすると sails lift すると layout.ejs が更新され、assets が .tmp/public (これはdevの場合で多分Productionは別のトコになる) に反映されるらしいです。</p>
+
+<p>JavaScriptはこんな感じで</p>
+
+<pre>var jsFilesToInject = [
+  'js/dependencies/sails.io.js',
+  'js/dependencies/**/*.js',
+  'js/dependencies/jquery-x.x.x.min.js',
+  'js/client/bootstrap.min.js',
+  'js/client/hogehoge.js',
+  'js/client/*.js'
+];
+</pre>
+
+<h5 id="css-や-lessはどーすれば">css や lessはどーすれば</h5>
+
+<p>同じく tasks/pipeline.js の cssFilesToInjectの中で</p>
+
+<pre>var cssFilesToInject = [
+  'assets/styles/importer.less',
+  'css/*.css'
+];
+</pre>
+
+<p>としたうえで、</p>
+
+<p>assets/styles/importer.less に追記してやれば、これも layout.ejs と .tmp/public に反映されるらしいです。</p>
+
+<pre>@import 'assets/less/style_a.less';
+@import 'assets/less/style_b.less';
+@import 'assets/less/colors.less';
+</pre>
+
+<p>cssFilesToInjectで指定されている通り css は規定では assets/css/の直下におけばいい事になります。</p>
+
+<h4 id="感想など">感想など</h4>
+
+<p>最初アセットパイプラインの動きが判らなくて無駄な時間を過ごしたけど、めっちゃ<a href="http://sailsjs.org/documentation/concepts/assets" target="_blank">ドキュメントの最初の方</a>に書いてました。</p>
+
+<p>触っているうちに雰囲気つかんで疑問点がうきぼりになってからドキュメントに目を通そうとか思っていましたが、このへんのCoCなフレームワークは最初にきちんとドキュメントに目を通した方が結局近道ですね。</p>
+
+<p><a href="http://sailsjs.org/documentation/concepts/" target="_blank">Concepts: Table of Contents | Sails.js Documentation</a></p>
+
+<p>まだ使い始めなんで、express と比べてどう幸せになれるかキッチリ説明できませんが、既にそういう気分になっています。</p>
+
+<p>個人的なモチベーションとしては<a href="https://github.com/balderdashy/waterline" target="_blank">ORマッパ(Walter Line)</a> を使えば MySQL が使えて scaffold による手抜きAPI開発が出来るという所や、i18nサポートとかmochaとの連携とかがフレームワークに組み込まれているあたりです。また機会があればその辺書きます。</p>
+
+<h4 id="参考にさせて頂いたサイト">参考にさせて頂いたサイト</h4>
+
+<p><a href="http://nantokaworks.com/p1101/" target="_blank">Node.js の MVCフレームワーク Sails.js が良さげなので少し試してみた</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/javascript/">javascript</a></li>
+          
+          <li><a href="http://www.tdtsh.com/categories/node.js/">node.js</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

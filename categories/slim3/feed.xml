@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slim3 on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/slim3/</link>
+    <description>Recent content in Slim3 on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 07 Mar 2012 09:40:04 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/slim3/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>appengine の Datastore Adminのページが真っ白</title>
+      <link>http://www.tdtsh.com/archives/1727/</link>
+      <pubDate>Wed, 07 Mar 2012 09:40:04 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1727/</guid>
+      <description>いつのまにかappengineの特定のアプリで少し前まで見られていたDatastore Admin のページが見られない様になっていました。 Internet Explo</description>
+    </item>
+    
+    <item>
+      <title>備忘録 scenic3 のPageクラスのアノテーション達</title>
+      <link>http://www.tdtsh.com/archives/1548/</link>
+      <pubDate>Fri, 02 Dec 2011 13:00:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1548/</guid>
+      <description>appengine java + slim3 の開発では、scenic3にお世話になっています。 scenic3は t2 frameworkのようなPageクラスをslim3で実現するs</description>
+    </item>
+    
+    <item>
+      <title>遅ればせながらGAE/J で TaskQueue を試す</title>
+      <link>http://www.tdtsh.com/archives/1523/</link>
+      <pubDate>Mon, 28 Nov 2011 21:30:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1523/</guid>
+      <description>&amp;nbsp; google appengine / javaの話ですけど。 バッチとかならcron で何とかなるもんだからいままで曖昧にしてきた訳ですが、そろそろ TaskQueue を弄っていこうと思います</description>
+    </item>
+    
+    <item>
+      <title>slim3.GlobalTransaction と slim3.Lock がいっぱい</title>
+      <link>http://www.tdtsh.com/archives/1476/</link>
+      <pubDate>Tue, 15 Nov 2011 01:34:22 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1476/</guid>
+      <description>appengineのDatastoreにいつのまにか slim3.GlobalTransaction と slim3.Lock というEntityが出来ていました。とくにslim3.Lockがいっぱい。 Slim</description>
+    </item>
+    
+    <item>
+      <title>appengine 1.5.5 の Cross-Group Transactions は Entity Group が 5つまでしか扱えない</title>
+      <link>http://www.tdtsh.com/archives/1448/</link>
+      <pubDate>Wed, 09 Nov 2011 05:01:28 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1448/</guid>
+      <description>先日 slim3 1.0.14 とグローバルトランザクションについて書きました。 その続編です。 slim3 の Datastore.beginGlobalTransaction() とか deprecated になってます。 やはりフツーのDatastore.begin</description>
+    </item>
+    
+    <item>
+      <title>Slim3 1.0.14 とCross-Group Transactions</title>
+      <link>http://www.tdtsh.com/archives/1430/</link>
+      <pubDate>Wed, 02 Nov 2011 10:53:24 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1430/</guid>
+      <description>Slim3が1.0.14になってる訳ですが、手もとのeclipseを確認したら、slim3-1.0.12.jarじゃないですか。 Slim3 Eclipse Plug</description>
+    </item>
+    
+    <item>
+      <title>GAE/J slim3 (とscenic3) で .html を静的ファイルじゃなくてリソースとして扱う</title>
+      <link>http://www.tdtsh.com/archives/1333/</link>
+      <pubDate>Wed, 10 Aug 2011 10:30:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1333/</guid>
+      <description>&amp;nbsp; 最近わたしは appengineといえば slim3 (とscenic3) がデフォルトになってます。 とある事情で、 appengine (for java)パスが/hogehoge</description>
+    </item>
+    
+    <item>
+      <title>eclipse で slim3 のbuild.xmlを開いてもアウトラインに何もでない</title>
+      <link>http://www.tdtsh.com/archives/1285/</link>
+      <pubDate>Tue, 24 May 2011 10:05:47 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1285/</guid>
+      <description>eclipse で slim3 の開発をやるとき、build.xmlを開いて「アウトラインビュー」でコントローラとかモデルとか作れて便利ですよね。 私は手で作っちゃう事</description>
+    </item>
+    
+    <item>
+      <title>eclipse の Google App Engine プロジェクトを実行した時リモートから見たい</title>
+      <link>http://www.tdtsh.com/archives/1157/</link>
+      <pubDate>Thu, 03 Mar 2011 05:06:40 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1157/</guid>
+      <description>良く忘れるので、メモ。 eclipseを起動 プロジェクトを右クリック [実行&amp;reg;] &amp;#8211; [実行の構成(N)] をクリック 実行構成の左ペインより[</description>
+    </item>
+    
+    <item>
+      <title>slim3のバージョンアップをする (1.0.7から1.0.8に更新)</title>
+      <link>http://www.tdtsh.com/archives/1154/</link>
+      <pubDate>Wed, 02 Mar 2011 11:04:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1154/</guid>
+      <description>この手順は私が行ったことの記録として書いたものですので、誤りを含んでいる可能性があります。 実際の手順は、Slim3 日本語サイト(非公式)など</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine/Java で動くEtupirkaCMSが良い</title>
+      <link>http://www.tdtsh.com/archives/1090/</link>
+      <pubDate>Fri, 04 Feb 2011 11:00:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1090/</guid>
+      <description>etupirka、イイですね。 EtupirkaCMS 0.1.0 リリース &amp;#8211; やさしいデスマーチ EtupirkaCMS(日本語) 何が凄いって、eclipse も appengine SDKも使わず</description>
+    </item>
+    
+    <item>
+      <title>オープンソース徹底活用 Slim3 on Google App Engine for Java</title>
+      <link>http://www.tdtsh.com/archives/902/</link>
+      <pubDate>Fri, 03 Sep 2010 05:05:24 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/902/</guid>
+      <description>読みました。 オープンソース徹底活用 Slim3 on Google App Engine for Java ひが やすを,小川 信一 Amazonで詳しく見る by AZlink &amp;lt;p&amp;gt; 内容を要約すると、GAEのデータストアはこ</description>
+    </item>
+    
+    <item>
+      <title>java の AntiSamyでサニタイズ、任意のHTMLタグを許可しscriptタグとかを無効化</title>
+      <link>http://www.tdtsh.com/archives/883/</link>
+      <pubDate>Tue, 24 Aug 2010 11:08:25 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/883/</guid>
+      <description>一般公開するWEBサービスを作る場合、慣れてないと手がかかるのがセキュリティへの配慮です。 Google App Engineとか使っている時点でSQLインジェ</description>
+    </item>
+    
+    <item>
+      <title>slim3、Google App Engine for Java 1.3.6 で Blobstore APIをためす</title>
+      <link>http://www.tdtsh.com/archives/864/</link>
+      <pubDate>Thu, 19 Aug 2010 09:00:42 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/864/</guid>
+      <description>slim3、Google App Engine for Java 1.3.6 で Blobstore API Google App Engine/Java (以下 GAE/J) のBlobstore APIについて調べています。 環境はSlim3 (1.0.5) + Velocity + app engine sdkは1</description>
+    </item>
+    
+    <item>
+      <title>slim3での1対多関連での参照整合性</title>
+      <link>http://www.tdtsh.com/archives/818/</link>
+      <pubDate>Thu, 29 Jul 2010 06:29:16 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/818/</guid>
+      <description>slim3での1対多関連（片方向でも双方向でもどっちも）での参照整合性の話です。 親モデルが削除された時 Datastore#deleteで親モ</description>
+    </item>
+    
+    <item>
+      <title>RDBMS脳では app engineのデータストアの概念で混乱する</title>
+      <link>http://www.tdtsh.com/archives/770/</link>
+      <pubDate>Sun, 04 Jul 2010 15:05:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/770/</guid>
+      <description>RDBMSを長くやっている人ほど、app engineのデータストアの概念で混乱する可能性が高いと思います。 自分もまだ時々判らなくなるので、一</description>
+    </item>
+    
+    <item>
+      <title>app engine で 古いIndexを削除するには</title>
+      <link>http://www.tdtsh.com/archives/766/</link>
+      <pubDate>Sat, 03 Jul 2010 15:05:52 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/766/</guid>
+      <description>Macの場合はコチラ 前々から気になっていたんですが、app engine の管理画面の Datasotre Indexesで確認すると、過去に色々と動かした名残で、既に存在し</description>
+    </item>
+    
+    <item>
+      <title>slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue()</title>
+      <link>http://www.tdtsh.com/archives/759/</link>
+      <pubDate>Fri, 02 Jul 2010 15:05:08 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/759/</guid>
+      <description>WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するの</description>
+    </item>
+    
+    <item>
+      <title>RDBMS脳を変えるのは難しい &amp;#8211; App Enine上でスケールするデータモデリングへの道</title>
+      <link>http://www.tdtsh.com/archives/752/</link>
+      <pubDate>Thu, 01 Jul 2010 14:00:59 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/752/</guid>
+      <description>slim3(App Engine/Java)のお勉強をしながら、良くあるパターンのブログサービス的なWEBアプリケーションを作っています。 ブログサービスの概念</description>
+    </item>
+    
+    <item>
+      <title>slim3 で ModelクラスのStringに(@lob=true)を追加すると org.slim3.controller.HotReloadingRuntimeException が発生</title>
+      <link>http://www.tdtsh.com/archives/707/</link>
+      <pubDate>Tue, 22 Jun 2010 07:44:44 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/707/</guid>
+      <description>slim3 で、既に存在するModelクラスのStringフィールドに、文字列を沢山保存しようとすると IllegalArgumentException が発生して保存が出来ませんでした。 これはApp</description>
+    </item>
+    
+    <item>
+      <title>slim3 と Velocity の連携 その3 Controller で値の入出力、バリデーションチェック</title>
+      <link>http://www.tdtsh.com/archives/633/</link>
+      <pubDate>Fri, 16 Apr 2010 06:03:37 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/633/</guid>
+      <description>前々回と前回にわたり、slim3とVelocityのインストールをして、基本的なController、Model、Serviceの各クラスの</description>
+    </item>
+    
+    <item>
+      <title>slim3のインストール、Velocity との連携 その2</title>
+      <link>http://www.tdtsh.com/archives/624/</link>
+      <pubDate>Thu, 15 Apr 2010 10:45:49 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/624/</guid>
+      <description>前回、slim3とVelocityのインストールをして、Controllerクラスを作ってみました。 その続きです。 &amp;nbsp; Modelクラスの作成 パ</description>
+    </item>
+    
+    <item>
+      <title>slim3のインストール、Velocity との連携</title>
+      <link>http://www.tdtsh.com/archives/617/</link>
+      <pubDate>Wed, 14 Apr 2010 02:52:13 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/617/</guid>
+      <description>重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザ</description>
+    </item>
+    
+  </channel>
+</rss>

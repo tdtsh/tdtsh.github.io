@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://www.tdtsh.com/archives/3498/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Titanium使いが React Native を少し触ってみた - はなたんのブログ</title>
+    
+<meta name="description" content="クロスプラットフォームを触ってみたシリーズの第5弾です。 React Nativeです。 といっても、今のところiOSだけですけれど。 一応、公式には&amp;#8">
+
+<meta property="og:title" content="Titanium使いが React Native を少し触ってみた - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.tdtsh.com/archives/3498/">
+<meta property="og:image" content="http://www.tdtsh.com/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="クロスプラットフォームを触ってみたシリーズの第5弾です。 React Nativeです。 といっても、今のところiOSだけですけれど。 一応、公式には&amp;#8">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://www.tdtsh.com/archives/3498/">
+<meta name="twitter:title" content="Titanium使いが React Native を少し触ってみた - はなたんのブログ">
+<meta name="twitter:description" content="クロスプラットフォームを触ってみたシリーズの第5弾です。 React Nativeです。 といっても、今のところiOSだけですけれど。 一応、公式には&amp;#8">
+<meta name="twitter:image" content="http://www.tdtsh.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.tdtsh.com/"
+    },
+    "headline": "Titanium使いが React Native を少し触ってみた - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.tdtsh.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-06-30T01:00:25JST",
+    "dateModified": "2015-06-30T01:00:25JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.tdtsh.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "クロスプラットフォームを触ってみたシリーズの第5弾です。 React Nativeです。 といっても、今のところiOSだけですけれど。 一応、公式には&#8"
+  }
+</script>
+
+
+    <link href="http://www.tdtsh.com/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tdtsh.com/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.tdtsh.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.tdtsh.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Titanium使いが React Native を少し触ってみた</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-06-30T01:00:25JST">Jun 30, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.tdtsh.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Titanium使いが React Native を少し触ってみた</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>クロスプラットフォームを触ってみたシリーズの第5弾です。</p>
+
+<p>React Nativeです。</p>
+
+<p>といっても、今のところiOSだけですけれど。</p>
+
+<p>一応、<a href="http://www.reactnative.com/" target="_blank">公式</a>には&#8221;Build native ios and android apps with javascript&#8221;って書いてます。</p>
+
+<p>以前どこかで「すぐにAndroidも対応するぜ」的な事が書いてたのを見た気がしたんですが、気配が感じられませんが大丈夫なんでしょうか。</p>
+
+<h4 id="インストール">インストール</h4>
+
+<p>導入の敷居はすごく低いです。</p>
+
+<p>XCodeとNode.jsが既にインストール済なら、5分位で<a href="http://facebook.github.io/react-native/docs/getting-started.html#content" target="_blank">getting-stated</a>のProjectを動かすまでいけます。</p>
+
+<p>npmでインスコして、プロジェクトを作るのはこれだけです。</p>
+
+<p>`クロスプラットフォームを触ってみたシリーズの第5弾です。</p>
+
+<p>React Nativeです。</p>
+
+<p>といっても、今のところiOSだけですけれど。</p>
+
+<p>一応、<a href="http://www.reactnative.com/" target="_blank">公式</a>には&#8221;Build native ios and android apps with javascript&#8221;って書いてます。</p>
+
+<p>以前どこかで「すぐにAndroidも対応するぜ」的な事が書いてたのを見た気がしたんですが、気配が感じられませんが大丈夫なんでしょうか。</p>
+
+<h4 id="インストール-1">インストール</h4>
+
+<p>導入の敷居はすごく低いです。</p>
+
+<p>XCodeとNode.jsが既にインストール済なら、5分位で<a href="http://facebook.github.io/react-native/docs/getting-started.html#content" target="_blank">getting-stated</a>のProjectを動かすまでいけます。</p>
+
+<p>npmでインスコして、プロジェクトを作るのはこれだけです。</p>
+
+<p>`</p>
+
+<h4 id="開発">開発</h4>
+
+<p>あとはFinderで、作成された</p>
+
+<p><code>PropertyFinder/PropertyFinder.xcodeproj</code></p>
+
+<p>をダブルクリックすれば、XCodeが立ち上がります。</p>
+
+<p>んでXCodeでシミュレータなりで一度動かせば、あとは index.ios.jsを編集しつつ、シミュレータで⌘+Rで確認するという流れです。</p>
+
+<p>それだけだと本当にすぐ終わってしまうので、今回はこのチュートリアルも写経したりしました。</p>
+
+<p><a href="http://www.raywenderlich.com/99473/introducing-react-native-building-apps-javascrip" target="_blank">Introducing React Native: Building Apps with JavaScript</a></p>
+
+<p>うん。楽しいです。</p>
+
+<p><a href="/uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png"><img data-attachment-id="3514" data-permalink="/blog/archives/3498/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2015-06-27-22-38-18-%e3%81%ae%e3%82%b3%e3%83%94%e3%83%bc" data-orig-file="/uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?fit=1500%2C800" data-orig-size="1500,800" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="スクリーンショット 2015-06-27 22.38.18 のコピー" data-image-description="" data-medium-file="/uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?fit=300%2C160" data-large-file="/uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?fit=525%2C280" src="/uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?resize=300%2C160" alt="スクリーンショット 2015-06-27 22.38.18 のコピー" class="aligncenter size-medium wp-image-3514" srcset="/uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?resize=300%2C160 300w, /uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?resize=1024%2C546 1024w, /uploads/2015/07/90c1caed9db3666f44c97653e8cddb4a.png?w=1500 1500w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<h4 id="感想">感想</h4>
+
+<p>以前Appceleratorも、React Native発表後、<a href="http://www.appcelerator.com/blog/2015/02/react-native-reaction/" target="_blank">即座にブログで「“Learn once, write everywhere” だって？俺達は4年以上前から言ってたぜ。“Write once, adapt everywhere.” てな！」とか反応</a>していた通り、コンセプトはTitaniumのと似ています。</p>
+
+<p>このへんの良し悪しは、<a href="https://twitter.com/masuidrive" target="_blank">@masuidrive</a>さんと<a href="https://twitter.com/naoya_ito" target="_blank">@naoya</a>さんがいい感じに纏めてくださっていますので参考にしてみてください。</p>
+
+<p><a href="https://speakerdeck.com/masuidrive/yuan-mou-evuanzierisutoga-jian-rureactnative" target="_blank">元某エヴァンジェリストが 見るReactNative // Speaker Deck</a></p>
+
+<p><a href="https://speakerdeck.com/naoya/alternative-nakai-fa-turufalsecai-ze-nituite" target="_blank">React Native / Alternative な開発ツールの採択について // Speaker Deck</a></p>
+
+<p>Alternativeなアプリ開発プラットフォームについてはいろんな意見がありますが、私の立場では少人数で、早く、マルチプラットフォームで、が求められる事が多いので、わりと肯定的です。つらみについては否定できませんが・・・</p>
+
+<p>なので、私の感想は一般的な割とイケてる環境での話ではなく、個人事業主とか小規模なスタートアップとかどちらかというと下々の民的な立ち位置にやや偏っていると思って頂ければ。</p>
+
+<p>JavaScript でネイティブアプリを書けるという点においては、React Native 結構いい感じです。Titaniumを知らなかったならば、超喜んでたかも知れません。</p>
+
+<p>Titaniumと比較してReact Nativeのメリットが享受できる程未だ使い込んでないのですが、触った感じ、好き・嫌いでいうと、わたしは好きかもです。</p>
+
+<p>コーディングスタイルはよりWebのフロントエンドJavaScriptっぽい感じがします。というかほぼ React.js です。</p>
+
+<p>気になったのは、チュートリアルではjsのファイルにjSXっぽいのとかcssっぽいのとか書いてて、classicなTitaniumのソレっぽい感じですけど、Titanium Alloyみたいに、viewとstyleは別ファイルに出来ないもんなんでしょうか。</p>
+
+<p>ドキュメントは探しやすいし読みやすいです。量も少ないけど。</p>
+
+<p>実際に自分で書き始めると、たぶん細かい所、たとえば遷移時やViewにアニメーションとか付けたい場合どうしたら？とか色々悩みそうです。</p>
+
+<p>現状で React Nativeでプロダクションなアプリを開発する気になるかどうかは微妙です。</p>
+
+<p>Titaniumに限った話では無いですが、私がTitaniumでアプリを開発するにあたり、ネット上の先人の知恵やユーザ会をはじめとしたコミュニティの方々の助けがなかったら、かなりしんどい事になっていたと思います。</p>
+
+<p>React Nativeの場合は、いまから道を切り開く苦労(と楽しさ)がありそうですね。今からガンガンさわって詳しくなって発信すると目立ちそうです。</p>
+
+<p>React.jsがかなり盛り上がっているので、React Nativeももしかしたら使う人が増えるかもしれませんね。</p>
+
+<p><a href="/blog/archives/3309">クロスプラットフォーム シリーズ1 Titanium Mobileは業務や受託開発で使えるのか</a></p>
+
+<p><a href="/blog/archives/3407">クロスプラットフォームを触ってみたシリーズ2 久々にCordova (旧PhoneGap) 触ってみた</a></p>
+
+<p><a href="/blog/archives/3418">クロスプラットフォームを触ってみたシリーズ3 Electron (旧Atom Shell)触ってみた</a></p>
+
+<p><a href="/blog/archives/3462">クロスプラットフォームを触ってみたシリーズ4 Ubuntu 15.04 で Titanium (Appcelerator CLI)、無料でどこまでできるか試してみた</a></p>
+
+<p><a href="/blog/archives/3498">クロスプラットフォームを触ってみたシリーズ5 Titanium使いが React Native を少し触ってみた</a></p>
+
+<p><a href="/blog/archives/3544">クロスプラットフォームを触ってみたシリーズ6 Titanium使いが JavaScripで書けるつながりで Native Script 触ってみた</a></p>
+
+<p>Reactつながりで。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.tdtsh.com/categories/crossplatform/">crossplatform</a></li>
+          
+          <li><a href="http://www.tdtsh.com/categories/javascript/">javascript</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://www.tdtsh.com/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://www.tdtsh.com/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://www.tdtsh.com/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://www.tdtsh.com/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://www.tdtsh.com/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://www.tdtsh.com/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+      <a href="http://www.tdtsh.com/archives/3817/" class="list-group-item">[Swift2] 背面カメラのトーチをオン</a>
+      
+      <a href="http://www.tdtsh.com/archives/3802/" class="list-group-item">[Swift2] UIView(ボタン)をフェードイン</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.tdtsh.com/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://www.tdtsh.com/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://www.tdtsh.com/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://www.tdtsh.com/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://www.tdtsh.com/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://www.tdtsh.com/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://www.tdtsh.com/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://www.tdtsh.com/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://www.tdtsh.com/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://www.tdtsh.com/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://www.tdtsh.com/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://www.tdtsh.com/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://www.tdtsh.com/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://www.tdtsh.com/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://www.tdtsh.com/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://www.tdtsh.com/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://www.tdtsh.com/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://www.tdtsh.com/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://www.tdtsh.com/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.tdtsh.com/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://www.tdtsh.com/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

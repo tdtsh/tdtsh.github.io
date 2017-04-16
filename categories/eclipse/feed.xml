@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eclipse on はなたんのブログ</title>
+    <link>http://www.tdtsh.com/categories/eclipse/</link>
+    <description>Recent content in Eclipse on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 28 Nov 2012 13:50:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.tdtsh.com/categories/eclipse/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows版 eclipse が Failed to create The Java Virtual Machine で起動できない</title>
+      <link>http://www.tdtsh.com/archives/2511/</link>
+      <pubDate>Wed, 28 Nov 2012 13:50:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2511/</guid>
+      <description>ここんとこずっとMac OS X の eclipse しか触ってないんですけど、久しぶりにWindows XP で eclipse を起動しようとすると、エラーで起動出来なかった。 eclipse.ini にJ</description>
+    </item>
+    
+    <item>
+      <title>Mac OS X で WinSCP みたいな Transmit、他Web開発系ツール</title>
+      <link>http://www.tdtsh.com/archives/2443/</link>
+      <pubDate>Wed, 17 Oct 2012 11:14:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2443/</guid>
+      <description>にわかマカーの自分としては最初は気にならないけど、使い込んでいく内にWindowsにあった便利なソフトウェア達が恋しくなります。 例えば Subversion とか</description>
+    </item>
+    
+    <item>
+      <title>Mac OS X の Finder (TotalFinder) で  dotファイル を見る</title>
+      <link>http://www.tdtsh.com/archives/2251/</link>
+      <pubDate>Tue, 11 Sep 2012 21:09:10 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/2251/</guid>
+      <description>特に eclipse に限った話でも無いんですが、Mac OS X の Finder で dotファイルとか出したい事けっこうあるんです。 eclipse とかの設定が隠しファイル ( .classp</description>
+    </item>
+    
+    <item>
+      <title>appengine のローカル開発環境 (eclipse) をスマートフォンで見る</title>
+      <link>http://www.tdtsh.com/archives/1989/</link>
+      <pubDate>Wed, 11 Jul 2012 07:21:33 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1989/</guid>
+      <description>最近 appengine の開発はすっかり Macbook Air + eclipse + GitBox に移行しました。 一応Windows機にも eclipse と TortoiseGitを入れてスタンバってますけど全然使わなく</description>
+    </item>
+    
+    <item>
+      <title>Mac OS X で eclipse のコンテンツ・アシスト</title>
+      <link>http://www.tdtsh.com/archives/1847/</link>
+      <pubDate>Thu, 24 May 2012 21:20:27 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1847/</guid>
+      <description>Windows の eclipse で手癖になっているものの1つに、Ctrl+1のクイック・フィックスとCtrl＋Spaceでのコンテンツ・アシストがあります。 Mac OS Xでは</description>
+    </item>
+    
+    <item>
+      <title>余ったノートPCには ubuntu がよさげ</title>
+      <link>http://www.tdtsh.com/archives/1798/</link>
+      <pubDate>Sun, 15 Apr 2012 21:30:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1798/</guid>
+      <description>余ったPCにはLinuxをぶち込むでしょう常考。 昔はLinuxのインストール厨だった私ですが、最近ではRed Hat系、それも CentOS しか触らなくな</description>
+    </item>
+    
+    <item>
+      <title>409 Conflict No transaction is in progress で appengine にデプロイできない</title>
+      <link>http://www.tdtsh.com/archives/1455/</link>
+      <pubDate>Fri, 11 Nov 2011 04:20:38 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1455/</guid>
+      <description>今日、GAE/Jでeclipseからデプロイしようとすると、失敗しました。 ダイアログはこんな感じです。 Unable to update app: Error posting to URL: https://appengine.google.com/api/appversion/startserving?app_id=XXXXXXX&amp;version=XXXX&amp; 409 Conflict No transaction is in progress. 前にも</description>
+    </item>
+    
+    <item>
+      <title>eclipse の viPlugin と キーバインドの変更</title>
+      <link>http://www.tdtsh.com/archives/1441/</link>
+      <pubDate>Fri, 04 Nov 2011 07:28:39 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1441/</guid>
+      <description>Windows機でテキスト書くときはgvimです。 なので、つい j とか k とか Ctrl+FとかCtrl+B とか打ってしまいます。 その点、Goog</description>
+    </item>
+    
+    <item>
+      <title>Slim3 1.0.14 とCross-Group Transactions</title>
+      <link>http://www.tdtsh.com/archives/1430/</link>
+      <pubDate>Wed, 02 Nov 2011 10:53:24 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1430/</guid>
+      <description>Slim3が1.0.14になってる訳ですが、手もとのeclipseを確認したら、slim3-1.0.12.jarじゃないですか。 Slim3 Eclipse Plug</description>
+    </item>
+    
+    <item>
+      <title>急にeclipse から appengine にデプロイできなくなりました</title>
+      <link>http://www.tdtsh.com/archives/1417/</link>
+      <pubDate>Fri, 28 Oct 2011 11:25:58 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1417/</guid>
+      <description>なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。 An internal error occurred during Deploying %APPNAME% to Google NullPointerException 理</description>
+    </item>
+    
+    <item>
+      <title>index が error で appengine にデプロイできないので index を削除</title>
+      <link>http://www.tdtsh.com/archives/1384/</link>
+      <pubDate>Sat, 22 Oct 2011 00:10:11 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1384/</guid>
+      <description>以前WindowsでGAEのインデックス削除しましがが、Macでもやってみました。 以前Windowsでやった時は （pythonのSDKをイン</description>
+    </item>
+    
+    <item>
+      <title>EVO と  Macbook Air が有ればマクドで仕事できますよね</title>
+      <link>http://www.tdtsh.com/archives/1370/</link>
+      <pubDate>Fri, 21 Oct 2011 15:26:16 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1370/</guid>
+      <description>いや、そんなにMac使い込んではいないですけど。 Google App Engine での開発とか、Macでブラウザとeclipse があれば、あとはWiFi か HTC EVOでテザ</description>
+    </item>
+    
+    <item>
+      <title>Mac OS X と eclipse に頑張って慣れていこう</title>
+      <link>http://www.tdtsh.com/archives/1366/</link>
+      <pubDate>Fri, 14 Oct 2011 15:42:31 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1366/</guid>
+      <description>相変わらず appengine とか弄っています。 自分のパソコンは持ってないんで、会社のWindows機 (ThinkPad X300)でコード書いてます。 デプロイとかeclips</description>
+    </item>
+    
+    <item>
+      <title>eclipse で slim3 のbuild.xmlを開いてもアウトラインに何もでない</title>
+      <link>http://www.tdtsh.com/archives/1285/</link>
+      <pubDate>Tue, 24 May 2011 10:05:47 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1285/</guid>
+      <description>eclipse で slim3 の開発をやるとき、build.xmlを開いて「アウトラインビュー」でコントローラとかモデルとか作れて便利ですよね。 私は手で作っちゃう事</description>
+    </item>
+    
+    <item>
+      <title>本屋で驚いた話と、eclipse に Android SDKを入れてみた話</title>
+      <link>http://www.tdtsh.com/archives/1161/</link>
+      <pubDate>Mon, 07 Mar 2011 10:40:20 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1161/</guid>
+      <description>最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし</description>
+    </item>
+    
+    <item>
+      <title>eclipse の Google App Engine プロジェクトを実行した時リモートから見たい</title>
+      <link>http://www.tdtsh.com/archives/1157/</link>
+      <pubDate>Thu, 03 Mar 2011 05:06:40 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1157/</guid>
+      <description>良く忘れるので、メモ。 eclipseを起動 プロジェクトを右クリック [実行&amp;reg;] &amp;#8211; [実行の構成(N)] をクリック 実行構成の左ペインより[</description>
+    </item>
+    
+    <item>
+      <title>slim3のバージョンアップをする (1.0.7から1.0.8に更新)</title>
+      <link>http://www.tdtsh.com/archives/1154/</link>
+      <pubDate>Wed, 02 Mar 2011 11:04:00 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/1154/</guid>
+      <description>この手順は私が行ったことの記録として書いたものですので、誤りを含んでいる可能性があります。 実際の手順は、Slim3 日本語サイト(非公式)など</description>
+    </item>
+    
+    <item>
+      <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす</title>
+      <link>http://www.tdtsh.com/archives/445/</link>
+      <pubDate>Fri, 30 Oct 2009 16:00:17 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/445/</guid>
+      <description>GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine SDK for java でデプロイ</title>
+      <link>http://www.tdtsh.com/archives/427/</link>
+      <pubDate>Tue, 27 Oct 2009 16:00:43 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/427/</guid>
+      <description>前回インストールした、Google App Engine SDK for javaを使って、コマンドラインでデプロイしてみる。 参考サイトの例に応用をきかせて、今回は SDKと</description>
+    </item>
+    
+    <item>
+      <title>GAE/J で WARNING Can not serve hoge.html directly.  You need to include it in &lt;static-files&gt; in your appengine-web.xml</title>
+      <link>http://www.tdtsh.com/archives/419/</link>
+      <pubDate>Sat, 24 Oct 2009 16:00:54 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/419/</guid>
+      <description>Google App Engine for Java (GAE/J) で、静的ファイル ( html、css、js ) を扱おうとして、 WARNING: Can not serve /hoge/hoge.nocache.js directly. You need to include it in in your appengine-web.xml. てな感じで怒られる。 appengine-web.xml の書き方が間違って</description>
+    </item>
+    
+    <item>
+      <title>GAE/J で HTML (静的ファイル) を</title>
+      <link>http://www.tdtsh.com/archives/415/</link>
+      <pubDate>Fri, 23 Oct 2009 16:00:25 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/415/</guid>
+      <description>Google App Engine for Java (GAE/J) で、まずはHTMLファイルをデプロイだ！ つまづいた事 その1 GAE/J での開発は、eclipseのプラグインで始めてます。 まず eclipse に慣れてな</description>
+    </item>
+    
+    <item>
+      <title>eclipse(Ganymede) で ArrayList は raw 型です。 総称型 ArrayList&lt;E&gt; への参照は、パラメーター化する必要があります</title>
+      <link>http://www.tdtsh.com/archives/411/</link>
+      <pubDate>Fri, 23 Oct 2009 00:00:32 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/411/</guid>
+      <description>JDK 1.4時代の古いJavaアプリケーションをeclipse(Ganymede)に持ってくると、 ArrayList は raw 型です。 総称型 ArrayList への参照は、パラメーター</description>
+    </item>
+    
+    <item>
+      <title>eclipse(Ganymede)で、シリアライズ可能クラス は long 型の static final serialVersionUID フィールドを宣言していません</title>
+      <link>http://www.tdtsh.com/archives/407/</link>
+      <pubDate>Thu, 22 Oct 2009 00:08:46 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/407/</guid>
+      <description>eclipse(Ganymede)で、 シリアライズ可能クラス Hoge は long 型の static final serialVersionUID フィールドを宣言していません と怒られた。 クラス Hoge は implements Serializable なクラス。</description>
+    </item>
+    
+    <item>
+      <title>eclipse(Ganymede)が起動出来ない (JVM terminated. Exit code=-1)</title>
+      <link>http://www.tdtsh.com/archives/283/</link>
+      <pubDate>Tue, 18 Aug 2009 00:49:38 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/283/</guid>
+      <description>ある日突然、eclipse(3.4.1)が起動出来なくなった。 こんなダイアログが出る。 --------------------------- Eclipse --------------------------- JVM terminated. Exit code=-1 -Dosgi.requiredJavaVersion=1.5 -Xms40m -Xmx512m -XX:MaxPermSize=256M -Djava.class.path=C:\eclipse\plugins\org.eclipse.equinox.launcher_1.0.101.R34x_v20081125.jar -os win32 -ws win32 -arch x86 -showsplash C:\eclipse\\plugins\org.eclipse.platform_3.3.101.v200902111700\splash.bmp -launcher C:\eclipse\eclipse.exe -name Eclipse --launcher.library C:\eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_1.0.101.R34x_v20080731\eclipse_1115.dll -startup</description>
+    </item>
+    
+    <item>
+      <title>eclipseで「Your Web Application Project must be configured to use a JDK in order to use JSPs.」のエラー対処</title>
+      <link>http://www.tdtsh.com/archives/59/</link>
+      <pubDate>Sun, 28 Jun 2009 12:41:27 +0000</pubDate>
+      
+      <guid>http://www.tdtsh.com/archives/59/</guid>
+      <description>eclipseをインストールして、JDKの設定をしていなかった事が原因。 [ウィンドウ] &amp;#8211; [設定] &amp;#8211; [Java]- [インストール済みの JRE] [追加]を押下 [標</description>
+    </item>
+    
+  </channel>
+</rss>
