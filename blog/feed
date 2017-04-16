@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>はなたんのブログ</title>
+	<atom:link href="http://www.tdtsh.com/blog/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.tdtsh.com/blog</link>
+	<description>何事にも中途半端です</description>
+	<lastBuildDate>Sat, 15 Apr 2017 16:36:11 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.7.3</generator>
+	<site xmlns="com-wordpress:feed-additions:1">93691468</site>
+
+	<item>
+		<title>wordpressからhugo+github.ioに移行</title>
+		<link>http://www.tdtsh.com/blog/archives/4000</link>
+		<pubDate>Sun, 16 Apr 2017 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/archives/4000</guid>
+		<description><![CDATA[wordpress のサーバ管理が面倒になってきたので、Hugo on GitHub Pagesに移行しました。 今これが見えているという事は、新しい方を見ています。 RSSフィードが微妙に変わっているんで、なんか変だったら再登録お願いします。]]></description>
+		<post-id xmlns="com-wordpress:feed-additions:1">4000</post-id>
+	</item>
+
+	<item>
+		<title>node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</title>
+		<link>http://www.tdtsh.com/blog/archives/3914</link>
+		<pubDate>Tue, 28 Feb 2017 13:55:37 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+		<category><![CDATA[ruby]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3914</guid>
+		<description><![CDATA[pm2を再起動したい node.js を Capistrano3 でデプロイする時に pm2 を restart したいです。 単純にこれでもまぁいいのですが、 execute :pm2, 'restart', fetc &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3914" class="more-link"><span class="screen-reader-text">"node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい"の</span>続きを読む</a></p>]]></description>
+		<post-id xmlns="com-wordpress:feed-additions:1">3914</post-id>
+	</item>
+
+	<item>
+		<title>Mac で Chrome を別プロフィールで多重起動</title>
+		<link>http://www.tdtsh.com/blog/archives/3906</link>
+		<pubDate>Thu, 12 Jan 2017 16:18:52 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[mac]]></category>
+		<category><![CDATA[開発環境]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3906</guid>
+		<description><![CDATA[Web系の開発とかしてて、複数ユーザでログインしたりしたいとき、Chromeならば通常のウィンドウとシークレットウィンドウの2ついけるけど、例えば10ユーザ位を使い分けたい時に。 要はこういうのをMacのChromeでや &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3906" class="more-link"><span class="screen-reader-text">"Mac で Chrome を別プロフィールで多重起動"の</span>続きを読む</a></p>]]></description>
+		<post-id xmlns="com-wordpress:feed-additions:1">3906</post-id>
+	</item>
+
+		<item>
+		<title>サーバサイドSwift</title>
+		<link>http://www.tdtsh.com/blog/archives/3900</link>
+		<pubDate>Thu, 15 Dec 2016 00:00:55 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[swift]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3900</guid>
+		<description><![CDATA[ちょくちょくサーバサイドSwiftの話を聞くのですがいまいち覚えきれないのでメモ。結構沢山あるんですね。 Perfect 9915 Star 名前が凄いし、Star数もそれを裏付けている。老舗かつ本命。 Kitura 5 &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3900" class="more-link"><span class="screen-reader-text">"サーバサイドSwift"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3900</post-id>	</item>
+		<item>
+		<title>久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</title>
+		<link>http://www.tdtsh.com/blog/archives/3891</link>
+		<pubDate>Fri, 04 Nov 2016 02:40:52 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[android]]></category>
+		<category><![CDATA[Titanium]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3891</guid>
+		<description><![CDATA[Titanium もいつのまにか 6.0.0 の RC が出て、V8がアップデートされたから 全Androidのモジュールビルドしなおしな!という事だと聞いて。 そう言えばSDKが4になった頃からノーメンテだったのを思い &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3891" class="more-link"><span class="screen-reader-text">"久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3891</post-id>	</item>
+		<item>
+		<title>socket.io 1.4系で 4undefined (追記あり)</title>
+		<link>http://www.tdtsh.com/blog/archives/3878</link>
+		<pubDate>Thu, 22 Sep 2016 23:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[node.js]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3878</guid>
+		<description><![CDATA[socket.ioを最新 (1.4系)にアップデートすると、emitの動きがおかしいというか、Clientで受け取れない事がありました。 こういうのは大丈夫だけど、 io.on("connection", functio &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3878" class="more-link"><span class="screen-reader-text">"socket.io 1.4系で 4undefined (追記あり)"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3878</post-id>	</item>
+		<item>
+		<title>XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</title>
+		<link>http://www.tdtsh.com/blog/archives/3840</link>
+		<pubDate>Fri, 12 Feb 2016 13:11:44 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[XCode]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3840</guid>
+		<description><![CDATA[&#160; 相変わらず EXC_BAD_ACCESS で慌てる自分がいます。 EXC_BAD_ACCESS ググっても日本語で書いているものはかなり古い記事が多いので、誰かのために書いておきます。 環境はXCode 7 &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3840" class="more-link"><span class="screen-reader-text">"XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3840</post-id>	</item>
+		<item>
+		<title>[Swift2] Facebook Popを使ったアニメーション</title>
+		<link>http://www.tdtsh.com/blog/archives/3834</link>
+		<pubDate>Thu, 11 Feb 2016 13:15:11 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[swift]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3834</guid>
+		<description><![CDATA[&#160; 前回やってみたアニメーションとは別のアプローチで。 facebookが提供しているアニメーションライブラリPopを使ってみます。 https://github.com/facebook/pop Titani &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3834" class="more-link"><span class="screen-reader-text">"[Swift2] Facebook Popを使ったアニメーション"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3834</post-id>	</item>
+		<item>
+		<title>Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</title>
+		<link>http://www.tdtsh.com/blog/archives/3823</link>
+		<pubDate>Fri, 05 Feb 2016 12:06:07 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[開発環境]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3823</guid>
+		<description><![CDATA[&#160; いつか誰かのためにメモ残します。 めっちゃ時間かかったけど辛抱強く付き合って頂いた電話サポートの中の人ありがとう。 自分の環境はMacのBootcampだけど、多分素のWindows機でも同様と思います。  &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3823" class="more-link"><span class="screen-reader-text">"Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3823</post-id>	</item>
+		<item>
+		<title>[Swift2] 背面カメラのトーチをオン</title>
+		<link>http://www.tdtsh.com/blog/archives/3817</link>
+		<pubDate>Fri, 29 Jan 2016 12:30:42 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[swift]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3817</guid>
+		<description><![CDATA[&#160; 暗い所でもカメラ撮影したいんです。 ソースコード なんかだいたい判ってきたんですが、Swift2になってエラーと取り回しが1系から変わっているんですね。 swiftのtry〜catchの作法がまだ良く判らな &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3817" class="more-link"><span class="screen-reader-text">"[Swift2] 背面カメラのトーチをオン"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3817</post-id>	</item>
+		<item>
+		<title>[Swift2] UIView(ボタン)をフェードイン</title>
+		<link>http://www.tdtsh.com/blog/archives/3802</link>
+		<pubDate>Sun, 24 Jan 2016 13:00:39 +0000</pubDate>
+		<dc:creator><![CDATA[はなたん]]></dc:creator>
+				<category><![CDATA[swift]]></category>
+
+		<guid isPermaLink="false">http://www.tdtsh.com/blog/?p=3802</guid>
+		<description><![CDATA[&#160; アニメーションやってみたくなったので、全く必要性は無いけどボタンをフェードインしてみます。 欲しいのはTitaniumでいうと Ti.UI.Animation 的なやつです。 Objective-Cでちょろ &#8230; <p class="link-more"><a href="http://www.tdtsh.com/blog/archives/3802" class="more-link"><span class="screen-reader-text">"[Swift2] UIView(ボタン)をフェードイン"の</span>続きを読む</a></p>]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">3802</post-id>	</item>
+	</channel>
+</rss>
