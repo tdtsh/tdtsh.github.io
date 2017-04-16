@@ -2,462 +2,462 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>開発環境 on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</link>
+    <link>http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</link>
     <description>Recent content in 開発環境 on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 12 Jan 2017 16:18:52 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac で Chrome を別プロフィールで多重起動</title>
-      <link>http://www.tdtsh.com/archives/3906/</link>
+      <link>http://tdtsh.github.io/archives/3906/</link>
       <pubDate>Thu, 12 Jan 2017 16:18:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3906/</guid>
+      <guid>http://tdtsh.github.io/archives/3906/</guid>
       <description>Web系の開発とかしてて、複数ユーザでログインしたりしたいとき、Chromeならば通常のウィンドウとシークレットウィンドウの2ついけるけど、</description>
     </item>
     
     <item>
       <title>Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</title>
-      <link>http://www.tdtsh.com/archives/3823/</link>
+      <link>http://tdtsh.github.io/archives/3823/</link>
       <pubDate>Fri, 05 Feb 2016 12:06:07 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3823/</guid>
+      <guid>http://tdtsh.github.io/archives/3823/</guid>
       <description>&amp;nbsp; いつか誰かのためにメモ残します。 めっちゃ時間かかったけど辛抱強く付き合って頂いた電話サポートの中の人ありがとう。 自分の環境はMacのBoo</description>
     </item>
     
     <item>
       <title>100均で見つけた Macbook のスタンド</title>
-      <link>http://www.tdtsh.com/archives/3759/</link>
+      <link>http://tdtsh.github.io/archives/3759/</link>
       <pubDate>Sat, 16 Jan 2016 12:26:32 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3759/</guid>
+      <guid>http://tdtsh.github.io/archives/3759/</guid>
       <description>Seria まな板立て Seria (100均) で探してきた、まな板立てです。 Macbookのスタンドに代替出来るかなと思って探したものですが思ったよりフィットし</description>
     </item>
     
     <item>
       <title>いまさらeslint (vim &#43; syntastic &#43; jshint だと JSX がエラーになる問題)</title>
-      <link>http://www.tdtsh.com/archives/3644/</link>
+      <link>http://tdtsh.github.io/archives/3644/</link>
       <pubDate>Sat, 12 Sep 2015 12:20:32 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3644/</guid>
+      <guid>http://tdtsh.github.io/archives/3644/</guid>
       <description>習慣と惰性で Vim (GVim) 使ってます。 Syntax Checkerは syntastic を使ってます。 あんまり使い込んで無くて、JavaScript ではファイル保存時にjshint</description>
     </item>
     
     <item>
       <title>Ubuntu 15.04 で Titanium (Appcelerator CLI)、無料でどこまでできるか試してみた</title>
-      <link>http://www.tdtsh.com/archives/3462/</link>
+      <link>http://tdtsh.github.io/archives/3462/</link>
       <pubDate>Tue, 23 Jun 2015 01:00:04 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3462/</guid>
+      <guid>http://tdtsh.github.io/archives/3462/</guid>
       <description>クロスプラットフォームを触ってみたシリーズの第4弾です。 Macbook に Ubuntu 15.04 日本語 Remix をインストールしたので、ついでにTitaniumモバイル(Andro</description>
     </item>
     
     <item>
       <title>Electron (旧Atom Shell)触ってみた</title>
-      <link>http://www.tdtsh.com/archives/3418/</link>
+      <link>http://tdtsh.github.io/archives/3418/</link>
       <pubDate>Sun, 21 Jun 2015 23:30:18 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3418/</guid>
+      <guid>http://tdtsh.github.io/archives/3418/</guid>
       <description>クロスプラットフォーム触ってみた第3弾です。 Electron（旧Atom Shell）は、JavaScript(Node.js)とHTML(含</description>
     </item>
     
     <item>
       <title>Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用)</title>
-      <link>http://www.tdtsh.com/archives/3371/</link>
+      <link>http://tdtsh.github.io/archives/3371/</link>
       <pubDate>Wed, 18 Feb 2015 13:00:30 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3371/</guid>
+      <guid>http://tdtsh.github.io/archives/3371/</guid>
       <description>最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば</description>
     </item>
     
     <item>
       <title>AWSのインスタンス監視に mackerel を使ってみた</title>
-      <link>http://www.tdtsh.com/archives/3316/</link>
+      <link>http://tdtsh.github.io/archives/3316/</link>
       <pubDate>Tue, 08 Jul 2014 12:29:43 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3316/</guid>
+      <guid>http://tdtsh.github.io/archives/3316/</guid>
       <description>先日参加させて頂いた JAWS-UG ではてなの田中さんが紹介してくださっていたやつ、早速試しました。 mackerelです。鯖です。 マーケレゥとかじゃないで</description>
     </item>
     
     <item>
       <title>Time Capsule と AirMac Express による 1階と2階の快適WiFi拡張</title>
-      <link>http://www.tdtsh.com/archives/3251/</link>
+      <link>http://tdtsh.github.io/archives/3251/</link>
       <pubDate>Wed, 07 May 2014 13:30:51 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3251/</guid>
+      <guid>http://tdtsh.github.io/archives/3251/</guid>
       <description>AirMac Expressとブリッジさせるため、1年後しで念願のTime Capsule 買いました。 去年の春頃、家の2階で仕事する事が多くなってきた時に、1階のeo</description>
     </item>
     
     <item>
       <title>awk で SQL文を作る</title>
-      <link>http://www.tdtsh.com/archives/2872/</link>
+      <link>http://tdtsh.github.io/archives/2872/</link>
       <pubDate>Thu, 11 Jul 2013 21:30:31 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2872/</guid>
+      <guid>http://tdtsh.github.io/archives/2872/</guid>
       <description>テストデータとかDMLを沢山つくりたいとき、Excelで Insert 文作ったりしますよね。 でもパターンや対象テーブルが多いとちょっと面倒です。 ここはひ</description>
     </item>
     
     <item>
       <title>Java野郎が PHPUnit を使ってみる、xUnitについて考える</title>
-      <link>http://www.tdtsh.com/archives/2860/</link>
+      <link>http://tdtsh.github.io/archives/2860/</link>
       <pubDate>Tue, 09 Jul 2013 21:45:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2860/</guid>
+      <guid>http://tdtsh.github.io/archives/2860/</guid>
       <description>PHPUnitは、xUnitと呼ばれるテスティング・フレームワークの一つです。 要するに JUnitのphp版です。 Zend Framework (1.6〜) や CakePHP (2.0</description>
     </item>
     
     <item>
       <title>格安VPSのBudgetVMにサーバ引越し(2)</title>
-      <link>http://www.tdtsh.com/archives/2785/</link>
+      <link>http://tdtsh.github.io/archives/2785/</link>
       <pubDate>Thu, 18 Apr 2013 10:22:29 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2785/</guid>
+      <guid>http://tdtsh.github.io/archives/2785/</guid>
       <description>という訳で、先日当ブログのサーバを一旦引越したのですが、今日は通信の品質が悪すぎて満足にサイトが見れませんでした。 ping の RT はだいたい 500ms 位です。</description>
     </item>
     
     <item>
       <title>Windows XP に VimFiler をインストールした時のメモ</title>
-      <link>http://www.tdtsh.com/archives/2721/</link>
+      <link>http://tdtsh.github.io/archives/2721/</link>
       <pubDate>Sun, 27 Jan 2013 21:30:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2721/</guid>
+      <guid>http://tdtsh.github.io/archives/2721/</guid>
       <description>前に書いた通り、Macbook Air で便利に使わせて頂いている VimFiler をWindows機にもインストールします mac os x (Mountailn Lion) に VimFiler 入れた時のメモ &amp;nbsp; Kaoriya Vimの</description>
     </item>
     
     <item>
       <title>Adobe Creative Suite の インストールで ライセンス認証の制限数を超えました</title>
-      <link>http://www.tdtsh.com/archives/2709/</link>
+      <link>http://tdtsh.github.io/archives/2709/</link>
       <pubDate>Sun, 20 Jan 2013 21:00:36 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2709/</guid>
+      <guid>http://tdtsh.github.io/archives/2709/</guid>
       <description>Adobe Creative Suite の 3（！）をWindows機にインストールし、PhotoShopを起動すると、ライセンス認証を求められます。 そこで「ライセンス認証の制</description>
     </item>
     
     <item>
       <title>mac os x (Mountailn Lion) に VimFiler 入れた時のメモ</title>
-      <link>http://www.tdtsh.com/archives/2705/</link>
+      <link>http://tdtsh.github.io/archives/2705/</link>
       <pubDate>Fri, 18 Jan 2013 13:07:51 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2705/</guid>
+      <guid>http://tdtsh.github.io/archives/2705/</guid>
       <description>最近VimFilerへの依存度が半端ない。 それはますます Macbook Air への依存度が高まる事を意味する訳です。 つい1年半まえまでは ThinkPad命とか</description>
     </item>
     
     <item>
       <title>Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール</title>
-      <link>http://www.tdtsh.com/archives/2548/</link>
+      <link>http://tdtsh.github.io/archives/2548/</link>
       <pubDate>Tue, 18 Dec 2012 20:00:03 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2548/</guid>
+      <guid>http://tdtsh.github.io/archives/2548/</guid>
       <description>そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ</description>
     </item>
     
     <item>
       <title>実家で暇だからherokuを弄ってみたメモ置き場</title>
-      <link>http://www.tdtsh.com/archives/2488/</link>
+      <link>http://tdtsh.github.io/archives/2488/</link>
       <pubDate>Sat, 10 Nov 2012 06:30:50 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2488/</guid>
+      <guid>http://tdtsh.github.io/archives/2488/</guid>
       <description>最近のナウなヤングはHeroku で Ruby on rails なんでしょう？ Herokuとは、Ruby on Railsを対象とした、Amazon Web Services（A</description>
     </item>
     
     <item>
       <title>Mac OS X で WinSCP みたいな Transmit、他Web開発系ツール</title>
-      <link>http://www.tdtsh.com/archives/2443/</link>
+      <link>http://tdtsh.github.io/archives/2443/</link>
       <pubDate>Wed, 17 Oct 2012 11:14:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2443/</guid>
+      <guid>http://tdtsh.github.io/archives/2443/</guid>
       <description>にわかマカーの自分としては最初は気にならないけど、使い込んでいく内にWindowsにあった便利なソフトウェア達が恋しくなります。 例えば Subversion とか</description>
     </item>
     
     <item>
       <title>Mac OS X の Finder (TotalFinder) で  dotファイル を見る</title>
-      <link>http://www.tdtsh.com/archives/2251/</link>
+      <link>http://tdtsh.github.io/archives/2251/</link>
       <pubDate>Tue, 11 Sep 2012 21:09:10 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2251/</guid>
+      <guid>http://tdtsh.github.io/archives/2251/</guid>
       <description>特に eclipse に限った話でも無いんですが、Mac OS X の Finder で dotファイルとか出したい事けっこうあるんです。 eclipse とかの設定が隠しファイル ( .classp</description>
     </item>
     
     <item>
       <title>appengineの開発がブラウザ上で完結する Cloud IDE (eXo)</title>
-      <link>http://www.tdtsh.com/archives/2014/</link>
+      <link>http://tdtsh.github.io/archives/2014/</link>
       <pubDate>Sun, 22 Jul 2012 21:10:27 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2014/</guid>
+      <guid>http://tdtsh.github.io/archives/2014/</guid>
       <description>以前、Google App Engine/Java で動くEtupirkaCMSが良い というエントリを書きましたが、更に簡単なやつがありました。 Cloud IDE (eXo) です。 会員登録をして</description>
     </item>
     
     <item>
       <title>appengine のローカル開発環境 (eclipse) をスマートフォンで見る</title>
-      <link>http://www.tdtsh.com/archives/1989/</link>
+      <link>http://tdtsh.github.io/archives/1989/</link>
       <pubDate>Wed, 11 Jul 2012 07:21:33 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1989/</guid>
+      <guid>http://tdtsh.github.io/archives/1989/</guid>
       <description>最近 appengine の開発はすっかり Macbook Air + eclipse + GitBox に移行しました。 一応Windows機にも eclipse と TortoiseGitを入れてスタンバってますけど全然使わなく</description>
     </item>
     
     <item>
       <title>mac os x で XCode 4.3 を入れたら GitBox から FileMerge が起動しない</title>
-      <link>http://www.tdtsh.com/archives/1860/</link>
+      <link>http://tdtsh.github.io/archives/1860/</link>
       <pubDate>Mon, 25 Jun 2012 10:47:37 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1860/</guid>
+      <guid>http://tdtsh.github.io/archives/1860/</guid>
       <description>Mac os x で gitクライアントと言えば、にわかマカーな私でもGitBoxです。 GitBox 先日、XCode 4.3を入れました。そろそろiOSアプリ開発本気</description>
     </item>
     
     <item>
       <title>macvim-kaoriya が良さげ</title>
-      <link>http://www.tdtsh.com/archives/1568/</link>
+      <link>http://tdtsh.github.io/archives/1568/</link>
       <pubDate>Sat, 03 Dec 2011 21:30:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1568/</guid>
+      <guid>http://tdtsh.github.io/archives/1568/</guid>
       <description>WindowsでKaoriya版vimを使っていてそのままMacで同じような環境を手に入れたい方向け。 macvim-kaoriya &amp;#8211; MacVim KaoriYa &amp;#8211; Google Project Hosting あるもんですねー。 ここ</description>
     </item>
     
     <item>
       <title>windows機 ユーザによる mac os x 備忘録</title>
-      <link>http://www.tdtsh.com/archives/1557/</link>
+      <link>http://tdtsh.github.io/archives/1557/</link>
       <pubDate>Sat, 03 Dec 2011 01:13:41 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1557/</guid>
+      <guid>http://tdtsh.github.io/archives/1557/</guid>
       <description>前の記事 Windows使いが Macbook Air でいきなりつまずいた4つのこと 普段の仕事での開発環境は ThinkPad (Windows XP)です。 テキストエディタのvim (Kaoriy</description>
     </item>
     
     <item>
       <title>Webブラウザ上で Android や iPhone アプリが開発できる Monaca</title>
-      <link>http://www.tdtsh.com/archives/1517/</link>
+      <link>http://tdtsh.github.io/archives/1517/</link>
       <pubDate>Sun, 27 Nov 2011 21:29:49 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1517/</guid>
+      <guid>http://tdtsh.github.io/archives/1517/</guid>
       <description>Jungle Java &amp;#8211; Monaca を少しだけ試してみたを見て、私もちょこっとやってみました。 要するに、HTML5から Android や iOS のネイティブアプリをビルドできる、WEBベー</description>
     </item>
     
     <item>
       <title>github を git clone しようとすると Permission denied (publickey) とかで出来ない</title>
-      <link>http://www.tdtsh.com/archives/1507/</link>
+      <link>http://tdtsh.github.io/archives/1507/</link>
       <pubDate>Sat, 26 Nov 2011 15:10:41 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1507/</guid>
+      <guid>http://tdtsh.github.io/archives/1507/</guid>
       <description>最近、git ばっか使ってます。 だって、べんりだもの。（みつを） Subversion使わなくなっちゃった。 で、git クライアントは、Windo</description>
     </item>
     
     <item>
       <title>いつのまにか Apple Developper登録 してた話</title>
-      <link>http://www.tdtsh.com/archives/1470/</link>
+      <link>http://tdtsh.github.io/archives/1470/</link>
       <pubDate>Sat, 12 Nov 2011 21:46:40 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1470/</guid>
+      <guid>http://tdtsh.github.io/archives/1470/</guid>
       <description>&amp;nbsp; Apple Developerに登録をしようと思ったらすでに登録していました。 いつやったか覚えてないけど、登録内容から考えると2年以上前に・・・。 M</description>
     </item>
     
     <item>
       <title>409 Conflict No transaction is in progress で appengine にデプロイできない</title>
-      <link>http://www.tdtsh.com/archives/1455/</link>
+      <link>http://tdtsh.github.io/archives/1455/</link>
       <pubDate>Fri, 11 Nov 2011 04:20:38 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1455/</guid>
+      <guid>http://tdtsh.github.io/archives/1455/</guid>
       <description>今日、GAE/Jでeclipseからデプロイしようとすると、失敗しました。 ダイアログはこんな感じです。 Unable to update app: Error posting to URL: https://appengine.google.com/api/appversion/startserving?app_id=XXXXXXX&amp;version=XXXX&amp; 409 Conflict No transaction is in progress. 前にも</description>
     </item>
     
     <item>
       <title>Slim3 1.0.14 とCross-Group Transactions</title>
-      <link>http://www.tdtsh.com/archives/1430/</link>
+      <link>http://tdtsh.github.io/archives/1430/</link>
       <pubDate>Wed, 02 Nov 2011 10:53:24 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1430/</guid>
+      <guid>http://tdtsh.github.io/archives/1430/</guid>
       <description>Slim3が1.0.14になってる訳ですが、手もとのeclipseを確認したら、slim3-1.0.12.jarじゃないですか。 Slim3 Eclipse Plug</description>
     </item>
     
     <item>
       <title>EVO と  Macbook Air が有ればマクドで仕事できますよね</title>
-      <link>http://www.tdtsh.com/archives/1370/</link>
+      <link>http://tdtsh.github.io/archives/1370/</link>
       <pubDate>Fri, 21 Oct 2011 15:26:16 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1370/</guid>
+      <guid>http://tdtsh.github.io/archives/1370/</guid>
       <description>いや、そんなにMac使い込んではいないですけど。 Google App Engine での開発とか、Macでブラウザとeclipse があれば、あとはWiFi か HTC EVOでテザ</description>
     </item>
     
     <item>
       <title>GAE/J で Python の bulkloader をつかってみる</title>
-      <link>http://www.tdtsh.com/archives/1359/</link>
+      <link>http://tdtsh.github.io/archives/1359/</link>
       <pubDate>Tue, 16 Aug 2011 11:46:29 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1359/</guid>
+      <guid>http://tdtsh.github.io/archives/1359/</guid>
       <description>&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし</description>
     </item>
     
     <item>
       <title>eclipse で slim3 のbuild.xmlを開いてもアウトラインに何もでない</title>
-      <link>http://www.tdtsh.com/archives/1285/</link>
+      <link>http://tdtsh.github.io/archives/1285/</link>
       <pubDate>Tue, 24 May 2011 10:05:47 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1285/</guid>
+      <guid>http://tdtsh.github.io/archives/1285/</guid>
       <description>eclipse で slim3 の開発をやるとき、build.xmlを開いて「アウトラインビュー」でコントローラとかモデルとか作れて便利ですよね。 私は手で作っちゃう事</description>
     </item>
     
     <item>
       <title>Windows使いが Macbook Air でいきなりつまずいた4つのこと</title>
-      <link>http://www.tdtsh.com/archives/1227/</link>
+      <link>http://tdtsh.github.io/archives/1227/</link>
       <pubDate>Thu, 31 Mar 2011 09:42:55 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1227/</guid>
+      <guid>http://tdtsh.github.io/archives/1227/</guid>
       <description>続編かきました &amp;gt; windows機 ユーザによる mac os x 備忘録 いや職場のんだし私が使う訳でも無いんですけど。 開封して改めてその薄さに驚きました。 私</description>
     </item>
     
     <item>
       <title>本屋で驚いた話と、eclipse に Android SDKを入れてみた話</title>
-      <link>http://www.tdtsh.com/archives/1161/</link>
+      <link>http://tdtsh.github.io/archives/1161/</link>
       <pubDate>Mon, 07 Mar 2011 10:40:20 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1161/</guid>
+      <guid>http://tdtsh.github.io/archives/1161/</guid>
       <description>最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし</description>
     </item>
     
     <item>
       <title>DBAN(Darik&amp;#8217;s Boot And Nuke)でHDDをローレベルフォーマット</title>
-      <link>http://www.tdtsh.com/archives/681/</link>
+      <link>http://tdtsh.github.io/archives/681/</link>
       <pubDate>Tue, 15 Jun 2010 15:10:21 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/681/</guid>
+      <guid>http://tdtsh.github.io/archives/681/</guid>
       <description>PCやサーバの廃棄時、データの消去どうしてますか？ 高価なHDDクラッシャーがある現場は楽ですが、永久磁石でささっとやられる方や、中にはプラッ</description>
     </item>
     
     <item>
       <title>Assembla無料で使える個人用Subversion / Git</title>
-      <link>http://www.tdtsh.com/archives/675/</link>
+      <link>http://tdtsh.github.io/archives/675/</link>
       <pubDate>Fri, 11 Jun 2010 02:43:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/675/</guid>
+      <guid>http://tdtsh.github.io/archives/675/</guid>
       <description>suz-labさんでプライベートなSubversionのWEBサービスが紹介されていました。 suz-lab &amp;#8211; blog: AssemblaでプライベートSVN (いつ</description>
     </item>
     
     <item>
       <title>Subversion 1.4.2をインストールした時のメモ</title>
-      <link>http://www.tdtsh.com/archives/535/</link>
+      <link>http://tdtsh.github.io/archives/535/</link>
       <pubDate>Mon, 18 Jan 2010 09:04:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/535/</guid>
+      <guid>http://tdtsh.github.io/archives/535/</guid>
       <description>ちょっと前に、Subversion用のサーバが壊れました。 幸い、リポジトリのHDDが生きていたので、別のサーバに構築した時のメモ書いておきま</description>
     </item>
     
     <item>
       <title>CygwinでOpenSSHの鍵ペアを作成</title>
-      <link>http://www.tdtsh.com/archives/467/</link>
+      <link>http://tdtsh.github.io/archives/467/</link>
       <pubDate>Thu, 26 Nov 2009 04:04:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/467/</guid>
+      <guid>http://tdtsh.github.io/archives/467/</guid>
       <description>Cygwinのインストール時に、opensslとopensshを追加すれば、 ssh_keygenが使えます。 パスフレーズ無し、1024ビット</description>
     </item>
     
     <item>
       <title>AVG Anti-Virus Free Edition 8.5 for Linux を CentOSにインストール</title>
-      <link>http://www.tdtsh.com/archives/379/</link>
+      <link>http://tdtsh.github.io/archives/379/</link>
       <pubDate>Fri, 11 Sep 2009 02:23:32 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/379/</guid>
+      <guid>http://tdtsh.github.io/archives/379/</guid>
       <description>Windowsでも個人的にお世話になっている AVG アンチウィルス無償版. 非商業的な目的でなら、無償です。 我が家ではもっぱら「ブラジル」と呼んでま</description>
     </item>
     
     <item>
       <title>CentOS で unknown filesystem type &amp;#8216;smbfs&amp;#8217;</title>
-      <link>http://www.tdtsh.com/archives/341/</link>
+      <link>http://tdtsh.github.io/archives/341/</link>
       <pubDate>Fri, 04 Sep 2009 10:51:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/341/</guid>
+      <guid>http://tdtsh.github.io/archives/341/</guid>
       <description>CentOS5 で、smbfs でSAMBAサーバの共有を mount -t smbfs //172.10.X.X/Share /Share こんな風にマウントしようとしたら、 unknown filesystem type &amp;#8216;smbfs&amp;#8217; こんな感じで怒られた。 CentOS4の頃はいけ</description>
     </item>
     
     <item>
       <title>CentOS 5 にeSVNをインストールした時のメモ</title>
-      <link>http://www.tdtsh.com/archives/334/</link>
+      <link>http://tdtsh.github.io/archives/334/</link>
       <pubDate>Thu, 03 Sep 2009 14:28:53 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/334/</guid>
+      <guid>http://tdtsh.github.io/archives/334/</guid>
       <description>eSVNの最新バージョンは0.6.12-1らしい。 2～3年前から更新とまっているような。 yum -y install qt yum -y install qt-devel yum -y install anthy-devel yum -y install qmake yum -y install subversion cd /usr/local/src wget http://jaist.dl.sourceforge.net/sourceforge/esvn/esvn-0.6.12-1.tar.gz tar xvzf</description>
     </item>
     
     <item>
       <title>subversionコマンド備忘録</title>
-      <link>http://www.tdtsh.com/archives/153/</link>
+      <link>http://tdtsh.github.io/archives/153/</link>
       <pubDate>Wed, 15 Jul 2009 04:01:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/153/</guid>
+      <guid>http://tdtsh.github.io/archives/153/</guid>
       <description>リポジトリ作成とデーモン起動 svnadmin create &amp;#8211;fs-type fsfs testrepos svnserve -d -r c:/svn インポート svn import svn://your.domain.com/home/svn/repos -m &amp;#8220;init&amp;#8221; チェックアウト svn co https://your.domain.com/home/svn/repos svn co svn://your.domain.comp/home/svn/repos &amp;#8211;username user_name &amp;#8211;password pass_word svn co svn+ssh://user_name@your.domain.com/home/svn/repos &amp;#8211;username user_name &amp;#8211;password pass_word svn co https://your.domain.com:1443/svn/repos チェックイン svn ci repos/test.txt -m</description>
     </item>
     
     <item>
       <title>CVSコマンド備忘録</title>
-      <link>http://www.tdtsh.com/archives/148/</link>
+      <link>http://tdtsh.github.io/archives/148/</link>
       <pubDate>Tue, 14 Jul 2009 04:20:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/148/</guid>
+      <guid>http://tdtsh.github.io/archives/148/</guid>
       <description>ログイン( pserver ) cvs -d :pserver:username@your.domain.com:/home/cvsroot login インポート cvs -d :ext:username@your.domain.com:/home/cvsroot import -I ! repo_name &amp;#8220;HEAD&amp;#8221; &amp;#8220;start&amp;#8221; エクスポート トランク cvs -d :ext:username@your.domain.com:/home/cvsroot -z9 export -r HEAD repo_name ブランチ cvs -e ssh -d username@your.domain.com:/home/cvsroot export -r BRANCH_NAME repo_name 特定の日付 cvs -d :ext:username@your.domain.com:/home/cvsroot export -D &amp;#8220;2007/05/03&amp;#8221; repo_name チェ</description>
     </item>
     
     <item>
       <title>XREAで無料サーバ</title>
-      <link>http://www.tdtsh.com/archives/117/</link>
+      <link>http://tdtsh.github.io/archives/117/</link>
       <pubDate>Fri, 10 Jul 2009 02:00:04 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/117/</guid>
+      <guid>http://tdtsh.github.io/archives/117/</guid>
       <description>バリュードメインで独自ドメインを取得すると、XREAの無料サーバが使えます。phpやMySQLが使えるので、WordPressやXOOPS、</description>
     </item>
     
     <item>
       <title>独自ドメイン取りました</title>
-      <link>http://www.tdtsh.com/archives/71/</link>
+      <link>http://tdtsh.github.io/archives/71/</link>
       <pubDate>Wed, 08 Jul 2009 01:38:11 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/71/</guid>
+      <guid>http://tdtsh.github.io/archives/71/</guid>
       <description>アフィリエイトの練習に始めたはてブですが、あまりアフィリエイトには向いてない事が判り始めてきました。 仕事では何十台とサーバ立ててきましたが、</description>
     </item>
     
     <item>
       <title>eclipseで「Your Web Application Project must be configured to use a JDK in order to use JSPs.」のエラー対処</title>
-      <link>http://www.tdtsh.com/archives/59/</link>
+      <link>http://tdtsh.github.io/archives/59/</link>
       <pubDate>Sun, 28 Jun 2009 12:41:27 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/59/</guid>
+      <guid>http://tdtsh.github.io/archives/59/</guid>
       <description>eclipseをインストールして、JDKの設定をしていなかった事が原因。 [ウィンドウ] &amp;#8211; [設定] &amp;#8211; [Java]- [インストール済みの JRE] [追加]を押下 [標</description>
     </item>
     
     <item>
       <title>yum で RPMforge</title>
-      <link>http://www.tdtsh.com/archives/50/</link>
+      <link>http://tdtsh.github.io/archives/50/</link>
       <pubDate>Mon, 22 Jun 2009 04:25:03 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/50/</guid>
+      <guid>http://tdtsh.github.io/archives/50/</guid>
       <description>サードパーティ製のRPMパッケージ群のリポジトリ、RPMforge (http://rpmrepo.org/RPMforge) をCentOS5のyumで使えるようにするメモ。 yum install yum-priorities wget http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm rpm &amp;#8211;import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt rpm -K rpmforge-release-0.3.6-1.el5.rf.*.rpm rpm</description>
     </item>
     
     <item>
       <title>仮のWEBシステムを、脳内でAmazon EC2に移行してみる</title>
-      <link>http://www.tdtsh.com/archives/19/</link>
+      <link>http://tdtsh.github.io/archives/19/</link>
       <pubDate>Wed, 20 May 2009 02:49:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/19/</guid>
+      <guid>http://tdtsh.github.io/archives/19/</guid>
       <description>仮のWEBシステムを、脳内でAmazon EC2に移行してみる。 ■EC2 インスタンス 次の3つから選択する。Smallで充分。 Small 1.7GB / 1CPU / 160GB HDD / 32bit</description>
     </item>
     
     <item>
       <title>Subversionサーバ再構築メモ</title>
-      <link>http://www.tdtsh.com/archives/3/</link>
+      <link>http://tdtsh.github.io/archives/3/</link>
       <pubDate>Tue, 12 May 2009 09:19:02 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3/</guid>
+      <guid>http://tdtsh.github.io/archives/3/</guid>
       <description>随分前に構築したSubversionサーバがぶっ壊れたので、別のPCに 再構築しました。メモっときます。 ############################################################ @@Berkeley DB 4.5.20 インストール ############################################################ cd /usr/local/src wget http://download.oracle.com/berkeley-db/db-4.5.20.tar.gz tar zxfv db-4.5.20.tar.gz cd</description>
     </item>
     
     <item>
       <title>Google App Engine備忘録</title>
-      <link>http://www.tdtsh.com/archives/4/</link>
+      <link>http://tdtsh.github.io/archives/4/</link>
       <pubDate>Tue, 12 May 2009 00:52:23 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/4/</guid>
+      <guid>http://tdtsh.github.io/archives/4/</guid>
       <description>あんまり興味なかった Google App Engine が Java対応した事で、 自分の中で急浮上。 【TECH WORLD Java対応のクラウド・プラットフォーム「Google App En</description>
     </item>
     

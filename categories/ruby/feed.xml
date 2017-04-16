@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/ruby/</link>
+    <link>http://tdtsh.github.io/categories/ruby/</link>
     <description>Recent content in Ruby on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 28 Feb 2017 13:55:37 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/ruby/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/ruby/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</title>
-      <link>http://www.tdtsh.com/archives/3914/</link>
+      <link>http://tdtsh.github.io/archives/3914/</link>
       <pubDate>Tue, 28 Feb 2017 13:55:37 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3914/</guid>
+      <guid>http://tdtsh.github.io/archives/3914/</guid>
       <description>pm2を再起動したい node.js を Capistrano3 でデプロイする時に pm2 を restart したいです。 単純にこれでもまぁいいのですが、 execute :pm2, &#39;restart&#39;, fetch(:app_name) 予めpm2で目的のアプリケーションが起</description>
     </item>
     

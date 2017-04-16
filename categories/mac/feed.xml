@@ -2,300 +2,300 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/mac/</link>
+    <link>http://tdtsh.github.io/categories/mac/</link>
     <description>Recent content in Mac on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 12 Jan 2017 16:18:52 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/mac/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/mac/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac で Chrome を別プロフィールで多重起動</title>
-      <link>http://www.tdtsh.com/archives/3906/</link>
+      <link>http://tdtsh.github.io/archives/3906/</link>
       <pubDate>Thu, 12 Jan 2017 16:18:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3906/</guid>
+      <guid>http://tdtsh.github.io/archives/3906/</guid>
       <description>Web系の開発とかしてて、複数ユーザでログインしたりしたいとき、Chromeならば通常のウィンドウとシークレットウィンドウの2ついけるけど、</description>
     </item>
     
     <item>
       <title>100均で見つけた Macbook のスタンド</title>
-      <link>http://www.tdtsh.com/archives/3759/</link>
+      <link>http://tdtsh.github.io/archives/3759/</link>
       <pubDate>Sat, 16 Jan 2016 12:26:32 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3759/</guid>
+      <guid>http://tdtsh.github.io/archives/3759/</guid>
       <description>Seria まな板立て Seria (100均) で探してきた、まな板立てです。 Macbookのスタンドに代替出来るかなと思って探したものですが思ったよりフィットし</description>
     </item>
     
     <item>
       <title>Electron (旧Atom Shell)触ってみた</title>
-      <link>http://www.tdtsh.com/archives/3418/</link>
+      <link>http://tdtsh.github.io/archives/3418/</link>
       <pubDate>Sun, 21 Jun 2015 23:30:18 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3418/</guid>
+      <guid>http://tdtsh.github.io/archives/3418/</guid>
       <description>クロスプラットフォーム触ってみた第3弾です。 Electron（旧Atom Shell）は、JavaScript(Node.js)とHTML(含</description>
     </item>
     
     <item>
       <title>Time Capsule と AirMac Express による 1階と2階の快適WiFi拡張</title>
-      <link>http://www.tdtsh.com/archives/3251/</link>
+      <link>http://tdtsh.github.io/archives/3251/</link>
       <pubDate>Wed, 07 May 2014 13:30:51 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3251/</guid>
+      <guid>http://tdtsh.github.io/archives/3251/</guid>
       <description>AirMac Expressとブリッジさせるため、1年後しで念願のTime Capsule 買いました。 去年の春頃、家の2階で仕事する事が多くなってきた時に、1階のeo</description>
     </item>
     
     <item>
       <title>雨だからDockerとかQiitaとか弄ってみた</title>
-      <link>http://www.tdtsh.com/archives/3236/</link>
+      <link>http://tdtsh.github.io/archives/3236/</link>
       <pubDate>Tue, 29 Apr 2014 03:28:14 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3236/</guid>
+      <guid>http://tdtsh.github.io/archives/3236/</guid>
       <description>初Qiitaです。初Dockerです。 HomeBrew で Mac に Docker を入れてみた &amp;#8211; Qiita いやーKobito + Qiita 捗るわー。 今までこの手のメモはGVim + Dropbox + ブログ(w</description>
     </item>
     
     <item>
       <title>Mac に git をインストールする3つの方法</title>
-      <link>http://www.tdtsh.com/archives/2913/</link>
+      <link>http://tdtsh.github.io/archives/2913/</link>
       <pubDate>Sun, 18 Aug 2013 13:00:18 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2913/</guid>
+      <guid>http://tdtsh.github.io/archives/2913/</guid>
       <description>今までSubversionで済ませてきたけど、そろそろ git 使いはじめるかーな人向け。 Macでgit入れる方法は沢山あって、下記の3つ以外にもあ</description>
     </item>
     
     <item>
       <title>iOS用のインスペクタ Reveal をインストール</title>
-      <link>http://www.tdtsh.com/archives/2888/</link>
+      <link>http://tdtsh.github.io/archives/2888/</link>
       <pubDate>Thu, 18 Jul 2013 21:00:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2888/</guid>
+      <guid>http://tdtsh.github.io/archives/2888/</guid>
       <description>iOS用のインスペクタ、Reveal がいいかんじです。 iOSアプリのViewを作る時に。 今はベータ版という事で無料なんですけど、このままでは</description>
     </item>
     
     <item>
       <title>Mac で bootcamp 上の Windows 8 を VMWare に変更 (MSに電話)</title>
-      <link>http://www.tdtsh.com/archives/2882/</link>
+      <link>http://tdtsh.github.io/archives/2882/</link>
       <pubDate>Mon, 15 Jul 2013 21:09:34 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2882/</guid>
+      <guid>http://tdtsh.github.io/archives/2882/</guid>
       <description>経緯まとめ 愛機は Macbook Air Mid 2012 家のWindows機壊れる オレ、これからは完全にマカーになる宣言 Officeとか必要。Mac 版Office使う 無理。</description>
     </item>
     
     <item>
       <title>iPhone / iPad の Safari のリーディングリスト を一括で削除するには</title>
-      <link>http://www.tdtsh.com/archives/2600/</link>
+      <link>http://tdtsh.github.io/archives/2600/</link>
       <pubDate>Fri, 21 Dec 2012 10:50:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2600/</guid>
+      <guid>http://tdtsh.github.io/archives/2600/</guid>
       <description>貧乏なのにガジェット好きと言う事で、iPhone / iPad は16GBか良くて32GBのモデルを使ってます。 最近のビデオかゲームとか、GB単位のコン</description>
     </item>
     
     <item>
       <title>Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール</title>
-      <link>http://www.tdtsh.com/archives/2548/</link>
+      <link>http://tdtsh.github.io/archives/2548/</link>
       <pubDate>Tue, 18 Dec 2012 20:00:03 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2548/</guid>
+      <guid>http://tdtsh.github.io/archives/2548/</guid>
       <description>そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ</description>
     </item>
     
     <item>
       <title>iMac 21.5インチ 開封の儀</title>
-      <link>http://www.tdtsh.com/archives/2523/</link>
+      <link>http://tdtsh.github.io/archives/2523/</link>
       <pubDate>Sat, 08 Dec 2012 12:54:29 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2523/</guid>
+      <guid>http://tdtsh.github.io/archives/2523/</guid>
       <description>家の（と言うか嫁の）パソコンが相当遅くて使い物にならない。 セールで買ったThinkPad 60e なんだけど OSが Vista と言うのがアレでした。 なのでそろ</description>
     </item>
     
     <item>
       <title>Time Machine は &amp;#8220;Time Capsule&amp;#8221; へのバックアップを完了できませんでした。の対処</title>
-      <link>http://www.tdtsh.com/archives/2503/</link>
+      <link>http://tdtsh.github.io/archives/2503/</link>
       <pubDate>Tue, 27 Nov 2012 12:38:12 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2503/</guid>
+      <guid>http://tdtsh.github.io/archives/2503/</guid>
       <description>Macbook Air を使い始めてはや1年ちょい。最近導入した Time Capsule の便利さを実感しています。 Windows時代は、バッチで重要なファイル達を昼休みにクラウド・</description>
     </item>
     
     <item>
       <title>Mac OS X で WinSCP みたいな Transmit、他Web開発系ツール</title>
-      <link>http://www.tdtsh.com/archives/2443/</link>
+      <link>http://tdtsh.github.io/archives/2443/</link>
       <pubDate>Wed, 17 Oct 2012 11:14:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2443/</guid>
+      <guid>http://tdtsh.github.io/archives/2443/</guid>
       <description>にわかマカーの自分としては最初は気にならないけど、使い込んでいく内にWindowsにあった便利なソフトウェア達が恋しくなります。 例えば Subversion とか</description>
     </item>
     
     <item>
       <title>別のMacで作った XCodeのプロジェクトで Valid signin identity not found とか怒られる</title>
-      <link>http://www.tdtsh.com/archives/2421/</link>
+      <link>http://tdtsh.github.io/archives/2421/</link>
       <pubDate>Mon, 15 Oct 2012 12:41:12 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2421/</guid>
+      <guid>http://tdtsh.github.io/archives/2421/</guid>
       <description>仕事用のMBAを新しくしたんで、新MBAはTimeCapsuleのバックアップから復元しました。 いやすごいですね。iPhoneみたいですね。</description>
     </item>
     
     <item>
       <title>Macbook Air の SSD 容量不足と /.MobileBackups.trash</title>
-      <link>http://www.tdtsh.com/archives/2407/</link>
+      <link>http://tdtsh.github.io/archives/2407/</link>
       <pubDate>Mon, 01 Oct 2012 11:32:14 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2407/</guid>
+      <guid>http://tdtsh.github.io/archives/2407/</guid>
       <description>Macbook Air を使い始めて結構経ちますけど、128GBあれば余裕とか思っていたSSDがいつもいっぱいいっぱいです。 最初は調子乗って iPhotoやiTu</description>
     </item>
     
     <item>
       <title>App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順</title>
-      <link>http://www.tdtsh.com/archives/2334/</link>
+      <link>http://tdtsh.github.io/archives/2334/</link>
       <pubDate>Fri, 28 Sep 2012 11:56:30 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2334/</guid>
+      <guid>http://tdtsh.github.io/archives/2334/</guid>
       <description>iPhone というか iOSアプリ開発しリリースをする上で避けて通れないプロビジョニング・プロファイルの作成。アプリ開発者は元より、開発はしないけど発注</description>
     </item>
     
     <item>
       <title>Apple Developer 登録 (法人) の手順 その1 (DUNS登録まで)</title>
-      <link>http://www.tdtsh.com/archives/2282/</link>
+      <link>http://tdtsh.github.io/archives/2282/</link>
       <pubDate>Mon, 24 Sep 2012 11:10:10 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2282/</guid>
+      <guid>http://tdtsh.github.io/archives/2282/</guid>
       <description>Apple Developer登録を法人で行った時の備忘録です。 流れを画面キャプチャ取ってみました。すぐ陳腐化すると思いますが、2012年9月現在はこ</description>
     </item>
     
     <item>
       <title>Mac OS X の Finder (TotalFinder) で  dotファイル を見る</title>
-      <link>http://www.tdtsh.com/archives/2251/</link>
+      <link>http://tdtsh.github.io/archives/2251/</link>
       <pubDate>Tue, 11 Sep 2012 21:09:10 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2251/</guid>
+      <guid>http://tdtsh.github.io/archives/2251/</guid>
       <description>特に eclipse に限った話でも無いんですが、Mac OS X の Finder で dotファイルとか出したい事けっこうあるんです。 eclipse とかの設定が隠しファイル ( .classp</description>
     </item>
     
     <item>
       <title>話題の t.free(テザーフリー) で macbookair &#43; iPhone4 (SB) でテザリングしてみた</title>
-      <link>http://www.tdtsh.com/archives/2046/</link>
+      <link>http://tdtsh.github.io/archives/2046/</link>
       <pubDate>Tue, 24 Jul 2012 15:10:23 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2046/</guid>
+      <guid>http://tdtsh.github.io/archives/2046/</guid>
       <description>話題のt.free(テザーフリー)をmacbook air (late 2010)にインストールして、iPhone 4 (SB)で試してみました。このブログもt.</description>
     </item>
     
     <item>
       <title>mac os x で XCode 4.3 を入れたら GitBox から FileMerge が起動しない</title>
-      <link>http://www.tdtsh.com/archives/1860/</link>
+      <link>http://tdtsh.github.io/archives/1860/</link>
       <pubDate>Mon, 25 Jun 2012 10:47:37 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1860/</guid>
+      <guid>http://tdtsh.github.io/archives/1860/</guid>
       <description>Mac os x で gitクライアントと言えば、にわかマカーな私でもGitBoxです。 GitBox 先日、XCode 4.3を入れました。そろそろiOSアプリ開発本気</description>
     </item>
     
     <item>
       <title>Mac OS X で eclipse のコンテンツ・アシスト</title>
-      <link>http://www.tdtsh.com/archives/1847/</link>
+      <link>http://tdtsh.github.io/archives/1847/</link>
       <pubDate>Thu, 24 May 2012 21:20:27 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1847/</guid>
+      <guid>http://tdtsh.github.io/archives/1847/</guid>
       <description>Windows の eclipse で手癖になっているものの1つに、Ctrl+1のクイック・フィックスとCtrl＋Spaceでのコンテンツ・アシストがあります。 Mac OS Xでは</description>
     </item>
     
     <item>
       <title>新しいiPad で DisplayPad 使ってみた</title>
-      <link>http://www.tdtsh.com/archives/1747/</link>
+      <link>http://tdtsh.github.io/archives/1747/</link>
       <pubDate>Sat, 24 Mar 2012 03:48:12 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1747/</guid>
+      <guid>http://tdtsh.github.io/archives/1747/</guid>
       <description>新しいiPad、画面が綺麗でいいですね。 特にオライリーとかのpdf本が実に読みやすくて嬉しいです。 紙と遜色ないレベルです。 産経新聞も、拡大し</description>
     </item>
     
     <item>
       <title>Apple Wireless Keyboard を買って iPad を待ってる</title>
-      <link>http://www.tdtsh.com/archives/1744/</link>
+      <link>http://tdtsh.github.io/archives/1744/</link>
       <pubDate>Thu, 15 Mar 2012 13:25:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1744/</guid>
+      <guid>http://tdtsh.github.io/archives/1744/</guid>
       <description>解禁と同時に予約した iPad (3rd) を待つ毎日。 Apple Storeは混んでたという噂を聞いたけど、iPhoneのApple Storeアプリからならサクっと予約</description>
     </item>
     
     <item>
       <title>いますぐインス！ au のスマートフォン で iCloud のフォトストリームみたいなアプリ  (au one Photo Air)</title>
-      <link>http://www.tdtsh.com/archives/1656/</link>
+      <link>http://tdtsh.github.io/archives/1656/</link>
       <pubDate>Mon, 06 Feb 2012 13:30:39 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1656/</guid>
+      <guid>http://tdtsh.github.io/archives/1656/</guid>
       <description>au by KDDI の Android なスマホ（auだからスマホンと言うべきか）には iCloud が無いんで、 写真をパソコンに取り込むのが面倒だという貴兄に。 あなたの思い出をカンタ</description>
     </item>
     
     <item>
       <title>macvim-kaoriya が良さげ</title>
-      <link>http://www.tdtsh.com/archives/1568/</link>
+      <link>http://tdtsh.github.io/archives/1568/</link>
       <pubDate>Sat, 03 Dec 2011 21:30:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1568/</guid>
+      <guid>http://tdtsh.github.io/archives/1568/</guid>
       <description>WindowsでKaoriya版vimを使っていてそのままMacで同じような環境を手に入れたい方向け。 macvim-kaoriya &amp;#8211; MacVim KaoriYa &amp;#8211; Google Project Hosting あるもんですねー。 ここ</description>
     </item>
     
     <item>
       <title>windows機 ユーザによる mac os x 備忘録</title>
-      <link>http://www.tdtsh.com/archives/1557/</link>
+      <link>http://tdtsh.github.io/archives/1557/</link>
       <pubDate>Sat, 03 Dec 2011 01:13:41 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1557/</guid>
+      <guid>http://tdtsh.github.io/archives/1557/</guid>
       <description>前の記事 Windows使いが Macbook Air でいきなりつまずいた4つのこと 普段の仕事での開発環境は ThinkPad (Windows XP)です。 テキストエディタのvim (Kaoriy</description>
     </item>
     
     <item>
       <title>iMessage と Facetime にこめたAppleの真の意図とは</title>
-      <link>http://www.tdtsh.com/archives/1534/</link>
+      <link>http://tdtsh.github.io/archives/1534/</link>
       <pubDate>Tue, 29 Nov 2011 21:25:57 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1534/</guid>
+      <guid>http://tdtsh.github.io/archives/1534/</guid>
       <description>iPhone の SMS がしれっと「メッセージ」に名称変更されてしばらく経ちます。 未だに、SMSのメッセージが水色になるのなんで？とかたまに聞かれます。 iPhone が W</description>
     </item>
     
     <item>
       <title>eclipse の viPlugin と キーバインドの変更</title>
-      <link>http://www.tdtsh.com/archives/1441/</link>
+      <link>http://tdtsh.github.io/archives/1441/</link>
       <pubDate>Fri, 04 Nov 2011 07:28:39 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1441/</guid>
+      <guid>http://tdtsh.github.io/archives/1441/</guid>
       <description>Windows機でテキスト書くときはgvimです。 なので、つい j とか k とか Ctrl+FとかCtrl+B とか打ってしまいます。 その点、Goog</description>
     </item>
     
     <item>
       <title>iOS5 での iPhone/iPad/Mac の連絡先と Google Contact の同期で悩む</title>
-      <link>http://www.tdtsh.com/archives/1404/</link>
+      <link>http://tdtsh.github.io/archives/1404/</link>
       <pubDate>Tue, 25 Oct 2011 22:58:09 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1404/</guid>
+      <guid>http://tdtsh.github.io/archives/1404/</guid>
       <description>以前、GMailの連絡先(Google Contacts)をiPhone/iPadの連絡帳に同期する手順について書きました。 その続報なんですけ</description>
     </item>
     
     <item>
       <title>Macbook Air 13” のケース</title>
-      <link>http://www.tdtsh.com/archives/1390/</link>
+      <link>http://tdtsh.github.io/archives/1390/</link>
       <pubDate>Sun, 23 Oct 2011 05:04:45 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1390/</guid>
+      <guid>http://tdtsh.github.io/archives/1390/</guid>
       <description>最近Macbook Airの話ばっかりです。 改めて自分のブログを見返すと、定期的にデジタルガジェットのブームがやってきている感じで恥ずかしいで</description>
     </item>
     
     <item>
       <title>EVO と  Macbook Air が有ればマクドで仕事できますよね</title>
-      <link>http://www.tdtsh.com/archives/1370/</link>
+      <link>http://tdtsh.github.io/archives/1370/</link>
       <pubDate>Fri, 21 Oct 2011 15:26:16 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1370/</guid>
+      <guid>http://tdtsh.github.io/archives/1370/</guid>
       <description>いや、そんなにMac使い込んではいないですけど。 Google App Engine での開発とか、Macでブラウザとeclipse があれば、あとはWiFi か HTC EVOでテザ</description>
     </item>
     
     <item>
       <title>Mac OS X と eclipse に頑張って慣れていこう</title>
-      <link>http://www.tdtsh.com/archives/1366/</link>
+      <link>http://tdtsh.github.io/archives/1366/</link>
       <pubDate>Fri, 14 Oct 2011 15:42:31 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1366/</guid>
+      <guid>http://tdtsh.github.io/archives/1366/</guid>
       <description>相変わらず appengine とか弄っています。 自分のパソコンは持ってないんで、会社のWindows機 (ThinkPad X300)でコード書いてます。 デプロイとかeclips</description>
     </item>
     

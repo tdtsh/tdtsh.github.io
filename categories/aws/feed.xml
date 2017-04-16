@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aws on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/aws/</link>
+    <link>http://tdtsh.github.io/categories/aws/</link>
     <description>Recent content in Aws on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 10 Jul 2015 00:30:09 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/aws/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/aws/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node.js から AWS の SES でメール送る</title>
-      <link>http://www.tdtsh.com/archives/3605/</link>
+      <link>http://tdtsh.github.io/archives/3605/</link>
       <pubDate>Fri, 10 Jul 2015 00:30:09 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3605/</guid>
+      <guid>http://tdtsh.github.io/archives/3605/</guid>
       <description>AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ</description>
     </item>
     
     <item>
       <title>AWSのインスタンス監視に mackerel を使ってみた</title>
-      <link>http://www.tdtsh.com/archives/3316/</link>
+      <link>http://tdtsh.github.io/archives/3316/</link>
       <pubDate>Tue, 08 Jul 2014 12:29:43 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3316/</guid>
+      <guid>http://tdtsh.github.io/archives/3316/</guid>
       <description>先日参加させて頂いた JAWS-UG ではてなの田中さんが紹介してくださっていたやつ、早速試しました。 mackerelです。鯖です。 マーケレゥとかじゃないで</description>
     </item>
     
     <item>
       <title>夏のJAWS-UG 三都物語 2014に行った話</title>
-      <link>http://www.tdtsh.com/archives/3322/</link>
+      <link>http://tdtsh.github.io/archives/3322/</link>
       <pubDate>Mon, 07 Jul 2014 13:00:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3322/</guid>
+      <guid>http://tdtsh.github.io/archives/3322/</guid>
       <description>夏のJAWS-UG 三都物語 2014に参加してきたんです。 はてなCTOの田中慎司さんから、AWSとmackerelで実践するImmutable</description>
     </item>
     
     <item>
       <title>実家で暇だからherokuを弄ってみたメモ置き場</title>
-      <link>http://www.tdtsh.com/archives/2488/</link>
+      <link>http://tdtsh.github.io/archives/2488/</link>
       <pubDate>Sat, 10 Nov 2012 06:30:50 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2488/</guid>
+      <guid>http://tdtsh.github.io/archives/2488/</guid>
       <description>最近のナウなヤングはHeroku で Ruby on rails なんでしょう？ Herokuとは、Ruby on Railsを対象とした、Amazon Web Services（A</description>
     </item>
     
     <item>
       <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
-      <link>http://www.tdtsh.com/archives/1095/</link>
+      <link>http://tdtsh.github.io/archives/1095/</link>
       <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1095/</guid>
+      <guid>http://tdtsh.github.io/archives/1095/</guid>
       <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
     </item>
     
     <item>
       <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
-      <link>http://www.tdtsh.com/archives/1076/</link>
+      <link>http://tdtsh.github.io/archives/1076/</link>
       <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1076/</guid>
+      <guid>http://tdtsh.github.io/archives/1076/</guid>
       <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
     </item>
     
     <item>
       <title>Amazon Web Services のマイクロインスタンス、月額約1300円</title>
-      <link>http://www.tdtsh.com/archives/919/</link>
+      <link>http://tdtsh.github.io/archives/919/</link>
       <pubDate>Fri, 10 Sep 2010 02:22:49 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/919/</guid>
+      <guid>http://tdtsh.github.io/archives/919/</guid>
       <description>Amazon Web Services が攻勢にでています。 Amazonクラウドから、1時間あたり約1.8円（Linux/Unixの場合＄0.02、Windowsで$0.03</description>
     </item>
     
     <item>
       <title>仮のWEBシステムを、脳内で GAE/J に移行してみる</title>
-      <link>http://www.tdtsh.com/archives/421/</link>
+      <link>http://tdtsh.github.io/archives/421/</link>
       <pubDate>Sun, 25 Oct 2009 16:00:15 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/421/</guid>
+      <guid>http://tdtsh.github.io/archives/421/</guid>
       <description>脳内で、月間PVが300万PV位のソーシャルメディアを、Google App Engine for Java にのせてみる。 ■ストレージ容量 無償は1GBまで。 コンテンツ、画像</description>
     </item>
     
     <item>
       <title>Amazon EC2 EBS (Elastic Block Store)はじめの一歩</title>
-      <link>http://www.tdtsh.com/archives/26/</link>
+      <link>http://tdtsh.github.io/archives/26/</link>
       <pubDate>Thu, 28 May 2009 04:31:02 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/26/</guid>
+      <guid>http://tdtsh.github.io/archives/26/</guid>
       <description>EBSはAmazon EC2用の外付けHDDみたいなものです。 利用料金 仮想ディスク容量： $0.10 / 1GB リクエスト(I/O) ： $0.10 / 100万I/Oリクエス</description>
     </item>
     
     <item>
       <title>Amazon EC2 はじめの一歩</title>
-      <link>http://www.tdtsh.com/archives/20/</link>
+      <link>http://tdtsh.github.io/archives/20/</link>
       <pubDate>Thu, 21 May 2009 04:14:33 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/20/</guid>
+      <guid>http://tdtsh.github.io/archives/20/</guid>
       <description>Amazon EC2を試してみたので、そのメモです。 環境構築とAMI起動、S3に保存までです。 クレジットカード片手に、Amazon EC2の申し込みをしま</description>
     </item>
     
     <item>
       <title>Amazon EC2 を始める為に必要なURLまとめ</title>
-      <link>http://www.tdtsh.com/archives/18/</link>
+      <link>http://tdtsh.github.io/archives/18/</link>
       <pubDate>Wed, 20 May 2009 11:44:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/18/</guid>
+      <guid>http://tdtsh.github.io/archives/18/</guid>
       <description>EC2にアカウントを作成する。 Amazon Elastic Compute Cloud (Amazon EC2) http://aws.amazon.com/ec2/ Amazon Web Services ポータル https://aws-portal.amazon.com/gp/aws/developer/account/index.html?ie=UTF8&amp;#38;action=activity-summary Firefoxのアドオンをインストール( EC2 と S3 ) Elasticfox (Firefox Extension for Amazon EC2) http://developer.amazonwebservices.com/connect/entry.jspa?externalID=609 S3FOX (Firefox Extension for Amazon S3) http://www.s3fox.net/ :[Amazon EC2</description>
     </item>
     
     <item>
       <title>仮のWEBシステムを、脳内でAmazon EC2に移行してみる</title>
-      <link>http://www.tdtsh.com/archives/19/</link>
+      <link>http://tdtsh.github.io/archives/19/</link>
       <pubDate>Wed, 20 May 2009 02:49:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/19/</guid>
+      <guid>http://tdtsh.github.io/archives/19/</guid>
       <description>仮のWEBシステムを、脳内でAmazon EC2に移行してみる。 ■EC2 インスタンス 次の3つから選択する。Smallで充分。 Small 1.7GB / 1CPU / 160GB HDD / 32bit</description>
     </item>
     

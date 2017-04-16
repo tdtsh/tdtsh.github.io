@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ios on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/ios/</link>
+    <link>http://tdtsh.github.io/categories/ios/</link>
     <description>Recent content in Ios on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 05 Jul 2015 23:37:01 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/ios/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/ios/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Titanium使いが JavaScriptで書けるつながりで Native Script 触ってみた</title>
-      <link>http://www.tdtsh.com/archives/3544/</link>
+      <link>http://tdtsh.github.io/archives/3544/</link>
       <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3544/</guid>
+      <guid>http://tdtsh.github.io/archives/3544/</guid>
       <description>クロスプラットフォームを触ってみたシリーズの第6弾は、Native Scriptです。 前回のReact Native に続き、JavaScriptで書ける繋</description>
     </item>
     
     <item>
       <title>FBライクなスライド式メニューのライブラリ、サンプル</title>
-      <link>http://www.tdtsh.com/archives/2831/</link>
+      <link>http://tdtsh.github.io/archives/2831/</link>
       <pubDate>Sun, 12 May 2013 14:32:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2831/</guid>
+      <guid>http://tdtsh.github.io/archives/2831/</guid>
       <description>Facebookでお馴染みの画面が横に半スライドしてメニューが出るアレ、 小さい画面でメニューをスッキリ見せるという意味でも、縦長になったiP</description>
     </item>
     
     <item>
       <title>iOSアプリで QRコードを扱う (QRコード ライブラリ ZXing)</title>
-      <link>http://www.tdtsh.com/archives/2545/</link>
+      <link>http://tdtsh.github.io/archives/2545/</link>
       <pubDate>Sun, 16 Dec 2012 20:00:36 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2545/</guid>
+      <guid>http://tdtsh.github.io/archives/2545/</guid>
       <description>Android界隈でQRコードを読み込むライブラリといえばZXingがデファクトの様ですが、 iOS でもいけるらしいです。 zxing &amp;#8211; Multi-format 1D/2D barcode image processing library with clients for Android,</description>
     </item>
     
     <item>
       <title>XCode で Vim風キーバインドを実現するXVim</title>
-      <link>http://www.tdtsh.com/archives/2465/</link>
+      <link>http://tdtsh.github.io/archives/2465/</link>
       <pubDate>Fri, 19 Oct 2012 12:01:47 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2465/</guid>
+      <guid>http://tdtsh.github.io/archives/2465/</guid>
       <description>いやタイトルそのまんまですけど。 XVim で XCode のエディタのキーバインドを Vim風に出来るんです。 個人的にコレすごい助かります。 インストール方法などは</description>
     </item>
     
     <item>
       <title>_OBJC_CLASS_$_referenced from とか出てビルドできない</title>
-      <link>http://www.tdtsh.com/archives/2437/</link>
+      <link>http://tdtsh.github.io/archives/2437/</link>
       <pubDate>Thu, 11 Oct 2012 11:09:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2437/</guid>
+      <guid>http://tdtsh.github.io/archives/2437/</guid>
       <description>なんらかのフレームワークをヘッダーファイルでImportしておいて、プロジェクトにフレームワークの追加を忘れると「_OBJC_CLASS_$</description>
     </item>
     
     <item>
       <title>iPhone 5 (iOS6) にしたら Safari のブックマークが消えた場合の対処</title>
-      <link>http://www.tdtsh.com/archives/2415/</link>
+      <link>http://tdtsh.github.io/archives/2415/</link>
       <pubDate>Thu, 04 Oct 2012 12:26:44 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2415/</guid>
+      <guid>http://tdtsh.github.io/archives/2415/</guid>
       <description>念願の iPhone 5 を手に入れ、やっぱLTE早いわヒャッホー！！とか思っていたのもつかの間、Safariを使い出して異変に気が付きました。 ブックマーク</description>
     </item>
     

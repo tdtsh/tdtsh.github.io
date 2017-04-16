@@ -2,723 +2,723 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google App Engine on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/google-app-engine/</link>
+    <link>http://tdtsh.github.io/categories/google-app-engine/</link>
     <description>Recent content in Google App Engine on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 27 Aug 2012 11:20:47 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/google-app-engine/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/google-app-engine/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Apps Script のメモ</title>
-      <link>http://www.tdtsh.com/archives/2111/</link>
+      <link>http://tdtsh.github.io/archives/2111/</link>
       <pubDate>Mon, 27 Aug 2012 11:20:47 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2111/</guid>
+      <guid>http://tdtsh.github.io/archives/2111/</guid>
       <description>先日 appengineの開発がブラウザ上で完結する Cloud IDE eXo’sについて書きましたが、 遅ればせながらGoogle Apps Scriptを少し触ってみ</description>
     </item>
     
     <item>
       <title>Google App Engine で PageSpeed Service を利用する</title>
-      <link>http://www.tdtsh.com/archives/2154/</link>
+      <link>http://tdtsh.github.io/archives/2154/</link>
       <pubDate>Mon, 20 Aug 2012 11:00:29 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2154/</guid>
+      <guid>http://tdtsh.github.io/archives/2154/</guid>
       <description>PageSpeed Serviceは自動的にアプリケーションのパフォーマンスを最適化するGoogleのサービスです。 PageSpeedってサイトのパフォーマン</description>
     </item>
     
     <item>
       <title>appengine java の urlFetch で Basic認証を使う (Low Level API版)</title>
-      <link>http://www.tdtsh.com/archives/2078/</link>
+      <link>http://tdtsh.github.io/archives/2078/</link>
       <pubDate>Tue, 31 Jul 2012 21:23:39 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2078/</guid>
+      <guid>http://tdtsh.github.io/archives/2078/</guid>
       <description>随分と前にGAE/J の Urlフェッチについて書きましたが、 今回は、Basic認証のページをフェッチする機会があったのでメモっておきます。 Low Level</description>
     </item>
     
     <item>
       <title>appengineの開発がブラウザ上で完結する Cloud IDE (eXo)</title>
-      <link>http://www.tdtsh.com/archives/2014/</link>
+      <link>http://tdtsh.github.io/archives/2014/</link>
       <pubDate>Sun, 22 Jul 2012 21:10:27 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2014/</guid>
+      <guid>http://tdtsh.github.io/archives/2014/</guid>
       <description>以前、Google App Engine/Java で動くEtupirkaCMSが良い というエントリを書きましたが、更に簡単なやつがありました。 Cloud IDE (eXo) です。 会員登録をして</description>
     </item>
     
     <item>
       <title>appengine java で backends で DatastoreTimeoutException</title>
-      <link>http://www.tdtsh.com/archives/1993/</link>
+      <link>http://tdtsh.github.io/archives/1993/</link>
       <pubDate>Wed, 18 Jul 2012 21:05:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1993/</guid>
+      <guid>http://tdtsh.github.io/archives/1993/</guid>
       <description>&amp;nbsp; &amp;nbsp; 前回ちょろっと書きましたが、backends で DatastoreTimeoutException が発生して結構ハマりました。 &amp;nbsp; &amp;nbsp; コチラのまとめをブログに書いておきます。 Backends での Query で DatastoreTimeoutException &amp;#8211; Google</description>
     </item>
     
     <item>
       <title>appengine java &#43; slim3 で 日付を扱う</title>
-      <link>http://www.tdtsh.com/archives/1963/</link>
+      <link>http://tdtsh.github.io/archives/1963/</link>
       <pubDate>Mon, 16 Jul 2012 21:21:14 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1963/</guid>
+      <guid>http://tdtsh.github.io/archives/1963/</guid>
       <description>&amp;nbsp; Google App Engine / Java で 日付を扱う時、例えば月末から月初までを対象としてDatastoreのQueryのフィルタを作りたいとかそんな時、UTCとJST</description>
     </item>
     
     <item>
       <title>appengine のローカル開発環境 (eclipse) をスマートフォンで見る</title>
-      <link>http://www.tdtsh.com/archives/1989/</link>
+      <link>http://tdtsh.github.io/archives/1989/</link>
       <pubDate>Wed, 11 Jul 2012 07:21:33 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1989/</guid>
+      <guid>http://tdtsh.github.io/archives/1989/</guid>
       <description>最近 appengine の開発はすっかり Macbook Air + eclipse + GitBox に移行しました。 一応Windows機にも eclipse と TortoiseGitを入れてスタンバってますけど全然使わなく</description>
     </item>
     
     <item>
       <title>appengine のがImage Service の getServingUrl が 非推奨</title>
-      <link>http://www.tdtsh.com/archives/1954/</link>
+      <link>http://tdtsh.github.io/archives/1954/</link>
       <pubDate>Sun, 08 Jul 2012 21:33:38 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1954/</guid>
+      <guid>http://tdtsh.github.io/archives/1954/</guid>
       <description>Google App Engine の 画像サービスは何気に便利なのでめっちゃ多用していますけど、多用しているImagesServiceのgetServingUrlメソッド</description>
     </item>
     
     <item>
       <title>今更ながらGAE/Jでbackendsの無料枠を活用する</title>
-      <link>http://www.tdtsh.com/archives/1909/</link>
+      <link>http://tdtsh.github.io/archives/1909/</link>
       <pubDate>Sun, 08 Jul 2012 14:01:49 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1909/</guid>
+      <guid>http://tdtsh.github.io/archives/1909/</guid>
       <description>去年のGoogle I/Oの頃に発表されてから早1年、いままで放置してきた Google App Engine の Backends を使い始めました。 無料枠があるとは聞いていましたし興味もあ</description>
     </item>
     
     <item>
       <title>Google App Engine が sdk 1.7.0 で独自ドメインでのSSLをサポート</title>
-      <link>http://www.tdtsh.com/archives/1883/</link>
+      <link>http://tdtsh.github.io/archives/1883/</link>
       <pubDate>Wed, 04 Jul 2012 12:00:49 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1883/</guid>
+      <guid>http://tdtsh.github.io/archives/1883/</guid>
       <description>appengine独自ドメインでSSL GAE/JでSSLがサポートされました。 SSL for a Custom Domain &amp;#8211; Google App Engine — Google Developers for businessの発表から2年、Tr</description>
     </item>
     
     <item>
       <title>appengine のカスタムインデックスに含まれるプロパティのインデックスを削除してはいけない</title>
-      <link>http://www.tdtsh.com/archives/1838/</link>
+      <link>http://tdtsh.github.io/archives/1838/</link>
       <pubDate>Wed, 25 Apr 2012 01:00:26 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1838/</guid>
+      <guid>http://tdtsh.github.io/archives/1838/</guid>
       <description>最近のGoogle App Engineでは、課金額節約のために、不要なシングルプロパティインデックスを削除するチューニングを行いますよね。 でも何で</description>
     </item>
     
     <item>
       <title>appengine の Mail APIで bounce mailが受信できなくなっている</title>
-      <link>http://www.tdtsh.com/archives/1771/</link>
+      <link>http://tdtsh.github.io/archives/1771/</link>
       <pubDate>Mon, 09 Apr 2012 21:30:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1771/</guid>
+      <guid>http://tdtsh.github.io/archives/1771/</guid>
       <description>いつの間にか appengine の Mail APIで bounce mailが受信できなくなっていて、まだ治ってない感じです。 不達メールのエラーメールが届かない &amp;#8211; Google-App-Engine-Japan | Google グループ 凄く</description>
     </item>
     
     <item>
       <title>appengine (java) のメンテナンスへの対応など</title>
-      <link>http://www.tdtsh.com/archives/1760/</link>
+      <link>http://tdtsh.github.io/archives/1760/</link>
       <pubDate>Sun, 08 Apr 2012 21:30:41 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1760/</guid>
+      <guid>http://tdtsh.github.io/archives/1760/</guid>
       <description>久しぶりにGoogle Code にあった Appengine のドキュメント達を見ようとしたら、Google Developer の方にリダイレクトされました。 引越しは着々と進んでいるよう</description>
     </item>
     
     <item>
       <title>appengine の Datastore Adminのページが真っ白</title>
-      <link>http://www.tdtsh.com/archives/1727/</link>
+      <link>http://tdtsh.github.io/archives/1727/</link>
       <pubDate>Wed, 07 Mar 2012 09:40:04 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1727/</guid>
+      <guid>http://tdtsh.github.io/archives/1727/</guid>
       <description>いつのまにかappengineの特定のアプリで少し前まで見られていたDatastore Admin のページが見られない様になっていました。 Internet Explo</description>
     </item>
     
     <item>
       <title>備忘録 scenic3 のPageクラスのアノテーション達</title>
-      <link>http://www.tdtsh.com/archives/1548/</link>
+      <link>http://tdtsh.github.io/archives/1548/</link>
       <pubDate>Fri, 02 Dec 2011 13:00:43 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1548/</guid>
+      <guid>http://tdtsh.github.io/archives/1548/</guid>
       <description>appengine java + slim3 の開発では、scenic3にお世話になっています。 scenic3は t2 frameworkのようなPageクラスをslim3で実現するs</description>
     </item>
     
     <item>
       <title>遅ればせながらGAE/J で TaskQueue を試す</title>
-      <link>http://www.tdtsh.com/archives/1523/</link>
+      <link>http://tdtsh.github.io/archives/1523/</link>
       <pubDate>Mon, 28 Nov 2011 21:30:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1523/</guid>
+      <guid>http://tdtsh.github.io/archives/1523/</guid>
       <description>&amp;nbsp; google appengine / javaの話ですけど。 バッチとかならcron で何とかなるもんだからいままで曖昧にしてきた訳ですが、そろそろ TaskQueue を弄っていこうと思います</description>
     </item>
     
     <item>
       <title>appengine の billing history が何かおかしい (おかしくなかった。追記アリ)</title>
-      <link>http://www.tdtsh.com/archives/1501/</link>
+      <link>http://tdtsh.github.io/archives/1501/</link>
       <pubDate>Fri, 25 Nov 2011 15:30:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1501/</guid>
+      <guid>http://tdtsh.github.io/archives/1501/</guid>
       <description>GAEが新料金になってから、Billing Historyをチェックするのが日課になっています。 いや、今までもそうですし、新料金でも充分安いん</description>
     </item>
     
     <item>
       <title>slim3.GlobalTransaction と slim3.Lock がいっぱい</title>
-      <link>http://www.tdtsh.com/archives/1476/</link>
+      <link>http://tdtsh.github.io/archives/1476/</link>
       <pubDate>Tue, 15 Nov 2011 01:34:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1476/</guid>
+      <guid>http://tdtsh.github.io/archives/1476/</guid>
       <description>appengineのDatastoreにいつのまにか slim3.GlobalTransaction と slim3.Lock というEntityが出来ていました。とくにslim3.Lockがいっぱい。 Slim</description>
     </item>
     
     <item>
       <title>409 Conflict No transaction is in progress で appengine にデプロイできない</title>
-      <link>http://www.tdtsh.com/archives/1455/</link>
+      <link>http://tdtsh.github.io/archives/1455/</link>
       <pubDate>Fri, 11 Nov 2011 04:20:38 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1455/</guid>
+      <guid>http://tdtsh.github.io/archives/1455/</guid>
       <description>今日、GAE/Jでeclipseからデプロイしようとすると、失敗しました。 ダイアログはこんな感じです。 Unable to update app: Error posting to URL: https://appengine.google.com/api/appversion/startserving?app_id=XXXXXXX&amp;version=XXXX&amp; 409 Conflict No transaction is in progress. 前にも</description>
     </item>
     
     <item>
       <title>appengine 1.5.5 の Cross-Group Transactions は Entity Group が 5つまでしか扱えない</title>
-      <link>http://www.tdtsh.com/archives/1448/</link>
+      <link>http://tdtsh.github.io/archives/1448/</link>
       <pubDate>Wed, 09 Nov 2011 05:01:28 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1448/</guid>
+      <guid>http://tdtsh.github.io/archives/1448/</guid>
       <description>先日 slim3 1.0.14 とグローバルトランザクションについて書きました。 その続編です。 slim3 の Datastore.beginGlobalTransaction() とか deprecated になってます。 やはりフツーのDatastore.begin</description>
     </item>
     
     <item>
       <title>Slim3 1.0.14 とCross-Group Transactions</title>
-      <link>http://www.tdtsh.com/archives/1430/</link>
+      <link>http://tdtsh.github.io/archives/1430/</link>
       <pubDate>Wed, 02 Nov 2011 10:53:24 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1430/</guid>
+      <guid>http://tdtsh.github.io/archives/1430/</guid>
       <description>Slim3が1.0.14になってる訳ですが、手もとのeclipseを確認したら、slim3-1.0.12.jarじゃないですか。 Slim3 Eclipse Plug</description>
     </item>
     
     <item>
       <title>急にeclipse から appengine にデプロイできなくなりました</title>
-      <link>http://www.tdtsh.com/archives/1417/</link>
+      <link>http://tdtsh.github.io/archives/1417/</link>
       <pubDate>Fri, 28 Oct 2011 11:25:58 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1417/</guid>
+      <guid>http://tdtsh.github.io/archives/1417/</guid>
       <description>なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。 An internal error occurred during Deploying %APPNAME% to Google NullPointerException 理</description>
     </item>
     
     <item>
       <title>appengine (java) でEメールを送信するとき、ヘッダの送信日時をGMT&#43;900にしたい</title>
-      <link>http://www.tdtsh.com/archives/1406/</link>
+      <link>http://tdtsh.github.io/archives/1406/</link>
       <pubDate>Tue, 25 Oct 2011 03:25:14 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1406/</guid>
+      <guid>http://tdtsh.github.io/archives/1406/</guid>
       <description>appengine java で 電子メールを送信する際に、ヘッダのDateをJSTにするにはどうすれば・・・。 タイトルそのまんまなんですけど、今のappengineで</description>
     </item>
     
     <item>
       <title>index が error で appengine にデプロイできないので index を削除</title>
-      <link>http://www.tdtsh.com/archives/1384/</link>
+      <link>http://tdtsh.github.io/archives/1384/</link>
       <pubDate>Sat, 22 Oct 2011 00:10:11 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1384/</guid>
+      <guid>http://tdtsh.github.io/archives/1384/</guid>
       <description>以前WindowsでGAEのインデックス削除しましがが、Macでもやってみました。 以前Windowsでやった時は （pythonのSDKをイン</description>
     </item>
     
     <item>
       <title>EVO と  Macbook Air が有ればマクドで仕事できますよね</title>
-      <link>http://www.tdtsh.com/archives/1370/</link>
+      <link>http://tdtsh.github.io/archives/1370/</link>
       <pubDate>Fri, 21 Oct 2011 15:26:16 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1370/</guid>
+      <guid>http://tdtsh.github.io/archives/1370/</guid>
       <description>いや、そんなにMac使い込んではいないですけど。 Google App Engine での開発とか、Macでブラウザとeclipse があれば、あとはWiFi か HTC EVOでテザ</description>
     </item>
     
     <item>
       <title>Mac OS X と eclipse に頑張って慣れていこう</title>
-      <link>http://www.tdtsh.com/archives/1366/</link>
+      <link>http://tdtsh.github.io/archives/1366/</link>
       <pubDate>Fri, 14 Oct 2011 15:42:31 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1366/</guid>
+      <guid>http://tdtsh.github.io/archives/1366/</guid>
       <description>相変わらず appengine とか弄っています。 自分のパソコンは持ってないんで、会社のWindows機 (ThinkPad X300)でコード書いてます。 デプロイとかeclips</description>
     </item>
     
     <item>
       <title>GAE/J で Python の bulkloader をつかってみる</title>
-      <link>http://www.tdtsh.com/archives/1359/</link>
+      <link>http://tdtsh.github.io/archives/1359/</link>
       <pubDate>Tue, 16 Aug 2011 11:46:29 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1359/</guid>
+      <guid>http://tdtsh.github.io/archives/1359/</guid>
       <description>&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし</description>
     </item>
     
     <item>
       <title>GAE/J slim3 (とscenic3) で .html を静的ファイルじゃなくてリソースとして扱う</title>
-      <link>http://www.tdtsh.com/archives/1333/</link>
+      <link>http://tdtsh.github.io/archives/1333/</link>
       <pubDate>Wed, 10 Aug 2011 10:30:43 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1333/</guid>
+      <guid>http://tdtsh.github.io/archives/1333/</guid>
       <description>&amp;nbsp; 最近わたしは appengineといえば slim3 (とscenic3) がデフォルトになってます。 とある事情で、 appengine (for java)パスが/hogehoge</description>
     </item>
     
     <item>
       <title>GAE/J で OpenID をやってみる（appengine java sdk 1.3.4以降）</title>
-      <link>http://www.tdtsh.com/archives/1315/</link>
+      <link>http://tdtsh.github.io/archives/1315/</link>
       <pubDate>Thu, 23 Jun 2011 04:44:36 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1315/</guid>
+      <guid>http://tdtsh.github.io/archives/1315/</guid>
       <description>去年の9月頃からGoogle App Engine for JavaでのOpenIDについて調べ出して、dyuprojectでやってみたりもしましたが、SDK 1.3.</description>
     </item>
     
     <item>
       <title>eclipse で slim3 のbuild.xmlを開いてもアウトラインに何もでない</title>
-      <link>http://www.tdtsh.com/archives/1285/</link>
+      <link>http://tdtsh.github.io/archives/1285/</link>
       <pubDate>Tue, 24 May 2011 10:05:47 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1285/</guid>
+      <guid>http://tdtsh.github.io/archives/1285/</guid>
       <description>eclipse で slim3 の開発をやるとき、build.xmlを開いて「アウトラインビュー」でコントローラとかモデルとか作れて便利ですよね。 私は手で作っちゃう事</description>
     </item>
     
     <item>
       <title>Google App Engine の Backends で 長時間、大規模な処理が可能に</title>
-      <link>http://www.tdtsh.com/archives/1272/</link>
+      <link>http://tdtsh.github.io/archives/1272/</link>
       <pubDate>Thu, 12 May 2011 02:30:19 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1272/</guid>
+      <guid>http://tdtsh.github.io/archives/1272/</guid>
       <description>Google App Engine 1.5.0 で、Backendsなるものが使える様になったそうですね。 Backends: Until now all App Engine applications have been running on short-lived dynamic instances that we spin up and down in response to application requests. This is great for building scalable web applications, but has a number</description>
     </item>
     
     <item>
       <title>eclipse の Google App Engine プロジェクトを実行した時リモートから見たい</title>
-      <link>http://www.tdtsh.com/archives/1157/</link>
+      <link>http://tdtsh.github.io/archives/1157/</link>
       <pubDate>Thu, 03 Mar 2011 05:06:40 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1157/</guid>
+      <guid>http://tdtsh.github.io/archives/1157/</guid>
       <description>良く忘れるので、メモ。 eclipseを起動 プロジェクトを右クリック [実行&amp;reg;] &amp;#8211; [実行の構成(N)] をクリック 実行構成の左ペインより[</description>
     </item>
     
     <item>
       <title>slim3のバージョンアップをする (1.0.7から1.0.8に更新)</title>
-      <link>http://www.tdtsh.com/archives/1154/</link>
+      <link>http://tdtsh.github.io/archives/1154/</link>
       <pubDate>Wed, 02 Mar 2011 11:04:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1154/</guid>
+      <guid>http://tdtsh.github.io/archives/1154/</guid>
       <description>この手順は私が行ったことの記録として書いたものですので、誤りを含んでいる可能性があります。 実際の手順は、Slim3 日本語サイト(非公式)など</description>
     </item>
     
     <item>
       <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
-      <link>http://www.tdtsh.com/archives/1095/</link>
+      <link>http://tdtsh.github.io/archives/1095/</link>
       <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1095/</guid>
+      <guid>http://tdtsh.github.io/archives/1095/</guid>
       <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
     </item>
     
     <item>
       <title>Google App Engine/Java で動くEtupirkaCMSが良い</title>
-      <link>http://www.tdtsh.com/archives/1090/</link>
+      <link>http://tdtsh.github.io/archives/1090/</link>
       <pubDate>Fri, 04 Feb 2011 11:00:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1090/</guid>
+      <guid>http://tdtsh.github.io/archives/1090/</guid>
       <description>etupirka、イイですね。 EtupirkaCMS 0.1.0 リリース &amp;#8211; やさしいデスマーチ EtupirkaCMS(日本語) 何が凄いって、eclipse も appengine SDKも使わず</description>
     </item>
     
     <item>
       <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
-      <link>http://www.tdtsh.com/archives/1076/</link>
+      <link>http://tdtsh.github.io/archives/1076/</link>
       <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1076/</guid>
+      <guid>http://tdtsh.github.io/archives/1076/</guid>
       <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
     </item>
     
     <item>
       <title>オープンソース徹底活用 Slim3 on Google App Engine for Java</title>
-      <link>http://www.tdtsh.com/archives/902/</link>
+      <link>http://tdtsh.github.io/archives/902/</link>
       <pubDate>Fri, 03 Sep 2010 05:05:24 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/902/</guid>
+      <guid>http://tdtsh.github.io/archives/902/</guid>
       <description>読みました。 オープンソース徹底活用 Slim3 on Google App Engine for Java ひが やすを,小川 信一 Amazonで詳しく見る by AZlink &amp;lt;p&amp;gt; 内容を要約すると、GAEのデータストアはこ</description>
     </item>
     
     <item>
       <title>java の AntiSamyでサニタイズ、任意のHTMLタグを許可しscriptタグとかを無効化</title>
-      <link>http://www.tdtsh.com/archives/883/</link>
+      <link>http://tdtsh.github.io/archives/883/</link>
       <pubDate>Tue, 24 Aug 2010 11:08:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/883/</guid>
+      <guid>http://tdtsh.github.io/archives/883/</guid>
       <description>一般公開するWEBサービスを作る場合、慣れてないと手がかかるのがセキュリティへの配慮です。 Google App Engineとか使っている時点でSQLインジェ</description>
     </item>
     
     <item>
       <title>slim3、Google App Engine for Java 1.3.6 で Blobstore APIをためす</title>
-      <link>http://www.tdtsh.com/archives/864/</link>
+      <link>http://tdtsh.github.io/archives/864/</link>
       <pubDate>Thu, 19 Aug 2010 09:00:42 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/864/</guid>
+      <guid>http://tdtsh.github.io/archives/864/</guid>
       <description>slim3、Google App Engine for Java 1.3.6 で Blobstore API Google App Engine/Java (以下 GAE/J) のBlobstore APIについて調べています。 環境はSlim3 (1.0.5) + Velocity + app engine sdkは1</description>
     </item>
     
     <item>
       <title>Google App Engine (SDK) 1.3.6</title>
-      <link>http://www.tdtsh.com/archives/859/</link>
+      <link>http://tdtsh.github.io/archives/859/</link>
       <pubDate>Thu, 19 Aug 2010 01:32:49 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/859/</guid>
+      <guid>http://tdtsh.github.io/archives/859/</guid>
       <description>1.3.6のSDK、Eclipseのんもリリースされてますね。 Google App Engine Blog: Multi-tenancy Support, High Performance Image Serving, Increased Datastore Quotas and More Delivered In New App Engine Release Namespaces APIによるマルチテナントアプリケ</description>
     </item>
     
     <item>
       <title>GAE/Jでのデータ移行</title>
-      <link>http://www.tdtsh.com/archives/857/</link>
+      <link>http://tdtsh.github.io/archives/857/</link>
       <pubDate>Tue, 17 Aug 2010 04:07:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/857/</guid>
+      <guid>http://tdtsh.github.io/archives/857/</guid>
       <description>今の所、Google App Engine for java でWEBアプリケーションを作ったとしても、既存サービスからの移行の場合にはデータの移行という最大の関門があります</description>
     </item>
     
     <item>
       <title>slim3での1対多関連での参照整合性</title>
-      <link>http://www.tdtsh.com/archives/818/</link>
+      <link>http://tdtsh.github.io/archives/818/</link>
       <pubDate>Thu, 29 Jul 2010 06:29:16 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/818/</guid>
+      <guid>http://tdtsh.github.io/archives/818/</guid>
       <description>slim3での1対多関連（片方向でも双方向でもどっちも）での参照整合性の話です。 親モデルが削除された時 Datastore#deleteで親モ</description>
     </item>
     
     <item>
       <title>RDBMS脳では app engineのデータストアの概念で混乱する</title>
-      <link>http://www.tdtsh.com/archives/770/</link>
+      <link>http://tdtsh.github.io/archives/770/</link>
       <pubDate>Sun, 04 Jul 2010 15:05:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/770/</guid>
+      <guid>http://tdtsh.github.io/archives/770/</guid>
       <description>RDBMSを長くやっている人ほど、app engineのデータストアの概念で混乱する可能性が高いと思います。 自分もまだ時々判らなくなるので、一</description>
     </item>
     
     <item>
       <title>app engine で 古いIndexを削除するには</title>
-      <link>http://www.tdtsh.com/archives/766/</link>
+      <link>http://tdtsh.github.io/archives/766/</link>
       <pubDate>Sat, 03 Jul 2010 15:05:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/766/</guid>
+      <guid>http://tdtsh.github.io/archives/766/</guid>
       <description>Macの場合はコチラ 前々から気になっていたんですが、app engine の管理画面の Datasotre Indexesで確認すると、過去に色々と動かした名残で、既に存在し</description>
     </item>
     
     <item>
       <title>slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue()</title>
-      <link>http://www.tdtsh.com/archives/759/</link>
+      <link>http://tdtsh.github.io/archives/759/</link>
       <pubDate>Fri, 02 Jul 2010 15:05:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/759/</guid>
+      <guid>http://tdtsh.github.io/archives/759/</guid>
       <description>WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するの</description>
     </item>
     
     <item>
       <title>RDBMS脳を変えるのは難しい &amp;#8211; App Enine上でスケールするデータモデリングへの道</title>
-      <link>http://www.tdtsh.com/archives/752/</link>
+      <link>http://tdtsh.github.io/archives/752/</link>
       <pubDate>Thu, 01 Jul 2010 14:00:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/752/</guid>
+      <guid>http://tdtsh.github.io/archives/752/</guid>
       <description>slim3(App Engine/Java)のお勉強をしながら、良くあるパターンのブログサービス的なWEBアプリケーションを作っています。 ブログサービスの概念</description>
     </item>
     
     <item>
       <title>GoogleのデータセンターとGAEは設計思想のスケールがでかい</title>
-      <link>http://www.tdtsh.com/archives/719/</link>
+      <link>http://tdtsh.github.io/archives/719/</link>
       <pubDate>Fri, 25 Jun 2010 07:28:11 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/719/</guid>
+      <guid>http://tdtsh.github.io/archives/719/</guid>
       <description>Googleクラウドの理想型は、昼の太陽（ソーラパワー）で電気エネルギーを蓄電し、夜（月は夜の比喩）月の出ているときにデータセンターのCPU</description>
     </item>
     
     <item>
       <title>slim3 で ModelクラスのStringに(@lob=true)を追加すると org.slim3.controller.HotReloadingRuntimeException が発生</title>
-      <link>http://www.tdtsh.com/archives/707/</link>
+      <link>http://tdtsh.github.io/archives/707/</link>
       <pubDate>Tue, 22 Jun 2010 07:44:44 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/707/</guid>
+      <guid>http://tdtsh.github.io/archives/707/</guid>
       <description>slim3 で、既に存在するModelクラスのStringフィールドに、文字列を沢山保存しようとすると IllegalArgumentException が発生して保存が出来ませんでした。 これはApp</description>
     </item>
     
     <item>
       <title>GAE上でWordPressを動かす取り組み</title>
-      <link>http://www.tdtsh.com/archives/667/</link>
+      <link>http://tdtsh.github.io/archives/667/</link>
       <pubDate>Mon, 07 Jun 2010 06:07:16 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/667/</guid>
+      <guid>http://tdtsh.github.io/archives/667/</guid>
       <description>GAE 上でWordPressを動かす &amp;#8211; ＠IT 意欲的な取り組みですね。 GAEでWordPressを動かす必要性については兎も角、こういった試みはG</description>
     </item>
     
     <item>
       <title>Google App Engine for Java 上で動作する OpenSocialコンテナ OpenSocial Pages</title>
-      <link>http://www.tdtsh.com/archives/665/</link>
+      <link>http://tdtsh.github.io/archives/665/</link>
       <pubDate>Fri, 04 Jun 2010 06:42:24 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/665/</guid>
+      <guid>http://tdtsh.github.io/archives/665/</guid>
       <description>Nakajiman Software Blog: OpenSocial Pages という新しい取り組みの紹介です OpenSocial Pages は Google App Engine for Java 上で動作する OpenSocial コンテナです。OpenSocial Pages は App Engine 上のアプリケーションに OpenSocial を組</description>
     </item>
     
     <item>
       <title>kotan</title>
-      <link>http://www.tdtsh.com/archives/656/</link>
+      <link>http://tdtsh.github.io/archives/656/</link>
       <pubDate>Mon, 31 May 2010 01:02:37 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/656/</guid>
+      <guid>http://tdtsh.github.io/archives/656/</guid>
       <description>備忘録としてメモ。 頑張って欲しい気持ちでいっぱいです。 Kotan の開発状況 &amp;#8211; やさしいデスマーチ １つはローカル環境でのデータ作成、主にテストデータを簡</description>
     </item>
     
     <item>
       <title>GAE SDK 1.3.4 でOpenIDに対応</title>
-      <link>http://www.tdtsh.com/archives/648/</link>
+      <link>http://tdtsh.github.io/archives/648/</link>
       <pubDate>Wed, 26 May 2010 10:41:52 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/648/</guid>
+      <guid>http://tdtsh.github.io/archives/648/</guid>
       <description>Google App Engine SDK 1.3.4 で、OpenID と OAuth に対応したそうですね。 まだeclipseのSDKを更新できていませんが、近い内に試したいです。 OpenIDが使</description>
     </item>
     
     <item>
       <title>slim3 と Velocity の連携 その3 Controller で値の入出力、バリデーションチェック</title>
-      <link>http://www.tdtsh.com/archives/633/</link>
+      <link>http://tdtsh.github.io/archives/633/</link>
       <pubDate>Fri, 16 Apr 2010 06:03:37 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/633/</guid>
+      <guid>http://tdtsh.github.io/archives/633/</guid>
       <description>前々回と前回にわたり、slim3とVelocityのインストールをして、基本的なController、Model、Serviceの各クラスの</description>
     </item>
     
     <item>
       <title>slim3のインストール、Velocity との連携 その2</title>
-      <link>http://www.tdtsh.com/archives/624/</link>
+      <link>http://tdtsh.github.io/archives/624/</link>
       <pubDate>Thu, 15 Apr 2010 10:45:49 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/624/</guid>
+      <guid>http://tdtsh.github.io/archives/624/</guid>
       <description>前回、slim3とVelocityのインストールをして、Controllerクラスを作ってみました。 その続きです。 &amp;nbsp; Modelクラスの作成 パ</description>
     </item>
     
     <item>
       <title>slim3のインストール、Velocity との連携</title>
-      <link>http://www.tdtsh.com/archives/617/</link>
+      <link>http://tdtsh.github.io/archives/617/</link>
       <pubDate>Wed, 14 Apr 2010 02:52:13 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/617/</guid>
+      <guid>http://tdtsh.github.io/archives/617/</guid>
       <description>重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザ</description>
     </item>
     
     <item>
       <title>Google App Engine for Java で セッションの_ah_SESSIONが増え続ける</title>
-      <link>http://www.tdtsh.com/archives/614/</link>
+      <link>http://tdtsh.github.io/archives/614/</link>
       <pubDate>Mon, 12 Apr 2010 09:43:46 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/614/</guid>
+      <guid>http://tdtsh.github.io/archives/614/</guid>
       <description>Google App Engine/Java (以下 GAE/J) でセッションを有効にすると、Datastore上に_ah_SESSIONがどんどん増え続けます。 削除用サーブレットが用意されて</description>
     </item>
     
     <item>
       <title>OpenID RP を Google App Engine (java) で (dyuproject)</title>
-      <link>http://www.tdtsh.com/archives/587/</link>
+      <link>http://tdtsh.github.io/archives/587/</link>
       <pubDate>Thu, 18 Mar 2010 06:02:19 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/587/</guid>
+      <guid>http://tdtsh.github.io/archives/587/</guid>
       <description>&amp;nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動</description>
     </item>
     
     <item>
       <title>Google App Engine for Java で Google Data (GData) API を使う 1</title>
-      <link>http://www.tdtsh.com/archives/580/</link>
+      <link>http://tdtsh.github.io/archives/580/</link>
       <pubDate>Thu, 11 Mar 2010 08:04:07 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/580/</guid>
+      <guid>http://tdtsh.github.io/archives/580/</guid>
       <description>Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data</description>
     </item>
     
     <item>
       <title>GAE/J (Google App Engine for Java) で Struts を動かす</title>
-      <link>http://www.tdtsh.com/archives/561/</link>
+      <link>http://tdtsh.github.io/archives/561/</link>
       <pubDate>Tue, 09 Feb 2010 08:18:58 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/561/</guid>
+      <guid>http://tdtsh.github.io/archives/561/</guid>
       <description>GAE/J (Google App Engine for Java) で Struts を動かす GAE/J でも Struts は動く GAE/J では Spring を始め、いわゆる「重い」フレームワークは避けたい。 今後オレオレフレームワークを作るのか、Sli</description>
     </item>
     
     <item>
       <title>GAE/J (Google App Engine for java) で 拡張log4jを使う(日本時間)</title>
-      <link>http://www.tdtsh.com/archives/558/</link>
+      <link>http://tdtsh.github.io/archives/558/</link>
       <pubDate>Thu, 04 Feb 2010 04:17:55 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/558/</guid>
+      <guid>http://tdtsh.github.io/archives/558/</guid>
       <description>先日、GAE/J (Google App Engine for java) で log4jを使うの続きです。 こんな素敵なエントリーを発見！ GAE/Jでlog4jの日付を日本時間で出力する。- 今</description>
     </item>
     
     <item>
       <title>GAE/J (Google App Engine for java) で log4jを使う</title>
-      <link>http://www.tdtsh.com/archives/493/</link>
+      <link>http://tdtsh.github.io/archives/493/</link>
       <pubDate>Mon, 30 Nov 2009 07:23:27 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/493/</guid>
+      <guid>http://tdtsh.github.io/archives/493/</guid>
       <description>先日、GAE SDK for Javaでのログのダウンロードについて書きました。 GAE/Jはデフォルトでjava.util.loggingを使う様になって</description>
     </item>
     
     <item>
       <title>Google App Engine / Java (GAE/J)で URL フェッチ APIを使う</title>
-      <link>http://www.tdtsh.com/archives/483/</link>
+      <link>http://tdtsh.github.io/archives/483/</link>
       <pubDate>Fri, 27 Nov 2009 15:30:54 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/483/</guid>
+      <guid>http://tdtsh.github.io/archives/483/</guid>
       <description>Google App Engine/Java (以下 GAE/J) のアプリケーションから、URL Fetch Java API (以下 URLフェッチAPI)を使って、Web上の他のリソースにアクセスできます。 今回は、と</description>
     </item>
     
     <item>
       <title>Google App Engine / Java (GAE/J) で GoogleアカウントAPIを使う</title>
-      <link>http://www.tdtsh.com/archives/478/</link>
+      <link>http://tdtsh.github.io/archives/478/</link>
       <pubDate>Fri, 27 Nov 2009 15:30:05 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/478/</guid>
+      <guid>http://tdtsh.github.io/archives/478/</guid>
       <description>Google App Engine/Java (以下 GAE/J) のアプリケーションから、Googleアカウントを持つユーザを認証できます。 今のところ、主に出来る事は、コレくらいです ・ログイン</description>
     </item>
     
     <item>
       <title>Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定)</title>
-      <link>http://www.tdtsh.com/archives/473/</link>
+      <link>http://tdtsh.github.io/archives/473/</link>
       <pubDate>Thu, 26 Nov 2009 17:00:48 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/473/</guid>
+      <guid>http://tdtsh.github.io/archives/473/</guid>
       <description>Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID</description>
     </item>
     
     <item>
       <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす</title>
-      <link>http://www.tdtsh.com/archives/445/</link>
+      <link>http://tdtsh.github.io/archives/445/</link>
       <pubDate>Fri, 30 Oct 2009 16:00:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/445/</guid>
+      <guid>http://tdtsh.github.io/archives/445/</guid>
       <description>GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ</description>
     </item>
     
     <item>
       <title>GAE (Google App Engine) SDK for Javaで ログの取得 (改訂版)</title>
-      <link>http://www.tdtsh.com/archives/442/</link>
+      <link>http://tdtsh.github.io/archives/442/</link>
       <pubDate>Thu, 29 Oct 2009 16:00:09 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/442/</guid>
+      <guid>http://tdtsh.github.io/archives/442/</guid>
       <description>※2012年2月07日 現状にあわせて修正・加筆しました。 Google App Engineのログは、WEB上( appengine.google.com のLogs )で見る事も出来るけど、デバッグには</description>
     </item>
     
     <item>
       <title>GAE SDK for Java で update 時にcannot find javac executable based on java.home</title>
-      <link>http://www.tdtsh.com/archives/429/</link>
+      <link>http://tdtsh.github.io/archives/429/</link>
       <pubDate>Wed, 28 Oct 2009 16:00:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/429/</guid>
+      <guid>http://tdtsh.github.io/archives/429/</guid>
       <description>※開発機はWindows XPです。 Google App Engine SDK for javaを使って、コマンドラインでデプロイしようと bin\appcfg.cmd update .\war すると、javac.exeが見つからない</description>
     </item>
     
     <item>
       <title>Google App Engine SDK for java でデプロイ</title>
-      <link>http://www.tdtsh.com/archives/427/</link>
+      <link>http://tdtsh.github.io/archives/427/</link>
       <pubDate>Tue, 27 Oct 2009 16:00:43 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/427/</guid>
+      <guid>http://tdtsh.github.io/archives/427/</guid>
       <description>前回インストールした、Google App Engine SDK for javaを使って、コマンドラインでデプロイしてみる。 参考サイトの例に応用をきかせて、今回は SDKと</description>
     </item>
     
     <item>
       <title>Google App Engine SDK for java のインストール</title>
-      <link>http://www.tdtsh.com/archives/424/</link>
+      <link>http://tdtsh.github.io/archives/424/</link>
       <pubDate>Mon, 26 Oct 2009 16:00:34 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/424/</guid>
+      <guid>http://tdtsh.github.io/archives/424/</guid>
       <description>前に書いたEclipseによる開発環境構築以外に、コマンドラインでやる方法もある。 Google App Engine SDK for Java のインストール [前に書いたEclipseによる</description>
     </item>
     
     <item>
       <title>仮のWEBシステムを、脳内で GAE/J に移行してみる</title>
-      <link>http://www.tdtsh.com/archives/421/</link>
+      <link>http://tdtsh.github.io/archives/421/</link>
       <pubDate>Sun, 25 Oct 2009 16:00:15 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/421/</guid>
+      <guid>http://tdtsh.github.io/archives/421/</guid>
       <description>脳内で、月間PVが300万PV位のソーシャルメディアを、Google App Engine for Java にのせてみる。 ■ストレージ容量 無償は1GBまで。 コンテンツ、画像</description>
     </item>
     
     <item>
       <title>GAE/J で WARNING Can not serve hoge.html directly.  You need to include it in &lt;static-files&gt; in your appengine-web.xml</title>
-      <link>http://www.tdtsh.com/archives/419/</link>
+      <link>http://tdtsh.github.io/archives/419/</link>
       <pubDate>Sat, 24 Oct 2009 16:00:54 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/419/</guid>
+      <guid>http://tdtsh.github.io/archives/419/</guid>
       <description>Google App Engine for Java (GAE/J) で、静的ファイル ( html、css、js ) を扱おうとして、 WARNING: Can not serve /hoge/hoge.nocache.js directly. You need to include it in in your appengine-web.xml. てな感じで怒られる。 appengine-web.xml の書き方が間違って</description>
     </item>
     
     <item>
       <title>GAE/J で HTML (静的ファイル) を</title>
-      <link>http://www.tdtsh.com/archives/415/</link>
+      <link>http://tdtsh.github.io/archives/415/</link>
       <pubDate>Fri, 23 Oct 2009 16:00:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/415/</guid>
+      <guid>http://tdtsh.github.io/archives/415/</guid>
       <description>Google App Engine for Java (GAE/J) で、まずはHTMLファイルをデプロイだ！ つまづいた事 その1 GAE/J での開発は、eclipseのプラグインで始めてます。 まず eclipse に慣れてな</description>
     </item>
     
     <item>
       <title>GAE java (Google App Engine) 上でのOpenID と まとめ</title>
-      <link>http://www.tdtsh.com/archives/346/</link>
+      <link>http://tdtsh.github.io/archives/346/</link>
       <pubDate>Fri, 04 Sep 2009 13:36:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/346/</guid>
+      <guid>http://tdtsh.github.io/archives/346/</guid>
       <description>GAE/JでOpenIDのRPを実装したい。 個人で作るWEBサービスなら兎も角、法人の場合とかはGAE上にメールアドレスとかの個人情報をぶっ</description>
     </item>
     
     <item>
       <title>Google App Engine (java) まとめ</title>
-      <link>http://www.tdtsh.com/archives/292/</link>
+      <link>http://tdtsh.github.io/archives/292/</link>
       <pubDate>Thu, 20 Aug 2009 12:20:38 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/292/</guid>
+      <guid>http://tdtsh.github.io/archives/292/</guid>
       <description>インストール、開発環境、ほか Google App Engine for java はじめの一歩 &amp;#8211; tdtshのブログ Google App Engine SDK for java のインストール &amp;#8211; tdtshのブログ Google App Engine SDK for java でデプロイ &amp;#8211;</description>
     </item>
     
     <item>
       <title>DOA、RDB と Key Valueストア(KVS)について</title>
-      <link>http://www.tdtsh.com/archives/207/</link>
+      <link>http://tdtsh.github.io/archives/207/</link>
       <pubDate>Thu, 30 Jul 2009 02:43:13 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/207/</guid>
+      <guid>http://tdtsh.github.io/archives/207/</guid>
       <description>前々回、前回、に引き続き、Key Valueストア(KVS)ネタ。 データの整合性（Consistency）を重視するRDB、データの可用性（A</description>
     </item>
     
     <item>
       <title>bookmarks 2009-07-30</title>
-      <link>http://www.tdtsh.com/archives/205/</link>
+      <link>http://tdtsh.github.io/archives/205/</link>
       <pubDate>Thu, 30 Jul 2009 00:39:47 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/205/</guid>
+      <guid>http://tdtsh.github.io/archives/205/</guid>
       <description>記事の一部はこちらに移動しました。 OpenID と Google App Engine (java) まとめ Google App Engine (java) のんばっかり。 サンのオープンソース責任者、「Google App EngineのJava</description>
     </item>
     
     <item>
       <title>Google App Engine for java はじめの一歩</title>
-      <link>http://www.tdtsh.com/archives/57/</link>
+      <link>http://tdtsh.github.io/archives/57/</link>
       <pubDate>Fri, 26 Jun 2009 13:46:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/57/</guid>
+      <guid>http://tdtsh.github.io/archives/57/</guid>
       <description>インストール、開発環境、ほか Google App Engine for java はじめの一歩 &amp;#8211; tdtshのブログ Google App Engine SDK for java のインストール &amp;#8211; tdtshのブログ Google App Engine SDK for java でデプロイ &amp;#8211;</description>
     </item>
     
     <item>
       <title>Google App Engine for Java と RDBMS</title>
-      <link>http://www.tdtsh.com/archives/22/</link>
+      <link>http://tdtsh.github.io/archives/22/</link>
       <pubDate>Sat, 23 May 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/22/</guid>
+      <guid>http://tdtsh.github.io/archives/22/</guid>
       <description>先日、Google App Engine for Javaをちょこっとだけ触ってみました。 IaaSのAmazon EC2と違い、GAEはPaaSなので、開発には色々と制</description>
     </item>
     
     <item>
       <title>Google App Engine備忘録</title>
-      <link>http://www.tdtsh.com/archives/4/</link>
+      <link>http://tdtsh.github.io/archives/4/</link>
       <pubDate>Tue, 12 May 2009 00:52:23 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/4/</guid>
+      <guid>http://tdtsh.github.io/archives/4/</guid>
       <description>あんまり興味なかった Google App Engine が Java対応した事で、 自分の中で急浮上。 【TECH WORLD Java対応のクラウド・プラットフォーム「Google App En</description>
     </item>
     

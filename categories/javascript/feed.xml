@@ -2,228 +2,228 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/javascript/</link>
+    <link>http://tdtsh.github.io/categories/javascript/</link>
     <description>Recent content in Javascript on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 08 Nov 2015 22:19:10 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/javascript/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/javascript/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>東京Node学園祭2015に参加してきました</title>
-      <link>http://www.tdtsh.com/archives/3666/</link>
+      <link>http://tdtsh.github.io/archives/3666/</link>
       <pubDate>Sun, 08 Nov 2015 22:19:10 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3666/</guid>
+      <guid>http://tdtsh.github.io/archives/3666/</guid>
       <description>滋賀から。夜行バス to 夜行バスで。 んで帰って即法事で田舎に帰らないとな合間にブログかきます。寝不足です。 沢山良いセッションがあったのです。他の</description>
     </item>
     
     <item>
       <title>いまさらeslint (vim &#43; syntastic &#43; jshint だと JSX がエラーになる問題)</title>
-      <link>http://www.tdtsh.com/archives/3644/</link>
+      <link>http://tdtsh.github.io/archives/3644/</link>
       <pubDate>Sat, 12 Sep 2015 12:20:32 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3644/</guid>
+      <guid>http://tdtsh.github.io/archives/3644/</guid>
       <description>習慣と惰性で Vim (GVim) 使ってます。 Syntax Checkerは syntastic を使ってます。 あんまり使い込んで無くて、JavaScript ではファイル保存時にjshint</description>
     </item>
     
     <item>
       <title>node.js で QRコード生成</title>
-      <link>http://www.tdtsh.com/archives/3629/</link>
+      <link>http://tdtsh.github.io/archives/3629/</link>
       <pubDate>Fri, 28 Aug 2015 12:50:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3629/</guid>
+      <guid>http://tdtsh.github.io/archives/3629/</guid>
       <description>自分用のメモです。 その名も qrcode。 Mac OSXでお試し。 インストール (OSX の場合) いきなり npm installしようとするとエラーになります。 公式</description>
     </item>
     
     <item>
       <title>Node.js から AWS の SES でメール送る</title>
-      <link>http://www.tdtsh.com/archives/3605/</link>
+      <link>http://tdtsh.github.io/archives/3605/</link>
       <pubDate>Fri, 10 Jul 2015 00:30:09 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3605/</guid>
+      <guid>http://tdtsh.github.io/archives/3605/</guid>
       <description>AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ</description>
     </item>
     
     <item>
       <title>Node.js で Rails っぽいフレームワークの Sails.js を使ってみた</title>
-      <link>http://www.tdtsh.com/archives/3572/</link>
+      <link>http://tdtsh.github.io/archives/3572/</link>
       <pubDate>Tue, 07 Jul 2015 23:30:46 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3572/</guid>
+      <guid>http://tdtsh.github.io/archives/3572/</guid>
       <description>勉強会で教えて頂いてからずっと気になっていたものの、ガッツリ触れずにいましたが、ようやく機会が訪れたので Sails を使いはじめました。 昨今、Node</description>
     </item>
     
     <item>
       <title>Titanium使いが JavaScriptで書けるつながりで Native Script 触ってみた</title>
-      <link>http://www.tdtsh.com/archives/3544/</link>
+      <link>http://tdtsh.github.io/archives/3544/</link>
       <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3544/</guid>
+      <guid>http://tdtsh.github.io/archives/3544/</guid>
       <description>クロスプラットフォームを触ってみたシリーズの第6弾は、Native Scriptです。 前回のReact Native に続き、JavaScriptで書ける繋</description>
     </item>
     
     <item>
       <title>Titanium使いが React Native を少し触ってみた</title>
-      <link>http://www.tdtsh.com/archives/3498/</link>
+      <link>http://tdtsh.github.io/archives/3498/</link>
       <pubDate>Tue, 30 Jun 2015 01:00:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3498/</guid>
+      <guid>http://tdtsh.github.io/archives/3498/</guid>
       <description>クロスプラットフォームを触ってみたシリーズの第5弾です。 React Nativeです。 といっても、今のところiOSだけですけれど。 一応、公式には&amp;#8</description>
     </item>
     
     <item>
       <title>Spigot と ScriptCraftプラグイン でマインクラフトなサーバを動かしてみた</title>
-      <link>http://www.tdtsh.com/archives/3482/</link>
+      <link>http://tdtsh.github.io/archives/3482/</link>
       <pubDate>Sat, 27 Jun 2015 12:30:55 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3482/</guid>
+      <guid>http://tdtsh.github.io/archives/3482/</guid>
       <description>マインクラフト、小学生の間で流行っている様ですね。 うちの子供たちも最近ドハマりです。 どれ位好きかというと、こういう帽子を買い与えた所、毎日か</description>
     </item>
     
     <item>
       <title>Ubuntu 15.04 で Titanium (Appcelerator CLI)、無料でどこまでできるか試してみた</title>
-      <link>http://www.tdtsh.com/archives/3462/</link>
+      <link>http://tdtsh.github.io/archives/3462/</link>
       <pubDate>Tue, 23 Jun 2015 01:00:04 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3462/</guid>
+      <guid>http://tdtsh.github.io/archives/3462/</guid>
       <description>クロスプラットフォームを触ってみたシリーズの第4弾です。 Macbook に Ubuntu 15.04 日本語 Remix をインストールしたので、ついでにTitaniumモバイル(Andro</description>
     </item>
     
     <item>
       <title>Electron (旧Atom Shell)触ってみた</title>
-      <link>http://www.tdtsh.com/archives/3418/</link>
+      <link>http://tdtsh.github.io/archives/3418/</link>
       <pubDate>Sun, 21 Jun 2015 23:30:18 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3418/</guid>
+      <guid>http://tdtsh.github.io/archives/3418/</guid>
       <description>クロスプラットフォーム触ってみた第3弾です。 Electron（旧Atom Shell）は、JavaScript(Node.js)とHTML(含</description>
     </item>
     
     <item>
       <title>無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行</title>
-      <link>http://www.tdtsh.com/archives/3401/</link>
+      <link>http://tdtsh.github.io/archives/3401/</link>
       <pubDate>Sun, 14 Jun 2015 15:00:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3401/</guid>
+      <guid>http://tdtsh.github.io/archives/3401/</guid>
       <description>先日少し書きましたが、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。 因みに既存のNode.ACSは20</description>
     </item>
     
     <item>
       <title>Titanium Mobileは業務や受託開発で使えるのか</title>
-      <link>http://www.tdtsh.com/archives/3309/</link>
+      <link>http://tdtsh.github.io/archives/3309/</link>
       <pubDate>Sat, 24 May 2014 02:31:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3309/</guid>
+      <guid>http://tdtsh.github.io/archives/3309/</guid>
       <description>もとい Titanium なんですけど、自分も未だに検索するときはTitanium Mobile て書きますね。 そうしないと場合によっては変なネジのサイトがヒットしたりする</description>
     </item>
     
     <item>
       <title>Titaniumはままつ #3 に行ってきました</title>
-      <link>http://www.tdtsh.com/archives/3292/</link>
+      <link>http://tdtsh.github.io/archives/3292/</link>
       <pubDate>Sun, 18 May 2014 03:00:23 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3292/</guid>
+      <guid>http://tdtsh.github.io/archives/3292/</guid>
       <description>朝5:30起きで。 Ti浜松の存在は知ってたのですが、滋賀から浜松まで新幹線で行くとなると軽く吉野家30回分という事で貧乏フリーランスとしては</description>
     </item>
     
     <item>
       <title>Titaniumもくもく会in関西vol0 (とTiShadowメモ)</title>
-      <link>http://www.tdtsh.com/archives/3206/</link>
+      <link>http://tdtsh.github.io/archives/3206/</link>
       <pubDate>Mon, 10 Mar 2014 13:40:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3206/</guid>
+      <guid>http://tdtsh.github.io/archives/3206/</guid>
       <description>関東では定期的にTitaniumもくもく会があるそうで良いなぁ、などと思っていたら、titanium もくもくin関西vol0のお知らせが目に</description>
     </item>
     
     <item>
       <title>Titanium でAndroidのapk作ったら「デバッグ可能な APK をアップロードしました」</title>
-      <link>http://www.tdtsh.com/archives/3192/</link>
+      <link>http://tdtsh.github.io/archives/3192/</link>
       <pubDate>Fri, 21 Feb 2014 13:10:15 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3192/</guid>
+      <guid>http://tdtsh.github.io/archives/3192/</guid>
       <description>Titanium で AndroidのSignedなapkをビルドするのに、Titanium SDK 3.2.0では苦労したと前に書きました。 今回は別のやつで、Tit</description>
     </item>
     
     <item>
       <title>Marvericksユーザの一番簡単な Genymotion &#43; Titanium インストール手順</title>
-      <link>http://www.tdtsh.com/archives/3167/</link>
+      <link>http://tdtsh.github.io/archives/3167/</link>
       <pubDate>Wed, 29 Jan 2014 00:12:01 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3167/</guid>
+      <guid>http://tdtsh.github.io/archives/3167/</guid>
       <description>環境は Macbook Air Marvericks + Titanium Studio/CLI/SDK 3.2.0です。 Mac OSX なら Mavericks以外も多分一緒だと思いますが。 あと一番簡単かどうかは自信ないですけど。 &amp;nbsp; JDK 多分既</description>
     </item>
     
     <item>
       <title>Titanium Studio/SDK/CLI 3.2.0 で「パッケージファイルに正しく署名されていません」</title>
-      <link>http://www.tdtsh.com/archives/3159/</link>
+      <link>http://tdtsh.github.io/archives/3159/</link>
       <pubDate>Thu, 23 Jan 2014 12:30:31 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3159/</guid>
+      <guid>http://tdtsh.github.io/archives/3159/</guid>
       <description>去年末にTitanium Studio と Titanium SDK / CLI を 3.2.0 にあげてから初のAndroid署名付きのDistribution な apk をビルドをしてGoogle Pla</description>
     </item>
     
     <item>
       <title>Android &#43; Titanium SDK 3.2.0 で local webview のjsが読めない</title>
-      <link>http://www.tdtsh.com/archives/3153/</link>
+      <link>http://tdtsh.github.io/archives/3153/</link>
       <pubDate>Fri, 17 Jan 2014 13:24:21 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3153/</guid>
+      <guid>http://tdtsh.github.io/archives/3153/</guid>
       <description>ローカルというかアプリ内のHTMLファイルを置いて、createWebview する事あるじゃないですか。 Titanium SDK 3.2.0に上げたら、Andro</description>
     </item>
     
     <item>
       <title>Titanium のListView で pull to refresh (SDK 3.2.0以降)</title>
-      <link>http://www.tdtsh.com/archives/3136/</link>
+      <link>http://tdtsh.github.io/archives/3136/</link>
       <pubDate>Fri, 27 Dec 2013 16:30:14 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3136/</guid>
+      <guid>http://tdtsh.github.io/archives/3136/</guid>
       <description>Titanium Mobile のListView で念願の pull to refreshが可能になりました。 ただし iOSのみです・・・Android野郎ションボリ。 SDK 3.2.0 で Titanium.UI.RefreshControl なるもの</description>
     </item>
     
     <item>
       <title>Titanium Certified Developer (TCD) になりました</title>
-      <link>http://www.tdtsh.com/archives/3091/</link>
+      <link>http://tdtsh.github.io/archives/3091/</link>
       <pubDate>Sun, 22 Dec 2013 06:00:51 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3091/</guid>
+      <guid>http://tdtsh.github.io/archives/3091/</guid>
       <description>世間では全然盛り上がっている感が無いですが自分の中では盛り上がっている Titanium Certified Developer (TCD) を受験してみましたよ。オンラインで受けられるので超楽です。プロ</description>
     </item>
     
     <item>
       <title>Titanium Mobile (Alloy) で自動ユニットテストまとめ</title>
-      <link>http://www.tdtsh.com/archives/3073/</link>
+      <link>http://tdtsh.github.io/archives/3073/</link>
       <pubDate>Tue, 10 Dec 2013 14:50:04 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3073/</guid>
+      <guid>http://tdtsh.github.io/archives/3073/</guid>
       <description>&amp;nbsp; &amp;nbsp; 先生、Alloyでテスト自動化したいです。 という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine</description>
     </item>
     
     <item>
       <title>Titanium Studio で プロジェクト作った直後にアレ？てなったりすること</title>
-      <link>http://www.tdtsh.com/archives/3065/</link>
+      <link>http://tdtsh.github.io/archives/3065/</link>
       <pubDate>Sun, 08 Dec 2013 12:10:25 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3065/</guid>
+      <guid>http://tdtsh.github.io/archives/3065/</guid>
       <description>私がガッツリ触りだしたのは Titanium Studio/SDK 3.1.3 からなのでそれ以前は知りません。 プロジェクトはAlloyを前提にしてますが多分Classicでも同じなんじゃ</description>
     </item>
     
     <item>
       <title>Titanium Studio で LogCat</title>
-      <link>http://www.tdtsh.com/archives/3062/</link>
+      <link>http://tdtsh.github.io/archives/3062/</link>
       <pubDate>Sun, 10 Nov 2013 16:30:01 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3062/</guid>
+      <guid>http://tdtsh.github.io/archives/3062/</guid>
       <description>Titanium Studio で LogCatを見たいじゃないですか。 毎回 DDMSやeclipse を同時起動するのが面倒になってきたのでメモ。 &amp;nbsp; Anrdoid ADT Plugin Titanium Studio起動</description>
     </item>
     
     <item>
       <title>backbone.js &#43; handlebars.js &#43; CakePHP &#43; bootstrap 参考サイト個人的まとめ</title>
-      <link>http://www.tdtsh.com/archives/2917/</link>
+      <link>http://tdtsh.github.io/archives/2917/</link>
       <pubDate>Thu, 26 Sep 2013 14:00:41 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2917/</guid>
+      <guid>http://tdtsh.github.io/archives/2917/</guid>
       <description>極めて個人的なまとめ。 フロントエンドは backbone.js、バックエンドは CakePHP でWebサービス作るの楽しいね。 ホントはRoRにしたかったけど</description>
     </item>
     

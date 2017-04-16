@@ -2,246 +2,246 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Management on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/management/</link>
+    <link>http://tdtsh.github.io/categories/management/</link>
     <description>Recent content in Management on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 03 Feb 2014 16:19:53 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/management/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/management/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>発言の精度</title>
-      <link>http://www.tdtsh.com/archives/2984/</link>
+      <link>http://tdtsh.github.io/archives/2984/</link>
       <pubDate>Mon, 03 Feb 2014 16:19:53 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2984/</guid>
+      <guid>http://tdtsh.github.io/archives/2984/</guid>
       <description>一応ソフトウェアのエンジニア的な仕事をさせて頂いていると、見えないものを見ると言うか、形の無いものを捉まえる必要に迫られたり、それらを言語化</description>
     </item>
     
     <item>
       <title>仕事のスピード感とあとでやるクセ</title>
-      <link>http://www.tdtsh.com/archives/2986/</link>
+      <link>http://tdtsh.github.io/archives/2986/</link>
       <pubDate>Mon, 14 Oct 2013 14:54:09 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2986/</guid>
+      <guid>http://tdtsh.github.io/archives/2986/</guid>
       <description>既にパターン化されたビジネスを回す場合には当てはまらない事もあるかもしれないけど、30代前半から今に至るまで一貫してベンチャーや新規事業的な</description>
     </item>
     
     <item>
       <title>Java野郎が PHPUnit を使ってみる、xUnitについて考える</title>
-      <link>http://www.tdtsh.com/archives/2860/</link>
+      <link>http://tdtsh.github.io/archives/2860/</link>
       <pubDate>Tue, 09 Jul 2013 21:45:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/2860/</guid>
+      <guid>http://tdtsh.github.io/archives/2860/</guid>
       <description>PHPUnitは、xUnitと呼ばれるテスティング・フレームワークの一つです。 要するに JUnitのphp版です。 Zend Framework (1.6〜) や CakePHP (2.0</description>
     </item>
     
     <item>
       <title>iTunes U の ネットワーク産業論 by 夏野 剛 がなかなか良かった</title>
-      <link>http://www.tdtsh.com/archives/1796/</link>
+      <link>http://tdtsh.github.io/archives/1796/</link>
       <pubDate>Thu, 19 Apr 2012 21:32:13 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1796/</guid>
+      <guid>http://tdtsh.github.io/archives/1796/</guid>
       <description>人に教えて頂いてなんとなく見始めたんですが、めちゃめちゃイイですね。 ネットワーク産業論 2011 by 夏野 剛 ネットワーク化とコンピューター技術の進化によ</description>
     </item>
     
     <item>
       <title>TEDイイんだけどソレ何？と聞かれた時困った話</title>
-      <link>http://www.tdtsh.com/archives/1649/</link>
+      <link>http://tdtsh.github.io/archives/1649/</link>
       <pubDate>Mon, 30 Jan 2012 21:30:58 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1649/</guid>
+      <guid>http://tdtsh.github.io/archives/1649/</guid>
       <description>先日、訳あって母（戦時中産まれ）と長い時間何かを待つ事になり、 退屈だったので私の iPhone で TED でも見ようと言うことになり、 そのとき母に、TEDって何</description>
     </item>
     
     <item>
       <title>2000円強からのマイクロファイナンスのススメ &amp;#8211; Kiva（キヴァ/キーヴァ）</title>
-      <link>http://www.tdtsh.com/archives/1579/</link>
+      <link>http://tdtsh.github.io/archives/1579/</link>
       <pubDate>Mon, 23 Jan 2012 21:30:50 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1579/</guid>
+      <guid>http://tdtsh.github.io/archives/1579/</guid>
       <description>「ひとの役にたっている」何かを一つもつべきことについて | Lifehacking.jp この記事を見て、遅まきながら Kiva を始めました。 久々にコレは良いな、広めたいな、と思っ</description>
     </item>
     
     <item>
       <title>中途半端なWEBサービス屋が「何のために、如何に働くか」を考える</title>
-      <link>http://www.tdtsh.com/archives/1604/</link>
+      <link>http://tdtsh.github.io/archives/1604/</link>
       <pubDate>Sat, 07 Jan 2012 21:30:10 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1604/</guid>
+      <guid>http://tdtsh.github.io/archives/1604/</guid>
       <description>私は現在サラリーマンです。 ある企業にフルタイムで雇用して頂き、今はソーシャルメディアっぽいWebサービスの開発と運用をやらせていただいていま</description>
     </item>
     
     <item>
       <title>怒っている人、感謝している人</title>
-      <link>http://www.tdtsh.com/archives/1570/</link>
+      <link>http://tdtsh.github.io/archives/1570/</link>
       <pubDate>Sat, 10 Dec 2011 22:00:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1570/</guid>
+      <guid>http://tdtsh.github.io/archives/1570/</guid>
       <description>10年位前に「仕事は楽しいかね」というタイトルの本を読みました。 社会人としてのわたしが影響を受けた本の一つです。 でも現実に仕事をしていく上で</description>
     </item>
     
     <item>
       <title>経営は戦い、ITは兵站</title>
-      <link>http://www.tdtsh.com/archives/1460/</link>
+      <link>http://tdtsh.github.io/archives/1460/</link>
       <pubDate>Fri, 11 Nov 2011 21:35:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1460/</guid>
+      <guid>http://tdtsh.github.io/archives/1460/</guid>
       <description>&amp;nbsp; ITの受託開発はだいたい人月でナンボの世界。 要するに時間でナンボ。 個々プログラマの生産性の違いとか創造性とかそんなんは殆ど関係がない。 価値</description>
     </item>
     
     <item>
       <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
-      <link>http://www.tdtsh.com/archives/1076/</link>
+      <link>http://tdtsh.github.io/archives/1076/</link>
       <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1076/</guid>
+      <guid>http://tdtsh.github.io/archives/1076/</guid>
       <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
     </item>
     
     <item>
       <title>「ソーシャル・メディア」の定義はあいまい</title>
-      <link>http://www.tdtsh.com/archives/1013/</link>
+      <link>http://tdtsh.github.io/archives/1013/</link>
       <pubDate>Wed, 24 Nov 2010 12:34:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1013/</guid>
+      <guid>http://tdtsh.github.io/archives/1013/</guid>
       <description>一応ソーシャル・メディアなウェブを仕事の一部としている関係上、TwitterのTLを読んでて、気になったので。 SNSの定義 まずはSNSの定義</description>
     </item>
     
     <item>
       <title>40歳からの仕事術</title>
-      <link>http://www.tdtsh.com/archives/1002/</link>
+      <link>http://tdtsh.github.io/archives/1002/</link>
       <pubDate>Fri, 05 Nov 2010 07:02:30 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/1002/</guid>
+      <guid>http://tdtsh.github.io/archives/1002/</guid>
       <description>よみました。 40歳からの仕事術 (新潮新書) 山本 真司 Amazonで詳しく見る by AZlink &amp;lt;p&amp;gt; だいぶ前に買ってそのままにしてた本。&amp;lt;br /&amp;gt; なんかホラ</description>
     </item>
     
     <item>
       <title>ハードウェアやソフトウェアは壊れたら買う、と言う考え方</title>
-      <link>http://www.tdtsh.com/archives/921/</link>
+      <link>http://tdtsh.github.io/archives/921/</link>
       <pubDate>Wed, 15 Sep 2010 09:25:17 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/921/</guid>
+      <guid>http://tdtsh.github.io/archives/921/</guid>
       <description>ITProにて、「保守を打ち切る」という中々男らしい？記事が掲載されている。 記事ではタイトルの通り、保守契約を打ち切ることで運用コストを減ら</description>
     </item>
     
     <item>
       <title>WEBサービスを立ち上げる天の時、地の利、人の輪</title>
-      <link>http://www.tdtsh.com/archives/895/</link>
+      <link>http://tdtsh.github.io/archives/895/</link>
       <pubDate>Thu, 26 Aug 2010 04:16:16 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/895/</guid>
+      <guid>http://tdtsh.github.io/archives/895/</guid>
       <description>ほらね。今は、新しいサービスを作るには、絶好のチャンスなんですよ。わたしもトライするし、いろんな人にトライしてもらいたいなぁと思います。 こん</description>
     </item>
     
     <item>
       <title>エンジニアの時代、というかWEBサービスの時代</title>
-      <link>http://www.tdtsh.com/archives/837/</link>
+      <link>http://tdtsh.github.io/archives/837/</link>
       <pubDate>Thu, 05 Aug 2010 02:54:35 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/837/</guid>
+      <guid>http://tdtsh.github.io/archives/837/</guid>
       <description>エンジニアの時代｜渋谷ではたらく社長のアメブロ この記事、 少し前に社内向けに作ったプレゼン資料と内容が凄くかぶっています。 だから、我が意を得た</description>
     </item>
     
     <item>
       <title>システム開発・構築の方々はシステム運用を理解してあげてください</title>
-      <link>http://www.tdtsh.com/archives/803/</link>
+      <link>http://tdtsh.github.io/archives/803/</link>
       <pubDate>Fri, 23 Jul 2010 11:51:53 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/803/</guid>
+      <guid>http://tdtsh.github.io/archives/803/</guid>
       <description>保守できなくなり、塩漬けにしたままのオープンシステム&amp;#8212;。いま“オープンレガシー”が情報システム部門を苦しめている。 &amp;#8230; 1990年代</description>
     </item>
     
     <item>
       <title>Twitter では BitTorrent を使って大量のサーバに高速にデプロイしている</title>
-      <link>http://www.tdtsh.com/archives/798/</link>
+      <link>http://tdtsh.github.io/archives/798/</link>
       <pubDate>Wed, 21 Jul 2010 11:00:08 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/798/</guid>
+      <guid>http://tdtsh.github.io/archives/798/</guid>
       <description>Twitterでは大量のサーバを運用しており、それらのサーバに対してのアップデートは素早く行わなければならい。しかしGitサーバに対するアク</description>
     </item>
     
     <item>
       <title>企業内コラボレーションツールがTwitter化、今度は企業向けSNSの様にはならない？</title>
-      <link>http://www.tdtsh.com/archives/705/</link>
+      <link>http://tdtsh.github.io/archives/705/</link>
       <pubDate>Tue, 22 Jun 2010 05:36:19 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/705/</guid>
+      <guid>http://tdtsh.github.io/archives/705/</guid>
       <description>「いままで企業内のコラボレーションといえば、メッセージング、スケジュール管理、電子掲示板、ドキュメント共有といった機能を備えるグループウェア</description>
     </item>
     
     <item>
       <title>日本も電波を再編しないと、将来iPhoneやAndroidが日本で使えなくなる</title>
-      <link>http://www.tdtsh.com/archives/703/</link>
+      <link>http://tdtsh.github.io/archives/703/</link>
       <pubDate>Mon, 21 Jun 2010 05:38:23 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/703/</guid>
+      <guid>http://tdtsh.github.io/archives/703/</guid>
       <description>先日、孫正義さん、池田信夫さん、夏野剛さんによる光の道討論が行われたと当ブログでも書きました。 早速テキストに書き起こしてくださった方がいます</description>
     </item>
     
     <item>
       <title>SIerや開発会社のエンジニアは、もっと中小のエンドユーザ企業に転職して欲しい</title>
-      <link>http://www.tdtsh.com/archives/686/</link>
+      <link>http://tdtsh.github.io/archives/686/</link>
       <pubDate>Wed, 16 Jun 2010 23:45:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/686/</guid>
+      <guid>http://tdtsh.github.io/archives/686/</guid>
       <description>ITは、今でも経済の最大のエンジンである。環境保護で成長するなんてナンセンスだが、日本の通信インフラは世界一で、成長のポテンシャルも大きい。</description>
     </item>
     
     <item>
       <title>iPhoneと日本のガラケー</title>
-      <link>http://www.tdtsh.com/archives/677/</link>
+      <link>http://tdtsh.github.io/archives/677/</link>
       <pubDate>Mon, 14 Jun 2010 08:02:14 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/677/</guid>
+      <guid>http://tdtsh.github.io/archives/677/</guid>
       <description>日本の携帯電話が、iモード全盛の時期に機能だけみると世界よりも２年ぐらい進んでいたのにも関わらず、今や「ガラパゴス・ケータイ」と呼ばれる世界</description>
     </item>
     
     <item>
       <title>ゲームクリエイターとソーシャルアプリケーション</title>
-      <link>http://www.tdtsh.com/archives/572/</link>
+      <link>http://tdtsh.github.io/archives/572/</link>
       <pubDate>Mon, 01 Mar 2010 04:54:50 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/572/</guid>
+      <guid>http://tdtsh.github.io/archives/572/</guid>
       <description>先日、昔在籍したゲーム開発会社のメンバとの懇親会に参加しました。 私自信はゲームをクリエイトする能力も立場でも無かったんですが、何故ゲーム開発</description>
     </item>
     
     <item>
       <title>アドミニストレーション( administration )とマネジメント( management )の違い</title>
-      <link>http://www.tdtsh.com/archives/23/</link>
+      <link>http://tdtsh.github.io/archives/23/</link>
       <pubDate>Sat, 23 May 2009 12:07:15 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/23/</guid>
+      <guid>http://tdtsh.github.io/archives/23/</guid>
       <description>アドミニストレーションも、マネジメントも、共に「管理」と訳される場合が多い。 個人的なイメージとしては、 アドミニストレーションは「行政執行」、</description>
     </item>
     
     <item>
       <title>仮のWEBシステムを、脳内でAmazon EC2に移行してみる</title>
-      <link>http://www.tdtsh.com/archives/19/</link>
+      <link>http://tdtsh.github.io/archives/19/</link>
       <pubDate>Wed, 20 May 2009 02:49:59 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/19/</guid>
+      <guid>http://tdtsh.github.io/archives/19/</guid>
       <description>仮のWEBシステムを、脳内でAmazon EC2に移行してみる。 ■EC2 インスタンス 次の3つから選択する。Smallで充分。 Small 1.7GB / 1CPU / 160GB HDD / 32bit</description>
     </item>
     
     <item>
       <title>小さな失敗の連続の中でいかに大負けしないか、と言う考え方</title>
-      <link>http://www.tdtsh.com/archives/7/</link>
+      <link>http://tdtsh.github.io/archives/7/</link>
       <pubDate>Thu, 14 May 2009 02:03:51 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/7/</guid>
+      <guid>http://tdtsh.github.io/archives/7/</guid>
       <description>ヴォータンの独白 &amp;#8211; 負の成果主義の悲惨な結末（再論） &amp;lt;div style=&amp;quot;float:left;margin-left:15px;line-height:120%&amp;quot; class=&amp;quot;amazlet-info&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;margin-bottom:10px;line-height:120%&amp;quot; class=&amp;quot;amazlet-name&amp;quot;&amp;gt; &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;http://www.amazon.co.jp/exec/obidos/ASIN/4334933394/tdtsh-22/ref=nosim/&amp;quot; name=&amp;quot;amazletlink&amp;quot;&amp;gt;内側から</description>
     </item>
     
     <item>
       <title>JavaフレームワークでWEB開発できる会社</title>
-      <link>http://www.tdtsh.com/archives/5/</link>
+      <link>http://tdtsh.github.io/archives/5/</link>
       <pubDate>Wed, 13 May 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/5/</guid>
+      <guid>http://tdtsh.github.io/archives/5/</guid>
       <description>Java、Velocity、Struts、Spring FrameworkでWebアプリケーション開発やってるお会社を探しててググッてみたけど</description>
     </item>
     

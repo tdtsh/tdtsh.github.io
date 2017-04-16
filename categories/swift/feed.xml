@@ -2,138 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swift on はなたんのブログ</title>
-    <link>http://www.tdtsh.com/categories/swift/</link>
+    <link>http://tdtsh.github.io/categories/swift/</link>
     <description>Recent content in Swift on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 15 Dec 2016 00:00:55 +0000</lastBuildDate>
     
-	<atom:link href="http://www.tdtsh.com/categories/swift/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tdtsh.github.io/categories/swift/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>サーバサイドSwift</title>
-      <link>http://www.tdtsh.com/archives/3900/</link>
+      <link>http://tdtsh.github.io/archives/3900/</link>
       <pubDate>Thu, 15 Dec 2016 00:00:55 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3900/</guid>
+      <guid>http://tdtsh.github.io/archives/3900/</guid>
       <description>ちょくちょくサーバサイドSwiftの話を聞くのですがいまいち覚えきれないのでメモ。結構沢山あるんですね。 Perfect 9915 Star 名前が凄いし、Star数もそれ</description>
     </item>
     
     <item>
       <title>[Swift2] Facebook Popを使ったアニメーション</title>
-      <link>http://www.tdtsh.com/archives/3834/</link>
+      <link>http://tdtsh.github.io/archives/3834/</link>
       <pubDate>Thu, 11 Feb 2016 13:15:11 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3834/</guid>
+      <guid>http://tdtsh.github.io/archives/3834/</guid>
       <description>&amp;nbsp; 前回やってみたアニメーションとは別のアプローチで。 facebookが提供しているアニメーションライブラリPopを使ってみます。 https://github.com/facebook/pop Titan</description>
     </item>
     
     <item>
       <title>[Swift2] 背面カメラのトーチをオン</title>
-      <link>http://www.tdtsh.com/archives/3817/</link>
+      <link>http://tdtsh.github.io/archives/3817/</link>
       <pubDate>Fri, 29 Jan 2016 12:30:42 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3817/</guid>
+      <guid>http://tdtsh.github.io/archives/3817/</guid>
       <description>&amp;nbsp; 暗い所でもカメラ撮影したいんです。 ソースコード なんかだいたい判ってきたんですが、Swift2になってエラーと取り回しが1系から変わっている</description>
     </item>
     
     <item>
       <title>[Swift2] UIView(ボタン)をフェードイン</title>
-      <link>http://www.tdtsh.com/archives/3802/</link>
+      <link>http://tdtsh.github.io/archives/3802/</link>
       <pubDate>Sun, 24 Jan 2016 13:00:39 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3802/</guid>
+      <guid>http://tdtsh.github.io/archives/3802/</guid>
       <description>&amp;nbsp; アニメーションやってみたくなったので、全く必要性は無いけどボタンをフェードインしてみます。 欲しいのはTitaniumでいうと Ti.UI.Animation 的なやつです</description>
     </item>
     
     <item>
       <title>[Swift2] ボタンにラベルをのせ、NSLineBreakModeを指定</title>
-      <link>http://www.tdtsh.com/archives/3797/</link>
+      <link>http://tdtsh.github.io/archives/3797/</link>
       <pubDate>Fri, 22 Jan 2016 14:20:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3797/</guid>
+      <guid>http://tdtsh.github.io/archives/3797/</guid>
       <description>ボタンにタイトルを与えるだけでは実現できない細かい制御をしたいので、ボタン側のタイトルをブランクにして、ラベルをaddSubviewします。</description>
     </item>
     
     <item>
       <title>[Swift2] ボタンを作る</title>
-      <link>http://www.tdtsh.com/archives/3791/</link>
+      <link>http://tdtsh.github.io/archives/3791/</link>
       <pubDate>Thu, 21 Jan 2016 14:11:05 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3791/</guid>
+      <guid>http://tdtsh.github.io/archives/3791/</guid>
       <description>前回作ったラベルをボタンに変更します。 UIButtonです。 Titaniumでいうと Ti.UI.Button です。 ソースコード 動かしたとこ 相変わらずへんな色なのは</description>
     </item>
     
     <item>
       <title>[Swift2] GCRectMake じゃないやつ (Legacy Constructor Violation)</title>
-      <link>http://www.tdtsh.com/archives/3789/</link>
+      <link>http://tdtsh.github.io/archives/3789/</link>
       <pubDate>Wed, 20 Jan 2016 14:26:47 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3789/</guid>
+      <guid>http://tdtsh.github.io/archives/3789/</guid>
       <description>前回Swiftlintを入れて、.swiftlint.yml ファイルを適宜修正し、なんとかビルドが通る様にはなりましたが、いくつかワーニング</description>
     </item>
     
     <item>
       <title>Swiftlintを入れてみた</title>
-      <link>http://www.tdtsh.com/archives/3787/</link>
+      <link>http://tdtsh.github.io/archives/3787/</link>
       <pubDate>Tue, 19 Jan 2016 13:09:43 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3787/</guid>
+      <guid>http://tdtsh.github.io/archives/3787/</guid>
       <description>初心者なんで、Linter無しでSwift書くの不安だなーと思ってたら、Swiftlintがあったので早速インスコ。 https://github.com/realm/SwiftLint インストール brew install swiftlint して</description>
     </item>
     
     <item>
       <title>[Swift2] NavigationController の子ウィンドウ閉じるとき2画面前に遷移させる</title>
-      <link>http://www.tdtsh.com/archives/3783/</link>
+      <link>http://tdtsh.github.io/archives/3783/</link>
       <pubDate>Mon, 18 Jan 2016 12:48:11 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3783/</guid>
+      <guid>http://tdtsh.github.io/archives/3783/</guid>
       <description>Swift初心者のメモです。 やりたいこと NavigationControllerの下にFirstViewControllerがあって、Sec</description>
     </item>
     
     <item>
       <title>[Swift2] カメラで静止画を撮影 (AVFoundation)</title>
-      <link>http://www.tdtsh.com/archives/3745/</link>
+      <link>http://tdtsh.github.io/archives/3745/</link>
       <pubDate>Sun, 17 Jan 2016 05:18:54 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3745/</guid>
+      <guid>http://tdtsh.github.io/archives/3745/</guid>
       <description>Swift初心者がカメラでの画像撮影について書いたメモです。 普段はTitanium使っててこの辺は楽してます。 あんまり詳しく無いけど Objective-C でなら</description>
     </item>
     
     <item>
       <title>[Swift2] UILabelを表示する</title>
-      <link>http://www.tdtsh.com/archives/3742/</link>
+      <link>http://tdtsh.github.io/archives/3742/</link>
       <pubDate>Fri, 15 Jan 2016 13:29:09 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3742/</guid>
+      <guid>http://tdtsh.github.io/archives/3742/</guid>
       <description>Swift初心者がやった事をメモしてます。 寝る前の1〜2時間でちょいちょいやっているので進み遅いです。 前回、追加したウィンドウに何も表示され</description>
     </item>
     
     <item>
       <title>[Swift2] ViewController を作って画面遷移 (NavigationController)</title>
-      <link>http://www.tdtsh.com/archives/3735/</link>
+      <link>http://tdtsh.github.io/archives/3735/</link>
       <pubDate>Thu, 14 Jan 2016 12:57:00 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3735/</guid>
+      <guid>http://tdtsh.github.io/archives/3735/</guid>
       <description>Swift初心者がやった事をメモします。 前回、追加したNavigationBarのRightBarButtonItemのactionを作って</description>
     </item>
     
     <item>
       <title>[Swift2] Alert を表示する</title>
-      <link>http://www.tdtsh.com/archives/3728/</link>
+      <link>http://tdtsh.github.io/archives/3728/</link>
       <pubDate>Wed, 13 Jan 2016 13:14:36 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3728/</guid>
+      <guid>http://tdtsh.github.io/archives/3728/</guid>
       <description>Swift初心者がやった事をメモします。 前回追加したNavigationBarのRightBarButtonItemのactionを作って、</description>
     </item>
     
     <item>
       <title>[Swift2] NavigationBar の 右にボタンを複数追加する</title>
-      <link>http://www.tdtsh.com/archives/3712/</link>
+      <link>http://tdtsh.github.io/archives/3712/</link>
       <pubDate>Tue, 12 Jan 2016 13:26:48 +0000</pubDate>
       
-      <guid>http://www.tdtsh.com/archives/3712/</guid>
+      <guid>http://tdtsh.github.io/archives/3712/</guid>
       <description>Swift初心者なのでやった事をメモしていこうと思います。 Swift2です。というかSwift1.x触った事ないです。 プロジェクト作成 プロジ</description>
     </item>
     
