@@ -6,10 +6,19 @@
     <description>Recent content on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 28 Feb 2017 13:55:37 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Apr 2017 15:00:08 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>wordpressからhugo&#43;github.ioに移行</title>
+      <link>http://tdtsh.github.io/archives/4000/</link>
+      <pubDate>Sun, 16 Apr 2017 15:00:08 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4000/</guid>
+      <description>wordpress 面倒になってきたので、hugo + github.io に移行しました。 今これが見えているという事は、新しい方を見ています。 RSSフィードが微妙に変わっているん</description>
+    </item>
     
     <item>
       <title>node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</title>
