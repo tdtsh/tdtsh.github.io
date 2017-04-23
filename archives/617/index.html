@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/617/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>slim3のインストール、Velocity との連携 - はなたんのブログ</title>
+    
+<meta name="description" content="重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザ">
+
+<meta property="og:title" content="slim3のインストール、Velocity との連携 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/617/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/617/">
+<meta name="twitter:title" content="slim3のインストール、Velocity との連携 - はなたんのブログ">
+<meta name="twitter:description" content="重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザ">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "slim3のインストール、Velocity との連携 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2010-04-14T02:52:13JST",
+    "dateModified": "2010-04-14T02:52:13JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザ"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">slim3のインストール、Velocity との連携</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-04-14T02:52:13JST">Apr 14, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">slim3のインストール、Velocity との連携</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>重量級のフレームワークはGAE/J上でspin-upの速度が遅い。JDOでDatastoreを操作してもsipn-upが遅い。その上トランザクションの要件を満たそうと思うと、難易度が高い。</p>
+
+<p><a href="http://d.hatena.ne.jp/higayasuo/20100319/1268984735">App Engineではどの言語を使えばいいのか &#8211; ひがやすを blog</a></p>
+
+<p>悩んだ挙句、オレオレフレームワークを捨て、<a href="http://sites.google.com/site/slim3appengine/Home">Slim3</a>に移行する事に決めました。</p>
+
+<p>でもやはり、toCのWEB屋にとってJSPはキツイ。</p>
+
+<p>保守フェーズ(運営)は主にエディターとかWEBデザイナとかが担う訳でして、彼らが扱いやすいVelocityが使いたい訳です。慣れてるし。</p>
+
+<p>多少の性能ダウンは覚悟で、slim3 と Velocityと連携させます。</p>
+
+<p>まぁvmファイルの数が少ない内はVelocityも早いですし。</p>
+
+<p>GAE/Jのロードマップ上、<a href="http://d.hatena.ne.jp/kazunori_279/20100328/1269767818">スピンダウン／スピンアップの回避</a>が出来る方法が提供されるかも知れない様ですから、それにちょっと期待します。</p>
+
+<p>最初の方は、基本的に、<a href="http://sites.google.com/site/slim3documentja/getting-started">スタートガイド (Slim3 日本語サイト(非公式))</a>に書いている事と同じです。</p>
+
+<p>eclipseは日本語化された3.4を使用し、<a href="/blog/archives/57">Google Plugin for Eclipse や Google App Engine JAVA SDKのインストール</a>は終わっているものとします。</p>
+
+<p>因みにOSはWindowsでJDKは6u17です。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="slim3ブランクプロジェクトのインストール">slim3ブランクプロジェクトのインストール</h4>
+
+<ul>
+<li><a href="http://code.google.com/p/slim3/downloads/list">Downloads &#8211; slim3 &#8211; Project Hosting on Google Code</a>より、最新バージョンのSlim3ブランクプロジェクト(2010-04-13時点ではslim3-blank-1.0.1.zip)をダウンロードする</li>
+<li>ダウンロードしたzipファイル(slim3-blank-X.X.X.zip ※Xは可変)を解凍する</li>
+<li>解凍したslim3-blankをeclipseのワークスペースにインポートする為に、eclipseを起動する</li>
+<li>[ファイル(F)] &#8211; [インポート(I)] をクリックする</li>
+<li>[一般] &#8211; [既存プロジェクトをワークスペースへ]を選択し[次へ(N)]クリックする</li>
+<li>[ルート・ディレクトリーの選択(T)]にて、先ほど解凍したslim3-blankディレクトリを指定し、[終了(F)]をクリックする</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="eclipseの設定">Eclipseの設定</h4>
+
+<ul>
+<li>[ウィンドウ(W)] &#8211; [設定(P)]をクリックする</li>
+<li>設定の左ペインより、[Java] &#8211; [コード・スタイル] &#8211; [インポートの編成]をクリックする</li>
+<li>[.* (例 &#8216;java.lang.Math.*) に必要な静的インポート数(S)]に1を設定し、[適用(A)]をクリックする</li>
+<li>設定の左ペインより、[Java] &#8211; [エディター] &#8211; [コンテンツ・アシスト] &#8211; [お気に入り] をクリックする</li>
+<li>[新規タイプ(T)]ボタンをクリックする</li>
+<li>[新規型お気に入り]にて、下記を追加し、[適用(A)]をクリックする</p>
+
+<ul>
+<li>org.hamcrest.CoreMatchers</li>
+<li>org.junit.Assert</li>
+<li>org.junit.matchers.JUnitMatchers</li>
+</ul></li>
+<li>設定の左ペインより、[一般] &#8211; [ワークスペース]をクリックする</li>
+<li>[自動的にリフレッシュ&reg;]にチェックを入れ、[OK]をクリックする</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="libにあるslim3-gen-xxx-jarをアノテーション処理のファクトリパスに追加">libにあるslim3-gen-xxx.jarをアノテーション処理のファクトリパスに追加</h4>
+
+<ul>
+<li>パッケージ・エクスプローラにてslim3-blankプロジェクトを選択する</li>
+<li>[プロジェクト(P)] &#8211; [プロパティー(P)]をクリックする</li>
+<li>[Javaコンパイラー] &#8211; [注釈処理] &#8211; [ファクトリーパス]をクリックする</li>
+<li>[JAR の追加(J)]をクリックする</li>
+<li>[JARの選択]ダイアログにて、[slim3-blank] &#8211; [lib] &#8211; [slim3-gen-1.0.1.jar]を選択し、[OK]をクリックする</li>
+<li>[OK]をクリックする</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="ブランクプロジェクトの実行">ブランクプロジェクトの実行</h4>
+
+<ul>
+<li>パッケージ・エクスプローラにてslim3-blankプロジェクトを選択し、右クリックする</li>
+<li>[実行&reg;] &#8211; [Webアプリケーション]をクリックする</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="プロジェクト名を好みの名前にリネーム">プロジェクト名を好みの名前にリネーム</h4>
+
+<ul>
+<li>パッケージ・エクスプローラにてslim3-blankプロジェクトを選択し、右クリックする</li>
+<li>[リファクタリング(T)] &#8211; [名前変更(N)]</li>
+<li>[Javaプロジェクト名の変更]にて、新しい名前を入力する</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="slim3-rootpackageの変更">slim3.rootPackageの変更</h4>
+
+<p>war/WEB-INF/web.xml を編集する。</p>
+
+<pre>&lt;context-param&gt;
+  &lt;param-name&gt;slim3.rootPackage&lt;/param-name&gt;
+  &lt;param-value&gt;slim3&lt;/param-value&gt;
+&lt;/context-param&gt;
+↓
+&lt;context-param&gt;
+  &lt;param-name&gt;slim3.rootPackage&lt;/param-name&gt;
+  &lt;param-value&gt;my.package&lt;/param-value&gt;
+&lt;/context-param&gt;
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="velocityのインストール">Velocityのインストール</h4>
+
+<p>詳細は、<a href="/blog/archives/445">先日書いた手順</a>を参照ください。</p>
+
+<ul>
+<li>ライブラリをWEB-INF/lib/にコピー</p>
+
+<ul>
+<li>velocity-1.6.2.jar</li>
+<li>velocity-tools-1.4.jar</li>
+</ul></li>
+<li>ビルドパスに追加</li>
+<li>web.xml追記</p>
+<pre>&lt;servlet&gt;
+&lt;servlet-name&gt;velocity&lt;/servlet-name&gt;
+&lt;servlet-class&gt;
+    my.package.control.VelocityServlet
+&lt;/servlet-class&gt;
+&lt;/servlet&gt;
+&lt;servlet-mapping&gt;
+&lt;servlet-name&gt;velocity&lt;/servlet-name&gt;
+&lt;url-pattern&gt;*.vm&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+</pre></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="velocityの依存性をwar-web-inf-lib-にコピー">Velocityの依存性をwar/WEB-INF/lib/にコピー</h4>
+
+<p>以下をコピーしてビルドパスに追加する。</p>
+
+<pre>commons-beanutils-1.7.0.jar
+commons-chain-1.1.jar
+commons-collections-3.2.jar
+commons-digester-1.8.jar
+commons-lang-2.2.jar
+commons-logging-1.1.jar
+commons-validator-1.3.1.jar
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="velocity設定ファイルをコピー">Velocity設定ファイルをコピー</h4>
+
+<p>以下をwar/WEB/INF/にコピーする。</p>
+
+<pre>VM_global_library.vm
+    velocity.properties
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="appengine-web-xmlに静的ファイルとか追記">appengine-web.xmlに静的ファイルとか追記</h4>
+
+<pre>&lt;static-files&gt;
+    &lt;include path="/asis/**" /&gt;
+    &lt;include path="/css/**" /&gt;
+    &lt;include path="/images/**" /&gt;
+    &lt;include path="**.js" /&gt;
+    &lt;include path="**.css" /&gt;
+    &lt;include path="**.png" /&gt;
+    &lt;include path="**.jpg" /&gt;
+    &lt;include path="**.jpeg" /&gt;
+    &lt;include path="**.swf" /&gt;
+    &lt;include path="**.gif" /&gt;
+    &lt;include path="**.ico" /&gt;
+    &lt;include path="**.html" /&gt;
+&lt;/static-files&gt;
+&lt;resource-files&gt;
+    &lt;include path="**.jsp" /&gt;
+    &lt;include path="**.vm" /&gt;
+&lt;/resource-files&gt;
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="controllerクラスの作成">Controllerクラスの作成</h4>
+
+<p>StrutsでいうActionクラスみたいなモンですが、設定ファイルが要りません。</p>
+
+<p>1URL：1クラスで、URLのパスとクラスパスを対応させています。</p>
+
+<ul>
+<li>パッケージ・エクスプローラにてプロジェクト直下の build.xml をダブルクリックする</li>
+
+<li><p>右側のアウトライン・ビューにて、[gen-controller-without-view]タスクを右クリックする。</p>
+
+<p>gen-controllerとの違いは、*.jspを生成しないこと。Velocoty使うのでjsp要らないので。</p></li>
+
+<li><p>[実行&reg;] &#8211; [1 Ant ビルド Alt+Shift+X, Q] (1番目の項目) をクリックする</p></li>
+
+<li><p>[Ant Input Request]にて、&#8221;/hoge/&#8221;と入力する</p></li>
+
+<li><p>下記ファイルが生成されている事を確認する。</p></p>
+
+<ul>
+<li>src/my/package/controller/hoge/IndexController.java</li>
+<li>test/my/package/controller/hoge/IndexControllerTest.java</li>
+</ul></li>
+
+<li><p>IndexController を編集して、forward先を&#8221;index.vm&#8221;に変更する</p></li>
+
+<li><p>war/hoge/index.vm を作成する。(VTLが使える)</p></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="controllerの処理結果をvelocity-vtl-に受け渡して表示するには">Controllerの処理結果をVelocity(VTL)に受け渡して表示するには</h4>
+
+<p>Controller側に用意されている、各スコープ(Application/Session/Request)のattributeに値を設定するメソッド</p>
+
+<ul>
+<li>requestScope()</li>
+<li>sessionScope()</li>
+<li>applicationScope()</li>
+</ul>
+
+<p>の内、requestScope()を利用します。</p>
+
+<p>注意点として、Antタスクgen-controller生成されたControllerのJavaソースファイルは、</p>
+
+<p>Windows XP + eclipse 3.4の環境ではファイルエンコーディングがsjisになる。</p>
+
+<p>下記の様にマルチバイトの文字列をハードコードする際には、ブラウザで表示する際の文字エンコーディングにあわせて、Controllerクラスのファイルエンコーディングを適宜変換 (utf-8などに) しておかないと文字化けする。</p>
+
+<pre>public class IndexController extends Controller {
+    @Override
+    public Navigation run() throws Exception {
+        String message = "Controllerからのメッセージです";
+        requestScope("message", message);
+        return forward("index.vm");
+    }
+}
+</pre>
+
+<p>VelocityServletの子クラス側で、RequestからAttributeの値を取り出し、VelocityのContextにセットする。</p>
+
+<pre>protected Template handleRequest(HttpServletRequest req,
+    HttpServletResponse res, Context ctx) throws Exception {
+    String templateName = "index.vm";
+    ctx.put("message", req.getAttribute("message"));
+    return getTemplate(templateName);
+}
+</pre>
+
+<p>最終的に、index.vm 側で出力出来るようになります。</p>
+
+<pre>&lt;p&gt;$message&lt;/p&gt;
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="log4j設定">log4j設定</h4>
+
+<p>詳細は<a href="/blog/archives/493">ココ</a>と<a href="/blog/archives/558">ココ</a> を参照ください。</p>
+
+<p>Velocityの依存性をwar/WEB-INF/lib/にコピーし、ビルドパスに追加する。</p>
+
+<pre>log4j-1.2.15.jar
+apache-log4j-extras-1.0.jar
+</pre>
+
+<p>src/log4.properties を編集する</p>
+
+<pre>log4j.rootLogger=INFO, A1
+log4j.appender.A1=org.apache.log4j.ConsoleAppender
+log4j.appender.A1.encoding=UTF-8
+log4j.appender.A1.layout=org.apache.log4j.EnhancedPatternLayout
+log4j.appender.A1.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss}{Asia/Tokyo} %-5p [%F:%L] - %m%n
+log4j.logger.org.apache.velocity=WARN,A1
+log4j.logger.org.apache.struts=WARN,A1
+log4j.logger.org.apache.commons.beanutils=WARN,A1
+log4j.category.ActionCommandBase=WARN,A1
+log4j.category.AbstractSelectLocale=WARN,A1
+log4j.category.BeanUtilsBean=WARN,A1
+log4j.category.ConvertUtilsBean=WARN,A1
+log4j.category.AbstractConverter=WARN,A1
+log4j.category.DataNucleus.JDO=WARN, A1
+log4j.category.DataNucleus.Persistence=WARN, A1
+log4j.category.DataNucleus.Cache=WARN, A1
+log4j.category.DataNucleus.MetaData=WARN, A1
+log4j.category.DataNucleus.General=WARN, A1
+log4j.category.DataNucleus.Utility=WARN, A1
+log4j.category.DataNucleus.Transaction=WARN, A1
+log4j.category.DataNucleus.Datastore=WARN, A1
+log4j.category.DataNucleus.ClassLoading=WARN, A1
+log4j.category.DataNucleus.Plugin=WARN, A1
+log4j.category.DataNucleus.ValueGeneration=WARN, A1
+log4j.category.DataNucleus.Enhancer=WARN, A1
+log4j.category.DataNucleus.SchemaTool=WARN, A1
+</pre>
+
+<p>WEB-INF/appengine-web.xml を修正します。</p>
+
+<blockquote>
+<p><system-properties></p>
+
+<p><property name=&#8221;java.util.logging.config.file&#8221; value=&#8221;WEB-INF/classes/log4j.properties&#8221;/></p>
+
+<p></system-properties></p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><a href="/blog/archives/624">次回、とりあえずModelクラスとServiceクラスをつくってみます</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="参考サイト">参考サイト</h4>
+
+<p><a href="http://sites.google.com/site/slim3documentja/getting-started">スタートガイド (Slim3 日本語サイト(非公式))</a></p>
+
+<p><a href="http://d.hatena.ne.jp/hageyahhoo/20100411/1270980051">【slim3】 JSPの開発手順および注意事項 &#8211; 炸裂！情熱の右フック！！</a></p>
+
+<p><a href="http://www39.atwiki.jp/fujiyan/pages/16.html">ふじやん雑記帳 &#8211; Slim3</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/slim3/">slim3</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

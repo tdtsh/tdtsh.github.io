@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/1417/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>急にeclipse から appengine にデプロイできなくなりました - はなたんのブログ</title>
+    
+<meta name="description" content="なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。 An internal error occurred during Deploying %APPNAME% to Google NullPointerException 理">
+
+<meta property="og:title" content="急にeclipse から appengine にデプロイできなくなりました - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/1417/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。 An internal error occurred during Deploying %APPNAME% to Google NullPointerException 理">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/1417/">
+<meta name="twitter:title" content="急にeclipse から appengine にデプロイできなくなりました - はなたんのブログ">
+<meta name="twitter:description" content="なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。 An internal error occurred during Deploying %APPNAME% to Google NullPointerException 理">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "急にeclipse から appengine にデプロイできなくなりました - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2011-10-28T11:25:58JST",
+    "dateModified": "2011-10-28T11:25:58JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。 An internal error occurred during Deploying %APPNAME% to Google NullPointerException 理"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">急にeclipse から appengine にデプロイできなくなりました</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-10-28T11:25:58JST">Oct 28, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">急にeclipse から appengine にデプロイできなくなりました</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>なんの拍子か判らないけど、気がついたら eclipse から appengine へデプロイしようとすると、こんなダイアログが出て失敗する様になりました。</p>
+
+<pre>An internal error occurred during Deploying %APPNAME% to Google NullPointerException
+</pre>
+
+<p>理由は判りません。</p>
+
+<p>心当たりがあるとすれば、appengine python sdk のランチャを弄ってた位です。</p>
+
+<p>Windows XP 、eclipse は Helios、appengine java SDK は 1.5.5 です。</p>
+
+<p>取り急ぎは macbook air の開発環境から問題なくdeploy出来るんでいいんですが、そこそこ困ります。</p>
+
+<p>更に、ローカルで実行しようとすると、こんな風に怒られます。</p>
+
+<pre>java.lang.RuntimeException: Unable to locate the App Engine agent. Please use dev_appserver, KickStart,  or set the jvm flag: "-javaagent:&lt;sdk_root>/lib/agent/appengine-agent.jar"
+    at com.google.appengine.tools.development.DevAppServerFactory.testAgentIsInstalled(DevAppServerFactory.java:102)
+    at com.google.appengine.tools.development.DevAppServerFactory.createDevAppServer(DevAppServerFactory.java:77)
+    at com.google.appengine.tools.development.DevAppServerFactory.createDevAppServer(DevAppServerFactory.java:38)
+    at com.google.appengine.tools.development.DevAppServerMain$StartAction.apply(DevAppServerMain.java:154)
+    at com.google.appengine.tools.util.Parser$ParseResult.applyArgs(Parser.java:48)
+    at com.google.appengine.tools.development.DevAppServerMain.&lt;init>(DevAppServerMain.java:113)
+    at com.google.appengine.tools.development.DevAppServerMain.main(DevAppServerMain.java:89)
+Caused by: java.lang.NoClassDefFoundError: com/google/appengine/tools/development/agent/AppEngineDevAgent
+    at com.google.appengine.tools.development.DevAppServerFactory.testAgentIsInstalled(DevAppServerFactory.java:98)
+    ... 6 more
+Caused by: java.lang.ClassNotFoundException: com.google.appengine.tools.development.agent.AppEngineDevAgent
+    at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+    at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+    at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+    ... 7 more
+
+&lt;/init>&lt;/sdk_root></pre>
+
+<p>どうやら、VMの引数をちゃんとしろと言っているようです。</p>
+
+<p>プロジェクトを右クリックして、英語の場合は[Run As] &#8211; [Run Configurations] を起動、[(x) = Arguments]タブ （日本語化の場合は[実行] &#8211; [実行の構成&#8230;] で[(x)=引数]タブ）で指定できます。</p>
+
+<p>ですが、元々の値が判りませんし入れるのメンドクサイです。</p>
+
+<p>かんたんな対処法は、パッケージエクスプローラ上の「App Engine SDK [App Engine &#8211; 1.x.x]を右クリックし、ビルドパスから除去して、プロジェクトのプロパティから再度SDKを指定すれば自動で入りました。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/eclipse/">eclipse</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/2334/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順 - はなたんのブログ</title>
+    
+<meta name="description" content="iPhone というか iOSアプリ開発しリリースをする上で避けて通れないプロビジョニング・プロファイルの作成。アプリ開発者は元より、開発はしないけど発注">
+
+<meta property="og:title" content="App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/2334/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="iPhone というか iOSアプリ開発しリリースをする上で避けて通れないプロビジョニング・プロファイルの作成。アプリ開発者は元より、開発はしないけど発注">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/2334/">
+<meta name="twitter:title" content="App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順 - はなたんのブログ">
+<meta name="twitter:description" content="iPhone というか iOSアプリ開発しリリースをする上で避けて通れないプロビジョニング・プロファイルの作成。アプリ開発者は元より、開発はしないけど発注">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2012-09-28T11:56:30JST",
+    "dateModified": "2012-09-28T11:56:30JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "iPhone というか iOSアプリ開発しリリースをする上で避けて通れないプロビジョニング・プロファイルの作成。アプリ開発者は元より、開発はしないけど発注"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-09-28T11:56:30JST">Sep 28, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">App Storeへのアプリ申請のための Distribution Provisioning Profile (プロビジョニング・プロファイル) の作成手順</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><img data-attachment-id="2402" data-permalink="/blog/archives/2334/appstore" data-orig-file="/uploads/2012/09/appstore.jpeg?fit=302%2C167" data-orig-size="302,167" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="appstore" data-image-description="" data-medium-file="/uploads/2012/09/appstore.jpeg?fit=300%2C165" data-large-file="/uploads/2012/09/appstore.jpeg?fit=302%2C167" src="/uploads/2012/09/appstore.jpeg?resize=300%2C165" alt="" title="appstore" class="aligncenter size-medium wp-image-2402" srcset="/uploads/2012/09/appstore.jpeg?resize=300%2C165 300w, /uploads/2012/09/appstore.jpeg?w=302 302w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></p>
+
+<p>iPhone というか iOSアプリ開発しリリースをする上で避けて通れないプロビジョニング・プロファイルの作成。アプリ開発者は元より、開発はしないけど発注元として開発会社に委託する場合とかにも、Distribution Provisioning Profileは必要になってきます。</p>
+
+<p>自分も2回ほどやってみましたが、イマイチ身になってない気がするんで、手順を書き起こしておきます。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="1-開発証明書の発行とmacへの登録">1. 開発証明書の発行とMacへの登録</h4>
+
+<p>1-1. MacでSafariを開き<a href="https://developer.apple.com/devcenter/ios/index.action" target="_blank">[iOS Developer Center]</a>へログインする。</p>
+
+<p><a href="/uploads/2012/09/7878c3323bd1d23412e871544a954a51.png" target="_blank"><img data-attachment-id="2335" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-11-53-27" data-orig-file="/uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?fit=1275%2C927" data-orig-size="1275,927" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 11.53.27" data-image-description="" data-medium-file="/uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?fit=300%2C218" data-large-file="/uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?fit=525%2C381" src="/uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?resize=300%2C218" alt="" title="スクリーンショット 2012-09-27 11.53.27" class="aligncenter size-medium wp-image-2335" srcset="/uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?resize=300%2C218 300w, /uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?resize=1024%2C744 1024w, /uploads/2012/09/7878c3323bd1d23412e871544a954a51.png?w=1275 1275w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>※開発者アカウントが複数のチームに所属している場合はここでチームを選ぶ。チームはログアウトするまで変更できないみたい。</p>
+
+<p><a href="/uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png" target="_blank"><img data-attachment-id="2374" data-permalink="/blog/archives/2334/%e5%90%8d%e7%a7%b0%e6%9c%aa%e8%a8%ad%e5%ae%9a2" data-orig-file="/uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?fit=1043%2C278" data-orig-size="1043,278" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="名称未設定2" data-image-description="" data-medium-file="/uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?fit=300%2C79" data-large-file="/uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?fit=525%2C139" src="/uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?resize=300%2C79" alt="" title="名称未設定2" class="aligncenter size-medium wp-image-2374" srcset="/uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?resize=300%2C79 300w, /uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?resize=1024%2C272 1024w, /uploads/2012/09/f261ee76dd4af09a36d3c143ff2b9ba7.png?w=1043 1043w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1−2. <a href="https://developer.apple.com/ios/manage/overview/index.action" target="_blank">[iOS Provisioning Portal]</a> をクリックする</p>
+
+<p><a href="/uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png" target="_blank"><img data-attachment-id="2338" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-11-55-16" data-orig-file="/uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?fit=1275%2C927" data-orig-size="1275,927" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 11.55.16" data-image-description="" data-medium-file="/uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?fit=300%2C218" data-large-file="/uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?fit=525%2C381" src="/uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?resize=300%2C218" alt="" title="スクリーンショット 2012-09-27 11.55.16" class="aligncenter size-medium wp-image-2338" srcset="/uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?resize=300%2C218 300w, /uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?resize=1024%2C744 1024w, /uploads/2012/09/5971d5316740a2e68b081c1b2cc4eb6e.png?w=1275 1275w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-3. 左メニューの[Certificates]をクリックし、右の方の[Request Certificate]をクリックすると、この画面になる。Macで証明書を作ってアップロードしないと先に進めないので、一旦ひらいたままにしておく</p>
+
+<p><a href="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png" target="_blank"><img data-attachment-id="2340" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-13-24-24" data-orig-file="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?fit=1239%2C1080" data-orig-size="1239,1080" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 13.24.24" data-image-description="" data-medium-file="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?fit=300%2C261" data-large-file="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?fit=525%2C457" src="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 13.24.24" class="aligncenter size-medium wp-image-2340" srcset="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?resize=300%2C261 300w, /uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?resize=1024%2C892 1024w, /uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-4. Spotlightを起動し、「キーチェーン」と入力し、[キーチェーンアクセス]を起動する</p>
+
+<p><a href="/uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png" target="_blank"><img data-attachment-id="2341" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-13-28-38" data-orig-file="/uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?fit=1177%2C771" data-orig-size="1177,771" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 13.28.38" data-image-description="" data-medium-file="/uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?fit=300%2C196" data-large-file="/uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?fit=525%2C344" src="/uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?resize=300%2C196" alt="" title="スクリーンショット 2012-09-27 13.28.38" class="aligncenter size-medium wp-image-2341" srcset="/uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?resize=300%2C196 300w, /uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?resize=1024%2C670 1024w, /uploads/2012/09/7c6dc5247ce4d8ddae8028321ee23027.png?w=1177 1177w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-5. メニューから[キーチェーンアクセス] &#8211; [証明書アシスタント] &#8211; [証明局に証明書を要求]をクリックする</p>
+
+<p><a href="/uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png" target="_blank"><img data-attachment-id="2342" data-permalink="/blog/archives/2334/%e5%90%8d%e7%a7%b0%e6%9c%aa%e8%a8%ad%e5%ae%9a" data-orig-file="/uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png?fit=741%2C338" data-orig-size="741,338" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="名称未設定" data-image-description="" data-medium-file="/uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png?fit=300%2C136" data-large-file="/uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png?fit=525%2C239" src="/uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png?resize=300%2C136" alt="" title="名称未設定" class="aligncenter size-medium wp-image-2342" srcset="/uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png?resize=300%2C136 300w, /uploads/2012/09/7dd4c3f74f006b34bb1d70d7adebd54e.png?w=741 741w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-6. 証明書アシスタントが起動するので、[ユーザのメールアドレス]に自分のメアド、[通称]に自分の名前を入力し、[ディスクに保存]を選択し、[鍵ペア情報を指定]にチェックを入れ、[続ける]をクリックする。下の画像見てもらったらスグ判ると思うけど、文字にすると長いナァ。</p>
+
+<p><a href="/uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png" target="_blank"><img data-attachment-id="2345" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-13-55-58" data-orig-file="/uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png?fit=730%2C550" data-orig-size="730,550" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 13.55.58" data-image-description="" data-medium-file="/uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png?fit=300%2C226" data-large-file="/uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png?fit=525%2C396" src="/uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png?resize=300%2C226" alt="" title="スクリーンショット 2012-09-27 13.55.58" class="aligncenter size-medium wp-image-2345" srcset="/uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png?resize=300%2C226 300w, /uploads/2012/09/5f2e8bb199b0643b5532056689a93d02.png?w=730 730w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-7. [保存]をクリックする</p>
+
+<p><a href="/uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png" target="_blank"><img data-attachment-id="2347" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-14-01-49" data-orig-file="/uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png?fit=730%2C550" data-orig-size="730,550" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 14.01.49" data-image-description="" data-medium-file="/uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png?fit=300%2C226" data-large-file="/uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png?fit=525%2C396" src="/uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png?resize=300%2C226" alt="" title="スクリーンショット 2012-09-27 14.01.49" class="aligncenter size-medium wp-image-2347" srcset="/uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png?resize=300%2C226 300w, /uploads/2012/09/d5c3c9d1a87ce9a6cc56d6144e5bdb11.png?w=730 730w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-8. 鍵ペア情報はデフォのままで。[続ける]をクリック</p>
+
+<p><a href="/uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png" target="_blank"><img data-attachment-id="2349" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-14-03-04" data-orig-file="/uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png?fit=730%2C550" data-orig-size="730,550" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 14.03.04" data-image-description="" data-medium-file="/uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png?fit=300%2C226" data-large-file="/uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png?fit=525%2C396" src="/uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png?resize=300%2C226" alt="" title="スクリーンショット 2012-09-27 14.03.04" class="aligncenter size-medium wp-image-2349" srcset="/uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png?resize=300%2C226 300w, /uploads/2012/09/c3513ccff455573ac115007ef81e52ed.png?w=730 730w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-9. [完了]をクリック。デスクトップに[CertificateSigningRequest.certSigningRequest]という名称のファイルが作成されている事を確認する。</p>
+
+<p><a href="/uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png" target="_blank"><img data-attachment-id="2351" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-14-04-05" data-orig-file="/uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png?fit=730%2C550" data-orig-size="730,550" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 14.04.05" data-image-description="" data-medium-file="/uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png?fit=300%2C226" data-large-file="/uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png?fit=525%2C396" src="/uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png?resize=300%2C226" alt="" title="スクリーンショット 2012-09-27 14.04.05" class="aligncenter size-medium wp-image-2351" srcset="/uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png?resize=300%2C226 300w, /uploads/2012/09/fd680e12f3fab42cc97db24eb7ece45f.png?w=730 730w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-10. Safariに戻り、[ファイルを選択]をクリックし、デスクトップにある[CertificateSigningRequest.certSigningRequest]を選択し、[Submit]をクリックする。</p>
+
+<p><a href="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png" target="_blank"><img data-attachment-id="2353" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-13-24-24-2" data-orig-file="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?fit=1239%2C1080" data-orig-size="1239,1080" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 13.24.24" data-image-description="" data-medium-file="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?fit=300%2C261" data-large-file="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?fit=525%2C457" src="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 13.24.24" class="aligncenter size-medium wp-image-2353" srcset="/uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?resize=300%2C261 300w, /uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?resize=1024%2C892 1024w, /uploads/2012/09/71e97aa9a12b611fdf7c3215fbb7fd4c1.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-11. [iOS Provisioning Portal] の [Certificates]に、[Download]ボタンが出現するのでクリックする。</p>
+
+<p><a href="/uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png" target="_blank"><img data-attachment-id="2365" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-14-14-51-2" data-orig-file="/uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?fit=1239%2C1080" data-orig-size="1239,1080" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 14.14.51" data-image-description="" data-medium-file="/uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?fit=300%2C261" data-large-file="/uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?fit=525%2C457" src="/uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 14.14.51" class="aligncenter size-medium wp-image-2365" srcset="/uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?resize=300%2C261 300w, /uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?resize=1024%2C892 1024w, /uploads/2012/09/596a2f5c193e023d773c7dc9b6dbb6f51.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>1-12. ダウンロードした[ios_development.cer]をダブルクリックする。</p>
+
+<p>1-13. [キーチェーンアクセス] &#8211; [自分の証明書] に、開発証明書（iPhone Developer:xxxx) が追加されている事を確認する。これで晴れて、このMacで自分が開発できる事になりました。</p>
+
+<p><a href="/uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png" target="_blank"><img data-attachment-id="2356" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-14-19-27" data-orig-file="/uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?fit=1273%2C771" data-orig-size="1273,771" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 14.19.27" data-image-description="" data-medium-file="/uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?fit=300%2C181" data-large-file="/uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?fit=525%2C318" src="/uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?resize=300%2C181" alt="" title="スクリーンショット 2012-09-27 14.19.27" class="aligncenter size-medium wp-image-2356" srcset="/uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?resize=300%2C181 300w, /uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?resize=1024%2C620 1024w, /uploads/2012/09/a20fa7079e515c58d0ac17c29622afbc.png?w=1273 1273w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>ここまでとほぼ同様の手順で、今度は販売証明書を作ります。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="2-販売証明書の発行とmacへの登録">2. 販売証明書の発行とMacへの登録</h4>
+
+<p>1.と大体一緒ですけど・・・</p>
+
+<p>2-1. [iOS Provisioning Portal] の [Certificates]にて、[Distribution]タブをクリックし、[Request Certificate]をクリックする。</p>
+
+<p><a href="/uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png" target="_blank"><img data-attachment-id="2366" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-14-32-22-2" data-orig-file="/uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?fit=1239%2C1080" data-orig-size="1239,1080" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 14.32.22" data-image-description="" data-medium-file="/uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?fit=300%2C261" data-large-file="/uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?fit=525%2C457" src="/uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 14.32.22" class="aligncenter size-medium wp-image-2366" srcset="/uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?resize=300%2C261 300w, /uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?resize=1024%2C892 1024w, /uploads/2012/09/f073bf1db8023db2587a53cae977082c1.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>2-2. 前の手順（1-3 〜 1-10）を実行する。</p>
+
+<p>2-3. [iOS Provisioning Portal] の [Certificates]の[Distribution]タブにも[Download]ボタンが出現するのでクリックする。</p>
+
+<p><a href="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png" target="_blank"><img data-attachment-id="2370" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-15-15-31" data-orig-file="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 15.15.31" data-image-description="" data-medium-file="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?fit=300%2C261" data-large-file="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?fit=525%2C456" src="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 15.15.31" class="aligncenter size-medium wp-image-2370" srcset="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?resize=300%2C261 300w, /uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?resize=1024%2C890 1024w, /uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>2-4. ダウンロードした[ios_distribution.cer]をダブルクリックする。</p>
+
+<p>2-5. [キーチェーンアクセス] – [自分の証明書] に、開発証明書（iPhone Distribution:xxxx) が追加されている事を確認する。</p>
+
+<p><a href="/uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png" target="_blank"><img data-attachment-id="2368" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-15-12-47" data-orig-file="/uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?fit=1273%2C771" data-orig-size="1273,771" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 15.12.47" data-image-description="" data-medium-file="/uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?fit=300%2C181" data-large-file="/uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?fit=525%2C318" src="/uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?resize=300%2C181" alt="" title="スクリーンショット 2012-09-27 15.12.47" class="aligncenter size-medium wp-image-2368" srcset="/uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?resize=300%2C181 300w, /uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?resize=1024%2C620 1024w, /uploads/2012/09/fae87e053b43a5c854c26a86d0d5f350.png?w=1273 1273w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>2-6. [iOS Provisioning Portal] の [Certificates]のWWDR証明書、[click here to download now]をクリックしダウンロードする。</p>
+
+<p><a href="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png" target="_blank"><img data-attachment-id="2371" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-15-15-31-2" data-orig-file="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 15.15.31" data-image-description="" data-medium-file="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?fit=300%2C261" data-large-file="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?fit=525%2C456" src="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 15.15.31" class="aligncenter size-medium wp-image-2371" srcset="/uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?resize=300%2C261 300w, /uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?resize=1024%2C890 1024w, /uploads/2012/09/75451ffd8ca5f17203ba21dc675ec46a1.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>2-7. ダウンロードした[AppleWWDRCA.cer]をダブルクリックする。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="3-devices">3. Devices</h4>
+
+<p>Deviceの設定は、アプリ申請（ディストリビューション・プロビジョニング・プロファイルの作成）に必須では無いのでここでは省きます。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="4-app-idを登録">4. App IDを登録</h4>
+
+<p>4-1. [iOS Provisioning Portal] の左、[App IDs]をクリックし、右にある[New App ID]をクリックする。</p>
+
+<p><a href="/uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png" target="_blank"><img data-attachment-id="2376" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-15-46-04" data-orig-file="/uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 15.46.04" data-image-description="" data-medium-file="/uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?fit=300%2C261" data-large-file="/uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?fit=525%2C456" src="/uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 15.46.04" class="aligncenter size-medium wp-image-2376" srcset="/uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?resize=300%2C261 300w, /uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?resize=1024%2C890 1024w, /uploads/2012/09/256bfeecd1858858e9f78a0145ff5463.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>4-2. 下記の必要事項を入力し[Submit]をクリックする。</p>
+
+<blockquote>
+<p>Description：組織名とか会社名とか。アプリ名では無い。</p>
+
+<p>Bundle Identifer (App ID Suffix)：com.tdtsh.myappとか。</p>
+
+<p>※開発用は*(アスタリスク)が無難、またはcom.tdtsh.*とかにしておいた方がいいですけど、申請用のApp IDは＊とは別に一意なんを作ります</p>
+</blockquote>
+
+<p><a href="/uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png" target="_blank"><img data-attachment-id="2379" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-16-02-38-2" data-orig-file="/uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 16.02.38" data-image-description="" data-medium-file="/uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?fit=300%2C261" data-large-file="/uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?fit=525%2C456" src="/uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 16.02.38" class="aligncenter size-medium wp-image-2379" srcset="/uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?resize=300%2C261 300w, /uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?resize=1024%2C890 1024w, /uploads/2012/09/25ce9899e8bf0fd5bf0d8e1789003c7f1.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="5-ディストリビューション-プロビジョニング-プロファイルの作成">5. ディストリビューション・プロビジョニング・プロファイルの作成</h4>
+
+<p>5-1. [iOS Provisioning Portal] の左、[Provisioning]をクリックし、[Distribution]をクリックし、右にある[New Profile]をクリックする。</p>
+
+<p><a href="/uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png" target="_blank"><img data-attachment-id="2387" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-17-11-57" data-orig-file="/uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 17.11.57" data-image-description="" data-medium-file="/uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?fit=300%2C261" data-large-file="/uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?fit=525%2C456" src="/uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 17.11.57" class="aligncenter size-medium wp-image-2387" srcset="/uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?resize=300%2C261 300w, /uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?resize=1024%2C890 1024w, /uploads/2012/09/ff32ccbb7edc36b5d2b79ab05767a61d.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>5-2. 下記の必要事項を入力し[Submit]をクリックする。</p>
+
+<blockquote>
+<p>Distribution Method：App Store にチェック</p>
+
+<p>Profile Name：自分用に判る名前をつけます</p>
+
+<p>App ID：4.で作成したもの</p>
+</blockquote>
+
+<p><a href="/uploads/2012/09/40564cb46954b003a08b356578661a79.png"><img data-attachment-id="2391" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-17-08-21" data-orig-file="/uploads/2012/09/40564cb46954b003a08b356578661a79.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 17.08.21" data-image-description="" data-medium-file="/uploads/2012/09/40564cb46954b003a08b356578661a79.png?fit=300%2C261" data-large-file="/uploads/2012/09/40564cb46954b003a08b356578661a79.png?fit=525%2C456" src="/uploads/2012/09/40564cb46954b003a08b356578661a79.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 17.08.21" class="aligncenter size-medium wp-image-2391" srcset="/uploads/2012/09/40564cb46954b003a08b356578661a79.png?resize=300%2C261 300w, /uploads/2012/09/40564cb46954b003a08b356578661a79.png?resize=1024%2C890 1024w, /uploads/2012/09/40564cb46954b003a08b356578661a79.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="おまけデベロップメント-プロビジョニング-プロファイルの作成">おまけデベロップメント・プロビジョニング・プロファイルの作成</h4>
+
+<p>デベロッパー・プロビジョニング・プロファイルは、アプリ申請には直接必要ありませんが、一応さらっと。</p>
+
+<p>実機にアプリをインストールしてテストしたりするのに必要です。</p>
+
+<p>あと今回省いたデバイスの登録が必要です。</p>
+
+<p>[iOS Provisioning Portal] の左、[Provisioning]をクリックし、[Distribution]をクリックし、右にある[New Profile]をクリックする。</p>
+
+<p><a href="/uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png" target="_blank"><img data-attachment-id="2385" data-permalink="/blog/archives/2334/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-09-27-16-16-35-2" data-orig-file="/uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?fit=1239%2C1078" data-orig-size="1239,1078" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="スクリーンショット 2012-09-27 16.16.35" data-image-description="" data-medium-file="/uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?fit=300%2C261" data-large-file="/uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?fit=525%2C456" src="/uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?resize=300%2C261" alt="" title="スクリーンショット 2012-09-27 16.16.35" class="aligncenter size-medium wp-image-2385" srcset="/uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?resize=300%2C261 300w, /uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?resize=1024%2C890 1024w, /uploads/2012/09/162d301a367f52824aeae39ff2dfdc561.png?w=1239 1239w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>あとの手順はだいたい4.と同じです。</p>
+
+<p>判ってしまえばなんてことは無いんでしょうが、初めてやる時は調べながらですごく時間がかかりました。</p>
+
+<p>特に、開発用のプロビジョニング・プロファイルと、申請用のプロビジョニング・プロファイルでは、Deviceの登録やApp IDで注意すべきポイントとかが微妙に違いますし。</p>
+
+<p>あと色々な項目の値が今後どこでどう使われるか判らないんで、どうしても慎重になります。</p>
+
+<p>あと画像多いしでめちゃめちゃ疲れました。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="参考にさせて頂いたサイト達">参考にさせて頂いたサイト達</h4>
+
+<p><a href="http://ameblo.jp/dev-rec/entry-11192891090.html" target="_blank">アプリ申請まとめ(2012/3現在)｜iPhoneアプリ開発日誌 -ZERO-</a></p>
+
+<p><a href="http://iphone.o-84.com/pub-apps/regist-apple/update-devprogram/" target="_blank">開発者登録の更新と必要な作業：iPhoneアプリ開発雑記帳</a></p>
+
+<p><a href="http://dev.classmethod.jp/smartphone/iphone/ios-device-provisioning-file/" target="_blank">iOSアプリを実機で動作確認しよう-プロビジョニングファイルの作成手順- ｜ クラスメソッド開発ブログ</a></p>
+
+<p><a href="http://uqtimes.blogspot.com/2012/04/blog-post.html" target="_blank">プロビジョニングプロファイルの作成と実機での動作確認 | UQ Times 開発の記録</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/mac/">mac</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/1023/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>CentOS 5.5 のserifフォントで「葉」のグリフがおかしい - はなたんのブログ</title>
+    
+<meta name="description" content="CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉">
+
+<meta property="og:title" content="CentOS 5.5 のserifフォントで「葉」のグリフがおかしい - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/1023/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/1023/">
+<meta name="twitter:title" content="CentOS 5.5 のserifフォントで「葉」のグリフがおかしい - はなたんのブログ">
+<meta name="twitter:description" content="CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "CentOS 5.5 のserifフォントで「葉」のグリフがおかしい - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2010-12-01T04:26:07JST",
+    "dateModified": "2010-12-01T04:26:07JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-12-01T04:26:07JST">Dec 1, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉」が文字化けみたいになっちゃいます。</p>
+
+<blockquote>
+<p>こんなん</p>
+
+<p><img data-attachment-id="1025" data-permalink="/blog/archives/1023/01_%e8%91%89%e3%81%8c%e6%96%87%e5%ad%97%e5%8c%96%e3%81%91" data-orig-file="/uploads/2010/12/01_葉が文字化け.jpg?fit=118%2C123" data-orig-size="118,123" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="背景は気にしないでください" data-image-description="" data-medium-file="/uploads/2010/12/01_葉が文字化け.jpg?fit=118%2C123" data-large-file="/uploads/2010/12/01_葉が文字化け.jpg?fit=118%2C123" src="/uploads/2010/12/01_葉が文字化け.jpg?resize=118%2C123" alt="葉がおかしい" title="葉がおかしい" class="aligncenter size-full wp-image-1025" data-recalc-dims="1" /></p>
+</blockquote>
+
+<p>※背景は気にしないでください</p>
+
+<p>で、そのCentOSでFirefoxを立ち上げてみたら、やっぱり「葉」がおかしい。</p>
+
+<p>どうやら、さざなみ明朝の「葉」のグリフがおかしいみたい。</p>
+
+<p>ちゃんと調べてないけど他にもあるかもしれない。</p>
+
+<p>良い機会だから、もう少しマシなフォントを入れたのでメモしておきます。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="ipaフォントをインストール">IPAフォントをインストール</h4>
+
+<p><a href="http://ossipedia.ipa.go.jp/ipafont/" target="_blank"><a href="http://ossipedia.ipa.go.jp/ipafont/">http://ossipedia.ipa.go.jp/ipafont/</a></a> から IPAfont00302.zip をダウンロードして、</p>
+
+<p>unzip IPAfont00302.zip</p>
+
+<p>cp ./IPAfont00302/*.ttf /usr/share/fonts/japanese/TrueType/</p>
+
+<p>fc-cache -fv</p>
+
+<p>fc-list | grep IPA</p>
+
+<p>#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+
+<p># IPAゴシック,IPAGothic:style=Regular</p>
+
+<p># IPA Pゴシック,IPAPGothic:style=Regular</p>
+
+<p># IPA明朝,IPAMincho:style=Regular</p>
+
+<p># IPA P明朝,IPAPMincho:style=Regular</p>
+
+<p>#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="jdkにでipaフォントを使う">jdkにでIPAフォントを使う</h4>
+
+<p>これがハマリました。</p>
+
+<p>JDK は 6u16 で、yum でインストールせず、 Sunのサイト、今は</p>
+
+<p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracleのサイト</a>からダウンロードした jdk-6u16-linux-i586.bin で、過去の習慣から /usr/local/j2sdk/ でシンボリックリンク貼ってます。</p>
+
+<p>fallback ディレクトリにリンクを貼ればいいらしいんで、やってみたんですが文字化け？は解消されませんでした。</p>
+
+<p>mkdir -p /usr/local/j2sdk/jre/lib/fonts/fallback/</p>
+
+<p>ln -s /usr/share/fonts/japanese/TrueType/ipa*.ttf /usr/local/j2sdk/jre/lib/fonts/fallback/</p>
+
+<p>で、fontconfig.properties.src を編集すれば良いらしいんで、やってみました。</p>
+
+<pre>vim /usr/local/j2sdk/jre/lib/fontconfig.properties.src
+#--------------------------------------------------------------------
+dialog.plain.japanese=IPA Gothic
+dialog.bold.japanese=IPA Gothic
+dialog.italic.japanese=IPA Gothic
+dialog.bolditalic.japanese=IPA Gothic
+sansserif.plain.japanese=IPA PGothic
+sansserif.bold.japanese=IPA PGothic
+sansserif.italic.japanese=IPA PGothic
+sansserif.bolditalic.japanese=IPA PGothic
+serif.plain.japanese=IPA PMincho
+serif.bold.japanese=IPA PMincho
+serif.italic.japanese=IPA PMincho
+serif.bolditalic.japanese=IPA PMincho
+monospaced.plain.japanese=IPA Gothic
+monospaced.bold.japanese=IPA Gothic
+monospaced.italic.japanese=IPA Gothic
+monospaced.bolditalic.japanese=IPA Gothic
+dialoginput.plain.japanese=IPA Gothic
+dialoginput.bold.japanese=IPA Gothic
+dialoginput.italic.japanese=IPA Gothic
+dialoginput.bolditalic.japanese=IPA Gothic
+
+# Search Sequences
+#sequence.allfonts=latin-1
+sequence.allfonts.x-euc-jp-linux=japanese,latin-1
+sequence.allfonts.UTF-8.ja=japanese,latin-1
+sequence.fallback=japanese
+
+# Exclusion Ranges
+
+# Font File Names
+filename.IPA_Gothic=/usr/share/fonts/japanese/TrueType/ipag.ttf
+filename.IPA_PGothic=/usr/share/fonts/japanese/TrueType/ipagp.ttf
+filename.IPA_Mincho=/usr/share/fonts/japanese/TrueType/ipam.ttf
+filename.IPA_PMincho=/usr/share/fonts/japanese/TrueType/ipamp.ttf
+filename.Sazanami_Gothic=/usr/share/fonts/japanese/TrueType/sazanami-gothic.ttf
+filename.Sazanami_Mincho=/usr/share/fonts/japanese/TrueType/sazanami-mincho.ttf
+#--------------------------------------------------------------------
+</pre>
+
+<p>が、コレでもダメでした。</p>
+
+<p><a href="http://download.oracle.com/javase/1.5.0/docs/guide/intl/fontconfig.html">ここで</a>よくよく確認すると、設定ファイルは読み込む優先順位があるらしいじゃないですか。</p>
+
+<p>なので、他のfontconfigファイルを移動して、編集したやつだけの状態にしたら、いけました。こんな方法で良いのかしら・・</p>
+
+<p>mkdir -p /usr/local/j2sdk/jre/lib/old_fontconfig</p>
+
+<p>mv /usr/local/j2sdk/jre/lib/fontconfig.* /usr/local/j2sdk/jre/lib/old_fontconfig</p>
+
+<p>cp /usr/local/j2sdk/jre/lib/old_fontconfig/fontconfig.properties.src /usr/local/j2sdk/jre/lib/fontconfig.properties</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="一応centosのローカルでも使える様に">一応CentOSのローカルでも使える様に</h4>
+
+<pre>vi /etc/fonts/conf.d/65-nonlatin.conf 
+#--------------------------------------------------------------------
+&lt;fontconfig&gt;
+    &lt;alias&gt;
+        &lt;family&gt;serif&lt;/family&gt;
+        &lt;prefer&gt;                        
+            &lt;family&gt;IPAPMincho&lt;/family&gt;
+            ...
+        &lt;/prefer&gt;
+    &lt;/alias&gt;
+    &lt;alias&gt;
+        &lt;family&gt;sans-serif&lt;/family&gt;
+        &lt;prefer&gt;
+            &lt;family&gt;IPAPGothic&lt;/family&gt;
+            ...
+        &lt;/prefer&gt;
+    &lt;/alias&gt;
+#--------------------------------------------------------------------
+&lt;/fontconfig&gt;&lt;/pre&gt;
+</pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="参考サイト">参考サイト</h4>
+
+<p><a href="http://dev.j-de.net/blog/CentOS%20%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88">Blog: CentOSへの日本語フォントのインストール &#8211; Jade Developers</a></p>
+
+<p><a href="http://wiki.livedoor.jp/linux_java_install/d/%A5%D5%A5%A9%A5%F3%A5%C8">フォント &#8211; Linux に Java(JRE 1.5) をインストールする方法 &#8211; livedoor Wiki（ウィキ）</a></p>
+
+<p><a href="http://d.hatena.ne.jp/cloudcomputing/20091117/1258464666">centos上でブラウザのフォントを変えたい &#8211; cloudcomputingはおいしいよ</a></p>
+
+<p><a href="http://tmcosmos.org/linux/centos/co5.html">CentOS 5 インストール個人的ノート</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/java/">java</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/linux/">linux</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

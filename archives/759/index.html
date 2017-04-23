@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/759/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue() - はなたんのブログ</title>
+    
+<meta name="description" content="WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するの">
+
+<meta property="og:title" content="slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue() - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/759/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するの">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/759/">
+<meta name="twitter:title" content="slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue() - はなたんのブログ">
+<meta name="twitter:description" content="WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するの">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue() - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2010-07-02T15:05:08JST",
+    "dateModified": "2010-07-02T15:05:08JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するの"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue()</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-07-02T15:05:08JST">Jul 2, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">slim3でユニーク制約みたいな &amp;#8211; #Datasotre#putUniqueValue()</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>WEBアプリケーションの会員登録などにおいて、ユーザ名とかメールアドレスとかを一意にしたい場合、アプリケーション側で一意チェックを実装するのは勿論、RDBMS側でもUnique制約をかけておいて整合性を担保しますよね。</p>
+
+<p>app engineにはそんなモンないですが、擬似的に実現する方法はあります。</p>
+
+<blockquote>
+<p>Google App EngineではRDBMSのようなUnique Indexをサポートしていません。ユニーク制限を実現する場合は、トランザクション中でKeyを使ったgetとputを組み合わせる必要があります。</p>
+
+<p><a href="http://d.hatena.ne.jp/higayasuo/20091111/1257905482">App Engineのユニーク制限を正しく理解しよう &#8211; ひがやすを blog</a></p>
+</blockquote>
+
+<p>slim3では上記を行うメソッドが用意されているようです。</p>
+
+<blockquote>
+<p>boolean putUniqueValue(String uniqueIndexName, String value)</p>
+
+<p>これはuniqueIndexNameというKindでvalueというKeyNameのキーを持つエンティティをTx内でputすることでその一意性を保証するというメソッド。</p>
+
+<p><a href="http://d.hatena.ne.jp/bufferings/20100609/1276110414">Slim3 Datastoreのputを読む &#8211; bufferings</a></p>
+</blockquote>
+
+<p>便利です。</p>
+
+<p><a href="http://slim3.googlecode.com/svn/trunk/slim3/javadoc/index.html?overview-summary.html">slim3のJavaDoc</a>を見ただけでは、イマイチ使い方がわかりにくいですね。</p>
+
+<p>兎に角やってみました。</p>
+
+<p>多分、こんな感じだと思うんですよ。</p>
+
+<pre>Transaction tx = Datastore.beginTransaction();
+    if (Datastore.putUniqueValue("uniqueUserId",user.getUserId())) {
+        throw new Excepiton("not unique");
+        return;
+    }
+    Datastore.put(tx, user);
+    Datastore.commit(tx);
+</pre>
+
+<p>これで意図通りに動いている様に見えます。</p>
+
+<p>これで実際にアプリケーションを動かすと、putUniqueValueの第一引数の名前でKindが出来る。このKindはKEYだけのKindで、ここに第二引数が追加されていく。同一のKEYははじかれる事で、一意制限っぽい動きを実現している様です。</p>
+
+<p>なので、第一引数はそれと判りやすい接頭語とかを付けといた方がよさそうです。</p>
+
+<p>かゆいトコだらけのapp engineだけど、slim3なら結構手が届く感じがします。</p>
+
+<p>ですが、app engine も slim3 も、未だドキュメントが充実していなくて、こういう tips が探しにくいです。</p>
+
+<p>判る人には判るので良いのですが、自分が使うと決めたフレームワークはもっと流行って欲しいわけです。</p>
+
+<p>なので、私のような凡人でも安心して使える様にする為に、ドキュメントを可能な限り書いていこうと思っています。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/slim3/">slim3</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/3605/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Node.js から AWS の SES でメール送る - はなたんのブログ</title>
+    
+<meta name="description" content="AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ">
+
+<meta property="og:title" content="Node.js から AWS の SES でメール送る - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/3605/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/3605/">
+<meta name="twitter:title" content="Node.js から AWS の SES でメール送る - はなたんのブログ">
+<meta name="twitter:description" content="AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Node.js から AWS の SES でメール送る - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-07-10T00:30:09JST",
+    "dateModified": "2015-07-10T00:30:09JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Node.js から AWS の SES でメール送る</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-07-10T00:30:09JST">Jul 10, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Node.js から AWS の SES でメール送る</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p><a href="http://aws.amazon.com/jp/sdk-for-node-js/" target="_blank">AWSのsdk for node.js</a> を使って、Node.js から AWS の SES でメール送る時の備忘録です。</p>
+
+<p>AWSのSESにアクセスします。</p>
+
+<p>今のところSESは東京リージョンでは使えないので、リージョンはバージニア北部で。</p>
+
+<p><a href="https://console.aws.amazon.com/ses/home?region=us-east-1" target="_blank"><a href="https://console.aws.amazon.com/ses/home?region=us-east-1">https://console.aws.amazon.com/ses/home?region=us-east-1</a></a></p>
+
+<p>送信者のメアドを認証します。</p>
+
+<p>リンクをクリックしてSMTPユーザを作成します。</p>
+
+<p><a href="/uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png"><img data-attachment-id="3608" data-permalink="/blog/archives/3605/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2015-07-07-10-07-21-3" data-orig-file="/uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?fit=1249%2C961" data-orig-size="1249,961" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="スクリーンショット 2015-07-07 10.07.21" data-image-description="" data-medium-file="/uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?fit=300%2C231" data-large-file="/uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?fit=525%2C404" src="/uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?resize=300%2C231" alt="スクリーンショット 2015-07-07 10.07.21" class="aligncenter size-medium wp-image-3608" srcset="/uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?resize=300%2C231 300w, /uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?resize=1024%2C788 1024w, /uploads/2015/07/77510e6d168179975a3b779dcaf3a08f2.png?w=1249 1249w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+
+<p>デフォルトではSendRawEmailポリシー しかアタッチされていないので、SendEmailポリシーを作成しアタッチします。作成したSTMPユーザに認証情報ページから[ユーザーポリシーの作成] &#8211; [Policy Generator] で作っていきます。</p>
+
+<p>最終的に出来たポリシーはこれ。</p>
+
+<pre>{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "xxxxxxxxxxx",
+            "Effect": "Allow",
+            "Action": [
+                "ses:SendEmail"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
+</pre>
+
+<p>あと 最初に作られるSMTP ユーザー名とSMTP パスワードでは送れません。</p>
+
+<p>Create Access Key アクセスキーを新たに作成して Credentioals.json に書いておきます。</p>
+
+<pre>{
+    "accessKeyId": "xxxxxxxxxxxxxxxxxx",
+    "secretAccessKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "region": "us-east-1" 
+}
+</pre>
+
+<p>npm i -S aws-sdk して node から送るコードを書きます。</p>
+
+<p>細かい所はドキュメントで確認します。</p>
+
+<p><a href="http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html" target="_blank">Class: AWS.SES — AWS SDK for JavaScript</a></p>
+
+<pre>var AWS = require('aws-sdk');
+AWS.config.loadFromPath('./config/credentials.json');
+var ses = new AWS.SES({apiVersion: '2010-12-01'});
+
+var params = {
+    Source: '認証した送信者のメアド',
+    Destination: {
+        ToAddresses: ['mail@to']
+    },
+    Message: {
+        Subject: {
+            Data: 'subject'
+        },
+        Body: {
+            Text: {
+                Data: 
+                    'body'
+            }
+        }
+    }
+};
+
+ses.sendEmail(params, function (err, data) {
+    if (err) {
+        // handle error
+    } else {
+        // do something
+    }
+});
+</pre>
+
+<p>こんな感じです。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/aws/">AWS</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/javascript/">javascript</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/node.js/">node.js</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

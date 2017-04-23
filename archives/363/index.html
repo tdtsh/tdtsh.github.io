@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/363/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする - はなたんのブログ</title>
+    
+<meta name="description" content="Spring Framework から Oracle の CLOB や BLOG を扱う事がある。 Oracle9i の頃から、LOB にはちょっと苦労させられた。 9iの頃のJDBCドライバ(Thin)では、文字数の制約で色">
+
+<meta property="og:title" content="Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/363/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="Spring Framework から Oracle の CLOB や BLOG を扱う事がある。 Oracle9i の頃から、LOB にはちょっと苦労させられた。 9iの頃のJDBCドライバ(Thin)では、文字数の制約で色">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/363/">
+<meta name="twitter:title" content="Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする - はなたんのブログ">
+<meta name="twitter:description" content="Spring Framework から Oracle の CLOB や BLOG を扱う事がある。 Oracle9i の頃から、LOB にはちょっと苦労させられた。 9iの頃のJDBCドライバ(Thin)では、文字数の制約で色">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2009-09-09T07:08:44JST",
+    "dateModified": "2009-09-09T07:08:44JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Spring Framework から Oracle の CLOB や BLOG を扱う事がある。 Oracle9i の頃から、LOB にはちょっと苦労させられた。 9iの頃のJDBCドライバ(Thin)では、文字数の制約で色"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2009-09-09T07:08:44JST">Sep 9, 2009</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Spring Framework の SqlUpdate で OracleのclobをInsert・Updateする</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>Spring Framework から Oracle の CLOB や BLOG を扱う事がある。</p>
+
+<p>Oracle9i の頃から、LOB にはちょっと苦労させられた。</p>
+
+<p>9iの頃のJDBCドライバ(Thin)では、文字数の制約で色々めんどくさかったけど、</p>
+
+<p>10g以降のJDBCドライバでは、いい感じに変換してくれるのか、CLOBフィールドの参照系ならVARCHAR感覚でコーディングできてた。</p>
+
+<p>でも、更新系では手抜きが通じない。</p>
+
+<p>8000バイト位(多分8192バイト)を超える文字列をInsert/Updagteすると、文字列が一部欠落してしまう。</p>
+
+<p>こっちはいい感じに変換してくれない。</p>
+
+<p>仕方ないから、LobHandlerを使ってちゃんと書いた(つもり)。</p>
+
+<p>Spring は未だに 1.2 を使ってマス。</p>
+
+<p>Sprint 2系でも、いっしょじゃないだろうか。</p>
+
+<p>設定はこんな感じで、lobHanderをインジェクションする。</p>
+
+<blockquote>
+<p>＜bean id=&#8221;lobHandler&#8221; class=&#8221;org.springframework.jdbc.support.lob.OracleLobHandler&#8221;＞</p>
+
+<p>＜property name=&#8221;nativeJdbcExtractor&#8221; ref=&#8221;nativeJdbcExtractor&#8221;/＞</p>
+
+<p>＜/bean＞</p>
+
+<p>＜bean id=&#8221;nativeJdbcExtractor&#8221; class=&#8221;org.springframework.jdbc.support.nativejdbc.CommonsDbcpNativeJdbcExtractor&#8221;/＞</p>
+
+<p>＜bean id=&#8221;abstractDao&#8221; abstract=&#8221;true&#8221;＞</p>
+
+<p>＜property name=&#8221;dataSource&#8221;＞</p>
+
+<p>＜ref bean=&#8221;dataSource&#8221; /＞</p>
+
+<p>＜/property＞</p>
+
+<p>＜/bean＞</p>
+
+<p>＜bean id=&#8221;hogeDao&#8221; parent=&#8221;abstractDao&#8221;</p>
+
+<p>class=&#8221;your.package.dao.HogeDaoImpl&#8221; ＞</p>
+
+<p>＜property name=&#8221;lobHandler&#8221;＞</p>
+
+<p>＜ref bean=&#8221;lobHandler&#8221; /＞</p>
+
+<p>＜/property＞</p>
+
+<p>＜/bean＞</p>
+</blockquote>
+
+<p>org.springframework.jdbc.object.SqlUpdate を継承したクラスを作る。</p>
+
+<p>Types は CLOBに。後は特に留意点なし。</p>
+
+<blockquote>
+<p>package your.package.dao.sql;</p>
+
+<p>import java.sql.ResultSet;</p>
+
+<p>import java.sql.SQLException;</p>
+
+<p>import java.sql.Types;</p>
+
+<p>import javax.sql.DataSource;</p>
+
+<p>import org.springframework.jdbc.core.SqlParameter;</p>
+
+<p>import org.springframework.jdbc.object.SqlUpdate;</p>
+
+<p>public class Create extends SqlUpdate {</p>
+
+<p>public Create(DataSource ds) {</p>
+
+<p>super(ds, QUERY);</p>
+
+<p>super.declareParameter(new SqlParameter(Types.INTEGER)); // ID</p>
+
+<p>super.declareParameter(new SqlParameter(Types.CLOB)); // Clob Data</p>
+
+<p>compile();</p>
+
+<p>}</p>
+
+<p>private static final String QUERY = &#8220;INSERT INTO Table (ID, CLOBFIELD) VALUES ( ?,? )&#8221;;</p>
+</blockquote>
+
+<p>んで、org.springframework.jdbc.core.support.JdbcDaoSupport を継承して、さっきのSqlUpdateクラスを使う。</p>
+
+<p>DIしたlobHandler を使って、 SqlLobValueを生成してあげる。</p>
+
+<blockquote>
+<p>package your.package.dao.sql;</p>
+
+<p>public class HogeDaoImpl extends JdbcDaoSupport {</p>
+
+<p>public HogeDaoImpl() {</p>
+
+<p>super();</p>
+
+<p>}</p>
+
+<p>private LobHandler lobHandler_;</p>
+
+<p>public void setLobHandler(LobHandler lobHandler) {</p>
+
+<p>lobHandler_ = lobHandler;</p>
+
+<p>}</p>
+
+<p>public void save(Object entityBean) {</p>
+
+<p>BeanOfTable bean = (BeanOfTable) entityBean;</p>
+
+<p>SqlLobValue clobField = new SqlLobValue(bean.getBody(), lobHandler_);</p>
+
+<p>String id = bean.getId();</p>
+
+<p>Create create = new Create(getDataSource());</p>
+
+<p>create.update(new Object[]{ id, clobField });</p>
+
+<p>}</p>
+</blockquote>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/java/">java</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9/">データベース</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

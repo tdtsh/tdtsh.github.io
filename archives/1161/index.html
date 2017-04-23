@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/1161/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>本屋で驚いた話と、eclipse に Android SDKを入れてみた話 - はなたんのブログ</title>
+    
+<meta name="description" content="最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし">
+
+<meta property="og:title" content="本屋で驚いた話と、eclipse に Android SDKを入れてみた話 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/1161/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/1161/">
+<meta name="twitter:title" content="本屋で驚いた話と、eclipse に Android SDKを入れてみた話 - はなたんのブログ">
+<meta name="twitter:description" content="最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "本屋で驚いた話と、eclipse に Android SDKを入れてみた話 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2011-03-07T10:40:20JST",
+    "dateModified": "2011-03-07T10:40:20JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "最近、IDEOS (Android 2.2) を購入した事もあり、自分の中でAndoroidブームが到来中です。 昨日近所の本屋さんに行って、なんとなくこんなの買ってし"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">本屋で驚いた話と、eclipse に Android SDKを入れてみた話</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-03-07T10:40:20JST">Mar 7, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">本屋で驚いた話と、eclipse に Android SDKを入れてみた話</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>最近、<a href="/blog/archives/1140">IDEOS (Android 2.2) を購入</a>した事もあり、自分の中でAndoroidブームが到来中です。</p>
+
+<p>昨日近所の本屋さんに行って、なんとなくこんなの買ってしまう位です。</p>
+
+<table cellpadding="5" border="0" style="border-collapse:separate;border-spacing:5px;border:none 0">
+  <tr>
+    <td valign="top" align="left" style="vertical-align:top;text-align:left">
+      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/477301671X/tdtsh-22/ref=nosim/" target="_blank"><img src="https://i0.wp.com/ecx.images-amazon.com/images/I/61kJ1a1gAVL._SL160_.jpg?w=525" alt="Android完全活用ガイド 特別保存版―次はAndroidと考えてるあなたに…この本、かなり参考になります!!! (SAKURA・MOOK 87)" data-recalc-dims="1" /></a>
+    </td>
+    
+    <td valign="top" align="left" style="vertical-align:top;text-align:left">
+      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/477301671X/tdtsh-22/ref=nosim/" target="_blank">Android完全活用ガイド 特別保存版―次はAndroidと考えてるあなたに…この本、かなり参考になります!!! (SAKURA・MOOK 87)</a><br /><font size="-1"></p> 
+      
+      <p>
+        笠倉出版社<br />売り上げランキング : 54533
+      </p>
+      
+      <p>
+        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/477301671X/tdtsh-22/ref=nosim/" target="_blank">Amazonで詳しく見る</a> by <a href="http://sakuratan.biz/azlink/dp/Android%E5%AE%8C%E5%85%A8%E6%B4%BB%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89%20%E7%89%B9%E5%88%A5%E4%BF%9D%E5%AD%98%E7%89%88%E2%80%95%E6%AC%A1%E3%81%AFAndroid%E3%81%A8%E8%80%83%E3%81%88%E3%81%A6%E3%82%8B%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E2%80%A6%E3%81%93%E3%81%AE%E6%9C%AC%E3%80%81%E3%81%8B%E3%81%AA%E3%82%8A%E5%8F%82%E8%80%83%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99!!!%20(SAKURA%E3%83%BBMOOK%2087)/477301671X/tdtsh-22" target="_blank">AZlink</a></font></td> </tr> </table> 
+        
+
+<pre><code>    &lt;p&gt;
+      ワタクシ結構前はIT系の資格試験とか大好きでして、本屋さんで参考書とか見る度に欲しくなっちゃう感じだったんですが、久々に本屋さんのIT系のコーナーを見て愕然となりました。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      参考書、殆ど無いやん！&lt;br /&gt; で、参考書コーナーの下半分は、iPhoneとかAndroidのマニュアル本がズラリと！&lt;br /&gt; あんだけいっぱいあったサーバ構築とか、ネットワーク管理とかの本も激減している！&lt;br /&gt; CCNAの本とかMCPの本とかOracle Masterの本とか、何処行ってん！&lt;br /&gt; あれだけときめいた赤本とか青本とか緑本とか黒本とかが！無い！全滅やん！
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      ・・・なんか世相を反映していると言うかなんと言うか、インフラ系の技術は特にコモディティ化しているナァ、と実感。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &amp;nbsp;&lt;br /&gt; &amp;nbsp;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      で、元々本屋さんに来たのは急にAndroidアプリ開発の本とか見たくなったから。&lt;br /&gt; 田舎なんで、流石に近所の本屋にはAndroidアプリ開発の本は無かったんで、Amazonでコレ注文しちゃいました。
+    &lt;/p&gt;
+
+    &lt;div class=&quot;azlink-box&quot; style=&quot;margin-bottom:0px&quot;&gt;
+      &lt;div class=&quot;azlink-image&quot; style=&quot;float:left&quot;&gt;
+        &lt;a href=&quot;http://www.amazon.co.jp/exec/obidos/ASIN/4873114853/tdtsh-22/ref=nosim/&quot; name=&quot;azlinklink&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://i0.wp.com/ecx.images-amazon.com/images/I/41mH5o0oUML._SL160_.jpg?w=525&quot; alt=&quot;初めてのAndroid 第3版&quot; style=&quot;border:none&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;azlink-info&quot; style=&quot;float:left;margin-left:15px;line-height:120%&quot;&gt;
+        &lt;div class=&quot;azlink-name&quot; style=&quot;margin-bottom:10px;line-height:120%&quot;&gt;
+          &lt;a href=&quot;http://www.amazon.co.jp/exec/obidos/ASIN/4873114853/tdtsh-22/ref=nosim/&quot; name=&quot;azlinklink&quot; target=&quot;_blank&quot;&gt;初めてのAndroid 第3版&lt;/a&gt;&lt;/p&gt; 
+
+          &lt;div class=&quot;azlink-powered-date&quot; style=&quot;font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%&quot;&gt;
+            posted with &lt;a href=&quot;http://sakuratan.biz/azlink/dp/%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AEAndroid%20%E7%AC%AC3%E7%89%88/4873114853/tdtsh-22&quot; target=&quot;_blank&quot;&gt;AZlink&lt;/a&gt; at 2011.3.7
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;azlink-detail&quot;&gt;
+          Ed Burnette,日本Androidの会（監訳）,長尾 高弘&lt;br /&gt;オライリージャパン&lt;br /&gt;売り上げランキング: 14494
+        &lt;/div&gt;
+
+        &lt;div class=&quot;azlink-review&quot; style=&quot;margin-top:10px;margin-bottom:10px&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;azlink-link&quot; style=&quot;margin-top:5px&quot;&gt;
+          &lt;a href=&quot;http://www.amazon.co.jp/exec/obidos/ASIN/4873114853/tdtsh-22/ref=nosim/&quot; target=&quot;_blank&quot;&gt;Amazon.co.jp で詳細を見る&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;azlink-footer&quot; style=&quot;clear:left&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;
+      &amp;nbsp;&lt;br /&gt; &lt;a href=&quot;http://www.oreilly.co.jp/index.shtml&quot; target=&quot;_ blank&quot;&gt;男は黙ってO&amp;#8217;Reilly&lt;/a&gt;。&lt;br /&gt; Amazonのブックレビューなど見ずともッ！！オライリーにハズレなど無いッ！！&lt;br /&gt; &amp;nbsp;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      で、待ちきれずに、Android SDKをインストールしてみました。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      基本的に、&lt;a href=&quot;http://gihyo.jp/dev/serial/01/androidapp/0002?page=1&quot; target=&quot;_blank&quot;&gt;ここの手順通り&lt;/a&gt;でOKでした。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      要するに、&lt;a href=&quot;http://developer.android.com/sdk/index.html&quot; target=&quot;_blank&quot;&gt;Download the Android SDK &amp;#8211; Android Developers&lt;/a&gt;でAndroid SDKをダウンロードして、c:\dev\android-sdk-windows に置いてPATHを通し、eclipse側の設定にも反映し、「&lt;a href=&quot;Android Development Plugin&quot; target=&quot;_blank&quot;&gt;https://dl-ssl.google.com/android/eclipse/&lt;/a&gt;」(URLは下記)をeclipseにインストールすればいいです。
+    &lt;/p&gt;
+
+    &lt;pre&gt;
+https://dl-ssl.google.com/android/eclipse/
+</code></pre>
+
+<p></pre></p>
+
+<pre><code>    &lt;p&gt;
+      エミュレータが動くとちょっと感動ですけど、エミュレータの中でAndoridが起動するまでかなり時間がかかるんで、最初は固まったと勘違いして強制終了した位です。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      そして私のPC (ThinkPad X300) では少しモッサリしてます。実機並にサクサク動かすには、もっと開発機のスペックを上げなくてはいけないんでしょーか。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &amp;nbsp;&lt;br /&gt; &amp;nbsp;
+    &lt;/p&gt;
+
+    &lt;h4&gt;
+      参考にさせて頂いたサイト
+    &lt;/h4&gt;
+
+    &lt;p&gt;
+      &lt;a href=&quot;http://d.hatena.ne.jp/moto_maka/20110117/1295205374&quot; target=&quot;_blank&quot;&gt;私が参考にしたAndroidアプリ開発情報をまとめてみました &amp;#8211; もとまか日記&lt;/a&gt;&lt;br /&gt; 非常によく纏まっています。&lt;br /&gt; 最初は自分でまとめ記事書こうと思ってたけど、必要ありませんでした。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;a href=&quot;http://gihyo.jp/dev/serial/01/androidapp&quot; target=&quot;_blank&quot;&gt;世界を目指せ！Androidアプリ開発入門&lt;/a&gt;&lt;br /&gt; 基本的にココを参考にインストールとかしました。
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;a href=&quot;http://www.techfirm.co.jp/lab/android.html&quot; target=&quot;_blank&quot;&gt;Android 入門 | テックファーム&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &amp;nbsp;&lt;br /&gt; &amp;nbsp;&lt;br /&gt; &amp;nbsp;&lt;br /&gt; &amp;nbsp;&lt;br /&gt; &amp;nbsp;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;a href=&quot;http://click.linksynergy.com/fs-bin/click?id=Vmaas/qrpBs&amp;#038;offerid=161592.10001316&amp;#038;type=4&amp;#038;subid=0&quot;&gt;&lt;img alt=&quot;Mac ソフトのことなら act2.com&quot; border=&quot;0&quot; src=&quot;https://i1.wp.com/act2mars.com/affi/ideos/6.png?w=525&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;img border=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://ad.linksynergy.com/fs-bin/show?id=Vmaas/qrpBs&amp;#038;bids=161592.10001316&amp;#038;type=4&amp;#038;subid=0&quot; /&gt;
+    &lt;/p&gt;
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/android/">android</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/eclipse/">eclipse</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/">開発環境</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

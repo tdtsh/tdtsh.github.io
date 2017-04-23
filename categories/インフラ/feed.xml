@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>インフラ on はなたんのブログ</title>
+    <link>http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</link>
+    <description>Recent content in インフラ on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 06 Sep 2015 12:30:56 +0000</lastBuildDate>
+    
+	<atom:link href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DropboxライクなownCloudちょっとだけレビュー</title>
+      <link>http://tdtsh.github.io/archives/3639/</link>
+      <pubDate>Sun, 06 Sep 2015 12:30:56 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3639/</guid>
+      <description>最近仕事でもDropboxに依存しまくりなので、ちょっと前に自前でなんとか出来ないかと類似したソフトウェアについて調べてました。 といってもP</description>
+    </item>
+    
+    <item>
+      <title>Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用)</title>
+      <link>http://tdtsh.github.io/archives/3371/</link>
+      <pubDate>Wed, 18 Feb 2015 13:00:30 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3371/</guid>
+      <description>最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば</description>
+    </item>
+    
+    <item>
+      <title>さくらVPSに移行しました</title>
+      <link>http://tdtsh.github.io/archives/3365/</link>
+      <pubDate>Sun, 15 Feb 2015 04:28:30 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3365/</guid>
+      <description>2013年の春にOpenVZな格安VPSのBudgetVMに当ブログを移行してから放置していました。途中一度ホッテントリ入りしたりして調子の</description>
+    </item>
+    
+    <item>
+      <title>夏のJAWS-UG 三都物語 2014に行った話</title>
+      <link>http://tdtsh.github.io/archives/3322/</link>
+      <pubDate>Mon, 07 Jul 2014 13:00:25 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3322/</guid>
+      <description>夏のJAWS-UG 三都物語 2014に参加してきたんです。 はてなCTOの田中慎司さんから、AWSとmackerelで実践するImmutable</description>
+    </item>
+    
+    <item>
+      <title>雨だからDockerとかQiitaとか弄ってみた</title>
+      <link>http://tdtsh.github.io/archives/3236/</link>
+      <pubDate>Tue, 29 Apr 2014 03:28:14 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3236/</guid>
+      <description>初Qiitaです。初Dockerです。 HomeBrew で Mac に Docker を入れてみた &amp;#8211; Qiita いやーKobito + Qiita 捗るわー。 今までこの手のメモはGVim + Dropbox + ブログ(w</description>
+    </item>
+    
+    <item>
+      <title>Webサイトのベンチマーク、パフォーマンス測定に JMeter が 意外と良かった</title>
+      <link>http://tdtsh.github.io/archives/2821/</link>
+      <pubDate>Thu, 09 May 2013 14:45:45 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2821/</guid>
+      <description>Webサービスのパフォーマンス測定とか、簡単なベンチマークは ab で済ましちゃうし、大規模なプロジェクトでは有償のんとか使うし、今まで存在は認識</description>
+    </item>
+    
+    <item>
+      <title>格安VPSのBudgetVMにサーバ引越し(2)</title>
+      <link>http://tdtsh.github.io/archives/2785/</link>
+      <pubDate>Thu, 18 Apr 2013 10:22:29 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2785/</guid>
+      <description>という訳で、先日当ブログのサーバを一旦引越したのですが、今日は通信の品質が悪すぎて満足にサイトが見れませんでした。 ping の RT はだいたい 500ms 位です。</description>
+    </item>
+    
+    <item>
+      <title>ブログのサーバ引越しました &amp;#8211; 格安VPSのBudgetVMにサーバ引越し(1)</title>
+      <link>http://tdtsh.github.io/archives/2786/</link>
+      <pubDate>Mon, 15 Apr 2013 11:44:23 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2786/</guid>
+      <description>可処分所得が少なくとっても貧乏なワタクシ、当ブログはかれこれ2年以上、value-domainさんの格安ホスティングサーバ XREA で頑張ってまいり</description>
+    </item>
+    
+    <item>
+      <title>余ったノートPCには ubuntu がよさげ</title>
+      <link>http://tdtsh.github.io/archives/1798/</link>
+      <pubDate>Sun, 15 Apr 2012 21:30:17 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1798/</guid>
+      <description>余ったPCにはLinuxをぶち込むでしょう常考。 昔はLinuxのインストール厨だった私ですが、最近ではRed Hat系、それも CentOS しか触らなくな</description>
+    </item>
+    
+    <item>
+      <title>障害復旧しました( WordPressがMySQLのオーバーヘッドで動かない)</title>
+      <link>http://tdtsh.github.io/archives/1689/</link>
+      <pubDate>Mon, 13 Feb 2012 04:33:07 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1689/</guid>
+      <description>週末（2012年02月11日頃〜2012年02月13日12：00頃）に、当ブログが見られない状態でした。 あまり居ないとは思いますが、該当時間</description>
+    </item>
+    
+    <item>
+      <title>github を git clone しようとすると Permission denied (publickey) とかで出来ない</title>
+      <link>http://tdtsh.github.io/archives/1507/</link>
+      <pubDate>Sat, 26 Nov 2011 15:10:41 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1507/</guid>
+      <description>最近、git ばっか使ってます。 だって、べんりだもの。（みつを） Subversion使わなくなっちゃった。 で、git クライアントは、Windo</description>
+    </item>
+    
+    <item>
+      <title>最近はビデオチャット関連が熱い</title>
+      <link>http://tdtsh.github.io/archives/1320/</link>
+      <pubDate>Fri, 08 Jul 2011 03:55:28 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1320/</guid>
+      <description>最近、ソーシャルメディア界隈でビデオチャットが熱いですね。 私の周りにはSkypeに常時ログインしているヒトが少ない事もあって、 PC向けWEB</description>
+    </item>
+    
+    <item>
+      <title>さくらInternetのVPS、予想以上にイイですね</title>
+      <link>http://tdtsh.github.io/archives/1103/</link>
+      <pubDate>Wed, 09 Feb 2011 11:23:22 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1103/</guid>
+      <description>前から少し気になってた さくら Internet のVPSを使う機会がありました。いやいや、イイですね！ レンタルサーバでいいじゃん的な案件でも、独自SSL欲しい</description>
+    </item>
+    
+    <item>
+      <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
+      <link>http://tdtsh.github.io/archives/1095/</link>
+      <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1095/</guid>
+      <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
+    </item>
+    
+    <item>
+      <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
+      <link>http://tdtsh.github.io/archives/1076/</link>
+      <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1076/</guid>
+      <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</title>
+      <link>http://tdtsh.github.io/archives/1023/</link>
+      <pubDate>Wed, 01 Dec 2010 04:26:07 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1023/</guid>
+      <description>CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉</description>
+    </item>
+    
+    <item>
+      <title>カッコウはコンピュータに卵を産む クリフォード・ストール</title>
+      <link>http://tdtsh.github.io/archives/1020/</link>
+      <pubDate>Thu, 25 Nov 2010 15:05:48 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1020/</guid>
+      <description>いまさらですが読みました。 カッコウはコンピュータに卵を産む〈上〉 &amp;lt;div class=&amp;quot;azlink-powered-date&amp;quot; style=&amp;quot;font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%&amp;quot;&amp;gt; posted with &amp;lt;a href=&amp;quot;http://sakuratan.biz/azlink/dp/%E3%82%AB%E3%83%83%E3%82%B3%E3%82%A6%E3%81%AF%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%81%AB%E5%8D%B5%E3%82%92%E7%94%A3%E3%82%80%E3%80%88%E4%B8%8A%E3%80%89/4794204302/tdtsh-22&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;AZlink&amp;lt;/a&amp;gt; at 2010.11.25 &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;azlink-detail&amp;quot;&amp;gt; クリフォード・ストール,池 央耿,Clifford</description>
+    </item>
+    
+    <item>
+      <title>実家のWindows機で勝手にメニューとか選択とかが上に移動する</title>
+      <link>http://tdtsh.github.io/archives/1005/</link>
+      <pubDate>Sun, 21 Nov 2010 06:07:42 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1005/</guid>
+      <description>この週末は息子と娘の七五三の写真とか御参りとかで、実家に帰ってました。 そしたら還暦をとっくにすぎた父がiPhone 4を購入していました。 3G</description>
+    </item>
+    
+    <item>
+      <title>iPhone、iPad のsshクライアント TouchTerm、pTerm</title>
+      <link>http://tdtsh.github.io/archives/993/</link>
+      <pubDate>Thu, 04 Nov 2010 01:50:16 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/993/</guid>
+      <description>緊急時に外部からサーバにログインしてデーモンの下げ上げとかしたい。 で、iPhone 3Gを購入して真っ先に購入したアプリが TouchTermで</description>
+    </item>
+    
+    <item>
+      <title>ハードウェアやソフトウェアは壊れたら買う、と言う考え方</title>
+      <link>http://tdtsh.github.io/archives/921/</link>
+      <pubDate>Wed, 15 Sep 2010 09:25:17 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/921/</guid>
+      <description>ITProにて、「保守を打ち切る」という中々男らしい？記事が掲載されている。 記事ではタイトルの通り、保守契約を打ち切ることで運用コストを減ら</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services のマイクロインスタンス、月額約1300円</title>
+      <link>http://tdtsh.github.io/archives/919/</link>
+      <pubDate>Fri, 10 Sep 2010 02:22:49 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/919/</guid>
+      <description>Amazon Web Services が攻勢にでています。 Amazonクラウドから、1時間あたり約1.8円（Linux/Unixの場合＄0.02、Windowsで$0.03</description>
+    </item>
+    
+    <item>
+      <title>インターネットイニシアティブ（IIJ）の月額4000円のホスティングサービス「IIJ GIO」</title>
+      <link>http://tdtsh.github.io/archives/834/</link>
+      <pubDate>Tue, 03 Aug 2010 11:06:19 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/834/</guid>
+      <description>インターネットイニシアティブ（IIJ）のマーケティング本部 GIOマーケティング部 副部長 小川晋平氏は、月額4000円、日割り課金で1日約133</description>
+    </item>
+    
+    <item>
+      <title>システム開発・構築の方々はシステム運用を理解してあげてください</title>
+      <link>http://tdtsh.github.io/archives/803/</link>
+      <pubDate>Fri, 23 Jul 2010 11:51:53 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/803/</guid>
+      <description>保守できなくなり、塩漬けにしたままのオープンシステム&amp;#8212;。いま“オープンレガシー”が情報システム部門を苦しめている。 &amp;#8230; 1990年代</description>
+    </item>
+    
+    <item>
+      <title>Twitter では BitTorrent を使って大量のサーバに高速にデプロイしている</title>
+      <link>http://tdtsh.github.io/archives/798/</link>
+      <pubDate>Wed, 21 Jul 2010 11:00:08 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/798/</guid>
+      <description>Twitterでは大量のサーバを運用しており、それらのサーバに対してのアップデートは素早く行わなければならい。しかしGitサーバに対するアク</description>
+    </item>
+    
+    <item>
+      <title>daemontools のオプション</title>
+      <link>http://tdtsh.github.io/archives/778/</link>
+      <pubDate>Mon, 05 Jul 2010 15:05:42 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/778/</guid>
+      <description>daemontools のオプション をすぐ忘れるので、備忘録です。 svc オプション サービス名 オプション 意味 備考 -u Up サービスが起動していなければ開始(サービスが停止して</description>
+    </item>
+    
+    <item>
+      <title>日本も電波を再編しないと、将来iPhoneやAndroidが日本で使えなくなる</title>
+      <link>http://tdtsh.github.io/archives/703/</link>
+      <pubDate>Mon, 21 Jun 2010 05:38:23 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/703/</guid>
+      <description>先日、孫正義さん、池田信夫さん、夏野剛さんによる光の道討論が行われたと当ブログでも書きました。 早速テキストに書き起こしてくださった方がいます</description>
+    </item>
+    
+    <item>
+      <title>孫正義さん、池田信夫さん、夏野剛さんによる光の道討論</title>
+      <link>http://tdtsh.github.io/archives/701/</link>
+      <pubDate>Fri, 18 Jun 2010 04:21:48 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/701/</guid>
+      <description>昨日の20時からはじまった、孫正義さん、池田信夫さん、夏野剛さんによる光の道討論をUstreamで見ました。 見逃した方はアーカイブでどうぞ。</description>
+    </item>
+    
+    <item>
+      <title>DBAN(Darik&amp;#8217;s Boot And Nuke)でHDDをローレベルフォーマット</title>
+      <link>http://tdtsh.github.io/archives/681/</link>
+      <pubDate>Tue, 15 Jun 2010 15:10:21 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/681/</guid>
+      <description>PCやサーバの廃棄時、データの消去どうしてますか？ 高価なHDDクラッシャーがある現場は楽ですが、永久磁石でささっとやられる方や、中にはプラッ</description>
+    </item>
+    
+    <item>
+      <title>Assembla無料で使える個人用Subversion / Git</title>
+      <link>http://tdtsh.github.io/archives/675/</link>
+      <pubDate>Fri, 11 Jun 2010 02:43:59 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/675/</guid>
+      <description>suz-labさんでプライベートなSubversionのWEBサービスが紹介されていました。 suz-lab &amp;#8211; blog: AssemblaでプライベートSVN (いつ</description>
+    </item>
+    
+    <item>
+      <title>Subversion のリポジトリを移動する</title>
+      <link>http://tdtsh.github.io/archives/537/</link>
+      <pubDate>Tue, 19 Jan 2010 07:58:10 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/537/</guid>
+      <description>前回、急ごしらえでSubversionサーバを復旧しました。その続きです。 急場しのぎで間に合わせの古いPCに作ったSubversionサーバ</description>
+    </item>
+    
+    <item>
+      <title>Subversion 1.4.2をインストールした時のメモ</title>
+      <link>http://tdtsh.github.io/archives/535/</link>
+      <pubDate>Mon, 18 Jan 2010 09:04:52 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/535/</guid>
+      <description>ちょっと前に、Subversion用のサーバが壊れました。 幸い、リポジトリのHDDが生きていたので、別のサーバに構築した時のメモ書いておきま</description>
+    </item>
+    
+    <item>
+      <title>GParted Live 0.4.6-1 のブータブルUSBメモリを作る</title>
+      <link>http://tdtsh.github.io/archives/527/</link>
+      <pubDate>Thu, 17 Dec 2009 07:35:13 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/527/</guid>
+      <description>だいぶ前に作ったGNU Parted (usb-live 0.3.1)のブータブルUSBメモリが、SATAとかSSDとかに対応できないみたいなので、久しぶりに作り直します。</description>
+    </item>
+    
+    <item>
+      <title>Google 日本語入力を使ってみた。Google Public DNSも使ってみてます。</title>
+      <link>http://tdtsh.github.io/archives/505/</link>
+      <pubDate>Fri, 04 Dec 2009 14:28:58 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/505/</guid>
+      <description>巷で少し話題の、Google社謹製FEP、「Google 日本語入力」を早速インストールしてみました。 この文章を書いている今、Google日本</description>
+    </item>
+    
+    <item>
+      <title>CygwinでOpenSSHの鍵ペアを作成</title>
+      <link>http://tdtsh.github.io/archives/467/</link>
+      <pubDate>Thu, 26 Nov 2009 04:04:25 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/467/</guid>
+      <description>Cygwinのインストール時に、opensslとopensshを追加すれば、 ssh_keygenが使えます。 パスフレーズ無し、1024ビット</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.3 &#43; Apache2.2.14 で configure: error: &amp;#8230;No recognized SSL/TLS toolkit detected</title>
+      <link>http://tdtsh.github.io/archives/396/</link>
+      <pubDate>Fri, 09 Oct 2009 05:12:47 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/396/</guid>
+      <description>configure: error: &amp;#8230;No recognized SSL/TLS toolkit detected CentOS 5.3 で、Apache2.2.14をコンパイルしようと、 ./configure したら、 こんなん出ました。 configure: error: ...No recognized SSL/TLS toolkit detected どーやら、OpenSSLが入っ</description>
+    </item>
+    
+    <item>
+      <title>SSHポートフォワードで open failed: administratively prohibited: open failed</title>
+      <link>http://tdtsh.github.io/archives/389/</link>
+      <pubDate>Wed, 16 Sep 2009 01:38:05 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/389/</guid>
+      <description>CentOS(4.2)のサーバを踏み台にして、SSHポートフォワード ssh -L 3389:rdphost:3389 username@remotehost -v で、リモートデスクトップに接続しようとしたら、 open failed: administratively prohibited: open failed と怒</description>
+    </item>
+    
+    <item>
+      <title>Tomcat 5.5.28にしたら、Cookieの値がダブルクオーテーションで囲まれる様になった</title>
+      <link>http://tdtsh.github.io/archives/386/</link>
+      <pubDate>Tue, 15 Sep 2009 11:10:33 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/386/</guid>
+      <description>数年ほったらかしだったWEBサービス(java)のミドルウェア達を、いっきにバージョンアップしてみました。 そしたら、認証関係で不具合が・・・</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.3でcifsでマウントしたWindows共有を、Apache(2.2)のAliasにすると画像が表示されない</title>
+      <link>http://tdtsh.github.io/archives/382/</link>
+      <pubDate>Mon, 14 Sep 2009 03:10:40 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/382/</guid>
+      <description>以前に書きましたが、CentOS 5.3にするとsmbfs が使えず、cifsでマウントしなくてはいけない、の続編です。 WEBサービスで、複数の</description>
+    </item>
+    
+    <item>
+      <title>AVG Anti-Virus Free Edition 8.5 for Linux を CentOSにインストール</title>
+      <link>http://tdtsh.github.io/archives/379/</link>
+      <pubDate>Fri, 11 Sep 2009 02:23:32 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/379/</guid>
+      <description>Windowsでも個人的にお世話になっている AVG アンチウィルス無償版. 非商業的な目的でなら、無償です。 我が家ではもっぱら「ブラジル」と呼んでま</description>
+    </item>
+    
+    <item>
+      <title>CentOS で unknown filesystem type &amp;#8216;smbfs&amp;#8217;</title>
+      <link>http://tdtsh.github.io/archives/341/</link>
+      <pubDate>Fri, 04 Sep 2009 10:51:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/341/</guid>
+      <description>CentOS5 で、smbfs でSAMBAサーバの共有を mount -t smbfs //172.10.X.X/Share /Share こんな風にマウントしようとしたら、 unknown filesystem type &amp;#8216;smbfs&amp;#8217; こんな感じで怒られた。 CentOS4の頃はいけ</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5 にeSVNをインストールした時のメモ</title>
+      <link>http://tdtsh.github.io/archives/334/</link>
+      <pubDate>Thu, 03 Sep 2009 14:28:53 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/334/</guid>
+      <description>eSVNの最新バージョンは0.6.12-1らしい。 2～3年前から更新とまっているような。 yum -y install qt yum -y install qt-devel yum -y install anthy-devel yum -y install qmake yum -y install subversion cd /usr/local/src wget http://jaist.dl.sourceforge.net/sourceforge/esvn/esvn-0.6.12-1.tar.gz tar xvzf</description>
+    </item>
+    
+    <item>
+      <title>WEBシステムのバックアップにはノートPCとUSB HDDがあればいい</title>
+      <link>http://tdtsh.github.io/archives/323/</link>
+      <pubDate>Wed, 02 Sep 2009 04:29:21 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/323/</guid>
+      <description>toC の Webサービスに携わる様になって、10年弱になろうとしている。 最初の方は、顧客から預かったシステムの運用をやっていた。 色んな商用バックア</description>
+    </item>
+    
+    <item>
+      <title>DOA、RDB と Key Valueストア(KVS)について</title>
+      <link>http://tdtsh.github.io/archives/207/</link>
+      <pubDate>Thu, 30 Jul 2009 02:43:13 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/207/</guid>
+      <description>前々回、前回、に引き続き、Key Valueストア(KVS)ネタ。 データの整合性（Consistency）を重視するRDB、データの可用性（A</description>
+    </item>
+    
+    <item>
+      <title>CVSコマンド備忘録</title>
+      <link>http://tdtsh.github.io/archives/148/</link>
+      <pubDate>Tue, 14 Jul 2009 04:20:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/148/</guid>
+      <description>ログイン( pserver ) cvs -d :pserver:username@your.domain.com:/home/cvsroot login インポート cvs -d :ext:username@your.domain.com:/home/cvsroot import -I ! repo_name &amp;#8220;HEAD&amp;#8221; &amp;#8220;start&amp;#8221; エクスポート トランク cvs -d :ext:username@your.domain.com:/home/cvsroot -z9 export -r HEAD repo_name ブランチ cvs -e ssh -d username@your.domain.com:/home/cvsroot export -r BRANCH_NAME repo_name 特定の日付 cvs -d :ext:username@your.domain.com:/home/cvsroot export -D &amp;#8220;2007/05/03&amp;#8221; repo_name チェ</description>
+    </item>
+    
+    <item>
+      <title>XREAで無料サーバ</title>
+      <link>http://tdtsh.github.io/archives/117/</link>
+      <pubDate>Fri, 10 Jul 2009 02:00:04 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/117/</guid>
+      <description>バリュードメインで独自ドメインを取得すると、XREAの無料サーバが使えます。phpやMySQLが使えるので、WordPressやXOOPS、</description>
+    </item>
+    
+    <item>
+      <title>taskkillとtasklist</title>
+      <link>http://tdtsh.github.io/archives/70/</link>
+      <pubDate>Wed, 08 Jul 2009 13:58:34 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/70/</guid>
+      <description>我が家の嫁PC、ThinkPad R60eは良くフリーズというか、応答しなくなる。 タスクマネージャさえ起動できなくなるからうっとおしい。 そんな</description>
+    </item>
+    
+    <item>
+      <title>独自ドメイン取りました</title>
+      <link>http://tdtsh.github.io/archives/71/</link>
+      <pubDate>Wed, 08 Jul 2009 01:38:11 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/71/</guid>
+      <description>アフィリエイトの練習に始めたはてブですが、あまりアフィリエイトには向いてない事が判り始めてきました。 仕事では何十台とサーバ立ててきましたが、</description>
+    </item>
+    
+    <item>
+      <title>findstr (windows版のgrepの様なコマンド)</title>
+      <link>http://tdtsh.github.io/archives/69/</link>
+      <pubDate>Tue, 07 Jul 2009 11:58:43 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/69/</guid>
+      <description>要するに、windows版のgrepです。 例）現在のディレクトリ以下のHTMLファイルで&amp;#8221;char&amp;#8221;を検索する findstr /s /i</description>
+    </item>
+    
+    <item>
+      <title>ApacheBench（abコマンド）備忘録</title>
+      <link>http://tdtsh.github.io/archives/60/</link>
+      <pubDate>Tue, 30 Jun 2009 01:49:07 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/60/</guid>
+      <description>リクエスト数1000回を、多重度10で実行する。 ab -n 1000 -c 10 http://192.168.0.10/ オプション -n 数値 テストで発行するリクエストの回数を数値で指定 -c 数値 テストで同時に</description>
+    </item>
+    
+    <item>
+      <title>Windows XPでイベントログに任意のログを出力するには</title>
+      <link>http://tdtsh.github.io/archives/61/</link>
+      <pubDate>Tue, 30 Jun 2009 01:00:15 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/61/</guid>
+      <description>備忘録です。 Windows XPで(多分Vistaも)、イベントログに任意のログ書けます。 eventcreate /T ERROR /ID 999 /L APPLICATION /D &#34;ほげほげ&#34; イベントビューアで確認したら、ちゃん</description>
+    </item>
+    
+    <item>
+      <title>denyhostsのメモ</title>
+      <link>http://tdtsh.github.io/archives/49/</link>
+      <pubDate>Mon, 22 Jun 2009 04:34:23 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/49/</guid>
+      <description>SSHアタックを自動的に、/etc/hosts.denyに加える、denyhosts のメモ yum -y install denyhosts vi /etc/denyhosts/denyhosts.cfg #&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211; # 一定時間後に制限を解除する（下の例</description>
+    </item>
+    
+    <item>
+      <title>SSLとCookieのセキュリティ備忘録</title>
+      <link>http://tdtsh.github.io/archives/46/</link>
+      <pubDate>Wed, 17 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/46/</guid>
+      <description>経路のセキュリティと同時にセキュアなセッション管理を SSL/TLS でクッキーを使うときは secure 属性を付けるのを基本とする &amp;#8211; http://www.ipa.go.jp/security/ciadr/20030808cookie-secure.html 経路のセキュリティと同時にセキュ</description>
+    </item>
+    
+    <item>
+      <title>LogParserでイベントログをダンプのバッチ</title>
+      <link>http://tdtsh.github.io/archives/38/</link>
+      <pubDate>Tue, 09 Jun 2009 05:39:31 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/38/</guid>
+      <description>LogParserを使って、hostname.txt上のコンピュータ名達のNTイベントログをダンプするバッチ作りました。 set logdir=. set user=administrator set pass=hogehoge :NBT セッシ</description>
+    </item>
+    
+    <item>
+      <title>スイッチングハブのワイヤスピードの計算</title>
+      <link>http://tdtsh.github.io/archives/33/</link>
+      <pubDate>Thu, 04 Jun 2009 00:18:57 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/33/</guid>
+      <description>Ethernetの最小フレームは64バイト。 実際には、20バイト分のオーバーヘッド(プリアンプル、Start Frame Delimiter、Inter</description>
+    </item>
+    
+    <item>
+      <title>LogParserでイベントログをダンプ</title>
+      <link>http://tdtsh.github.io/archives/31/</link>
+      <pubDate>Wed, 03 Jun 2009 11:10:46 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/31/</guid>
+      <description>こんな感じ。 NT、2000の頃は、リソキのdumpel.exe使ってたけど、便利になった。 for /F %%F IN (hostname.txt) do LogParser.exe &amp;#8220;select TimeGenerated,EventID,EventType,EventTypeName,EventCategory,EventCategoryName,ComputerName,Message,Data into %%F_system.csv from \\%%F\system where &amp;#8216;%yyyy_mm_dd%&amp;#8217; = TO_STRING(TimeGenerated,&amp;#8217;yyyy-MM-dd&amp;#8217;) &amp;#8221; -i:evt -o:csv</description>
+    </item>
+    
+    <item>
+      <title>Microsoftは「1人の管理者で5000台のサーバーを運用」しているらしい</title>
+      <link>http://tdtsh.github.io/archives/24/</link>
+      <pubDate>Wed, 27 May 2009 02:51:25 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/24/</guid>
+      <description>http://itpro.nikkeibp.co.jp/article/NEWS/20080502/300572/ ITインフラストラクチャは規模の経済が働く典型的な分野ですね。 そら勝てんわ・・・</description>
+    </item>
+    
+    <item>
+      <title>SAMBA に robocopy で ERROR 5 (0x00000005) Changing File Attributes</title>
+      <link>http://tdtsh.github.io/archives/21/</link>
+      <pubDate>Fri, 22 May 2009 00:50:33 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/21/</guid>
+      <description>robocopy で、リモートのNTFS (Windows 2003 Server) から、リモートのSAMBAサーバにバックアップを取ることがあります。 稀に、こんなエラーが発生して、全然コピーが</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 を始める為に必要なURLまとめ</title>
+      <link>http://tdtsh.github.io/archives/18/</link>
+      <pubDate>Wed, 20 May 2009 11:44:52 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/18/</guid>
+      <description>EC2にアカウントを作成する。 Amazon Elastic Compute Cloud (Amazon EC2) http://aws.amazon.com/ec2/ Amazon Web Services ポータル https://aws-portal.amazon.com/gp/aws/developer/account/index.html?ie=UTF8&amp;#38;action=activity-summary Firefoxのアドオンをインストール( EC2 と S3 ) Elasticfox (Firefox Extension for Amazon EC2) http://developer.amazonwebservices.com/connect/entry.jspa?externalID=609 S3FOX (Firefox Extension for Amazon S3) http://www.s3fox.net/ :[Amazon EC2</description>
+    </item>
+    
+    <item>
+      <title>仮のWEBシステムを、脳内でAmazon EC2に移行してみる</title>
+      <link>http://tdtsh.github.io/archives/19/</link>
+      <pubDate>Wed, 20 May 2009 02:49:59 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/19/</guid>
+      <description>仮のWEBシステムを、脳内でAmazon EC2に移行してみる。 ■EC2 インスタンス 次の3つから選択する。Smallで充分。 Small 1.7GB / 1CPU / 160GB HDD / 32bit</description>
+    </item>
+    
+    <item>
+      <title>POPコマンド</title>
+      <link>http://tdtsh.github.io/archives/12/</link>
+      <pubDate>Mon, 18 May 2009 09:32:27 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/12/</guid>
+      <description>popを使用して自分宛てにきたメールを読む # telnet my_server.my_domain.ne.jp 110 &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211; user my_name@my_domain.ne.jp pass hogehoge stat OK 1 32 ← ステータスコマンドの結果 list OK 1 messages (32 octets) ← listコマンド成功 retr 1 ← 1番目</description>
+    </item>
+    
+    <item>
+      <title>SMTPコマンド備忘録</title>
+      <link>http://tdtsh.github.io/archives/13/</link>
+      <pubDate>Mon, 18 May 2009 09:28:22 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/13/</guid>
+      <description>SMTPコマンド備忘録 # telnet my_mailserver.my_domain.ne.jp 25 &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- helo mail from: my_name@my_domain.ne.jp rcpt to: to_name@to_domain.ne.jp data 本文を書く。 . quit &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- SMTPコマンドの説明 ●HELO または EHLO STMPサーバとの接続を開始する。</description>
+    </item>
+    
+    <item>
+      <title>SMTP レスポンスコード表</title>
+      <link>http://tdtsh.github.io/archives/14/</link>
+      <pubDate>Mon, 18 May 2009 09:28:07 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/14/</guid>
+      <description>SMTP レスポンスコード表 200 （非標準サクセス応答 RFC876を参照） 211 システム状況またはシステムヘルプ応答。 214 ヘルプメッセージについて。 220 指定した</description>
+    </item>
+    
+    <item>
+      <title>Subversionサーバ再構築メモ</title>
+      <link>http://tdtsh.github.io/archives/3/</link>
+      <pubDate>Tue, 12 May 2009 09:19:02 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3/</guid>
+      <description>随分前に構築したSubversionサーバがぶっ壊れたので、別のPCに 再構築しました。メモっときます。 ############################################################ @@Berkeley DB 4.5.20 インストール ############################################################ cd /usr/local/src wget http://download.oracle.com/berkeley-db/db-4.5.20.tar.gz tar zxfv db-4.5.20.tar.gz cd</description>
+    </item>
+    
+  </channel>
+</rss>

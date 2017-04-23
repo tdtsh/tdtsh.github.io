@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/580/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Google App Engine for Java で Google Data (GData) API を使う 1 - はなたんのブログ</title>
+    
+<meta name="description" content="Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data">
+
+<meta property="og:title" content="Google App Engine for Java で Google Data (GData) API を使う 1 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/580/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/580/">
+<meta name="twitter:title" content="Google App Engine for Java で Google Data (GData) API を使う 1 - はなたんのブログ">
+<meta name="twitter:description" content="Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Google App Engine for Java で Google Data (GData) API を使う 1 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2010-03-11T08:04:07JST",
+    "dateModified": "2010-03-11T08:04:07JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Google App Engine for Java で Google Data (GData) API を使う 1</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-03-11T08:04:07JST">Mar 11, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Google App Engine for Java で Google Data (GData) API を使う 1</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。</p>
+
+<p>なんでも、<a href="http://code.google.com/intl/ja/apis/gdata/">Google Data (GData) API</a>なるものを使えば良いらしい。</p>
+
+<h4 id="google-data-gdata-apiとは">Google Data (GData) APIとは</h4>
+
+<p>GData APIとはなんでしょう。</p>
+
+<p><a href="http://code.google.com/intl/ja/apis/gdata/">Google Data (GData) APIのサイト</a>によると、</p>
+
+<p>「Google DATA API では、Web 上のデータを読み書きするシンプルな標準プロトコルを提供します。」ということです。</p>
+
+<p>サポートされているGoogleのサービスは、こんなにあります。(2010年3月現在)</p>
+
+<ul>
+<li><a href="http://code.google.com/apis/analytics/">Google Analytics Data Export API</a></li>
+<li><a href="http://code.google.com/apis/apps/">Google Apps API</a></li>
+<li><a href="http://code.google.com/apis/base/">Google Base Data API</a></li>
+<li><a href="http://code.google.com/apis/blogger/">Blogger Data API</a></li>
+<li><a href="http://code.google.com/apis/books/">Google Book Search Data API</a></li>
+<li><a href="http://code.google.com/apis/calendar/">Google Calendar Data API</a></li>
+<li><a href="http://code.google.com/apis/codesearch/">Google Code Search Data API</a></li>
+<li><a href="http://code.google.com/apis/contacts/">Google Contacts Data API</a></li>
+<li><a href="http://code.google.com/apis/documents/">Google Documents List Data API</a></li>
+<li><a href="http://code.google.com/apis/finance/">Google Finance Portfolio Data API</a></li>
+<li><a href="http://code.google.com/apis/health/">Google Health Data API</a></li>
+<li><a href="http://code.google.com/apis/maps/documentation/mapsdata/">Google Maps Data API</a></li>
+<li><a href="http://code.google.com/apis/notebook/">Google Notebook Data API</a></li>
+<li><a href="http://code.google.com/apis/picasaweb/">Picasa Web Albums Data API</a></li>
+<li><a href="http://code.google.com/apis/spreadsheets/">Google Spreadsheets Data API</a></li>
+<li><a href="http://code.google.com/apis/webmastertools/">Webmaster Tools Data API</a></li>
+<li><a href="http://code.google.com/apis/youtube/">YouTube Data API</a></li>
+</ul>
+
+<hr />
+
+<h4 id="google-data-gdata-api-クライアント-ライブラリ">Google Data (GData) API クライアント ライブラリ</h4>
+
+<p>GAE/JなのでJava版を使いますけど、<a href="http://code.google.com/intl/ja/apis/gdata/docs/client-libraries.html">phpやJavaScriptでもイケる</a>ので簡単に試せますね。</p>
+
+<p><a href="http://code.google.com/p/gdata-java-client/downloads/list">Downloads &#8211; gdata-java-client &#8211; Project Hosting on Google Code</a>からライブラリをダウンロードします。</p>
+
+<p>サンプルは要らないので、gdata-src.java-1.40.3.zip にしましたが、ライブラリが欲しいだけならどっちでもいいです。</p>
+
+<p>ダウンロードしたzipファイルの、gdata/java/lib に、たくさんjarファイルがあります。</p>
+
+<p>利用したいGoogleのサービスに対し、jarファイルの名称から何が必要かなんとなく想像がつきますね。</p>
+
+<pre>gdata-analytics-2.1.jar
+gdata-analytics-meta-2.1.jar
+gdata-appsforyourdomain-1.0.jar
+gdata-appsforyourdomain-meta-1.0.jar
+gdata-base-1.0.jar
+gdata-blogger-2.0.jar
+gdata-blogger-meta-2.0.jar
+gdata-books-1.0.jar
+gdata-books-meta-1.0.jar
+gdata-calendar-2.0.jar
+gdata-calendar-meta-2.0.jar
+gdata-client-1.0.jar
+gdata-client-meta-1.0.jar
+gdata-codesearch-2.0.jar
+gdata-codesearch-meta-2.0.jar
+gdata-contacts-3.0.jar
+gdata-contacts-meta-3.0.jar
+gdata-core-1.0.jar
+gdata-docs-3.0.jar
+gdata-docs-meta-3.0.jar
+gdata-finance-2.0.jar
+gdata-finance-meta-2.0.jar
+gdata-gtt-2.0.jar
+gdata-gtt-meta-2.0.jar
+gdata-health-2.0.jar
+gdata-health-meta-2.0.jar
+gdata-maps-2.0.jar
+gdata-maps-meta-2.0.jar
+gdata-media-1.0.jar
+gdata-photos-2.0.jar
+gdata-photos-meta-2.0.jar
+gdata-projecthosting-2.1.jar
+gdata-projecthosting-meta-2.1.jar
+gdata-sidewiki-2.0.jar
+gdata-sidewiki-meta-2.0.jar
+gdata-sites-2.0.jar
+gdata-sites-meta-2.0.jar
+gdata-spreadsheet-3.0.jar
+gdata-spreadsheet-meta-3.0.jar
+gdata-webmastertools-2.0.jar
+gdata-webmastertools-meta-2.0.jar
+gdata-youtube-2.0.jar
+gdata-youtube-meta-2.0.jar
+</pre>
+
+<p>gdata/java/deps にも、こんなんいてはります。</p>
+
+<pre>google-collect-1.0-rc1.jar
+jsr305.jar
+</pre>
+
+<hr />
+
+<p>疲れたから次回に続きます。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/java/">java</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/2989/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2 - はなたんのブログ</title>
+    
+<meta name="description" content="Titanium Moblie いいですね。 特に Alloy という MVCフレームワーク的なものが標準になってから、昨今のイケてるJavaScript開発者にとっては馴染み易いスタ">
+
+<meta property="og:title" content="Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/2989/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="Titanium Moblie いいですね。 特に Alloy という MVCフレームワーク的なものが標準になってから、昨今のイケてるJavaScript開発者にとっては馴染み易いスタ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/2989/">
+<meta name="twitter:title" content="Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2 - はなたんのブログ">
+<meta name="twitter:description" content="Titanium Moblie いいですね。 特に Alloy という MVCフレームワーク的なものが標準になってから、昨今のイケてるJavaScript開発者にとっては馴染み易いスタ">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2013-10-15T13:00:29JST",
+    "dateModified": "2013-10-15T13:00:29JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Titanium Moblie いいですね。 特に Alloy という MVCフレームワーク的なものが標準になってから、昨今のイケてるJavaScript開発者にとっては馴染み易いスタ"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-10-15T13:00:29JST">Oct 15, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Titanium MobileのAndroid用モジュールでハマったまとめ その1 exec returned: 2</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><img data-attachment-id="2990" data-permalink="/blog/archives/2989/titanium_mobile" data-orig-file="/uploads/2013/10/titanium_mobile.jpeg?fit=225%2C225" data-orig-size="225,225" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="titanium_mobile" data-image-description="" data-medium-file="/uploads/2013/10/titanium_mobile.jpeg?fit=225%2C225" data-large-file="/uploads/2013/10/titanium_mobile.jpeg?fit=225%2C225" src="/uploads/2013/10/titanium_mobile.jpeg?resize=225%2C225" alt="titanium_mobile" class="aligncenter size-full wp-image-2990" srcset="/uploads/2013/10/titanium_mobile.jpeg?w=225 225w, /uploads/2013/10/titanium_mobile.jpeg?resize=150%2C150 150w" sizes="(max-width: 225px) 100vw, 225px" data-recalc-dims="1" /></p>
+
+<p>Titanium Moblie いいですね。</p>
+
+<p>特に Alloy という MVCフレームワーク的なものが標準になってから、昨今のイケてるJavaScript開発者にとっては馴染み易いスタイルになったんじゃないでしょうか。まんまbackbone.js(とunderscore.jsが使われている)な部分多いですし。私はイケて無いんでアレですけど、ディレクトリ体系もRails的でちょっと好きです。</p>
+
+<p>ちょっと前にTitaniumを触ってみただけの方は是非Alloyも試して欲しいです。</p>
+
+<p>体裁もtssとかいうcssライクなファイルで定義するといった感じなので、ライトなアプリを開発してみたいWeb開発者はもうみんなTitaniumでいいんじゃないか？とさえ思います。</p>
+
+<p>とはいえ実際にはObjective-CやJavaでアプリを書ける事に越したことは無いし、デバイスに依存する部分(例えばカメラ周りとか、モーションセンサー周りとか)はネイティブで書かざるを得ないケースもあります。また既存のアプリを Titanium に移殖するといった時に、過去資産を活かしたい事もあるでしょう。</p>
+
+<p>そういう場合、Titanium Mobile の 「Module(モジュール)」という枠組みに従えば、iOSやAndroidのネイティブアプリをTitanium側から呼び出して使う事が出来ます。</p>
+
+<p>個人的には、モジュールが作れるからこそTitaniumをガッツリ触る気になった決め手というか、それが無かったら多分使わなかったです。</p>
+
+<p>iOS側やAndorid側で出来てTitanium側は対応待ちとかそもそも不可能とか、そういうケースが出た時にAppcelerator社に依存とか厳しすぎだし、最悪自分で何とか出来るという安心感がTitanium Mobile の大変良い所の一つだと私は思っています。</p>
+
+<p>そんなこんなで、モジュールを作成して色々とハマったのでメモ残します。</p>
+
+<p>MacですがWindowsもさほど変わりは無いと思います。多分。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="ハマったポイント1-exec-returned-2">ハマったポイント1 exec returned: 2</h4>
+
+<p>iOSモジュールについては個人ブログ等での日本語の情報が豊富なのですが、Androidは少ないです。</p>
+
+<p>本来学習コストが低いTitaniumですがモジュール(それもAndroidは特に)の開発となると話は別で、ネイティブでの開発経験が無いと厳しいです。特にAndoridのソレはiOS版と比べて、さらに環境構築の敷居が高い気がします。</p>
+
+<p>その辺が情報の少なさとまとまった説明が無いという事情につながっているのでしょう。</p>
+
+<p>加えて公式ドキュメントも、Androidモジュール開発に関する情報が分散していたり、不足している部分があったりします。</p>
+
+<p>AndroidのSDKやtool群のアップデートの頻度やフラグメンテーションへの配慮など、Appcelerator社としても手に余るという事情も、もしかしたらあるのかもしれません。</p>
+
+<p>という訳で、Android NDK周りで結構回り道しました、という話です。</p>
+
+<p><a href="https://wiki.appcelerator.org/display/guides/Android%20Module%20Development%20Guide" target="_blank">Android Module Development Guide &#8211; Documentation &#038; Guides &#8211; Appcelerator Wiki</a>に従い、Androidモジュールを作成してみます。</p>
+
+<h5 id="環境">環境</h5>
+
+<pre>Mac os x 10.8.5
+Titanium Studio 3.1.13
+ant 1.8.4
+java 1.7.0_13
+Android SDK Tools Rev 22
+Android SDK Platform-tools/Build-tools Rev 18.1.0
+Android NDK r9
+</pre>
+
+<p>まずはこんな感じで、空のAndoridモジュールを作成してみます。</p>
+
+<pre>titanium.py create --platform=android --type=module --name=android_test_module
+ --id=com.tdtsh.android_test_module --android=/Users/tdtsh/android-sdk-macosx
+</pre>
+
+<p>↑この時点でいくつか間違いや不足があるのですが、</p>
+
+<p>まずはantタスクを実行してビルドしてみます。</p>
+
+<pre>cd /path/to/android_test_module
+ant 
+</pre>
+
+<p>するとこんなエラーになりました。</p>
+
+<pre>BUILD FAILED
+/Users/MYNAME/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/
+module/android/build.xml:296: The following error occurred while executing this line:
+/Users/MYNAME/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/
+module/android/build.xml:247: Neither the ANDROID_NDK environment variable,
+ or the android.ndk property is not set to an existing Android NDK installation
+ (check your module's build.properties).
+</pre>
+
+<p>これについてはすぐ分かりました。ググればたくさん出てきます。<a href="http://developer.appcelerator.com/question/141064/android-module-development-kroll-error" target="_blank">ここ</a>とか。</p>
+
+<p>大概の場合はココでNDKが要る事に気がつくことになりますが、私はたまたま最新のNDKが既にインストールされていたので、そのまま使いました。</p>
+
+<p>後で環境変数を書く方式に替えたのですが、取り敢えずはモジュール直下のbuild.propertiesにこう書けばよいです。</p>
+
+<blockquote>
+<p>android.ndk=/path/to/android-ndk-r9</p>
+</blockquote>
+
+<p>気を取り直して ant を実行すると、こんどはこのエラーです。</p>
+
+<pre>BUILD FAILED
+/Users/MYNAME/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/
+module/android/build.xml:326: The following error occurred while executing this line:
+/Users/MYNAME/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/
+module/android/build.xml:281: exec returned: 2
+</pre>
+
+<p>あまりにもエラー内容があっさりし過ぎてて何が起こっているかさっぱり判らず。</p>
+
+<p>ここで悶えることしばし。</p>
+
+<p>Titanium SDKを3.1.0まで順にデクリメントしてみたり、<a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Titanium_Compatibility_Matrix" target="_blank">公式にはJDK6でないといけないと書いている</a>ので、色々試行錯誤してみたり。(結論から言うとJDK7でも一応ビルドできました)</p>
+
+<p>ググって色々と試しているうちにコレを見つけます。</p>
+
+<p><a href="https://developer.appcelerator.com/question/155508" target="_blank">Vanilla Android Module Build Fails</a></p>
+
+<p>まじか！</p>
+
+<p>最新のNDK (r9) が原因かもしれない・・・</p>
+
+<p>長くなったので<a href="/blog/archives/3001">続きは次回</a>に。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="参考にさせて頂いたサイト">参考にさせて頂いたサイト</h4>
+
+<p><a href="http://isisredirect.blogspot.jp/2011/09/titanium-mobile-module-developer-guide_20.html?m=1" target="_blank">勝手／全／超訳 Titanium Mobile Module Developer Guide for Android</a></p>
+
+<p><a href="https://wiki.appcelerator.org/display/guides/Android%20Module%20Development%20Guide" target="_blank">Android Module Development Guide &#8211; Documentation &#038; Guides &#8211; Appcelerator Wiki</a></p>
+
+<p><a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Titanium_Compatibility_Matrix" target="_blank">Titanium Compatibility Matrix &#8211; Titanium 3.X &#8211; Appcelerator Docs</a></p>
+
+<p><a href="http://builds.appcelerator.com.s3.amazonaws.com/javadoc/index.html" target="_blank">Overview (Titanium Android Java API) </a></p>
+
+<p><a href="http://d.hatena.ne.jp/siso9to/20110819/1313724829" target="_blank">TitaniumのAndroid用モジュールを作る　その１- しそメモ（Titanium/Android/Ruby）</a></p>
+
+<p><a href="https://jira.appcelerator.org/secure/IssueNavigator.jspa" target="_blank">Issue Navigator &#8211; Appcelerator JIRA</a></p>
+
+<p><a href="http://developer.appcelerator.com/questions/newest" target="_blank">Community Questions &#038; Answers &#8211; Appcelerator Developer Center</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/android/">android</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/titanium/">Titanium</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

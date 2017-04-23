@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/2548/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール - はなたんのブログ</title>
+    
+<meta name="description" content="そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ">
+
+<meta property="og:title" content="Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/2548/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/2548/">
+<meta name="twitter:title" content="Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール - はなたんのブログ">
+<meta name="twitter:description" content="そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2012-12-18T20:00:03JST",
+    "dateModified": "2012-12-18T20:00:03JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。 Linux機でいつもやっているから楽勝と舐めてかかってハマっ"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-12-18T20:00:03JST">Dec 18, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Oracle Instant Client と sqlplus を mac os x (Mountain Lion) にインストール</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><a href="/uploads/2012/12/oracle.jpeg"><img data-attachment-id="2563" data-permalink="/blog/archives/2548/oracle" data-orig-file="/uploads/2012/12/oracle.jpeg?fit=259%2C194" data-orig-size="259,194" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="oracle" data-image-description="" data-medium-file="/uploads/2012/12/oracle.jpeg?fit=259%2C194" data-large-file="/uploads/2012/12/oracle.jpeg?fit=259%2C194" src="/uploads/2012/12/oracle.jpeg?resize=259%2C194" alt="" title="oracle" class="alignnone size-full wp-image-2563" data-recalc-dims="1" /></a></p>
+
+<p>そう言えば未だMacbook Air にOracleクライアントをインスコしてなかった。</p>
+
+<p>Linux機でいつもやっているから楽勝と舐めてかかってハマったのでちゃんとメモします。</p>
+
+<p>それにしても、Mac用のOIC は まだ10.2なんですね・・・</p>
+
+<p>ウチでも未だ9iが現役ですから別にイイですけど。</p>
+
+<p>いくらシスアド、DBA、運用/構築/ネットワークSEなAdmin君界隈に Mac が全然浸透してないとは言え、Oracleはマカー軽視し過ぎじゃ無いですかね。</p>
+
+<p>Oracle Masterと言う名の認定制度兼囲い込みコミュで数十万のエンジニアを囲い込んだのも今は昔。一事が万事と言います。こんな所にも企業姿勢は現れるんじゃないかな。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="ダウンロードと解凍">ダウンロードと解凍</h4>
+
+<p><a href="http://www.oracle.com/" target="_blank">OracleOTN(US)</a> にサインインする。JPじゃ無いです。</p>
+
+<p><a href="http://www.oracle.com/technetwork/topics/intel-macsoft-098667.html" target="_blank">OracleOTN(US)のOracle Instant Client ダウンロード</a> のページへ</p>
+
+<p>以下のファイルをダウンロードします。</p>
+
+<p><strong><font color="red">注意 x64(64ビット版)ではなく、x86(32ビット版)の方です！！</font></strong></p>
+
+<blockquote>
+<p>instantclient-basic-10.2.0.4.0-macosx-x86.zip</p>
+
+<p>instantclient-sdk-10.2.0.4.0-macosx-x86.zip</p>
+
+<p>instantclient-sqlplus-10.2.0.4.0-macosx-x86.zip</p>
+
+<p>instantclient-jdbc-10.2.0.4.0-macosx-x86.zip</p>
+</blockquote>
+
+<p>ファイルを解凍します。</p>
+
+<blockquote>
+<p>unzip ./instantclient-basic-10.2.0.4.0-macosx-x86.zip</p>
+
+<p>unzip ./instantclient-jdbc-10.2.0.4.0-macosx-x86.zip</p>
+
+<p>unzip ./instantclient-sdk-10.2.0.4.0-macosx-x86.zip</p>
+
+<p>unzip ./instantclient-sqlplus-10.2.0.4.0-macosx-x86.zip</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="インストールと設定">インストールと設定</h4>
+
+<p>解凍したディレクトリ移動し、シンボリックリンクを作成します。</p>
+
+<blockquote>
+<p>mv instantclient_10_2 /usr/local/oracle</p>
+
+<p>cd /usr/local/oracle/</p>
+
+<p>ln -s ./libclntsh.dylib.10.1 ./libclntsh.dylib</p>
+
+<p>ln -s ./libheteroxa10.dylib ./libheteroxa.dylib</p>
+
+<p>ln -s ./libheteroxa10.jnilib ./libheteroxa.jnilib</p>
+
+<p>ln -s ./libnnz10.dylib ./libnnz.dylib</p>
+
+<p>ln -s ./libocci.dylib.10.1 ./libocci.dylib</p>
+
+<p>ln -s ./libocijdbc10.dylib ./libocijdbc.dylib</p>
+
+<p>ln -s ./libocijdbc10.jnilib ./libocijdbc.jnilib</p>
+</blockquote>
+
+<p>ライブラリ・ローディング・パスなどの環境変数をセットします。</p>
+
+<blockquote>
+<p>vi ~/.bash_profile</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+
+<p># for oracle instant client 2012-12-13</p>
+
+<p>export ORACLE_HOME=/usr/local/oracle</p>
+
+<p>export DYLD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME</p>
+
+<p>export PATH=$PATH:/usr/local/oracle</p>
+
+<p>export NLS_LANG=Japanese_Japan.AL32UTF8</p>
+
+<p>export TNS_ADMIN=$ORACLE_HOME/network/admin/tnsnames.ora</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+</blockquote>
+
+<p><strong><font color="red">LD_LIBRARY_PATHでは無く、DYLD_LIBRARY_PATHです！！</font></strong></p>
+
+<p>※2012/12/20追記 su &#8211; するたびにイチイチ怒られる様になりました。なので、今はDYLD_LIBRARY_PATH へのexportは必要な時だけにしてます。</p>
+
+<p>一応確認しときます。</p>
+
+<blockquote>
+<p>source ~/.bash_profile</p>
+
+<p>printenv DYLD_LIBRARY_PATH</p>
+
+<p>printenv ORACLE_HOME</p>
+
+<p>printenv PATH</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="接続する">接続する</h4>
+
+<p>tnsnames.ora を自作しておきます。</p>
+
+<blockquote>
+<p>mkdir -p /usr/local/oracle/network/admin/</p>
+
+<p>vi /usr/local/oracle/network/admin/tnsnames.ora</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+
+<p>HOGE =</p>
+
+<p>(DESCRIPTION =</p>
+
+<p>(ADDRESS_LIST =</p>
+
+<p>(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.0.1)(PORT = 1521))</p>
+
+<p>)</p>
+
+<p>(CONNECT_DATA =</p>
+
+<p>(SERVER = DEDICATED)</p>
+
+<p>(SERVICE_NAME = hoge)</p>
+
+<p>)</p>
+
+<p>)</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+</blockquote>
+
+<p>Oracleに接続します</p>
+
+<blockquote>
+<p>sqlplus user/pass@HOGE</p>
+</blockquote>
+
+<p>落ち着いてやれば難しくないんですけど、Linux とかの先入観とかtypoとか色々あって、結構時間かかりました。</p>
+
+<p>これからはオラ、 Mac からも オラクル！</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="参考にさせて頂いたサイト">参考にさせて頂いたサイト</h4>
+
+<p><a href="http://www.oracle.com/technetwork/jp/topics/intel-macsoft-084115-ja.html" target="_blank">Instant Client ダウンロード for Mac OS X (Intel x86)</a></p>
+
+<p><a href="http://d.hatena.ne.jp/yoshidashingo/20120917/1347867405" target="_blank">sqlplus をインストール &#8211; yoshidashingo</a></p>
+
+<p><a href="http://d.hatena.ne.jp/tkizm/20110914/1315996197" target="_blank">Mac OS X LionにOracle instantclientを入れる &#8211; いっぽんの猟銃のむこうに (DAIZOじいさんとGun)</a></p>
+
+<p><a href="http://ja.softuses.com/22677" target="_blank">Oracle Instantclient Mac OS をインストールする/X 環境変数を設定せず？</a></p>
+
+<p><a href="http://blog.ik.am/entry/view/id/118/title/Mac%20OS%20X%2010.6%E3%81%ABsqlplus%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/;jsessionid=f48dc95d57d19e69967e2a777f08" target="_blank">Mac OS X 10.6にsqlplusをインストールする &#8211; BLOG.IK.AM</a></p>
+
+<p><a href="http://www.danilovizzarro.it/2008/07/how-to-install-sqlplus-and-the-oracle-client-v102-on-a-mac-os-x-leopard-1054/" target="_blank">HOW-TO: Install SqlPlus and the Oracle Client v10.2 on Mac OS X Leopard 10.5.4 | Danilo Vizzarro</a></p>
+
+<p><a href="https://forums.oracle.com/forums/thread.jspa?threadID=397512" target="_blank">OTN Discussion Forums : can I install Oracle client on Mac os X &#8230;</a></p>
+
+<p><a href="http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html" target="_blank">Instant Client downloads for Mac OS X (Intel x86)</a></p>
+
+<p><a href="http://blog.livedoor.jp/blackwingcat/archives/1587216.html" target="_blank">Mac OSX の dyld: Library not loaded を回避する &#8211; Windows 2000 Blog</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/mac/">mac</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9/">データベース</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/">開発環境</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

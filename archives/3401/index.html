@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/3401/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行 - はなたんのブログ</title>
+    
+<meta name="description" content="先日少し書きましたが、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。 因みに既存のNode.ACSは20">
+
+<meta property="og:title" content="無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行 - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/3401/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="先日少し書きましたが、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。 因みに既存のNode.ACSは20">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/3401/">
+<meta name="twitter:title" content="無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行 - はなたんのブログ">
+<meta name="twitter:description" content="先日少し書きましたが、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。 因みに既存のNode.ACSは20">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行 - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2015-06-14T15:00:08JST",
+    "dateModified": "2015-06-14T15:00:08JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "先日少し書きましたが、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。 因みに既存のNode.ACSは20"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-06-14T15:00:08JST">Jun 14, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><a href="/blog/archives/3385">先日少し書きました</a>が、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。</p>
+
+<p>因みに既存のNode.ACSは2015年9月1日迄のようです。</p>
+
+<p>そして俺たちのNode Ninja も今日サービス終了とか。</p>
+
+<p><a href="http://node-ninja.com/archives/1124" target="_blank">Node Ninja サービス提供終了のお知らせ</a></p>
+
+<p>もうだめぽ。</p>
+
+<p>という訳で Node.jsのホスト先の代替として、最近OpenShiftを使い始めました。</p>
+
+<p><a href="https://www.openshift.com/" target="_blank">OpenShift</a></p>
+
+<p>無料のFree Plan では、GEAR(ギア)と呼ばれるインスタンスのうち、Smallという一番ちいさいの(CPU 1x、メモリ 512MB、ストレージ 1GB)が3つまで無料で持てます。</p>
+
+<p>3つ以上欲しい場合は、Bronze Plan への移行が必要です。Bronze Planそのものに料金はかかりませんが、16個までギアが持てます。4つ目以降、追加するギアはSmallでも有料です。</p>
+
+<p>例えば smallは $0.02/hour です。AWSの東京リージョンでEC2のmicroインスタンスを買うのと同じくらいですね。ただストレージ費用がAWSと比較して高い (1GB per gear; $1.00/month)です。まぁIaaSのEC2と比較するのはフェアじゃ無いですけど。</p>
+
+<p>そして16個以上のギアを使いたい場合は、問答無用でSILVERプラン ($20/month)になります。 ストレージ費用がBRONZEの6分の1 (6GB per gear; $1.00/month)になります。やったね。</p>
+
+<p>なかなか良く考えられた値付けだと思いました。</p>
+
+<p><a href="https://www.openshift.com/products/pricing/plan-comparison" target="_blank">OpenShift Online Monthly Plan Comparison</a></p>
+
+<p>アカウント登録やサイトの公開は特に難しく無いので、手順は参考サイトを見て頂ければ良いと思います。</p>
+
+<p>コンソールからssh公開鍵を登録して、デプロイはherokuみたくgitのremoteリポジトリへPushする要領です。楽です。</p>
+
+<p>独自ドメインも問題無くいけます。</p>
+
+<p>DNS側でCNAMEレコードを登録して、OpenShiftの管理コンソール側で、該当アプリケーションにエイリアスを追加すればOKです。</p>
+
+<p>自分のサイトもOpenShiftに変えてみました。</p>
+
+<p><a href="http://www.close-to.biz/" target="_blank"><a href="http://www.close-to.biz/">http://www.close-to.biz/</a></a></p>
+
+<p>あんまりアクセスも無いしレイテンシを気にしないで良い場合に重宝します。</p>
+
+<p>そのうち一発あててSILVERプランに移行したいと思います。</p>
+
+<h4 id="参考にさせて頂いたサイト達">参考にさせて頂いたサイト達</h4>
+
+<p><a href="http://workpiles.com/2014/11/openshift-domain-setting/" target="_blank">Openshiftで独自ドメインの設定 | Workpiles</a></p>
+
+<p><a href="http://qiita.com/itheart/items/f40b78957344bc1c17b6" target="_blank">OpenShiftでMEAN Stackを試してみた &#8211; Qiita</a></p>
+
+<p><a href="http://www.axlight.com/mt/sundayhacking/2013/08/redhatpaasopenshiftnodejs.html" target="_blank">RedHatのPaaSであるOpenShiftでnode.jsを使ってみる、Herokuの代わりになるか &#8211; SundayHacking</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/javascript/">javascript</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/node.js/">node.js</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

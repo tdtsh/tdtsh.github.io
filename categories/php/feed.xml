@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on はなたんのブログ</title>
+    <link>http://tdtsh.github.io/categories/php/</link>
+    <description>Recent content in Php on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 01 May 2014 14:20:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://tdtsh.github.io/categories/php/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>円グラフと積算折れ線グラフを pChart と CakePHP でやったメモ</title>
+      <link>http://tdtsh.github.io/archives/3247/</link>
+      <pubDate>Thu, 01 May 2014 14:20:44 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3247/</guid>
+      <description>&amp;nbsp; pChart version 1 CakePHPのサイトで円グラフとか折れ線グラフとか要ったのでメモ。 phpでグラフといえばpChartです。 いつのまにか pChart</description>
+    </item>
+    
+    <item>
+      <title>backbone.js &#43; handlebars.js &#43; CakePHP &#43; bootstrap 参考サイト個人的まとめ</title>
+      <link>http://tdtsh.github.io/archives/2917/</link>
+      <pubDate>Thu, 26 Sep 2013 14:00:41 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2917/</guid>
+      <description>極めて個人的なまとめ。 フロントエンドは backbone.js、バックエンドは CakePHP でWebサービス作るの楽しいね。 ホントはRoRにしたかったけど</description>
+    </item>
+    
+    <item>
+      <title>PHPDocumentor より ApiGen がなかなか良い</title>
+      <link>http://tdtsh.github.io/archives/2904/</link>
+      <pubDate>Fri, 16 Aug 2013 13:30:45 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2904/</guid>
+      <description>以前 PHPDocumentor を試してみたんですけど、出力されたドキュメントがイマイチ見にくいのと、ページレベルのコメントを拾ってくれなかったので、代替ツールを探し</description>
+    </item>
+    
+    <item>
+      <title>Java野郎が PHPUnit を使ってみる、xUnitについて考える</title>
+      <link>http://tdtsh.github.io/archives/2860/</link>
+      <pubDate>Tue, 09 Jul 2013 21:45:59 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2860/</guid>
+      <description>PHPUnitは、xUnitと呼ばれるテスティング・フレームワークの一つです。 要するに JUnitのphp版です。 Zend Framework (1.6〜) や CakePHP (2.0</description>
+    </item>
+    
+    <item>
+      <title>Mac に pear と PHPUnit と PHPDocumentorをインストール</title>
+      <link>http://tdtsh.github.io/archives/2855/</link>
+      <pubDate>Sun, 07 Jul 2013 02:00:04 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2855/</guid>
+      <description>Mac OS X に pear をインストールしたのでメモ書いときます。 七夕だし。いや嘘です。 PHPUnit と PHPDocumentor を動かしたかったので。 mountain lion です。そしてmac-ports では無</description>
+    </item>
+    
+    <item>
+      <title>Zend Framework で Zend_Controller_Exception</title>
+      <link>http://tdtsh.github.io/archives/2792/</link>
+      <pubDate>Sat, 20 Apr 2013 01:00:04 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2792/</guid>
+      <description>全国1千万人のphperの皆さん、Zend Framework 弄ってますか。 Zend Frameworkとは、Zend Technologies が 2006年3月頃に出したMVCなフレームワー</description>
+    </item>
+    
+    <item>
+      <title>wordpressを3.0.4にアップグレードしました</title>
+      <link>http://tdtsh.github.io/archives/1035/</link>
+      <pubDate>Wed, 12 Jan 2011 03:25:16 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1035/</guid>
+      <description>当サイトのブログエンジンはwordpressなんですけど、バージョン2.8位で止ってたんで久々にアップグレードしました。いつの間にかバージョ</description>
+    </item>
+    
+    <item>
+      <title>php で &lt;&amp;#63 (クエスチョン)の後ろにphpを忘れると動かない (php.ini の short_open_tag)</title>
+      <link>http://tdtsh.github.io/archives/400/</link>
+      <pubDate>Wed, 21 Oct 2009 03:59:17 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/400/</guid>
+      <description>FAQですが、備忘録です。 久しぶりにWEBサーバをphp5.3で構築して、古いWEBサーバのWEBアプリケーションを移行したら、所々のページ</description>
+    </item>
+    
+    <item>
+      <title>wordpressを携帯対応</title>
+      <link>http://tdtsh.github.io/archives/142/</link>
+      <pubDate>Sun, 12 Jul 2009 12:37:12 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/142/</guid>
+      <description>当ブログ(WordPress)を携帯対応しました。 Ktai Style (携帯対応プラグイン)を導入しただけ。 軽くエミュレータで見てみたところでは、ちゃんと携</description>
+    </item>
+    
+    <item>
+      <title>wordpress 2.8の管理画面レイアウト崩れ</title>
+      <link>http://tdtsh.github.io/archives/112/</link>
+      <pubDate>Thu, 09 Jul 2009 15:05:49 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/112/</guid>
+      <description>Firefox3 で見ると、wordpress 2.8 の管理画面のレイアウトがぐちゃぐちゃ。 IE8では問題なし。 define( &amp;#8216;CONCATENATE_SCRIPTS&amp;#8217;, false ); wp-config.php の上の方に、上記を追加したらなおる。 http://wordpress.org/support/topic/279132?replies=2</description>
+    </item>
+    
+    <item>
+      <title>独自ドメイン取りました</title>
+      <link>http://tdtsh.github.io/archives/71/</link>
+      <pubDate>Wed, 08 Jul 2009 01:38:11 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/71/</guid>
+      <description>アフィリエイトの練習に始めたはてブですが、あまりアフィリエイトには向いてない事が判り始めてきました。 仕事では何十台とサーバ立ててきましたが、</description>
+    </item>
+    
+    <item>
+      <title>phpで日時を扱う備忘録</title>
+      <link>http://tdtsh.github.io/archives/63/</link>
+      <pubDate>Thu, 02 Jul 2009 04:33:17 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/63/</guid>
+      <description>現在時刻を取得（例：2009-09-02 13:34） date( &#34;Y-m-d H:i:s&#34;,time()); 現在時刻をyyyymmで取得(例：200907) date( &#34;Ym&#34;,time()); Y 年 4桁 y 年 2桁 m 月 2桁 n 月 1</description>
+    </item>
+    
+  </channel>
+</rss>

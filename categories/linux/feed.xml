@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on はなたんのブログ</title>
+    <link>http://tdtsh.github.io/categories/linux/</link>
+    <description>Recent content in Linux on はなたんのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 23 Jun 2015 01:00:04 +0000</lastBuildDate>
+    
+	<atom:link href="http://tdtsh.github.io/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu 15.04 で Titanium (Appcelerator CLI)、無料でどこまでできるか試してみた</title>
+      <link>http://tdtsh.github.io/archives/3462/</link>
+      <pubDate>Tue, 23 Jun 2015 01:00:04 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3462/</guid>
+      <description>クロスプラットフォームを触ってみたシリーズの第4弾です。 Macbook に Ubuntu 15.04 日本語 Remix をインストールしたので、ついでにTitaniumモバイル(Andro</description>
+    </item>
+    
+    <item>
+      <title>awk で SQL文を作る</title>
+      <link>http://tdtsh.github.io/archives/2872/</link>
+      <pubDate>Thu, 11 Jul 2013 21:30:31 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2872/</guid>
+      <description>テストデータとかDMLを沢山つくりたいとき、Excelで Insert 文作ったりしますよね。 でもパターンや対象テーブルが多いとちょっと面倒です。 ここはひ</description>
+    </item>
+    
+    <item>
+      <title>余ったノートPCには ubuntu がよさげ</title>
+      <link>http://tdtsh.github.io/archives/1798/</link>
+      <pubDate>Sun, 15 Apr 2012 21:30:17 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1798/</guid>
+      <description>余ったPCにはLinuxをぶち込むでしょう常考。 昔はLinuxのインストール厨だった私ですが、最近ではRed Hat系、それも CentOS しか触らなくな</description>
+    </item>
+    
+    <item>
+      <title>さくらInternetのVPS、予想以上にイイですね</title>
+      <link>http://tdtsh.github.io/archives/1103/</link>
+      <pubDate>Wed, 09 Feb 2011 11:23:22 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1103/</guid>
+      <description>前から少し気になってた さくら Internet のVPSを使う機会がありました。いやいや、イイですね！ レンタルサーバでいいじゃん的な案件でも、独自SSL欲しい</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</title>
+      <link>http://tdtsh.github.io/archives/1023/</link>
+      <pubDate>Wed, 01 Dec 2010 04:26:07 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1023/</guid>
+      <description>CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉</description>
+    </item>
+    
+    <item>
+      <title>iPhone、iPad のsshクライアント TouchTerm、pTerm</title>
+      <link>http://tdtsh.github.io/archives/993/</link>
+      <pubDate>Thu, 04 Nov 2010 01:50:16 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/993/</guid>
+      <description>緊急時に外部からサーバにログインしてデーモンの下げ上げとかしたい。 で、iPhone 3Gを購入して真っ先に購入したアプリが TouchTermで</description>
+    </item>
+    
+    <item>
+      <title>daemontools のオプション</title>
+      <link>http://tdtsh.github.io/archives/778/</link>
+      <pubDate>Mon, 05 Jul 2010 15:05:42 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/778/</guid>
+      <description>daemontools のオプション をすぐ忘れるので、備忘録です。 svc オプション サービス名 オプション 意味 備考 -u Up サービスが起動していなければ開始(サービスが停止して</description>
+    </item>
+    
+    <item>
+      <title>Subversion のリポジトリを移動する</title>
+      <link>http://tdtsh.github.io/archives/537/</link>
+      <pubDate>Tue, 19 Jan 2010 07:58:10 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/537/</guid>
+      <description>前回、急ごしらえでSubversionサーバを復旧しました。その続きです。 急場しのぎで間に合わせの古いPCに作ったSubversionサーバ</description>
+    </item>
+    
+    <item>
+      <title>Subversion 1.4.2をインストールした時のメモ</title>
+      <link>http://tdtsh.github.io/archives/535/</link>
+      <pubDate>Mon, 18 Jan 2010 09:04:52 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/535/</guid>
+      <description>ちょっと前に、Subversion用のサーバが壊れました。 幸い、リポジトリのHDDが生きていたので、別のサーバに構築した時のメモ書いておきま</description>
+    </item>
+    
+    <item>
+      <title>GParted Live 0.4.6-1 のブータブルUSBメモリを作る</title>
+      <link>http://tdtsh.github.io/archives/527/</link>
+      <pubDate>Thu, 17 Dec 2009 07:35:13 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/527/</guid>
+      <description>だいぶ前に作ったGNU Parted (usb-live 0.3.1)のブータブルUSBメモリが、SATAとかSSDとかに対応できないみたいなので、久しぶりに作り直します。</description>
+    </item>
+    
+    <item>
+      <title>CygwinでOpenSSHの鍵ペアを作成</title>
+      <link>http://tdtsh.github.io/archives/467/</link>
+      <pubDate>Thu, 26 Nov 2009 04:04:25 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/467/</guid>
+      <description>Cygwinのインストール時に、opensslとopensshを追加すれば、 ssh_keygenが使えます。 パスフレーズ無し、1024ビット</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.3 &#43; Apache2.2.14 で configure: error: &amp;#8230;No recognized SSL/TLS toolkit detected</title>
+      <link>http://tdtsh.github.io/archives/396/</link>
+      <pubDate>Fri, 09 Oct 2009 05:12:47 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/396/</guid>
+      <description>configure: error: &amp;#8230;No recognized SSL/TLS toolkit detected CentOS 5.3 で、Apache2.2.14をコンパイルしようと、 ./configure したら、 こんなん出ました。 configure: error: ...No recognized SSL/TLS toolkit detected どーやら、OpenSSLが入っ</description>
+    </item>
+    
+    <item>
+      <title>SSHポートフォワードで open failed: administratively prohibited: open failed</title>
+      <link>http://tdtsh.github.io/archives/389/</link>
+      <pubDate>Wed, 16 Sep 2009 01:38:05 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/389/</guid>
+      <description>CentOS(4.2)のサーバを踏み台にして、SSHポートフォワード ssh -L 3389:rdphost:3389 username@remotehost -v で、リモートデスクトップに接続しようとしたら、 open failed: administratively prohibited: open failed と怒</description>
+    </item>
+    
+    <item>
+      <title>CentOS 5.3でcifsでマウントしたWindows共有を、Apache(2.2)のAliasにすると画像が表示されない</title>
+      <link>http://tdtsh.github.io/archives/382/</link>
+      <pubDate>Mon, 14 Sep 2009 03:10:40 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/382/</guid>
+      <description>以前に書きましたが、CentOS 5.3にするとsmbfs が使えず、cifsでマウントしなくてはいけない、の続編です。 WEBサービスで、複数の</description>
+    </item>
+    
+    <item>
+      <title>AVG Anti-Virus Free Edition 8.5 for Linux を CentOSにインストール</title>
+      <link>http://tdtsh.github.io/archives/379/</link>
+      <pubDate>Fri, 11 Sep 2009 02:23:32 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/379/</guid>
+      <description>Windowsでも個人的にお世話になっている AVG アンチウィルス無償版. 非商業的な目的でなら、無償です。 我が家ではもっぱら「ブラジル」と呼んでま</description>
+    </item>
+    
+    <item>
+      <title>CentOS で unknown filesystem type &amp;#8216;smbfs&amp;#8217;</title>
+      <link>http://tdtsh.github.io/archives/341/</link>
+      <pubDate>Fri, 04 Sep 2009 10:51:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/341/</guid>
+      <description>CentOS5 で、smbfs でSAMBAサーバの共有を mount -t smbfs //172.10.X.X/Share /Share こんな風にマウントしようとしたら、 unknown filesystem type &amp;#8216;smbfs&amp;#8217; こんな感じで怒られた。 CentOS4の頃はいけ</description>
+    </item>
+    
+  </channel>
+</rss>

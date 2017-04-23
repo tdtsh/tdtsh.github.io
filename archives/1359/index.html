@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/1359/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>GAE/J で Python の bulkloader をつかってみる - はなたんのブログ</title>
+    
+<meta name="description" content="&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし">
+
+<meta property="og:title" content="GAE/J で Python の bulkloader をつかってみる - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/1359/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/1359/">
+<meta name="twitter:title" content="GAE/J で Python の bulkloader をつかってみる - はなたんのブログ">
+<meta name="twitter:description" content="&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "GAE/J で Python の bulkloader をつかってみる - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2011-08-16T11:46:29JST",
+    "dateModified": "2011-08-16T11:46:29JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "&nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">GAE/J で Python の bulkloader をつかってみる</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-08-16T11:46:29JST">Aug 16, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">GAE/J で Python の bulkloader をつかってみる</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>&nbsp;</p>
+
+<p>Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。</p>
+
+<p>痺れを切らして、普段 GAE/Jな私が、<a href="http://code.google.com/intl/ja/appengine/docs/python/tools/uploadingdata.html" target="_blank">Python版のbulkloader</a>を使ってみました。</p>
+
+<p>普段GAE/Jなので、<a href="http://code.google.com/intl/ja/appengine/docs/python/gettingstarted/devenvironment.html" target="_blank">スタートガイド Python 開発環境 / Google code</a>を参考に、環境作りからはじめます。</p>
+
+<p>&nbsp;</p>
+
+<h4 id="pythonをインストール">Pythonをインストール</h4>
+
+<p><a href="http://www.python.org/download/" target="_blank">Download &#8211; Python</a>から手繰り、私の場合はWindows (未だにXPデス)なので、Windows x86 MSI Installer なんをインストールします。最新は2.7.2の様です。</p>
+
+<p>Macなら最初から入っていますし、Linuxも大概のディストリビューションで最初から入っています。</p>
+
+<p>&nbsp;</p>
+
+<h4 id="google-app-engine-sdk-for-python-をインストール">Google App Engine SDK for Python をインストール</h4>
+
+<p>GAE/JなヒトでもPython版SDKを既に入れている方もいるかもしれませんが、入れてないヒトは入れましょう。</p>
+
+<p><a href="http://code.google.com/intl/ja/appengine/downloads.html" target="_blank">Google App Engine SDK のダウンロード</a>から、Google App Engine SDK for Pythonをインストールします。最新は1.5.2でした。</p>
+
+<p>とりあえずCドライブ直下に置きました。</p>
+
+<p>インストールディレクトリは c:\appengine-python-sdk-1.5.2 となりました。</p>
+
+<p>これを環境変数PATHに追加しときます。</p>
+
+<p>&nbsp;</p>
+
+<h4 id="gae-j側の準備">GAE/J側の準備</h4>
+
+<p>既存プロジェクトの web.xmlを編集し、GAE/J側のRemoteApiServletを有効化？します。</p>
+
+<pre>&lt;servlet&gt;
+        &lt;servlet-name&gt;remoteapi&lt;/servlet-name&gt;
+        &lt;servlet-class&gt;com.google.apphosting.utils.remoteapi.RemoteApiServlet&lt;/servlet-class&gt;
+    &lt;/servlet&gt;
+    &lt;servlet-mapping&gt;
+        &lt;servlet-name&gt;remoteapi&lt;/servlet-name&gt;
+        &lt;url-pattern&gt;/remote_api&lt;/url-pattern&gt;
+    &lt;/servlet-mapping&gt;
+</pre>
+
+<p>勿論この後デプロイします。</p>
+
+<p>&nbsp;</p>
+
+<h4 id="設定ファイル-yaml-を作成">設定ファイル (yaml) を作成</h4>
+
+<p>cmd.exe を起動し、appcfg.py で create_bulkloader_config を実行します。</p>
+
+<pre>cd c:\appengine-python-sdk-1.5.2
+appcfg.py create_bulkloader_config --url=http://{appId}.appspot.com/remote_api
+ --application={appId} --filename=config.yml
+</pre>
+
+<p>High Replicationの場合は、&#8211;application の引数のアタマに s~ をつけないといけないみたいです。</p>
+
+<p>こんな風に。</p>
+
+<pre>cd c:\appengine-python-sdk-1.5.2
+appcfg.py create_bulkloader_config --url=http://{appId}.appspot.com/remote_api
+ --application=s~{appId} --filename=config.yml
+</pre>
+
+<p>自動生成されたconfig.yml には、そのとき appengine側に存在する kind のスキーマを反映したものになっているようです。</p>
+
+<p>アップロード/ダウンロードするkindが限定されている場合などは、このymlファイルを編集して対象kindだけのymlファイルを作っても良い。</p>
+
+<p>自動生成されたymlファイルは、TODO: の記述がいくつかあり、ココを適宜修正する必要があります。</p>
+
+<p>最低でもconnector (と connector_options )を編集します。</p>
+
+<pre>connector: # TODO: Choose a connector here: csv, simplexml, etc...
+  connector_options:
+    # TODO: Add connector options here--these are specific to each connector.
+↓
+  connector: csv
+  connector_options:
+    encoding: utf-8  
+</pre>
+
+<p>&nbsp;</p>
+
+<h4 id="csvアップロード">CSVアップロード</h4>
+
+<p>ダウンロードするには、こんな感じ。</p>
+
+<pre>appcfg.py download_data --filename=test2.csv --config_file=test.yml
+ --url=http://{appId}.appspot.com/remote_api --application=s~{appId} --kind={ClassNameOfKind} -v
+</pre>
+
+<p>アップロードはこんな感じ。</p>
+
+<pre>appcfg.py upload_data --filename=test.csv --config_file=test.yml
+ --url=http://{appId}.appspot.com/remote_api --application=s~{appId} --kind={ClassNameOfKind} -v
+</pre>
+
+<h4 id="参考にさせて頂いた先人の知恵">参考にさせて頂いた先人の知恵</h4>
+
+<p><a href="http://pomu0325.blogspot.com/2011/02/gae-bulkloadergaej.html" target="_blank">pomu0325: [GAE] bulkloaderをGAE/Jで使う</a></p>
+
+<p><a href="http://d.hatena.ne.jp/zetta1985/20100119/1263911416" target="_blank">Javaプログラマの為のGAE/py bulkloader &#8211; GAE/py環境設定 &#8211; &#8211; 高卒文系プログラマの日常 by zetta1985</a></p>
+
+<p><a href="http://isann.blog2.fc2.com/blog-category-0.html" target="_blank">きのふよりけふ、けふよりあした　 未分類</a></p>
+
+<p><a href="http://d.hatena.ne.jp/noriboz/20110121/1295571732" target="_blank">CSVファイルのデータをアップロードする方法 &#8211; 気楽に開発メモ</a></p>
+
+<p><a href="http://ikaisays.com/2010/06/10/using-the-bulkloader-with-java-app-engine/" target="_blank">Using the bulkloader with Java App Engine &#8211; Ikai Lan says</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/java/">java</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89/">クラウド</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/">開発環境</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

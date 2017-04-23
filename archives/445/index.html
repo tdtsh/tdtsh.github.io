@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/445/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす - はなたんのブログ</title>
+    
+<meta name="description" content="GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ">
+
+<meta property="og:title" content="GAE/J (Google App Engine for Java) で Apache Velocityを動かす - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/445/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/445/">
+<meta name="twitter:title" content="GAE/J (Google App Engine for Java) で Apache Velocityを動かす - はなたんのブログ">
+<meta name="twitter:description" content="GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "GAE/J (Google App Engine for Java) で Apache Velocityを動かす - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2009-10-30T16:00:17JST",
+    "dateModified": "2009-10-30T16:00:17JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">GAE/J (Google App Engine for Java) で Apache Velocityを動かす</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2009-10-30T16:00:17JST">Oct 30, 2009</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">GAE/J (Google App Engine for Java) で Apache Velocityを動かす</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h4 id="gae-j-で-apache-velocity-は動く">GAE/J で Apache Velocity は動く</h4>
+
+<p>わたしにとってGAE/Jをガンガン使えるか否かは、<a href="http://velocity.apache.org/">Apache Velocity</a>が動くかどうかに強く依存しています。</p>
+
+<p>他のテンプレートエンジンを触ったことないし、JSPは絶対イヤだからです。</p>
+
+<p><a href="http://groups.google.com/group/google-appengine-java/web/will-it-play-in-app-engine?hl=en">Will it play in App Engine &#8211; Google App Engine for Java | Google Groups</a>にはVelocityのことは書かれていてない(2009年10月30日現在)。</p>
+
+<p>結論から言うとGAE/JでVelocityは動きます。<a href="http://d.hatena.ne.jp/tetsuya_odaka/20090828/1251416748">すでに動かしちゃってる先人の方</a>もいらっしゃる様です。</p>
+
+<p>ちょっと安心です。</p>
+
+<p>GAEにデプロイしたサンプルはこちら</p>
+
+<p><a href="http://tdtsh-blog.appspot.com/velocity/top.vm" target="_bkank" ><a href="http://tdtsh-blog.appspot.com/velocity/top.vm">http://tdtsh-blog.appspot.com/velocity/top.vm</a></a></p>
+
+<hr />
+
+<h4 id="インストール手順">インストール手順</h4>
+
+<p>今個人的に使っているのは、velocity-1.4 と velocity-tools-1.1 なんですが、この際だから最新にしちゃいます。</p>
+
+<p><a href="http://velocity.apache.org/download.cgi">Downloads &#8211; Apache Velocity Site</a>から、</p>
+
+<p>velocity-1.6.2.zip</p>
+
+<p>velocity-tools-1.4.zip</p>
+
+<p>をダウンロードします。</p>
+
+<p>ダウンロードした2つのzipをローカルのどっかに解凍します。</p>
+
+<p>解凍したディレクトリから、jarファイルを、eclipseのプロジェクトのwar/WEB-INF/lib/にコピーします。</p>
+
+<p>velocity-1.6.2\velocity-1.6.2.jar</p>
+
+<p>velocity-tools-1.4\lib\velocity-tools-1.4.jar</p>
+
+<p>ここまでで実行すると、依存性が解決できずに (org.apache.commons達) Exceptionはきまくりでした。</p>
+
+<p>細かい依存性の管理については後回しにして、velocity-tools-1.4\lib\ の下の、commons-* を片っ端からeclipseのプロジェクトのwar/WEB-INF/lib/にコピーしました。</p>
+
+<p>こいつらです。</p>
+
+<p>commons-beanutils-1.7.0.jar</p>
+
+<p>commons-chain-1.1.jar</p>
+
+<p>commons-collections-3.2.jar</p>
+
+<p>commons-digester-1.8.jar</p>
+
+<p>commons-lang-2.2.jar</p>
+
+<p>commons-logging-1.1.jar</p>
+
+<p>commons-validator-1.3.1.jar</p>
+
+<p>最終的に、依存性は maven で管理したいなぁ、と思います。</p>
+
+<hr />
+
+<h4 id="動かしてみる">動かしてみる</h4>
+
+<p>先ずは、クラス my.package.VelocityServlet として、org.apache.velocity.tools.view.servlet.VelocityViewServlet を拡張してクラスを作ります。とりあえずは何も実装しなくていいです。</p>
+
+<p>war/WEB-INF/web.xmlを修正して、こんな感じにしました。</p>
+
+<pre>&lt;servlet&gt;
+    &lt;servlet-name&gt;velocity&lt;/servlet-name&gt;
+    &lt;servlet-class&gt; 
+        my.package.VelocityServlet
+    &lt;/servlet-class&gt;
+&lt;/servlet&gt;
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;velocity&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/velocity/*&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;velocity&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.vm&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+</pre>
+
+<p>それから、VMファイルはサーブレットからアクセス出来る必要があるので、war/WEB-INF/appengine-web.xmlを修正して、リソースファイルとして設定しておきます。今回はこんな感じにしました。</p>
+
+<pre>&lt;resource-files&gt;
+    &lt;include path="/velocity/*" /&gt;
+&lt;/resource-files&gt;
+</pre>
+
+<p>war/velocityディレクトリを作成し、その中に test.vm ファイルを作成します。</p>
+
+<p>中身はなんでもいいんですが、簡単にテストする方法としては、VTLでのコメントを書けばいいです。</p>
+
+<pre>&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Test VelocityServlet&lt;/h1&gt;
+    ## if you see this message, VelocityViewServlet might not work.
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p><a href="http://localhost:8080/velocity/test.vm">http://localhost:8080/velocity/test.vm</a> にアクセスします。</p>
+
+<p>404エラーや500エラーなら、何かの設定が間違っています。</p>
+
+<p>if you see&#8230; が表示されたなら、静的ファイルとして読まれているかもしれません。</p>
+
+<p>(VelocityViewServletがリクエストを正しく処理していれば、if you see&#8230; の部分は見えません)</p>
+
+<p>今回は、VM_global_library.vm とか velocity.properties のことには触れていないけど、リソースファイルとして配備すればもちろん使えます。encodingをきちんと設定すれば、日本語もちゃんと使えます。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/eclipse/">eclipse</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/java/">java</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89/">クラウド</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/3073/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Titanium Mobile (Alloy) で自動ユニットテストまとめ - はなたんのブログ</title>
+    
+<meta name="description" content="&amp;nbsp; &amp;nbsp; 先生、Alloyでテスト自動化したいです。 という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine">
+
+<meta property="og:title" content="Titanium Mobile (Alloy) で自動ユニットテストまとめ - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/3073/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="&amp;nbsp; &amp;nbsp; 先生、Alloyでテスト自動化したいです。 という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/3073/">
+<meta name="twitter:title" content="Titanium Mobile (Alloy) で自動ユニットテストまとめ - はなたんのブログ">
+<meta name="twitter:description" content="&amp;nbsp; &amp;nbsp; 先生、Alloyでテスト自動化したいです。 という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Titanium Mobile (Alloy) で自動ユニットテストまとめ - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2013-12-10T14:50:04JST",
+    "dateModified": "2013-12-10T14:50:04JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "&nbsp; &nbsp; 先生、Alloyでテスト自動化したいです。 という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Titanium Mobile (Alloy) で自動ユニットテストまとめ</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-12-10T14:50:04JST">Dec 10, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Titanium Mobile (Alloy) で自動ユニットテストまとめ</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<p>先生、Alloyでテスト自動化したいです。</p>
+
+<p>という訳で、Titanium Mobile で使いやすそうな UnitTestフレームワークをググってみると Jasmine 一択な空気をビンビン感じます。感じやすく空気が読めるのを自負する自分としてはこれはもう迷い無く Jasmine でいく事にします。</p>
+
+<p>便宜上自動ユニットテストと呼んでますが、やりたい事はどっちかというとコントローラ含む結合〜システムテストだったりします。そもそもJasmineを触った事ないんでそこまで出来るかは未だ良く判ってないですけど、それはそれとして。</p>
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<hr />
+
+<h4 id="先人達の知恵">先人達の知恵</h4>
+
+<h5 id="jasmine-titanium">Jasmine Titanium</h5>
+
+<p>Titanium で Jasmine を動かし、GitHubで公開もされています。なんというGJ。2011年と少し古いのでアレだけど最初の方に知恵を積み上げた方達尊敬します。有難う御座います。</p>
+
+<p><a href="http://higelog.brassworks.jp/?p=692" target="_blank">Titaniumでユニットテスト | ひげろぐ</a></p>
+
+<p><a href="http://higelog.brassworks.jp/?p=1063" target="_blank">Titaniumでユニットテスト Jasmine再び編 | ひげろぐ</a></p>
+
+<p><a href="http://higelog.brassworks.jp/?p=1253" target="_blank">Jasmine TitaniumをGithubで公開しました | ひげろぐ</a></p>
+
+<p><a href="https://github.com/akahigeg/jasmine-titanium" target="_blank">akahigeg/jasmine-titanium (GitHub)</a></p>
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<hr />
+
+<h5 id="jasmine-titanium-jenkins">Jasmine Titanium + Jenkins</h5>
+
+<p>jasmine-titaniumとjasmine.titanium.JUnitXmlReporterをつなげて Titanium Mobile + Jasmine + Jenkins でiPhoneアプリの自動テストの話です。Jasmine のみならず Jenkins まで。素晴らしい。Jenkins化する時に参考にさせて頂きます。2011年当時はAlloyのアの字も無かった事が悔やまれます。</p>
+
+<p><a href="http://ikeike443.hatenablog.com/entry/20111203/p1" target="_blank">Titanium Mobile Jasmine Jenkins でiPhoneアプリの自動テスト組んでみたよ &#8211; ikeike443のブログ</a></p>
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<hr />
+
+<h5 id="titanium-jenkins-coffeescript等">Titanium + Jenkins + CoffeeScript等</h5>
+
+<p>ようやくAlloyが登場します。Alloyの安定版は Titanium SDK 3.x.x以降だろうから、2012年冬位からですよね。(多分)</p>
+
+<p>もぅバリバリのJavaScript開発者な匂いがプンプンするエントリ。</p>
+
+<p><a href="http://www.ari-hiro.com/blog/2013/05/26/introduce-alloy" target="_blank">TitaniumのフレームワークAlloyをCoffeeScript/Jade/Jasmine/TiShadowで便利に使う &#8211; Ari-Press</a></p>
+
+<p><a href="https://gist.github.com/hiroara/5648769" target="_blank">CoffeeScript Jade Jasmine環境でAlloyによる開発をするためのコンパイルスクリプト。</a></p>
+
+<p>なんですと。alloy generate jmkて何？</p>
+
+<p>ついていけてないので後で調べます。コレを理解するとしあわせになれそうな予感がします。</p>
+
+<p>あとCoffeeScript 凄くイイって聞くんですけど(諸事情で今回は素のJSです)触った事なくて尻込みしてますが、Titaniumと組み合わせではどうなんでしょう。</p>
+
+<p>Titanium Mobile はともかくAlloyとなると日本語で発信されている情報は少なくて、Jasmineとの組み合わせはもう壊滅的です。もっぱら英語圏が頼りになってきます。</p>
+
+<p>以降は英語。</p>
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<hr />
+
+<h5 id="titanium-alloy-jasmine-testing-英語">titanium-alloy-jasmine-testing (英語)</h5>
+
+<p>「Titanium Mobile alloy jasmine」でググると1番目にヒットするのがコチラ。なるほどそのままです。</p>
+
+<p>活発にメンテナンスされているかどうかは未知数です。4ヶ月前に最終更新、STARが15個 (内私が1個) です。</p>
+
+<p>まぁでも有力候補です。なにしろGoogle先生イチオシですし。</p>
+
+<p><a href="https://github.com/tsteur/titanium-alloy-jasmine-testing/" target="_blank">tsteur/titanium-alloy-jasmine-testing</a></p>
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<hr />
+
+<h5 id="tijasmine-英語">tijasmine (英語)</h5>
+
+<p><a href="https://github.com/billdawson/tijasmine" target="_blank">tijasmine &#8211; GitHub</a>使ってみたよ、という話。</p>
+
+<p>判りやすい。</p>
+
+<p>他にも色々リンクつけてくれてて芋づる式に見つかるとかナイス。</p>
+
+<p><a href="http://codingpie.com/2013/06/12/unit-testing-in-titanium-appcelerator-and-alloy-testing-commonjs-modules/" target="_blank">Unit testing in Titanium Appcelerator and Alloy: Testing commonjs modules | Coding pie</a></p>
+
+<p><a href="http://billdawson.com/an-appcelerator-titanium-jasmine-javascript-testing-module/" target="_blank">An Appcelerator Titanium Jasmine (Javascript Testing) Module</a></p>
+
+<p>Thank you <a href="http://billdawson.com/" target="_blank">Bill Dawson</a>!!</p>
+
+<p>&nbsp;<br />
+&nbsp;</p>
+
+<hr />
+
+<h5 id="denvers-unit-test-titanium-alloy-project-英語">denvers / unit-test-titanium-alloy-project (英語)</h5>
+
+<p>最終更新 11ヶ月前とちょい古いけど、Starが27人か。</p>
+
+<p>/app/assets/spec/</p>
+
+<p>にspecを置いて、</p>
+
+<p>app/alloy.js で、dev で require(&#8216;spec/ui&#8217;)シロ、本番時はコメントアウト、か。</p>
+
+<p>なるほど。やはりそうなるのか。</p>
+
+<p>Denver, thanks a lot!!</p>
+
+<p><a href="https://coderwall.com/p/7lzu4g" target="_blank">Denver Sessink : Automate Unit Testing a Titanium Alloy project</a></p>
+
+<p><a href="https://github.com/denvers/unit-test-titanium-alloy-project" target="_blank">denvers/unit-test-titanium-alloy-project</a></p>
+
+<p>取り敢えずいずれかを使えば、Titanium Alloy でも振舞駆動でテストファーストな自動化が出来そうです。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/android/">android</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/javascript/">javascript</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/titanium/">Titanium</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

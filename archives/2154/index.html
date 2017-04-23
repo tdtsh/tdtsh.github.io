@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/2154/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Google App Engine で PageSpeed Service を利用する - はなたんのブログ</title>
+    
+<meta name="description" content="PageSpeed Serviceは自動的にアプリケーションのパフォーマンスを最適化するGoogleのサービスです。 PageSpeedってサイトのパフォーマン">
+
+<meta property="og:title" content="Google App Engine で PageSpeed Service を利用する - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/2154/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="PageSpeed Serviceは自動的にアプリケーションのパフォーマンスを最適化するGoogleのサービスです。 PageSpeedってサイトのパフォーマン">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/2154/">
+<meta name="twitter:title" content="Google App Engine で PageSpeed Service を利用する - はなたんのブログ">
+<meta name="twitter:description" content="PageSpeed Serviceは自動的にアプリケーションのパフォーマンスを最適化するGoogleのサービスです。 PageSpeedってサイトのパフォーマン">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Google App Engine で PageSpeed Service を利用する - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2012-08-20T11:00:29JST",
+    "dateModified": "2012-08-20T11:00:29JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "PageSpeed Serviceは自動的にアプリケーションのパフォーマンスを最適化するGoogleのサービスです。 PageSpeedってサイトのパフォーマン"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Google App Engine で PageSpeed Service を利用する</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2012-08-20T11:00:29JST">Aug 20, 2012</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Google App Engine で PageSpeed Service を利用する</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>PageSpeed Serviceは自動的にアプリケーションのパフォーマンスを最適化するGoogleのサービスです。</p>
+
+<p><a href="https://developers.google.com/speed/pagespeed/service" target="_blank"><img data-attachment-id="2163" data-permalink="/blog/archives/2154/pagespeed-100" data-orig-file="/uploads/2012/08/pagespeed-100.png?fit=100%2C100" data-orig-size="100,100" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="pagespeed-100" data-image-description="" data-medium-file="/uploads/2012/08/pagespeed-100.png?fit=100%2C100" data-large-file="/uploads/2012/08/pagespeed-100.png?fit=100%2C100" src="/uploads/2012/08/pagespeed-100.png?resize=100%2C100" alt="" title="pagespeed-100" class="aligncenter size-full wp-image-2163" data-recalc-dims="1" /></a></p>
+
+<p>PageSpeedってサイトのパフォーマンスを調べてくれるサービスだと思ってましたが、それは<a href="https://developers.google.com/speed/pagespeed/insights?hl=ja" target="_blank">PageSpeed Insights</a> で、<a href="https://developers.google.com/speed/pagespeed/service" target="_blank">PageSpeed Service</a>はそれとは別モノみたいです。</p>
+
+<p>明示的に試した訳ではありませんが、</p>
+
+<blockquote>
+<p>How it works</p>
+
+<p>You sign up and provide us with your serving and reference domains.</p>
+
+<p>You send traffic to PageSpeed Service by pointing your DNS CNAME entry to ghs.google.com.</p>
+</blockquote>
+
+<p>という事です。appengine の独自ドメインでお馴染みのやつですね。</p>
+
+<p>ただこのやり方（sign-upしてDNSを云々）をとらないでも、Page Speed Serviceは Appengine からなら簡単に利用できます。（多分java sdk1.7.0以降）</p>
+
+<h4 id="特徴と制限">特徴と制限</h4>
+
+<p>・通常の帯域幅の費用に加えて、帯域幅のギガバイトあたり0.39ドルかかる</p>
+
+<p>・Datastore が HRD の場合のみ使える(マスター/スレーブはダメ）</p>
+
+<p>・POSTリクエスト等の投稿の際には適用されない</p>
+
+<p>・32MB以上のレスポンスは切り捨てられる。（音声やビデオ等の提供時には要注意）</p>
+
+<p>・app.yaml(Python)やappengine-web.xml(Java)に除外URLリストを設定できるらしい</p>
+
+<h4 id="有効化するには">有効化するには</h4>
+
+<p>Appengineコンソールの[Application Settings]ページで、[Enable Page Speed Service]のチェックボックスをチェックして、[Save Settings]をクリックするだけです。</p>
+
+<h4 id="有効化した感じ">有効化した感じ</h4>
+
+<p>流石に spin-up まで早くなる訳ではありませんが、ブラウザの表示が一気に行われる感じになりました。効いてます。</p>
+
+<p>事前に<a href="https://chrome.google.com/webstore/detail/ppoeoaddbpekbjolfgeinemjlkpkeojc" target="_blank">App Engine PageSpeed Service Preview Chrome extension</a> なる Chrome のエクステンションをインストールすれば、事前にPageSpeed の導入効果を測定できますんで、試してみてください。</p>
+
+<p>有効化すると、staticなファイル達のパスがおそらくGoogle側のキャッシュサーバのURLに書き換えられます。</p>
+
+<p>1日使ってみた印象は、ベータ版の様なのでまだ Stable で無いなという印象です。</p>
+
+<p>まだちょっしか使ってませんが、稀にファイルが表示されなかったりする事もありました。</p>
+
+<p>安定してたらまた試したいです。</p>
+
+<h4 id="参考にさせて頂いたサイト達">参考にさせて頂いたサイト達</h4>
+
+<p><a href="http://mtg-guilds.blogspot.com/2012/06/google-app-engine-python-sdk-release.html" target="_blank">MTG-Guild 開発日誌: 読解練習：Google App Engine Python SDK Release Notes 1.7.0</a></p>
+
+<p><a href="https://developers.google.com/appengine/docs/adminconsole/performancesettings#pagespeed" target="_blank">Adjusting Application Performance &#8211; Google App Engine — Google Developers</a></p>
+
+<p><a href="https://developers.google.com/speed/docs/pss/tryit" target="_blank">Measure Speed up &#8211; PageSpeed Service — Google Developers</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/3049/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity - はなたんのブログ</title>
+    
+<meta name="description" content="その1と、その2、そして その3 で、ようやくTitanium Mobile での Android Moduleの開発準備が整いました。 今回その続きです。既存のActivit">
+
+<meta property="og:title" content="Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/3049/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="その1と、その2、そして その3 で、ようやくTitanium Mobile での Android Moduleの開発準備が整いました。 今回その続きです。既存のActivit">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/3049/">
+<meta name="twitter:title" content="Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity - はなたんのブログ">
+<meta name="twitter:description" content="その1と、その2、そして その3 で、ようやくTitanium Mobile での Android Moduleの開発準備が整いました。 今回その続きです。既存のActivit">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2013-10-21T13:30:58JST",
+    "dateModified": "2013-10-21T13:30:58JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "その1と、その2、そして その3 で、ようやくTitanium Mobile での Android Moduleの開発準備が整いました。 今回その続きです。既存のActivit"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2013-10-21T13:30:58JST">Oct 21, 2013</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Titanium MobileのAndroid用モジュールでハマったまとめ その4 Activity</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p><img data-attachment-id="2990" data-permalink="/blog/archives/2989/titanium_mobile" data-orig-file="/uploads/2013/10/titanium_mobile.jpeg?fit=225%2C225" data-orig-size="225,225" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="titanium_mobile" data-image-description="" data-medium-file="/uploads/2013/10/titanium_mobile.jpeg?fit=225%2C225" data-large-file="/uploads/2013/10/titanium_mobile.jpeg?fit=225%2C225" src="/uploads/2013/10/titanium_mobile.jpeg?resize=225%2C225" alt="titanium_mobile" class="aligncenter size-full wp-image-2990" srcset="/uploads/2013/10/titanium_mobile.jpeg?w=225 225w, /uploads/2013/10/titanium_mobile.jpeg?resize=150%2C150 150w" sizes="(max-width: 225px) 100vw, 225px" data-recalc-dims="1" /></p>
+
+<p><a href="/blog/archives/2989">その1</a>と、<a href="/blog/archives/3001">その2</a>、そして <a href="/blog/archives/3013">その3</a> で、ようやくTitanium Mobile での Android Moduleの開発準備が整いました。</p>
+
+<p>今回その続きです。既存のActivityをModuleとして移殖しちゃう時ハマった事です。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="リソースと国際化">リソースと国際化</h4>
+
+<p>既存のアプリをモジュールとして再利用しようとした時とかにぶつかる壁が、リソースファイルの扱い。</p>
+
+<p>javacのコンパイルがコケます。</p>
+
+<pre>java.io.FileNotFoundException: /Users/MYNAME/MYPROJECT/modules/testmodule/build/generated/json/org/appcelerator/titanium/bindings/testmodule.json (No such file or directory)
+     [java]     at org.apache.tools.ant.taskdefs.ExecuteJava.execute(ExecuteJava.java:194)
+java.io.FileNotFoundException appcelerator/titanium/bindings/ json  (No such file or directory)
+</pre>
+
+<p>FAQなのでググればたくさんでてきます。</p>
+
+<p>R.java生成してくれないので、リソースはTitaniumのTiRHelperを使う必要があります。</p>
+
+<pre>String someText = getResources().getString(TiRHelper.getResource("string.sometext"));
+</pre>
+
+<p>参考サイト</p>
+
+<p><a href="http://developer.appcelerator.com/question/116650/native-android-java-module-for-titanium-doesnt-generate-rjava" target="_blank">Native android java module for titanium doesn&#8217;t generate r.java &#8211; Community Questions &#038; Answers</a></p>
+
+<p><a href="https://developer.appcelerator.com/question/49671/android-r-references-in-appcelerator-module" target="_blank">Android R.* references in appcelerator module &#8211; Community Questions &#038; Answers &#8211; Appcelerator Deve</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="androidmanifest-xmlのカスタマイズ">AndroidManifest.xmlのカスタマイズ</h4>
+
+<p>モジュールから既存のActivityをまんま起動したいけど、まずはAndroidManifest.xmlはどーすればって話です。</p>
+
+<p>最終的なAndroidManifest.xmlはTitanium Mobile が自動で生成するので、そちらを修正してもダメです。</p>
+
+<p>また、あらかじめAndroidManifest.xmlを書いておく方法もありますが、モジュール単体のテストとかどうすれば。</p>
+
+<p>結論としては、モジュールのテスト用としは、モジュールディレクトリ直下の timodule.xml、タイタニウム側は tiapp.xml に、それぞれこんな風に書けば、設定ファイルで生成されるAndroidManifestをカスタマイズ出来ます。</p>
+
+<pre>&lt;android xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;manifest&gt;
+        &lt;application android:debuggable="true"&gt;
+            &lt;activity android:name="com.tdtsh.testmodule.TestActivity"/&gt;
+        &lt;/application&gt;
+    &lt;/manifest&gt;
+&lt;/android&gt;
+</pre>
+
+<p>参考サイト</p>
+
+<p><a href="http://stackoverflow.com/questions/12344665/setting-up-an-android-activity-within-titanium" target="_blank">java &#8211; Setting up an Android Activity within Titanium &#8211; Stack Overflow</a></p>
+
+<p><a href="https://wiki.appcelerator.org/display/guides/Maintaining%20a%20Custom%20AndroidManifest.xml" target="_blank">Maintaining a Custom AndroidManifest.xml &#8211; Documentation &#038; Guides &#8211; Appcelerator Wiki</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="activityの起動">Activityの起動</h4>
+
+<p>アクティティを起動して結果を受け取りたい場合は、こんな感じです。</p>
+
+<p>判ってしまえばどうって事ないですが、兎に角情報が少なくて難儀しました。</p>
+
+<pre>public class TestModule extends KrollModule
+    implements TiActivityResultHandler
+{
+...
+
+@Kroll.method
+public void openActivity()
+{
+    Activity activity = getTiContext().getTiApp().getCurrentActivity();
+    TiActivitySupport support = (TiActivitySupport) activity;
+    requestCode = support.getUniqueResultCode();
+
+    Intent intent = new Intent(activity, TestActivity.class);  
+    intent.putExtra("some_arg", some_arg);
+    support.launchActivityForResult(intent, requestCode, this);
+}
+</pre>
+
+<p>※余談</p>
+
+<p>起動する事だけが目的であれば、openActivity() の中身はコレで充分ですが、戻り値とか欲しい場合は、onActivityResultどーかくの？ってなります。</p>
+
+<pre>Intent intent = new Intent(TiApplication.getInstance().getRootActivity(), TestActivity.class);  
+TiApplication.getInstance().getRootActivity().startActivityForResult(intent, ACT_SKINCHECK);
+</pre>
+
+<p>因みにAndroid Module側でActivityのコールバックinterfaceはこうかきます。</p>
+
+<pre>@Override
+    public void onResult(Activity activity, int thisRequestCode, int resultCode, Intent data)
+    {
+        this.triggerComplete();
+    }
+
+    @Override
+    public void onError(Activity activity, int requestCode, Exception e)
+    {
+        this.triggerError(-2);
+    }
+
+</pre>
+
+<p>Titanium側のイベントを着火するにはこんな感じです。</p>
+
+<pre>@Kroll.method
+    public void triggerComplete() 
+    {
+        KrollDict event = new KrollDict();
+        event.put("arg", "something");
+        fireEvent("skinCheckComplete", event);     
+    }
+</pre>
+
+<p>参考サイト</p>
+
+<p>java &#8211; Appcelerator custom module receiving callback for onActivityResult &#8211; Stack Overflow</p>
+
+<p><a href="http://stackoverflow.com/questions/5215071/appcelerator-custom-module-receiving-callback-for-onactivityresult">http://stackoverflow.com/questions/5215071/appcelerator-custom-module-receiving-callback-for-onactivityresult</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="android-os-networkonmainthreadexception-org-apache-http-client-httpclient">android.os.NetworkOnMainThreadException org.apache.http.client.HttpClient</h4>
+
+<p>モジュールから起動したActivity で 同期通信をすると、NetworkOnMainThreadExceptionで処理がコケます。</p>
+
+<p>これはTitaniumに限った話では無くてハニカム以上のAndroidの仕様でメインUIスレッドで同期通信が出来ないんですけど、既存のアプリで動作していたコードがTitanium Mobile ではダメ、というのに遭遇しました。スレッドの動作が既存アプリとTitaniumモジュールとして動作した場合とで違った、という事なんでしょうか。</p>
+
+<p>そもそもなんで既存アプリは動作いていたのかよく判りませんし、設計としてイケてないしで、仕方ないのでAsync Taskを使って本来あるべき姿にActivtyをリライトする羽目になりました。</p>
+
+<p>ま、コレに関してはTitaniumは悪くないんですけど。</p>
+
+<p>参考サイト</p>
+
+<p><a href="http://shirusu-ni-tarazu.hatenablog.jp/entry/2013/01/20/033030" target="_blank">【Android】メインスレッド(要は画面処理)でhttpリクエスト投げようとしたら怒られた。　〜NetworkOnMainThreadException〜 &#8211; 記すに足らず。</a></p>
+
+<p><a href="http://d.hatena.ne.jp/Nagise/20120309/1331265123" target="_blank">AsyncTaskの使い方考察 &#8211; プログラマーの脳みそ</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="jarが重複">jarが重複</h4>
+
+<p>コレも判ってしまえばどうってことないけど、初めて遭遇すると焦るやつです。</p>
+
+<p>モジュール側でHttpClientを使って通信とかしているやつを、Titaniumアプリに結合したら、ビルドが通らなくなりました。</p>
+
+<pre>[ERROR] System Error while compiling Android classes.dex [ERROR] UNEXPECTED TOP-LEVEL EXCEPTION:
+[ERROR] java.lang.IllegalArgumentException: already added: Lorg/apache/james/mime4j/descriptor/BodyDescriptor;
+</pre>
+
+<p>もっと正確にいうと、結合は出来てたのに、あるときを境にビルドできなくなったです。</p>
+
+<p>実はTi側でこんなコードを書いたら、</p>
+
+<pre>var xhr = Titanium.Network.createHTTPClient();
+</pre>
+
+<p>ビルドじに必要なライブラリが自動で注入される仕組みらしいです。</p>
+
+<p>んで、そのライブラリ達と同じものを、jar側のlibとかにもぶっこんでると、かぶっとるがな！とビルドがコケる理屈らしいです。多分。</p>
+
+<p>モジュール側で</p>
+
+<p>httpmime-4.1.1.jar</p>
+
+<p>apache-mime4j-0.6.1.jar</p>
+
+<p>を削除すれば、通る様になりました。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="basic認証ムリポ">BASIC認証ムリポ</h4>
+
+<p>もともと手順がややこしいく、何かとトラブルが多い AndroidでのBASIC認証 ですが、何とか動いてた既存のコードがTitaniumモジュールでは全く動きません。正直お手上げです。</p>
+
+<p>Titanium Module のActivityでWebViewのBasic認証は無理、が現状のわたしの理解です。</p>
+
+<p>&nbsp;</p>
+
+<ul>
+<li>* *落とし穴多かったし尽くハマりまくった感じだけど、とりあえずなんとかなってきました。
+
+
+<br /></li>
+</ul>
+
+<p>もとより最初から情報を持っていたら、こんなに苦労しなかったのに・・・という事ばかりなので、頑張ってブログ纏めました。</p>
+
+<p>日本語の情報めちゃ少ないんで。</p></p>
+
+<p>色々Disってる感じになってますが、Titaniumかなり好きになってきました。</p>
+
+<p>Android開発者はもっとTitaniumで書いて、もちょっと盛り上がって欲しいです。Objective-C書かなくても、クロスプラットフォームですよアナタ。</p>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<h4 id="参考にさせて頂いたサイト">参考にさせて頂いたサイト</h4>
+
+<p><a href="http://docs.appcelerator.com/titanium/3.0/#!/guide/Android_Module_Development_Guide" target="_blank">Android Module Development Guide &#8211; Titanium 3.X &#8211; Appcelerator Docs</a></p>
+
+<p><a href="http://www.titaniumtutorial.com/2013/10/android-module-development-part1.html" target="_blank">Android Module Development &#8211; Part 1 | Appcelerator Titanium Tutorial</a></p>
+
+<p><a href="http://www.titaniumtutorial.com/2013/10/android-module-development-part-2_9.html" target="_blank">Android Module Development &#8211; Part 2 | Appcelerator Titanium Tutorial</a></p>
+
+<p><a href="http://www.titaniumtutorial.com/2013/10/android-module-development-part-3.html" target="_blank">Android Module Development &#8211; Part 3 | Appcelerator Titanium Tutorial</a></p>
+
+<p><a href="http://www.titaniumtutorial.com/2013/10/android-module-development-part-4.html" target="_blank">Android Module Development &#8211; Part 4 | Appcelerator Titanium Tutorial</a></p>
+
+<p><a href="http://www.titaniumtutorial.com/2013/11/android-module-development-part-5.html" target="_blank">Android Module Development &#8211; Part 5 | Appcelerator Titanium Tutorial</a></p>
+
+<p><a href="http://isisredirect.blogspot.com/2011/09/titanium-mobile-module-developer-guide_20.html" target="_blank">isis re-direct: 勝手／全／超訳 Titanium Mobile Module Developer Guide for Android</a></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/android/">android</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/titanium/">Titanium</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

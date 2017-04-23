@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+
+<link rel="canonical" href="http://tdtsh.github.io/archives/473/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定) - はなたんのブログ</title>
+    
+<meta name="description" content="Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID">
+
+<meta property="og:title" content="Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定) - はなたんのブログ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://tdtsh.github.io/archives/473/">
+<meta property="og:image" content="http://tdtsh.github.io/images/default.png">
+<meta property="og:site_name" content="はなたんのブログ">
+<meta property="og:description" content="Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="はなたんのブログ">
+<meta name="twitter:url" content="http://tdtsh.github.io/archives/473/">
+<meta name="twitter:title" content="Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定) - はなたんのブログ">
+<meta name="twitter:description" content="Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID">
+<meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://tdtsh.github.io/"
+    },
+    "headline": "Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定) - はなたんのブログ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://tdtsh.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2009-11-26T17:00:48JST",
+    "dateModified": "2009-11-26T17:00:48JST",
+    "author": {
+      "@type": "Person",
+      "name": "はなたんのブログ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "はなたんのブログ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://tdtsh.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID"
+  }
+</script>
+
+
+    <link href="http://tdtsh.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://tdtsh.github.io/">はなたんのブログ</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://tdtsh.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://tdtsh.github.io/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定)</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2009-11-26T17:00:48JST">Nov 26, 2009</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+
+    <h1 class="title">Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定)</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<p>Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。</p>
+
+<p>http://アプリケーションID.appspot.com/</p>
+
+<p>企業ユースの場合は特に、独自ドメインで公開したいのが普通ですね。</p>
+
+<p>GAE/Jを独自ドメインで利用したい場合、Google Apps を申し込めば良いようです。</p>
+
+<p>早速挑戦してみました。</p>
+
+<h4 id="google-apps-を申し込む">Google Apps を申し込む</h4>
+
+<p>まずは、Google Apps を使用できる様にします。</p>
+
+<p>独自ドメインを持っていてDNSサーバの管理権限があれば、Standard Edition で無料でできます。</p>
+
+<ul>
+<li><a href="http://www.google.com/a/help/intl/ja/edu/index.html">Google Apps</a>をブラウズします。</li>
+<li><a href="http://www.google.com/a/help/intl/ja/admins/editions_spe_list.html">機能比較とお申し込み</a>をクリックします。</li>
+<li>Standard Editionの<a href="http://www.google.com/a/cpanel/domain/new?hl=ja">[申し込み]</a>をクリックします。</li>
+<li>[Google Apps にお申し込みいただくには、お客様の組織のドメイン名を入力してください]にて、以下の様に入力し、[次へ]をクリックします。</p>
+
+<ul>
+<li>●管理者: このドメインを所有または管理しています</li>
+<li>ドメイン名を入力 : my.domain.xxx</li>
+</ul></li>
+
+<li><p>[Google Apps Standard Edition への申し込み (手順 <sup>2</sup>&frasl;<sub>3</sub>)]にて、必要事項を入力し、[次へ進む]をクリックします。(xxxxは伏字)</p></p>
+
+<ul>
+<li>名 : 権兵衛</li>
+<li>姓 : 名無</li>
+<li>メール アドレス : xxxxxxxxx@gmail.com &lt;- 取り合えず、GAE/Jでも使用しているGoogle Accountを使用しました</li>
+<li>電話番号 : xxxx-xxx-xxxx</li>
+<li>国/地域 : 日本</li>
+<li>役職 : システム管理者</li>
+
+<li><p>Google Apps では、サービスを正しく設定するため DNS を変更する必要があります。</p>
+
+<p>■ドメインの DNS レコードを変更できない場合、組織で使用できる Google Apps の機能に影響する場合があることを理解します。</p></li>
+
+<li><p>組織名 : xxxxxx株式会社</p></li>
+
+<li><p>タイプ : 適宜選択</p></li>
+
+<li><p>組織の規模 : 適宜選択</p></li>
+
+<li><p>組織内で現在メール アカウントを提供していますか</p>
+
+<p>●はい</p></li>
+
+<li><p>提供している場合、メールサーバー ソフトは何をお使いですか。 (例: Microsoft Exchange)</br /></p>
+
+<p>外部ASP</p></li>
+
+<li><p>Google Apps へのお申し込みに関して Google のセールス チームのサポートはありましたか。</br /></p>
+
+<p>●いいえ</p></li>
+</ul></li>
+
+<li><p>[設定 &#8211; 最初の管理者アカウントを作成 (手順 <sup>3</sup>&frasl;<sub>3</sub>)]にて、必要事項を入力し、[同意して、設定を続行]をクリックします。</p></p>
+
+<ul>
+<li><p>ユーザー名 : gae@my.domain.xxx
+パスワード : 適宜入力</p></li>
+
+<li><p>パスワードの再入力 : 適宜入力</p></li>
+</ul></li>
+</ul>
+
+<p>Google Apps のダッシュボードが表示されれば、完了です。</p>
+
+<hr />
+
+<h4 id="ドメイン所有権を確認">ドメイン所有権を確認</h4>
+
+<ul>
+<li><a href="https://www.google.com/a/cpanel/my.domain.xxx/Dashboard">Google Apps のダッシュボード</a>をブラウズします。</li>
+<li>[ドメインの所有権を確認]をクリックします。</li>
+
+<li><p>[ドメインの所有権を確認] で、今回は [HTMLファイルをアップロード]を選択しました。</p>
+
+<p>※(ネイキッド ドメイン (my.domain.xxx)へのAレコードが適宜登録されている必要があります)</p></li>
+</ul>
+
+<hr />
+
+<h4 id="google-app-engine-側での設定">Google App Engine 側での設定</h4>
+
+<p>参考サイト</p>
+
+<p><a href="http://blog.livedoor.jp/cbnanashi/archives/926628.html">CB NANASHI管理人ブログ : GAE/J、アプリを独自ドメインで使う</a></p>
+
+<p><a href="http://www.google.com/support/a/bin/answer.py?hl=jp&amp;#038;answer=91077">Google App Engine &#8211; Google Apps ヘルプ</a></p>
+
+<p>の通り、GAE/Jのダッシュボードから、Version をクリックしたんですけど、[Domain Setup (ドメイン設定)] も [Add Domain (ドメインを追加)] も出現しません。</p>
+
+<p>GAE/J と Google Apps Googleアカウント が違うアカウントである事と関係するのかもしれません。</p>
+
+<p>なので、この方法は取れません。</p>
+
+<hr />
+
+<h4 id="google-apps側でgoogle-app-engine-の割り当て">Google Apps側でGoogle App Engine の割り当て</h4>
+
+<p>色々やっているウチに、Google Apps側だけで、設定が完結できました。</p>
+
+<ul>
+<li><a href="https://www.google.com/a/cpanel/my.domain.xxx/Dashboard">Google Apps のダッシュボード</a>をブラウズします。</li>
+<li>[ドメインの設定]をクリックします。</li>
+
+<li><p>[コントロールパネル]で以下を選択し、[変更を保存]をクリックします。</p>
+
+<p>●拡張版 (アメリカ英語のみ)</p></li>
+
+<li><p><a href="https://www.google.com/a/cpanel/my.domain.xxx/Dashboard">Google Apps のダッシュボード</a>をブラウズします。</p></li>
+
+<li><p>[add more services]をクリックします。</p></li>
+
+<li><p>[Other services] の [Google　App Engine] に、App IDを入力し、[Add it now]をクリックします。</p></li>
+
+<li><p>[You have requested that the &#8216;App ID&#8217; service be added to your domain]にて、[Activate this service]をクリックします。</p></li>
+
+<li><p>[App ID settings]が表示されるので、- [Web address]の[Add new URL]をクリックします。</p></li>
+
+<li><p>なにか適当※に入力し、[Add]をクリックします。 ※たとえば www (<a href="http://www.my.domain.xxx/)など">http://www.my.domain.xxx/)など</a></p></li>
+
+<li><p>[Changing CNAME record]が表示されるので、指示に従い、DNSサーバにCNAMEを登録します。</p>
+
+<p>www.my.domain.xxx IN CNAME ghs.google.com</p></li>
+</ul>
+
+<p>しばらくすると、<a href="http://www.my.domain.xxx/">http://www.my.domain.xxx/</a> で、GAE/J のアプリケーションが表示出来る様になります。</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://tdtsh.github.io/categories/google-app-engine/">Google App Engine</a></li>
+          
+          <li><a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89/">クラウド</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><a href="/profile">About me</a></div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
+      
+      <a href="http://tdtsh.github.io/archives/4000/" class="list-group-item">wordpressからhugo&#43;github.ioに移行</a>
+      
+      <a href="http://tdtsh.github.io/archives/3914/" class="list-group-item">node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</a>
+      
+      <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
+      
+      <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
+      
+      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
+      
+      <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
+      
+      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
+      
+      <a href="http://tdtsh.github.io/archives/3823/" class="list-group-item">Windows 10 のライセンス認証 エラーコード 0xC004f050 の対応</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/categories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://tdtsh.github.io/categories/google-app-engine" class="list-group-item">google-app-engine</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9" class="list-group-item">インフラ</a>
+      
+      <a href="http://tdtsh.github.io/categories/android" class="list-group-item">android</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83" class="list-group-item">開発環境</a>
+      
+      <a href="http://tdtsh.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" class="list-group-item">クラウド</a>
+      
+      <a href="http://tdtsh.github.io/categories/mac" class="list-group-item">mac</a>
+      
+      <a href="http://tdtsh.github.io/categories/titanium" class="list-group-item">titanium</a>
+      
+      <a href="http://tdtsh.github.io/categories/management" class="list-group-item">management</a>
+      
+      <a href="http://tdtsh.github.io/categories/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" class="list-group-item">データベース</a>
+      
+      <a href="http://tdtsh.github.io/categories/eclipse" class="list-group-item">eclipse</a>
+      
+      <a href="http://tdtsh.github.io/categories/javascript" class="list-group-item">javascript</a>
+      
+      <a href="http://tdtsh.github.io/categories/knowledge" class="list-group-item">knowledge</a>
+      
+      <a href="http://tdtsh.github.io/categories/slim3" class="list-group-item">slim3</a>
+      
+      <a href="http://tdtsh.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="http://tdtsh.github.io/categories/node.js" class="list-group-item">node.js</a>
+      
+      <a href="http://tdtsh.github.io/categories/swift" class="list-group-item">swift</a>
+      
+      <a href="http://tdtsh.github.io/categories/crossplatform" class="list-group-item">crossplatform</a>
+      
+      <a href="http://tdtsh.github.io/categories/aws" class="list-group-item">aws</a>
+      
+      <a href="http://tdtsh.github.io/categories/php" class="list-group-item">php</a>
+      
+      <a href="http://tdtsh.github.io/categories/ios" class="list-group-item">ios</a>
+      
+      <a href="http://tdtsh.github.io/categories/xcode" class="list-group-item">xcode</a>
+      
+      <a href="http://tdtsh.github.io/categories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; はなたんのブログ</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
