@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Apr 2017 15:00:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Apr 2017 10:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo で Google analyticsの設定</title>
+      <link>http://tdtsh.github.io/archives/4002/</link>
+      <pubDate>Sun, 30 Apr 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4002/</guid>
+      <description>HugoでGoogle Analytics設定方向 先週wordpressからhugo+github.ioに移行したのだけど、そういえばGoog</description>
+    </item>
     
     <item>
       <title>AWS EC2 の CentOS でホスト名変更</title>

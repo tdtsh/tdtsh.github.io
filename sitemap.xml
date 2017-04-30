@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://tdtsh.github.io/archives/4002/</loc>
+    <lastmod>2017-04-30T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://tdtsh.github.io/archives/4001/</loc>
     <lastmod>2017-04-23T15:00:08+00:00</lastmod>
   </url>
@@ -2555,7 +2560,7 @@
   
   <url>
     <loc>http://tdtsh.github.io/blog/</loc>
-    <lastmod>2017-04-23T15:00:08+00:00</lastmod>
+    <lastmod>2017-04-30T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2674,7 +2679,7 @@
   
   <url>
     <loc>http://tdtsh.github.io/</loc>
-    <lastmod>2017-04-23T15:00:08+00:00</lastmod>
+    <lastmod>2017-04-30T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
