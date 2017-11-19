@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://tdtsh.github.io/archives/4005/</loc>
+    <lastmod>2017-11-19T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://tdtsh.github.io/archives/4004/</loc>
     <lastmod>2017-11-02T10:00:00+00:00</lastmod>
   </url>
@@ -2565,7 +2570,7 @@
   
   <url>
     <loc>http://tdtsh.github.io/blog/</loc>
-    <lastmod>2017-11-02T10:00:00+00:00</lastmod>
+    <lastmod>2017-11-19T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2684,7 +2689,7 @@
   
   <url>
     <loc>http://tdtsh.github.io/</loc>
-    <lastmod>2017-11-02T10:00:00+00:00</lastmod>
+    <lastmod>2017-11-19T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2714,7 +2719,7 @@
   
   <url>
     <loc>http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</loc>
-    <lastmod>2017-11-02T10:00:00+00:00</lastmod>
+    <lastmod>2017-11-19T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

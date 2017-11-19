@@ -6,10 +6,19 @@
     <description>Recent content on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 02 Nov 2017 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Nov 2017 10:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Macbook のキーボードが反応しない</title>
+      <link>http://tdtsh.github.io/archives/4005/</link>
+      <pubDate>Sun, 19 Nov 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4005/</guid>
+      <description>噂に聞いてはいたけど、自分のMacbook 12 2017 のキーボード、tの文字がえらい反応が鈍くなってしまった。 これも噂通りだけど、ゴミがつまるとなる</description>
+    </item>
     
     <item>
       <title>Chrome Storeのアカウント作成</title>
