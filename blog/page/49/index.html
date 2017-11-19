@@ -70,6 +70,25 @@ ga('send', 'pageview');
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2009-06-03T11:10:46JST">Jun 3, 2009</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://tdtsh.github.io/archives/31/">LogParserでイベントログをダンプ</a></h2>
+  </header>
+
+  
+  <div class="summary">こんな感じ。 NT、2000の頃は、リソキのdumpel.exe使ってたけど、便利になった。 for /F %%F IN (hostname.txt) do LogParser.exe &#8220;select TimeGenerated,EventID,EventType,EventTypeName,EventCategory,EventCategoryName,ComputerName,Message,Data into %%F_system.csv from \\%%F\system where &#8216;%yyyy_mm_dd%&#8217; = TO_STRING(TimeGenerated,&#8217;yyyy-MM-dd&#8217;) &#8221; -i:evt -o:csv</div>
+
+  <footer>
+    <a href="http://tdtsh.github.io/archives/31/" title="LogParserでイベントログをダンプ">Read More…</a>
+  </footer>
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2009-06-02T00:00:00JST">Jun 2, 2009</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
       
@@ -238,25 +257,6 @@ ga('send', 'pageview');
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2009-05-22T00:50:33JST">May 22, 2009</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://tdtsh.github.io/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://tdtsh.github.io/archives/21/">SAMBA に robocopy で ERROR 5 (0x00000005) Changing File Attributes</a></h2>
-  </header>
-
-  
-  <div class="summary">robocopy で、リモートのNTFS (Windows 2003 Server) から、リモートのSAMBAサーバにバックアップを取ることがあります。 稀に、こんなエラーが発生して、全然コピーが</div>
-
-  <footer>
-    <a href="http://tdtsh.github.io/archives/21/" title="SAMBA に robocopy で ERROR 5 (0x00000005) Changing File Attributes">Read More…</a>
-  </footer>
-</article>
-</li>
-      
     </ul>
 
     
@@ -293,6 +293,8 @@ ga('send', 'pageview');
     </div>
     <div class="list-group">
       
+      <a href="http://tdtsh.github.io/archives/4004/" class="list-group-item">Chrome Storeのアカウント作成</a>
+      
       <a href="http://tdtsh.github.io/archives/4002/" class="list-group-item">hugo で Google analyticsの設定</a>
       
       <a href="http://tdtsh.github.io/archives/4001/" class="list-group-item">AWS EC2 の CentOS でホスト名変更</a>
@@ -310,8 +312,6 @@ ga('send', 'pageview');
       <a href="http://tdtsh.github.io/archives/3878/" class="list-group-item">socket.io 1.4系で 4undefined (追記あり)</a>
       
       <a href="http://tdtsh.github.io/archives/3840/" class="list-group-item">XCode 7 で EXC_BAD_ACCESS のデバッグ (Zombie Objects)</a>
-      
-      <a href="http://tdtsh.github.io/archives/3834/" class="list-group-item">[Swift2] Facebook Popを使ったアニメーション</a>
       
     </div>
   </section>

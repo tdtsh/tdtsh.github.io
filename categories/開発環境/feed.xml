@@ -6,10 +6,28 @@
     <description>Recent content in 開発環境 on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 12 Jan 2017 16:18:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2017 10:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chrome Storeのアカウント作成</title>
+      <link>http://tdtsh.github.io/archives/4004/</link>
+      <pubDate>Thu, 02 Nov 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4004/</guid>
+      <description>Chrome Extension の公開の費用 Chrome Extension を公開するには、Chrome ウェブストアの開発者登録費として、最初に1度だけ5ドルを支払う必要がある。Google Pla</description>
+    </item>
+    
+    <item>
+      <title>hugo で Google analyticsの設定</title>
+      <link>http://tdtsh.github.io/archives/4002/</link>
+      <pubDate>Sun, 30 Apr 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4002/</guid>
+      <description>HugoでGoogle Analytics設定方向 先週wordpressからhugo+github.ioに移行したのだけど、そういえばGoog</description>
+    </item>
     
     <item>
       <title>Mac で Chrome を別プロフィールで多重起動</title>

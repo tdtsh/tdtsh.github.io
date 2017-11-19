@@ -6,10 +6,19 @@
     <description>Recent content on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 30 Apr 2017 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2017 10:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chrome Storeのアカウント作成</title>
+      <link>http://tdtsh.github.io/archives/4004/</link>
+      <pubDate>Thu, 02 Nov 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4004/</guid>
+      <description>Chrome Extension の公開の費用 Chrome Extension を公開するには、Chrome ウェブストアの開発者登録費として、最初に1度だけ5ドルを支払う必要がある。Google Pla</description>
+    </item>
     
     <item>
       <title>hugo で Google analyticsの設定</title>
