@@ -136,9 +136,11 @@ ga('send', 'pageview');
 
   
 
-  <div class="article-body"><p>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Storage上のパーティションが見えなくなった事が原因で、MacOSの再インストールが出来なくなった。</p>
+  <div class="article-body">
 
-<p>やったこと</p>
+<p>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Storage上のパーティションが見えなくなった事が原因で、MacOSの再インストールが出来なくなった。</p>
+
+<h2 id="やったこと">やったこと</h2>
 
 <pre><code>diskutil list
 </code></pre>
@@ -150,13 +152,16 @@ ga('send', 'pageview');
 
 <p>Core Storage (論理ボリュームの入れ物の様なもの)を作成</p>
 
-<p><code>
-diskutil cs createVolume 作った論理グループのID jhfs+ &quot;Macintosh HD&quot; 100%
-</code>`</p>
+<pre><code>diskutil cs createVolume 作った論理グループのID jhfs+ &quot;Macintosh HD&quot; 100%
+</code></pre>
 
 <p>Core Storage に論理ボリュームを作成</p>
 
 <p>その後、MacOS再インストールを開始したらいけた。</p>
+
+<h2 id="原因">原因</h2>
+
+<p>原因は良くわかってない。</p>
 
 <p>以前、Macbook 2017 でFileVaultで暗号化したSSDのSierraをHigh Sierraにアップデートしようとした時、パーティションの作成が出来なくなり、アップデートが失敗した事があった。
 結局クリアインストールを行ってから、TimeMachine経由でリストアできたので事なきを得たのだけど、ディスク関連のトラブルはあんまり詳しくないから焦る。</p>
