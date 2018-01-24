@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 19 Nov 2017 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jan 2018 10:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Macbook Pro のSSDがフォーマット出来ない</title>
+      <link>http://tdtsh.github.io/archives/4006/</link>
+      <pubDate>Wed, 24 Jan 2018 10:00:00 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4006/</guid>
+      <description>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでパーティション</description>
+    </item>
     
     <item>
       <title>Macbook のキーボードが反応しない</title>
