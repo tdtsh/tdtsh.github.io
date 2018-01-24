@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Macbook Pro のSSDがフォーマット出来ない - はなたんのブログ</title>
     
-<meta name="description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでパーティション">
+<meta name="description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto">
 
 <meta property="og:title" content="Macbook Pro のSSDがフォーマット出来ない - はなたんのブログ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://tdtsh.github.io/archives/4006/">
 <meta property="og:image" content="http://tdtsh.github.io/images/default.png">
 <meta property="og:site_name" content="はなたんのブログ">
-<meta property="og:description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでパーティション">
+<meta property="og:description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="はなたんのブログ">
 <meta name="twitter:url" content="http://tdtsh.github.io/archives/4006/">
 <meta name="twitter:title" content="Macbook Pro のSSDがフォーマット出来ない - はなたんのブログ">
-<meta name="twitter:description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでパーティション">
+<meta name="twitter:description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto">
 <meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでパーティション"
+    "description": "会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto"
   }
 </script>
 
@@ -136,16 +136,27 @@ ga('send', 'pageview');
 
   
 
-  <div class="article-body"><p>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでパーティションが見えなくなった。</p>
+  <div class="article-body"><p>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Storage上のパーティションが見えなくなった事が原因で、MacOSの再インストールが出来なくなった。</p>
 
 <p>やったこと</p>
 
 <pre><code>diskutil list
-diskutil cs create &quot;CS_SSD&quot; disk0s2
-diskutil cs createVolume 作った論理グループのID jhfs+ &quot;Macintosh HD&quot; 100%
 </code></pre>
 
-<p>で、MacOS再インストールを開始したらいけた。</p>
+<p>サイズからdisk0s2が目的のパーティションのIDENTIFIERだと確認</p>
+
+<pre><code>diskutil cs create &quot;CS_SSD&quot; disk0s2
+</code></pre>
+
+<p>Core Storage (論理ボリュームの入れ物の様なもの)を作成</p>
+
+<p><code>
+diskutil cs createVolume 作った論理グループのID jhfs+ &quot;Macintosh HD&quot; 100%
+</code>`</p>
+
+<p>Core Storage に論理ボリュームを作成</p>
+
+<p>その後、MacOS再インストールを開始したらいけた。</p>
 
 <p>以前、Macbook 2017 でFileVaultで暗号化したSSDのSierraをHigh Sierraにアップデートしようとした時、パーティションの作成が出来なくなり、アップデートが失敗した事があった。
 結局クリアインストールを行ってから、TimeMachine経由でリストアできたので事なきを得たのだけど、ディスク関連のトラブルはあんまり詳しくないから焦る。</p>
