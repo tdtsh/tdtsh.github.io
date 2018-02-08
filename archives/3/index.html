@@ -140,350 +140,352 @@ ga('send', 'pageview');
   <p>
     随分前に構築したSubversionサーバがぶっ壊れたので、別のPCに
   </p>
-  
+
   <p>
     再構築しました。メモっときます。
   </p>
-  
+
   <p>
   </p>
-  
+
   <p>
   </p>
-  
+
   <p>
     ############################################################
   </p>
-  
+
   <p>
     @@Berkeley DB 4.5.20 インストール
   </p>
-  
+
   <p>
     ############################################################
   </p>
-  
+
   <p>
     cd /usr/local/src
   </p>
-  
+
   <p>
     wget <a href="http://download.oracle.com/berkeley-db/db-4.5.20.tar.gz" target="_blank">http://download.oracle.com/berkeley-db/db-4.5.20.tar.gz</a>
   </p>
-  
+
   <p>
     tar zxfv db-4.5.20.tar.gz
   </p>
-  
+
   <p>
     cd /usr/local/src/db-4.5.20/build_unix/
   </p>
-  
+
   <p>
     ../dist/configure
   </p>
-  
+
   <p>
     make
   </p>
-  
+
   <p>
     make install
   </p>
-  
+
   <p>
     ls /usr/local/BerkeleyDB.4.5
   </p>
-  
+
   <p>
     vi /etc/ld.so.conf
   </p>
-  
+
   <p>
     #&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
   </p>
-  
+
   <p>
     include /usr/local/BerkeleyDB.4.5/lib
   </p>
-  
+
   <p>
     #&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
   </p>
-  
+
   <p>
     /sbin/ldconfig
   </p>
-  
+
   <p>
     ############################################################
   </p>
-  
+
   <p>
     #@@Subversion 1.4.2 インストール
   </p>
-  
+
   <p>
     ############################################################
   </p>
-  
+
   <p>
     # 2009/05/12現在の最新は1.6.2だったけど、旧サーバの
   </p>
-  
+
   <p>
     # Subversionの復旧の為だから、1.4.2であわしておく
   </p>
-  
+
   <p>
     cd /usr/local/src
   </p>
-  
+
   <p>
     wget <a href="http://subversion.tigris.org/downloads/subversion-1.4.2.tar.gz" target="_blank">http://subversion.tigris.org/downloads/subversion-1.4.2.tar.gz</a>
   </p>
-  
+
   <p>
     cd /usr/local/src
   </p>
-  
+
   <p>
     tar zxfv subversion-1.4.2.tar.gz
   </p>
-  
+
   <p>
     cd /usr/local/src/subversion-1.4.2
   </p>
-  
+
   <p>
     ./configure &#8211;with-berkeley-db=/usr/local/BerkeleyDB.4.5
   </p>
-  
+
   <p>
     #ここでエラー発生
   </p>
-  
+
   <p>
     #&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
   </p>
-  
+
   <p>
     configure: error: APR-UTIL was installed independently,
   </p>
-  
+
   <p>
     it won&#8217;t be possible to use the specified Berkeley DB: /usr/local/BerkeleyDB.4.5
   </p>
-  
+
   <p>
     #&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
   </p>
-  
+
   <p>
     # 以前インストールしたapr-utilのパスを指定してみる。
   </p>
-  
+
   <p>
     ./configure &#8211;with-apr=/usr/local/apr-httpd &#8211;with-apr-util=/usr/local/apr-util-httpd &#8211;with-berkeley-db=/usr/local/BerkeleyDB.4.5
   </p>
-  
+
   <p>
     #またもやエラー発生
   </p>
-  
+
   <p>
     #&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
   </p>
-  
+
   <p>
     configure: error: APR-UTIL was installed independently,
   </p>
-  
+
   <p>
     it won&#8217;t be possible to use the specified Berkeley DB: /usr/local/BerkeleyDB.4.5
   </p>
-  
+
   <p>
     #&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
   </p>
-  
+
   <p>
     #このサイトを参考に、
   </p>
-  
+
   <p>
     #<a href="http://www.saiin.net/~silphire/tips/svninstall.html" target="_blank">http://www.saiin.net/~silphire/tips/svninstall.html</a>
   </p>
-  
+
   <p>
     #Apacheのパッケージの中のsrclib/{apr,apr-util}をSubversionのtar ballを展開したディレクトリの中にコピーします。
   </p>
-  
+
   <p>
     cp -a ../httpd-2.2.4/srclib/{apr,apr-util} .
   </p>
-  
+
   <p>
     ./configure &#8211;with-berkeley-db=/usr/local/BerkeleyDB.4.5
   </p>
-  
+
   <p>
     #これでいけた
   </p>
-  
+
   <p>
     cd /usr/local/src/db-4.5.20/build_unix/
   </p>
-  
+
   <p>
     ../dist/configure
   </p>
-  
+
   <p>
     make
   </p>
-  
+
   <p>
     make install
   </p>
-  
+
   <p>
   </p>
-  
+
   <p>
     mkdir -p /share/svn/repos
   </p>
-  
+
   <p>
     chown -R nobody:dev /share/svn
   </p>
-  
+
   <p>
     ln -s /share/svn /home/svn
   </p>
-  
+
   <p>
     vi /etc/sysconfig/iptables
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     # subversion
   </p>
-  
+
   <ul>
     <li>
       A RH-Firewall-1-INPUT -s 172.10.0.0/16 -m state &#8211;state NEW -m tcp -p tcp &#8211;dport 3690 -j ACCEPT
     </li>
   </ul>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     /etc/init.d/iptables restart
   </p>
-  
+
   <p>
     # 旧サーバ上で
   </p>
-  
+
   <p>
     svnadmin dump /home/svn/repos &#62; /home/me/repos.dmp
   </p>
-  
+
   <p>
     scp /home/me/repos.dmp root@172.10.10.121:/home/svn/
   </p>
-  
+
   <p>
     # localhostで
   </p>
-  
+
   <p>
     cd /home/svn/
   </p>
-  
+
   <p>
     svnadmin create /home/svn/repos
   </p>
-  
+
   <p>
     svnadmin load ./repos &#60; mailwise_repos.dmp
   </p>
-  
+
   <p>
     vi /home/svn/repos/conf/svnserve.conf
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     [general]
   </p>
-  
+
   <p>
     anon-access = none
   </p>
-  
+
   <p>
     auth-access = write
   </p>
-  
+
   <p>
     password-db = passwd
   </p>
-  
+
   <p>
     realm = My First Repository
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     vi /home/svn/repos/conf/passwd
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     user = pass
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     #svnserve -d -r /home/svn/repos
   </p>
-  
+
   <p>
     vi /etc/rc.d/rc.local
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
-  
+
   <p>
     /usr/local/bin/svnserve -d -r /home/svn/repos &#038;
   </p>
-  
+
   <p>
     &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
   </p>
 </div>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=tdtsh-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4274066800&linkId=4d69aa04dfbef60a8b3e18c7f444d905"></iframe>
 </div>
 
   <footer class="article-footer">
@@ -517,8 +519,7 @@ ga('send', 'pageview');
   </div>
 
   <div class="col-md-4">
-    
-<aside class="l-sidebar">
+    <aside class="l-sidebar">
 
   <section class="panel panel-default">
     <div class="panel-heading">
@@ -531,6 +532,8 @@ ga('send', 'pageview');
       <div class="panel-title">LATESTS</div>
     </div>
     <div class="list-group">
+      
+      <a href="http://tdtsh.github.io/archives/4006/" class="list-group-item">Macbook Pro のSSDがフォーマット出来ない</a>
       
       <a href="http://tdtsh.github.io/archives/4006/" class="list-group-item">Macbook Pro のSSDがフォーマット出来ない</a>
       
@@ -549,8 +552,6 @@ ga('send', 'pageview');
       <a href="http://tdtsh.github.io/archives/3906/" class="list-group-item">Mac で Chrome を別プロフィールで多重起動</a>
       
       <a href="http://tdtsh.github.io/archives/3900/" class="list-group-item">サーバサイドSwift</a>
-      
-      <a href="http://tdtsh.github.io/archives/3891/" class="list-group-item">久しぶりに Titanium の Android のアプリやモジュールをビルドしたらハマったこと</a>
       
     </div>
   </section>
@@ -623,7 +624,10 @@ ga('send', 'pageview');
   </section>
   
 
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=tdtsh-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00DLK4GO2&linkId=c6a29468b6e75e351403b5a4e85651e7"></iframe>
 </aside>
+
 
 
   </div>
