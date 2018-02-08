@@ -6,18 +6,18 @@
     <description>Recent content in Mac on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 24 Jan 2018 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Feb 2018 10:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/mac/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Macbook Pro のSSDがフォーマット出来ない</title>
-      <link>http://tdtsh.github.io/archives/4006/</link>
-      <pubDate>Wed, 24 Jan 2018 10:00:00 +0000</pubDate>
+      <title>ThinkPad Bluetooth ワイヤレス・トラックポイント・キーボード</title>
+      <link>http://tdtsh.github.io/archives/4007/</link>
+      <pubDate>Thu, 08 Feb 2018 10:00:00 +0000</pubDate>
       
-      <guid>http://tdtsh.github.io/archives/4006/</guid>
-      <description>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto</description>
+      <guid>http://tdtsh.github.io/archives/4007/</guid>
+      <description>前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacboo</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Wed, 24 Jan 2018 10:00:00 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/4006/</guid>
-      <description>前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacboo</description>
+      <description>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto</description>
     </item>
     
     <item>

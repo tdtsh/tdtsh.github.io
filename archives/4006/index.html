@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Macbook Pro のSSDがフォーマット出来ない - はなたんのブログ</title>
     
-<meta name="description" content="前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacboo">
+<meta name="description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto">
 
 <meta property="og:title" content="Macbook Pro のSSDがフォーマット出来ない - はなたんのブログ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://tdtsh.github.io/archives/4006/">
 <meta property="og:image" content="http://tdtsh.github.io/images/default.png">
 <meta property="og:site_name" content="はなたんのブログ">
-<meta property="og:description" content="前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacboo">
+<meta property="og:description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="はなたんのブログ">
 <meta name="twitter:url" content="http://tdtsh.github.io/archives/4006/">
 <meta name="twitter:title" content="Macbook Pro のSSDがフォーマット出来ない - はなたんのブログ">
-<meta name="twitter:description" content="前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacboo">
+<meta name="twitter:description" content="会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto">
 <meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacboo"
+    "description": "会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Sto"
   }
 </script>
 
@@ -136,13 +136,37 @@ ga('send', 'pageview');
 
   
 
-  <div class="article-body"><p>前前職ではThinkPad Travel Keyboard with UltraNavi を2台並べて使っていた程度にはトラックポイント党だった自分ですが、ここ数年はにわかマカーとしてMacbookばっかり使ってますけれども、たまにWindowsをさわらなくちゃな時用にキーボード買い直したいなぁと思っていた所、事情で必要になり買いました。</p>
+  <div class="article-body">
 
-<p>レノボ・ジャパン ThinkPad Bluetooth ワイヤレス・トラックポイント・キーボード - US
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=tdtsh-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00DLK4GO2&linkId=c6a29468b6e75e351403b5a4e85651e7"></iframe></p>
+<p>会社の Macbook Pro 15inch RetinaのSierra再インストール時にSSDのパーティションが作れなくなった時の対応メモ。DiskUtilでCore Storage上のパーティションが見えなくなった事が原因で、MacOSの再インストールが出来なくなった。</p>
 
-<p>トラックポイント、良いですね。
-でもトラックポイントは使いすぎると右手の腱鞘炎が再発するので、程々に。</p>
+<h2 id="やったこと">やったこと</h2>
+
+<pre><code>diskutil list
+</code></pre>
+
+<p>サイズからdisk0s2が目的のパーティションのIDENTIFIERだと確認</p>
+
+<pre><code>diskutil cs create &quot;CS_SSD&quot; disk0s2
+</code></pre>
+
+<p>Core Storage (論理ボリュームの入れ物の様なもの)を作成</p>
+
+<pre><code>diskutil cs createVolume 作った論理グループのID jhfs+ &quot;Macintosh HD&quot; 100%
+</code></pre>
+
+<p>Core Storage に論理ボリュームを作成</p>
+
+<p>その後、MacOS再インストールを開始したらいけた。</p>
+
+<h2 id="原因">原因</h2>
+
+<p>原因は良くわかってない。</p>
+
+<p>以前、Macbook 2017 でFileVaultで暗号化したSSDのSierraをHigh Sierraにアップデートしようとした時、パーティションの作成が出来なくなり、アップデートが失敗した事があった。
+結局クリアインストールを行ってから、TimeMachine経由でリストアできたので事なきを得たのだけど、ディスク関連のトラブルはあんまり詳しくないから焦る。</p>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=tdtsh-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B075MB3MZZ&linkId=4b7988828b349a42bc7846bb168480d3"></iframe>
 </div>
 
   <footer class="article-footer">
@@ -188,7 +212,7 @@ ga('send', 'pageview');
     </div>
     <div class="list-group">
       
-      <a href="http://tdtsh.github.io/archives/4006/" class="list-group-item">Macbook Pro のSSDがフォーマット出来ない</a>
+      <a href="http://tdtsh.github.io/archives/4007/" class="list-group-item">ThinkPad Bluetooth ワイヤレス・トラックポイント・キーボード</a>
       
       <a href="http://tdtsh.github.io/archives/4006/" class="list-group-item">Macbook Pro のSSDがフォーマット出来ない</a>
       
@@ -296,19 +320,6 @@ ga('send', 'pageview');
         <p><span class="h-logo">&copy; はなたんのブログ</span></p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
-</html>
-
-<p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
           <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
         </aside>
       </div>
