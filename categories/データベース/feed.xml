@@ -21,12 +21,57 @@
     </item>
     
     <item>
+      <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
+      <link>http://tdtsh.github.io/archives/1095/</link>
+      <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1095/</guid>
+      <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
+    </item>
+    
+    <item>
+      <title>WEBでER図 WWW SQL Designer</title>
+      <link>http://tdtsh.github.io/archives/900/</link>
+      <pubDate>Fri, 03 Sep 2010 02:44:44 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/900/</guid>
+      <description>久々にERダイアグラムを書く機会がありました。 手元にツールが無くて、何かいいのないか探してたら、よさげなもの発見。 WWW SQL Designer phpなサーバがあれ</description>
+    </item>
+    
+    <item>
+      <title>RDBMS脳では app engineのデータストアの概念で混乱する</title>
+      <link>http://tdtsh.github.io/archives/770/</link>
+      <pubDate>Sun, 04 Jul 2010 15:05:17 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/770/</guid>
+      <description>RDBMSを長くやっている人ほど、app engineのデータストアの概念で混乱する可能性が高いと思います。 自分もまだ時々判らなくなるので、一</description>
+    </item>
+    
+    <item>
       <title>RDBMS脳を変えるのは難しい &amp;#8211; App Enine上でスケールするデータモデリングへの道</title>
       <link>http://tdtsh.github.io/archives/752/</link>
       <pubDate>Thu, 01 Jul 2010 14:00:59 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/752/</guid>
       <description>slim3(App Engine/Java)のお勉強をしながら、良くあるパターンのブログサービス的なWEBアプリケーションを作っています。 ブログサービスの概念</description>
+    </item>
+    
+    <item>
+      <title>Access 2010 では DBエンジンに SQL Azure が使える様になる</title>
+      <link>http://tdtsh.github.io/archives/679/</link>
+      <pubDate>Tue, 15 Jun 2010 02:03:26 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/679/</guid>
+      <description>マイクロソフトのAccess 2010では、ODBCを通じてクラウド上のリレーショナルデータベースであるSQL Azureに直接接続可能だと、M</description>
+    </item>
+    
+    <item>
+      <title>DBマガジン、休刊</title>
+      <link>http://tdtsh.github.io/archives/660/</link>
+      <pubDate>Tue, 01 Jun 2010 02:51:19 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/660/</guid>
+      <description>DB マガジン、休刊 &amp;#8211; スラッシュドット・ジャパン ニッチと言えばニッチなジャンルの雑誌だっただけに仕方ないですが、良く読んでた雑誌が消えていくのは</description>
     </item>
     
     <item>

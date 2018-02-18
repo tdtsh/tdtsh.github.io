@@ -6,10 +6,19 @@
     <description>Recent content in Crossplatform on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 30 Jun 2015 01:00:25 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2015 23:37:01 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/crossplatform/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Titanium使いが JavaScriptで書けるつながりで Native Script 触ってみた</title>
+      <link>http://tdtsh.github.io/archives/3544/</link>
+      <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3544/</guid>
+      <description>クロスプラットフォームを触ってみたシリーズの第6弾は、Native Scriptです。 前回のReact Native に続き、JavaScriptで書ける繋</description>
+    </item>
     
     <item>
       <title>Titanium使いが React Native を少し触ってみた</title>
@@ -18,6 +27,15 @@
       
       <guid>http://tdtsh.github.io/archives/3498/</guid>
       <description>クロスプラットフォームを触ってみたシリーズの第5弾です。 React Nativeです。 といっても、今のところiOSだけですけれど。 一応、公式には&amp;#8</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 15.04 で Titanium (Appcelerator CLI)、無料でどこまでできるか試してみた</title>
+      <link>http://tdtsh.github.io/archives/3462/</link>
+      <pubDate>Tue, 23 Jun 2015 01:00:04 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3462/</guid>
+      <description>クロスプラットフォームを触ってみたシリーズの第4弾です。 Macbook に Ubuntu 15.04 日本語 Remix をインストールしたので、ついでにTitaniumモバイル(Andro</description>
     </item>
     
     <item>
@@ -39,6 +57,15 @@
     </item>
     
     <item>
+      <title>Titanium Mobileは業務や受託開発で使えるのか</title>
+      <link>http://tdtsh.github.io/archives/3309/</link>
+      <pubDate>Sat, 24 May 2014 02:31:59 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3309/</guid>
+      <description>もとい Titanium なんですけど、自分も未だに検索するときはTitanium Mobile て書きますね。 そうしないと場合によっては変なネジのサイトがヒットしたりする</description>
+    </item>
+    
+    <item>
       <title>Titaniumはままつ #3 に行ってきました</title>
       <link>http://tdtsh.github.io/archives/3292/</link>
       <pubDate>Sun, 18 May 2014 03:00:23 +0000</pubDate>
@@ -54,6 +81,51 @@
       
       <guid>http://tdtsh.github.io/archives/3206/</guid>
       <description>関東では定期的にTitaniumもくもく会があるそうで良いなぁ、などと思っていたら、titanium もくもくin関西vol0のお知らせが目に</description>
+    </item>
+    
+    <item>
+      <title>Titanium でAndroidのapk作ったら「デバッグ可能な APK をアップロードしました」</title>
+      <link>http://tdtsh.github.io/archives/3192/</link>
+      <pubDate>Fri, 21 Feb 2014 13:10:15 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3192/</guid>
+      <description>Titanium で AndroidのSignedなapkをビルドするのに、Titanium SDK 3.2.0では苦労したと前に書きました。 今回は別のやつで、Tit</description>
+    </item>
+    
+    <item>
+      <title>Marvericksユーザの一番簡単な Genymotion &#43; Titanium インストール手順</title>
+      <link>http://tdtsh.github.io/archives/3167/</link>
+      <pubDate>Wed, 29 Jan 2014 00:12:01 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3167/</guid>
+      <description>環境は Macbook Air Marvericks + Titanium Studio/CLI/SDK 3.2.0です。 Mac OSX なら Mavericks以外も多分一緒だと思いますが。 あと一番簡単かどうかは自信ないですけど。 &amp;nbsp; JDK 多分既</description>
+    </item>
+    
+    <item>
+      <title>Titanium で Androidモジュール作るときのemulatorを変える</title>
+      <link>http://tdtsh.github.io/archives/3156/</link>
+      <pubDate>Wed, 22 Jan 2014 11:50:25 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3156/</guid>
+      <description>Titanium で Androidモジュール作るとき ant run.emulator した時のAndroidエミュレータがデフォルトではHVGAで小さすぎる。 なので変更します。 vi ~/Library/Application\ Support/Titanium/mobilesdk/osx/3.2.0.GA/android/builder.py #&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211; avd_skin</description>
+    </item>
+    
+    <item>
+      <title>Titanium (Appcelerator Platform) の有料プラン料金についてまとめ</title>
+      <link>http://tdtsh.github.io/archives/3144/</link>
+      <pubDate>Mon, 30 Dec 2013 16:00:52 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3144/</guid>
+      <description>2015年6月23日追記 Appcelerator Platform 4.0になってから、プランや料金体系が大幅に変更になっています。 この記事の内容は既に実体と乖離してます。 無料でで</description>
+    </item>
+    
+    <item>
+      <title>Titanium MobileのBaaS、Appcelerator Cloud Services (ACS)が素敵</title>
+      <link>http://tdtsh.github.io/archives/3085/</link>
+      <pubDate>Sat, 14 Dec 2013 03:28:22 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3085/</guid>
+      <description>Titanium Mobile でアプリ作っていながら、未だ ACS を触った事の無い私が来ましたよ。 オレ、正月休みにはACS触るんだ・・・ Appcelerator Cloud Services (ACS) は Backend as a Service (BaaS) と呼ばれるサービ</description>
     </item>
     
   </channel>

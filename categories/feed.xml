@@ -6,7 +6,7 @@
     <description>Recent content in Categories on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 14 Sep 2015 12:30:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Nov 2016 02:40:52 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Android</title>
       <link>http://tdtsh.github.io/categories/android/</link>
-      <pubDate>Mon, 14 Sep 2015 12:30:37 +0000</pubDate>
+      <pubDate>Fri, 04 Nov 2016 02:40:52 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/android/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Aws</title>
       <link>http://tdtsh.github.io/categories/aws/</link>
-      <pubDate>Tue, 08 Jul 2014 12:29:43 +0000</pubDate>
+      <pubDate>Fri, 10 Jul 2015 00:30:09 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/aws/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>Crossplatform</title>
       <link>http://tdtsh.github.io/categories/crossplatform/</link>
-      <pubDate>Tue, 30 Jun 2015 01:00:25 +0000</pubDate>
+      <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/crossplatform/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Eclipse</title>
       <link>http://tdtsh.github.io/categories/eclipse/</link>
-      <pubDate>Fri, 14 Oct 2011 15:42:31 +0000</pubDate>
+      <pubDate>Wed, 28 Nov 2012 13:50:00 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/eclipse/</guid>
       <description></description>
@@ -50,16 +50,25 @@
     <item>
       <title>Google App Engine</title>
       <link>http://tdtsh.github.io/categories/google-app-engine/</link>
-      <pubDate>Fri, 02 Dec 2011 13:00:43 +0000</pubDate>
+      <pubDate>Mon, 27 Aug 2012 11:20:47 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/google-app-engine/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Ios</title>
+      <link>http://tdtsh.github.io/categories/ios/</link>
+      <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/categories/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Java</title>
       <link>http://tdtsh.github.io/categories/java/</link>
-      <pubDate>Thu, 12 May 2011 02:30:19 +0000</pubDate>
+      <pubDate>Tue, 31 Jul 2012 21:23:39 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/java/</guid>
       <description></description>
@@ -77,7 +86,7 @@
     <item>
       <title>Knowledge</title>
       <link>http://tdtsh.github.io/categories/knowledge/</link>
-      <pubDate>Fri, 18 Jun 2010 04:21:48 +0000</pubDate>
+      <pubDate>Tue, 04 Jun 2013 21:04:45 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/knowledge/</guid>
       <description></description>
@@ -86,7 +95,7 @@
     <item>
       <title>Linux</title>
       <link>http://tdtsh.github.io/categories/linux/</link>
-      <pubDate>Thu, 04 Nov 2010 01:50:16 +0000</pubDate>
+      <pubDate>Tue, 23 Jun 2015 01:00:04 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/linux/</guid>
       <description></description>
@@ -113,7 +122,7 @@
     <item>
       <title>Node.Js</title>
       <link>http://tdtsh.github.io/categories/node.js/</link>
-      <pubDate>Sun, 08 Nov 2015 22:19:10 +0000</pubDate>
+      <pubDate>Tue, 28 Feb 2017 13:55:37 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/node.js/</guid>
       <description></description>
@@ -122,16 +131,25 @@
     <item>
       <title>Php</title>
       <link>http://tdtsh.github.io/categories/php/</link>
-      <pubDate>Thu, 26 Sep 2013 14:00:41 +0000</pubDate>
+      <pubDate>Thu, 01 May 2014 14:20:44 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/php/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Ruby</title>
+      <link>http://tdtsh.github.io/categories/ruby/</link>
+      <pubDate>Tue, 28 Feb 2017 13:55:37 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/categories/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Slim3</title>
       <link>http://tdtsh.github.io/categories/slim3/</link>
-      <pubDate>Fri, 02 Dec 2011 13:00:43 +0000</pubDate>
+      <pubDate>Wed, 07 Mar 2012 09:40:04 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/slim3/</guid>
       <description></description>
@@ -140,7 +158,7 @@
     <item>
       <title>Swift</title>
       <link>http://tdtsh.github.io/categories/swift/</link>
-      <pubDate>Thu, 11 Feb 2016 13:15:11 +0000</pubDate>
+      <pubDate>Thu, 15 Dec 2016 00:00:55 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/swift/</guid>
       <description></description>
@@ -149,9 +167,18 @@
     <item>
       <title>Titanium</title>
       <link>http://tdtsh.github.io/categories/titanium/</link>
-      <pubDate>Mon, 14 Sep 2015 12:30:37 +0000</pubDate>
+      <pubDate>Fri, 04 Nov 2016 02:40:52 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/categories/titanium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xcode</title>
+      <link>http://tdtsh.github.io/categories/xcode/</link>
+      <pubDate>Fri, 12 Feb 2016 13:11:44 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/categories/xcode/</guid>
       <description></description>
     </item>
     

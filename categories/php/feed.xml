@@ -6,10 +6,19 @@
     <description>Recent content in Php on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 26 Sep 2013 14:00:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2014 14:20:44 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/php/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>円グラフと積算折れ線グラフを pChart と CakePHP でやったメモ</title>
+      <link>http://tdtsh.github.io/archives/3247/</link>
+      <pubDate>Thu, 01 May 2014 14:20:44 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/3247/</guid>
+      <description>&amp;nbsp; pChart version 1 CakePHPのサイトで円グラフとか折れ線グラフとか要ったのでメモ。 phpでグラフといえばpChartです。 いつのまにか pChart</description>
+    </item>
     
     <item>
       <title>backbone.js &#43; handlebars.js &#43; CakePHP &#43; bootstrap 参考サイト個人的まとめ</title>
@@ -21,12 +30,48 @@
     </item>
     
     <item>
+      <title>PHPDocumentor より ApiGen がなかなか良い</title>
+      <link>http://tdtsh.github.io/archives/2904/</link>
+      <pubDate>Fri, 16 Aug 2013 13:30:45 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2904/</guid>
+      <description>以前 PHPDocumentor を試してみたんですけど、出力されたドキュメントがイマイチ見にくいのと、ページレベルのコメントを拾ってくれなかったので、代替ツールを探し</description>
+    </item>
+    
+    <item>
+      <title>Java野郎が PHPUnit を使ってみる、xUnitについて考える</title>
+      <link>http://tdtsh.github.io/archives/2860/</link>
+      <pubDate>Tue, 09 Jul 2013 21:45:59 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2860/</guid>
+      <description>PHPUnitは、xUnitと呼ばれるテスティング・フレームワークの一つです。 要するに JUnitのphp版です。 Zend Framework (1.6〜) や CakePHP (2.0</description>
+    </item>
+    
+    <item>
       <title>Mac に pear と PHPUnit と PHPDocumentorをインストール</title>
       <link>http://tdtsh.github.io/archives/2855/</link>
       <pubDate>Sun, 07 Jul 2013 02:00:04 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/2855/</guid>
       <description>Mac OS X に pear をインストールしたのでメモ書いときます。 七夕だし。いや嘘です。 PHPUnit と PHPDocumentor を動かしたかったので。 mountain lion です。そしてmac-ports では無</description>
+    </item>
+    
+    <item>
+      <title>Zend Framework で Zend_Controller_Exception</title>
+      <link>http://tdtsh.github.io/archives/2792/</link>
+      <pubDate>Sat, 20 Apr 2013 01:00:04 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/2792/</guid>
+      <description>全国1千万人のphperの皆さん、Zend Framework 弄ってますか。 Zend Frameworkとは、Zend Technologies が 2006年3月頃に出したMVCなフレームワー</description>
+    </item>
+    
+    <item>
+      <title>wordpressを3.0.4にアップグレードしました</title>
+      <link>http://tdtsh.github.io/archives/1035/</link>
+      <pubDate>Wed, 12 Jan 2011 03:25:16 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/1035/</guid>
+      <description>当サイトのブログエンジンはwordpressなんですけど、バージョン2.8位で止ってたんで久々にアップグレードしました。いつの間にかバージョ</description>
     </item>
     
     <item>
