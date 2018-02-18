@@ -6,46 +6,10 @@
     <description>Recent content in Java on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 31 Jul 2012 21:23:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 May 2011 02:30:19 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/java/feed.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>appengine java の urlFetch で Basic認証を使う (Low Level API版)</title>
-      <link>http://tdtsh.github.io/archives/2078/</link>
-      <pubDate>Tue, 31 Jul 2012 21:23:39 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/2078/</guid>
-      <description>随分と前にGAE/J の Urlフェッチについて書きましたが、 今回は、Basic認証のページをフェッチする機会があったのでメモっておきます。 Low Level</description>
-    </item>
-    
-    <item>
-      <title>Velocity小ネタ &amp;#8211; VTL で Map を key で foreach</title>
-      <link>http://tdtsh.github.io/archives/2059/</link>
-      <pubDate>Thu, 26 Jul 2012 14:30:06 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/2059/</guid>
-      <description>Jakarta Velocity の VTLでのループは foreach しかありません。 WEBサービスではだいたいの場合はPOJOなBeanをListに突っ込んでクルクル回して使ってるん</description>
-    </item>
-    
-    <item>
-      <title>eclipse の viPlugin と キーバインドの変更</title>
-      <link>http://tdtsh.github.io/archives/1441/</link>
-      <pubDate>Fri, 04 Nov 2011 07:28:39 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1441/</guid>
-      <description>Windows機でテキスト書くときはgvimです。 なので、つい j とか k とか Ctrl+FとかCtrl+B とか打ってしまいます。 その点、Goog</description>
-    </item>
-    
-    <item>
-      <title>GAE/J で Python の bulkloader をつかってみる</title>
-      <link>http://tdtsh.github.io/archives/1359/</link>
-      <pubDate>Tue, 16 Aug 2011 11:46:29 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1359/</guid>
-      <description>&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし</description>
-    </item>
     
     <item>
       <title>Google App Engine の Backends で 長時間、大規模な処理が可能に</title>
@@ -57,165 +21,12 @@
     </item>
     
     <item>
-      <title>openid4java で OpenID OP のサンプルを動かしてみる</title>
-      <link>http://tdtsh.github.io/archives/1208/</link>
-      <pubDate>Thu, 17 Mar 2011 10:43:01 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1208/</guid>
-      <description>openid4javaのサンプルを動かしてみる 事前にJDKとmeven2のインストールが必要です。 openid4javaのDownloads</description>
-    </item>
-    
-    <item>
-      <title>eclipse の Google App Engine プロジェクトを実行した時リモートから見たい</title>
-      <link>http://tdtsh.github.io/archives/1157/</link>
-      <pubDate>Thu, 03 Mar 2011 05:06:40 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1157/</guid>
-      <description>良く忘れるので、メモ。 eclipseを起動 プロジェクトを右クリック [実行&amp;reg;] &amp;#8211; [実行の構成(N)] をクリック 実行構成の左ペインより[</description>
-    </item>
-    
-    <item>
-      <title>slim3のバージョンアップをする (1.0.7から1.0.8に更新)</title>
-      <link>http://tdtsh.github.io/archives/1154/</link>
-      <pubDate>Wed, 02 Mar 2011 11:04:00 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1154/</guid>
-      <description>この手順は私が行ったことの記録として書いたものですので、誤りを含んでいる可能性があります。 実際の手順は、Slim3 日本語サイト(非公式)など</description>
-    </item>
-    
-    <item>
-      <title>CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</title>
-      <link>http://tdtsh.github.io/archives/1023/</link>
-      <pubDate>Wed, 01 Dec 2010 04:26:07 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1023/</guid>
-      <description>CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉</description>
-    </item>
-    
-    <item>
-      <title>ROMEでRSSフィードを解析して簡易RSSリーダServletを作る</title>
-      <link>http://tdtsh.github.io/archives/941/</link>
-      <pubDate>Thu, 07 Oct 2010 15:10:56 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/941/</guid>
-      <description>javaでRSSフィードを解析したい時には、ROMEプロジェクトが便利です。 インストール Project ROMEからrome-1.0.jarをダウンロード</description>
-    </item>
-    
-    <item>
-      <title>java の AntiSamyでサニタイズ、任意のHTMLタグを許可しscriptタグとかを無効化</title>
-      <link>http://tdtsh.github.io/archives/883/</link>
-      <pubDate>Tue, 24 Aug 2010 11:08:25 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/883/</guid>
-      <description>一般公開するWEBサービスを作る場合、慣れてないと手がかかるのがセキュリティへの配慮です。 Google App Engineとか使っている時点でSQLインジェ</description>
-    </item>
-    
-    <item>
-      <title>OpenID RP を Google App Engine (java) で (dyuproject)</title>
-      <link>http://tdtsh.github.io/archives/587/</link>
-      <pubDate>Thu, 18 Mar 2010 06:02:19 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/587/</guid>
-      <description>&amp;nbsp; 前回も書きましたが、GAE/J上ではSocketが使えない。故にopenid4javaはGAEでは使えない。 でも、dyuprojectは動</description>
-    </item>
-    
-    <item>
-      <title>Google App Engine for Java で Google Data (GData) API を使う 1</title>
-      <link>http://tdtsh.github.io/archives/580/</link>
-      <pubDate>Thu, 11 Mar 2010 08:04:07 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/580/</guid>
-      <description>Google App Engine/Java (以下 GAE/J) のアプリケーションから、Google Calender とか、Google Mapとか、Picasa Web Albums とかと連携したい。 なんでも、Google Data</description>
-    </item>
-    
-    <item>
-      <title>javax.imageio.ImageIO  で gif画像 の write (とリサイズ関係)</title>
-      <link>http://tdtsh.github.io/archives/569/</link>
-      <pubDate>Fri, 26 Feb 2010 00:47:23 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/569/</guid>
-      <description>たまたまImageIOを触る機会があって始めて認識した事なんですが、javax.imageio.ImageIO で gif 画像を扱う時、JDK5まで</description>
-    </item>
-    
-    <item>
-      <title>GAE/J (Google App Engine for java) で 拡張log4jを使う(日本時間)</title>
-      <link>http://tdtsh.github.io/archives/558/</link>
-      <pubDate>Thu, 04 Feb 2010 04:17:55 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/558/</guid>
-      <description>先日、GAE/J (Google App Engine for java) で log4jを使うの続きです。 こんな素敵なエントリーを発見！ GAE/Jでlog4jの日付を日本時間で出力する。- 今</description>
-    </item>
-    
-    <item>
-      <title>JADでjavaのclassファイルを逆コンパイルする</title>
-      <link>http://tdtsh.github.io/archives/529/</link>
-      <pubDate>Mon, 04 Jan 2010 07:55:43 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/529/</guid>
-      <description>たまーに、ソースコードが手元にないjavaのclassファイルのソースが見たい時があります。 その時の為に、開発環境には必ず逆コンパイラのJA</description>
-    </item>
-    
-    <item>
-      <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす</title>
-      <link>http://tdtsh.github.io/archives/445/</link>
-      <pubDate>Fri, 30 Oct 2009 16:00:17 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/445/</guid>
-      <description>GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ</description>
-    </item>
-    
-    <item>
-      <title>GAE (Google App Engine) SDK for Javaで ログの取得 (改訂版)</title>
-      <link>http://tdtsh.github.io/archives/442/</link>
-      <pubDate>Thu, 29 Oct 2009 16:00:09 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/442/</guid>
-      <description>※2012年2月07日 現状にあわせて修正・加筆しました。 Google App Engineのログは、WEB上( appengine.google.com のLogs )で見る事も出来るけど、デバッグには</description>
-    </item>
-    
-    <item>
-      <title>GAE SDK for Java で update 時にcannot find javac executable based on java.home</title>
-      <link>http://tdtsh.github.io/archives/429/</link>
-      <pubDate>Wed, 28 Oct 2009 16:00:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/429/</guid>
-      <description>※開発機はWindows XPです。 Google App Engine SDK for javaを使って、コマンドラインでデプロイしようと bin\appcfg.cmd update .\war すると、javac.exeが見つからない</description>
-    </item>
-    
-    <item>
-      <title>Google App Engine SDK for java でデプロイ</title>
-      <link>http://tdtsh.github.io/archives/427/</link>
-      <pubDate>Tue, 27 Oct 2009 16:00:43 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/427/</guid>
-      <description>前回インストールした、Google App Engine SDK for javaを使って、コマンドラインでデプロイしてみる。 参考サイトの例に応用をきかせて、今回は SDKと</description>
-    </item>
-    
-    <item>
       <title>Google App Engine SDK for java のインストール</title>
       <link>http://tdtsh.github.io/archives/424/</link>
       <pubDate>Mon, 26 Oct 2009 16:00:34 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/424/</guid>
       <description>前に書いたEclipseによる開発環境構築以外に、コマンドラインでやる方法もある。 Google App Engine SDK for Java のインストール [前に書いたEclipseによる</description>
-    </item>
-    
-    <item>
-      <title>仮のWEBシステムを、脳内で GAE/J に移行してみる</title>
-      <link>http://tdtsh.github.io/archives/421/</link>
-      <pubDate>Sun, 25 Oct 2009 16:00:15 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/421/</guid>
-      <description>脳内で、月間PVが300万PV位のソーシャルメディアを、Google App Engine for Java にのせてみる。 ■ストレージ容量 無償は1GBまで。 コンテンツ、画像</description>
-    </item>
-    
-    <item>
-      <title>GAE/J で WARNING Can not serve hoge.html directly.  You need to include it in &lt;static-files&gt; in your appengine-web.xml</title>
-      <link>http://tdtsh.github.io/archives/419/</link>
-      <pubDate>Sat, 24 Oct 2009 16:00:54 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/419/</guid>
-      <description>Google App Engine for Java (GAE/J) で、静的ファイル ( html、css、js ) を扱おうとして、 WARNING: Can not serve /hoge/hoge.nocache.js directly. You need to include it in in your appengine-web.xml. てな感じで怒られる。 appengine-web.xml の書き方が間違って</description>
     </item>
     
     <item>

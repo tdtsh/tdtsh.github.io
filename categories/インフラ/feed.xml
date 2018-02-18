@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Vagrant で RoR環境メモ (Ruby on Rails チュートリアル用)</title>
-      <link>http://tdtsh.github.io/archives/3371/</link>
-      <pubDate>Wed, 18 Feb 2015 13:00:30 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3371/</guid>
-      <description>最近Vagrantの便利さを知って、すべてをVagrantで書き直したい今日このごろです。 10年以上前からインフラ弄ってますが、思いかえせば</description>
-    </item>
-    
-    <item>
       <title>さくらVPSに移行しました</title>
       <link>http://tdtsh.github.io/archives/3365/</link>
       <pubDate>Sun, 15 Feb 2015 04:28:30 +0000</pubDate>
@@ -48,129 +39,12 @@
     </item>
     
     <item>
-      <title>雨だからDockerとかQiitaとか弄ってみた</title>
-      <link>http://tdtsh.github.io/archives/3236/</link>
-      <pubDate>Tue, 29 Apr 2014 03:28:14 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3236/</guid>
-      <description>初Qiitaです。初Dockerです。 HomeBrew で Mac に Docker を入れてみた &amp;#8211; Qiita いやーKobito + Qiita 捗るわー。 今までこの手のメモはGVim + Dropbox + ブログ(w</description>
-    </item>
-    
-    <item>
-      <title>Webサイトのベンチマーク、パフォーマンス測定に JMeter が 意外と良かった</title>
-      <link>http://tdtsh.github.io/archives/2821/</link>
-      <pubDate>Thu, 09 May 2013 14:45:45 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/2821/</guid>
-      <description>Webサービスのパフォーマンス測定とか、簡単なベンチマークは ab で済ましちゃうし、大規模なプロジェクトでは有償のんとか使うし、今まで存在は認識</description>
-    </item>
-    
-    <item>
-      <title>格安VPSのBudgetVMにサーバ引越し(2)</title>
-      <link>http://tdtsh.github.io/archives/2785/</link>
-      <pubDate>Thu, 18 Apr 2013 10:22:29 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/2785/</guid>
-      <description>という訳で、先日当ブログのサーバを一旦引越したのですが、今日は通信の品質が悪すぎて満足にサイトが見れませんでした。 ping の RT はだいたい 500ms 位です。</description>
-    </item>
-    
-    <item>
-      <title>ブログのサーバ引越しました &amp;#8211; 格安VPSのBudgetVMにサーバ引越し(1)</title>
-      <link>http://tdtsh.github.io/archives/2786/</link>
-      <pubDate>Mon, 15 Apr 2013 11:44:23 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/2786/</guid>
-      <description>可処分所得が少なくとっても貧乏なワタクシ、当ブログはかれこれ2年以上、value-domainさんの格安ホスティングサーバ XREA で頑張ってまいり</description>
-    </item>
-    
-    <item>
-      <title>余ったノートPCには ubuntu がよさげ</title>
-      <link>http://tdtsh.github.io/archives/1798/</link>
-      <pubDate>Sun, 15 Apr 2012 21:30:17 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1798/</guid>
-      <description>余ったPCにはLinuxをぶち込むでしょう常考。 昔はLinuxのインストール厨だった私ですが、最近ではRed Hat系、それも CentOS しか触らなくな</description>
-    </item>
-    
-    <item>
       <title>障害復旧しました( WordPressがMySQLのオーバーヘッドで動かない)</title>
       <link>http://tdtsh.github.io/archives/1689/</link>
       <pubDate>Mon, 13 Feb 2012 04:33:07 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/1689/</guid>
       <description>週末（2012年02月11日頃〜2012年02月13日12：00頃）に、当ブログが見られない状態でした。 あまり居ないとは思いますが、該当時間</description>
-    </item>
-    
-    <item>
-      <title>github を git clone しようとすると Permission denied (publickey) とかで出来ない</title>
-      <link>http://tdtsh.github.io/archives/1507/</link>
-      <pubDate>Sat, 26 Nov 2011 15:10:41 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1507/</guid>
-      <description>最近、git ばっか使ってます。 だって、べんりだもの。（みつを） Subversion使わなくなっちゃった。 で、git クライアントは、Windo</description>
-    </item>
-    
-    <item>
-      <title>最近はビデオチャット関連が熱い</title>
-      <link>http://tdtsh.github.io/archives/1320/</link>
-      <pubDate>Fri, 08 Jul 2011 03:55:28 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1320/</guid>
-      <description>最近、ソーシャルメディア界隈でビデオチャットが熱いですね。 私の周りにはSkypeに常時ログインしているヒトが少ない事もあって、 PC向けWEB</description>
-    </item>
-    
-    <item>
-      <title>さくらInternetのVPS、予想以上にイイですね</title>
-      <link>http://tdtsh.github.io/archives/1103/</link>
-      <pubDate>Wed, 09 Feb 2011 11:23:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1103/</guid>
-      <description>前から少し気になってた さくら Internet のVPSを使う機会がありました。いやいや、イイですね！ レンタルサーバでいいじゃん的な案件でも、独自SSL欲しい</description>
-    </item>
-    
-    <item>
-      <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
-      <link>http://tdtsh.github.io/archives/1095/</link>
-      <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1095/</guid>
-      <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
-    </item>
-    
-    <item>
-      <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
-      <link>http://tdtsh.github.io/archives/1076/</link>
-      <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1076/</guid>
-      <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
-    </item>
-    
-    <item>
-      <title>CentOS 5.5 のserifフォントで「葉」のグリフがおかしい</title>
-      <link>http://tdtsh.github.io/archives/1023/</link>
-      <pubDate>Wed, 01 Dec 2010 04:26:07 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1023/</guid>
-      <description>CentOS 5.5 で動かしているサーブレットコンテナで、つまりjavaで、論理フォントにserifを指定して日本語を扱っている時に気がついたんですが、「葉</description>
-    </item>
-    
-    <item>
-      <title>カッコウはコンピュータに卵を産む クリフォード・ストール</title>
-      <link>http://tdtsh.github.io/archives/1020/</link>
-      <pubDate>Thu, 25 Nov 2010 15:05:48 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1020/</guid>
-      <description>いまさらですが読みました。 カッコウはコンピュータに卵を産む〈上〉 &amp;lt;div class=&amp;quot;azlink-powered-date&amp;quot; style=&amp;quot;font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%&amp;quot;&amp;gt; posted with &amp;lt;a href=&amp;quot;http://sakuratan.biz/azlink/dp/%E3%82%AB%E3%83%83%E3%82%B3%E3%82%A6%E3%81%AF%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%81%AB%E5%8D%B5%E3%82%92%E7%94%A3%E3%82%80%E3%80%88%E4%B8%8A%E3%80%89/4794204302/tdtsh-22&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;AZlink&amp;lt;/a&amp;gt; at 2010.11.25 &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;azlink-detail&amp;quot;&amp;gt; クリフォード・ストール,池 央耿,Clifford</description>
-    </item>
-    
-    <item>
-      <title>実家のWindows機で勝手にメニューとか選択とかが上に移動する</title>
-      <link>http://tdtsh.github.io/archives/1005/</link>
-      <pubDate>Sun, 21 Nov 2010 06:07:42 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1005/</guid>
-      <description>この週末は息子と娘の七五三の写真とか御参りとかで、実家に帰ってました。 そしたら還暦をとっくにすぎた父がiPhone 4を購入していました。 3G</description>
     </item>
     
     <item>
@@ -201,48 +75,12 @@
     </item>
     
     <item>
-      <title>インターネットイニシアティブ（IIJ）の月額4000円のホスティングサービス「IIJ GIO」</title>
-      <link>http://tdtsh.github.io/archives/834/</link>
-      <pubDate>Tue, 03 Aug 2010 11:06:19 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/834/</guid>
-      <description>インターネットイニシアティブ（IIJ）のマーケティング本部 GIOマーケティング部 副部長 小川晋平氏は、月額4000円、日割り課金で1日約133</description>
-    </item>
-    
-    <item>
       <title>システム開発・構築の方々はシステム運用を理解してあげてください</title>
       <link>http://tdtsh.github.io/archives/803/</link>
       <pubDate>Fri, 23 Jul 2010 11:51:53 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/803/</guid>
       <description>保守できなくなり、塩漬けにしたままのオープンシステム&amp;#8212;。いま“オープンレガシー”が情報システム部門を苦しめている。 &amp;#8230; 1990年代</description>
-    </item>
-    
-    <item>
-      <title>Twitter では BitTorrent を使って大量のサーバに高速にデプロイしている</title>
-      <link>http://tdtsh.github.io/archives/798/</link>
-      <pubDate>Wed, 21 Jul 2010 11:00:08 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/798/</guid>
-      <description>Twitterでは大量のサーバを運用しており、それらのサーバに対してのアップデートは素早く行わなければならい。しかしGitサーバに対するアク</description>
-    </item>
-    
-    <item>
-      <title>daemontools のオプション</title>
-      <link>http://tdtsh.github.io/archives/778/</link>
-      <pubDate>Mon, 05 Jul 2010 15:05:42 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/778/</guid>
-      <description>daemontools のオプション をすぐ忘れるので、備忘録です。 svc オプション サービス名 オプション 意味 備考 -u Up サービスが起動していなければ開始(サービスが停止して</description>
-    </item>
-    
-    <item>
-      <title>日本も電波を再編しないと、将来iPhoneやAndroidが日本で使えなくなる</title>
-      <link>http://tdtsh.github.io/archives/703/</link>
-      <pubDate>Mon, 21 Jun 2010 05:38:23 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/703/</guid>
-      <description>先日、孫正義さん、池田信夫さん、夏野剛さんによる光の道討論が行われたと当ブログでも書きました。 早速テキストに書き起こしてくださった方がいます</description>
     </item>
     
     <item>
@@ -255,33 +93,6 @@
     </item>
     
     <item>
-      <title>DBAN(Darik&amp;#8217;s Boot And Nuke)でHDDをローレベルフォーマット</title>
-      <link>http://tdtsh.github.io/archives/681/</link>
-      <pubDate>Tue, 15 Jun 2010 15:10:21 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/681/</guid>
-      <description>PCやサーバの廃棄時、データの消去どうしてますか？ 高価なHDDクラッシャーがある現場は楽ですが、永久磁石でささっとやられる方や、中にはプラッ</description>
-    </item>
-    
-    <item>
-      <title>Assembla無料で使える個人用Subversion / Git</title>
-      <link>http://tdtsh.github.io/archives/675/</link>
-      <pubDate>Fri, 11 Jun 2010 02:43:59 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/675/</guid>
-      <description>suz-labさんでプライベートなSubversionのWEBサービスが紹介されていました。 suz-lab &amp;#8211; blog: AssemblaでプライベートSVN (いつ</description>
-    </item>
-    
-    <item>
-      <title>Subversion のリポジトリを移動する</title>
-      <link>http://tdtsh.github.io/archives/537/</link>
-      <pubDate>Tue, 19 Jan 2010 07:58:10 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/537/</guid>
-      <description>前回、急ごしらえでSubversionサーバを復旧しました。その続きです。 急場しのぎで間に合わせの古いPCに作ったSubversionサーバ</description>
-    </item>
-    
-    <item>
       <title>Subversion 1.4.2をインストールした時のメモ</title>
       <link>http://tdtsh.github.io/archives/535/</link>
       <pubDate>Mon, 18 Jan 2010 09:04:52 +0000</pubDate>
@@ -291,30 +102,12 @@
     </item>
     
     <item>
-      <title>GParted Live 0.4.6-1 のブータブルUSBメモリを作る</title>
-      <link>http://tdtsh.github.io/archives/527/</link>
-      <pubDate>Thu, 17 Dec 2009 07:35:13 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/527/</guid>
-      <description>だいぶ前に作ったGNU Parted (usb-live 0.3.1)のブータブルUSBメモリが、SATAとかSSDとかに対応できないみたいなので、久しぶりに作り直します。</description>
-    </item>
-    
-    <item>
       <title>Google 日本語入力を使ってみた。Google Public DNSも使ってみてます。</title>
       <link>http://tdtsh.github.io/archives/505/</link>
       <pubDate>Fri, 04 Dec 2009 14:28:58 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/505/</guid>
       <description>巷で少し話題の、Google社謹製FEP、「Google 日本語入力」を早速インストールしてみました。 この文章を書いている今、Google日本</description>
-    </item>
-    
-    <item>
-      <title>CygwinでOpenSSHの鍵ペアを作成</title>
-      <link>http://tdtsh.github.io/archives/467/</link>
-      <pubDate>Thu, 26 Nov 2009 04:04:25 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/467/</guid>
-      <description>Cygwinのインストール時に、opensslとopensshを追加すれば、 ssh_keygenが使えます。 パスフレーズ無し、1024ビット</description>
     </item>
     
     <item>

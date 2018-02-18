@@ -6,28 +6,10 @@
     <description>Recent content in Node.Js on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 28 Feb 2017 13:55:37 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2015 22:19:10 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/node.js/feed.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>node.js を Capistrano3 でデプロイ時に pm2 をいい感じに再起動したい</title>
-      <link>http://tdtsh.github.io/archives/3914/</link>
-      <pubDate>Tue, 28 Feb 2017 13:55:37 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3914/</guid>
-      <description>pm2を再起動したい node.js を Capistrano3 でデプロイする時に pm2 を restart したいです。 単純にこれでもまぁいいのですが、 execute :pm2, &#39;restart&#39;, fetch(:app_name) 予めpm2で目的のアプリケーションが起</description>
-    </item>
-    
-    <item>
-      <title>socket.io 1.4系で 4undefined (追記あり)</title>
-      <link>http://tdtsh.github.io/archives/3878/</link>
-      <pubDate>Thu, 22 Sep 2016 23:00:00 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3878/</guid>
-      <description>socket.ioを最新 (1.4系)にアップデートすると、emitの動きがおかしいというか、Clientで受け取れない事がありました。 こうい</description>
-    </item>
     
     <item>
       <title>東京Node学園祭2015に参加してきました</title>
@@ -36,24 +18,6 @@
       
       <guid>http://tdtsh.github.io/archives/3666/</guid>
       <description>滋賀から。夜行バス to 夜行バスで。 んで帰って即法事で田舎に帰らないとな合間にブログかきます。寝不足です。 沢山良いセッションがあったのです。他の</description>
-    </item>
-    
-    <item>
-      <title>node.js で QRコード生成</title>
-      <link>http://tdtsh.github.io/archives/3629/</link>
-      <pubDate>Fri, 28 Aug 2015 12:50:17 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3629/</guid>
-      <description>自分用のメモです。 その名も qrcode。 Mac OSXでお試し。 インストール (OSX の場合) いきなり npm installしようとするとエラーになります。 公式</description>
-    </item>
-    
-    <item>
-      <title>Node.js から AWS の SES でメール送る</title>
-      <link>http://tdtsh.github.io/archives/3605/</link>
-      <pubDate>Fri, 10 Jul 2015 00:30:09 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3605/</guid>
-      <description>AWSのsdk for node.js を使って、Node.js から AWS の SES でメール送る時の備忘録です。 AWSのSESにアクセスします。 今のところSESは東京リージ</description>
     </item>
     
     <item>
@@ -66,15 +30,6 @@
     </item>
     
     <item>
-      <title>Titanium使いが JavaScriptで書けるつながりで Native Script 触ってみた</title>
-      <link>http://tdtsh.github.io/archives/3544/</link>
-      <pubDate>Sun, 05 Jul 2015 23:37:01 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3544/</guid>
-      <description>クロスプラットフォームを触ってみたシリーズの第6弾は、Native Scriptです。 前回のReact Native に続き、JavaScriptで書ける繋</description>
-    </item>
-    
-    <item>
       <title>Electron (旧Atom Shell)触ってみた</title>
       <link>http://tdtsh.github.io/archives/3418/</link>
       <pubDate>Sun, 21 Jun 2015 23:30:18 +0000</pubDate>
@@ -84,57 +39,12 @@
     </item>
     
     <item>
-      <title>無料でNode.js、Node Ninja や Node.ACS から OpenShift に移行</title>
-      <link>http://tdtsh.github.io/archives/3401/</link>
-      <pubDate>Sun, 14 Jun 2015 15:00:08 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3401/</guid>
-      <description>先日少し書きましたが、Appceleratorの Node.ACS が Arrow Cloudとなって颯爽と事実上の有料化になりました。 因みに既存のNode.ACSは20</description>
-    </item>
-    
-    <item>
-      <title>独自ドメインな Node.ACS なサイトを Arrow Cloud に移行</title>
-      <link>http://tdtsh.github.io/archives/3385/</link>
-      <pubDate>Wed, 13 May 2015 02:00:39 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3385/</guid>
-      <description>Titaniumer な皆さん、Appcelerator Platfrom への移行は順調ですか。 私の方は出足からこけてしまい、環境変数に余計なものが入ってたことが原因で、数週間</description>
-    </item>
-    
-    <item>
-      <title>Node.ACS に独自ドメインを割り当てる</title>
-      <link>http://tdtsh.github.io/archives/3117/</link>
-      <pubDate>Tue, 24 Dec 2013 03:00:34 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3117/</guid>
-      <description>前回の 無料でNode.jsをホスティングできる Node.ACS 触ってみたが思いのほか沢山の方に読んで頂けた様で、調子にのって急 いで続編書きます。 どうやらホ</description>
-    </item>
-    
-    <item>
-      <title>無料でNode.jsをホスティングできる Node.ACS 触ってみた</title>
-      <link>http://tdtsh.github.io/archives/3102/</link>
-      <pubDate>Mon, 23 Dec 2013 05:10:23 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3102/</guid>
-      <description>Node.ACSの日本語の情報皆無に近いので、一発書いてみます。 前回、ACSが素敵的なエントリを書きましたが、Node.ACSもかなり素敵そ</description>
-    </item>
-    
-    <item>
       <title>Titanium Mobile ACS の個人的まとめ</title>
       <link>http://tdtsh.github.io/archives/3089/</link>
       <pubDate>Mon, 16 Dec 2013 18:02:16 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/3089/</guid>
       <description>前回、ACSが素敵的なエントリを書きました。 次に作るアプリでがっつりACSを使ってみるつもりなので、取り敢えず色々なURLをメモしておきます</description>
-    </item>
-    
-    <item>
-      <title>Titanium MobileのBaaS、Appcelerator Cloud Services (ACS)が素敵</title>
-      <link>http://tdtsh.github.io/archives/3085/</link>
-      <pubDate>Sat, 14 Dec 2013 03:28:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/3085/</guid>
-      <description>Titanium Mobile でアプリ作っていながら、未だ ACS を触った事の無い私が来ましたよ。 オレ、正月休みにはACS触るんだ・・・ Appcelerator Cloud Services (ACS) は Backend as a Service (BaaS) と呼ばれるサービ</description>
     </item>
     
   </channel>

@@ -39,15 +39,6 @@
     </item>
     
     <item>
-      <title>実家で暇だからherokuを弄ってみたメモ置き場</title>
-      <link>http://tdtsh.github.io/archives/2488/</link>
-      <pubDate>Sat, 10 Nov 2012 06:30:50 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/2488/</guid>
-      <description>最近のナウなヤングはHeroku で Ruby on rails なんでしょう？ Herokuとは、Ruby on Railsを対象とした、Amazon Web Services（A</description>
-    </item>
-    
-    <item>
       <title>iTunes U の ネットワーク産業論 by 夏野 剛 がなかなか良かった</title>
       <link>http://tdtsh.github.io/archives/1796/</link>
       <pubDate>Thu, 19 Apr 2012 21:32:13 +0000</pubDate>
@@ -66,120 +57,12 @@
     </item>
     
     <item>
-      <title>GAE/J で Python の bulkloader をつかってみる</title>
-      <link>http://tdtsh.github.io/archives/1359/</link>
-      <pubDate>Tue, 16 Aug 2011 11:46:29 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1359/</guid>
-      <description>&amp;nbsp; Java版のbulkloaderが出ると信じて待つこと1年以上、for businessもスベッてしまい、いまだその気配もなく。 痺れを切らし</description>
-    </item>
-    
-    <item>
-      <title>さくらInternetのVPS、予想以上にイイですね</title>
-      <link>http://tdtsh.github.io/archives/1103/</link>
-      <pubDate>Wed, 09 Feb 2011 11:23:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1103/</guid>
-      <description>前から少し気になってた さくら Internet のVPSを使う機会がありました。いやいや、イイですね！ レンタルサーバでいいじゃん的な案件でも、独自SSL欲しい</description>
-    </item>
-    
-    <item>
-      <title>IaaS、PaaSに一番求めることは、システム運用管理がどれだけ容易になるか</title>
-      <link>http://tdtsh.github.io/archives/1095/</link>
-      <pubDate>Tue, 08 Feb 2011 10:26:56 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1095/</guid>
-      <description>IaaSプロバイダはどうやってマーケットを広げるのか？ PaaSレイヤを提供するのは簡単だが、そうすると顧客にはロックインされるという懸念が持</description>
-    </item>
-    
-    <item>
-      <title>SEOはコンテンツありき、IPv4枯渇、マイナスのプロモーションなど</title>
-      <link>http://tdtsh.github.io/archives/1076/</link>
-      <pubDate>Wed, 02 Feb 2011 03:05:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1076/</guid>
-      <description>SEOとデザインは今後より密接になる理由 : could 良い記事。 WEBサイトもSEOもコンテンツありき、ですね。 そしてソーシャルメディアの場合は、コン</description>
-    </item>
-    
-    <item>
-      <title>Salesforceのchatter.comが始まった</title>
-      <link>http://tdtsh.github.io/archives/1070/</link>
-      <pubDate>Tue, 01 Feb 2011 03:06:47 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/1070/</guid>
-      <description>Salesforceの chatter.com が始まったらしいです。 Salesforce chatter.com 日本 早速登録してみました。すこぶる簡単です。 会社で1番です。でも2番は居ないかもしれません</description>
-    </item>
-    
-    <item>
       <title>Amazon Web Services のマイクロインスタンス、月額約1300円</title>
       <link>http://tdtsh.github.io/archives/919/</link>
       <pubDate>Fri, 10 Sep 2010 02:22:49 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/919/</guid>
       <description>Amazon Web Services が攻勢にでています。 Amazonクラウドから、1時間あたり約1.8円（Linux/Unixの場合＄0.02、Windowsで$0.03</description>
-    </item>
-    
-    <item>
-      <title>WEBサービスを立ち上げる天の時、地の利、人の輪</title>
-      <link>http://tdtsh.github.io/archives/895/</link>
-      <pubDate>Thu, 26 Aug 2010 04:16:16 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/895/</guid>
-      <description>ほらね。今は、新しいサービスを作るには、絶好のチャンスなんですよ。わたしもトライするし、いろんな人にトライしてもらいたいなぁと思います。 こん</description>
-    </item>
-    
-    <item>
-      <title>インターネットイニシアティブ（IIJ）の月額4000円のホスティングサービス「IIJ GIO」</title>
-      <link>http://tdtsh.github.io/archives/834/</link>
-      <pubDate>Tue, 03 Aug 2010 11:06:19 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/834/</guid>
-      <description>インターネットイニシアティブ（IIJ）のマーケティング本部 GIOマーケティング部 副部長 小川晋平氏は、月額4000円、日割り課金で1日約133</description>
-    </item>
-    
-    <item>
-      <title>GoogleのデータセンターとGAEは設計思想のスケールがでかい</title>
-      <link>http://tdtsh.github.io/archives/719/</link>
-      <pubDate>Fri, 25 Jun 2010 07:28:11 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/719/</guid>
-      <description>Googleクラウドの理想型は、昼の太陽（ソーラパワー）で電気エネルギーを蓄電し、夜（月は夜の比喩）月の出ているときにデータセンターのCPU</description>
-    </item>
-    
-    <item>
-      <title>企業内コラボレーションツールがTwitter化、今度は企業向けSNSの様にはならない？</title>
-      <link>http://tdtsh.github.io/archives/705/</link>
-      <pubDate>Tue, 22 Jun 2010 05:36:19 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/705/</guid>
-      <description>「いままで企業内のコラボレーションといえば、メッセージング、スケジュール管理、電子掲示板、ドキュメント共有といった機能を備えるグループウェア</description>
-    </item>
-    
-    <item>
-      <title>日本も電波を再編しないと、将来iPhoneやAndroidが日本で使えなくなる</title>
-      <link>http://tdtsh.github.io/archives/703/</link>
-      <pubDate>Mon, 21 Jun 2010 05:38:23 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/703/</guid>
-      <description>先日、孫正義さん、池田信夫さん、夏野剛さんによる光の道討論が行われたと当ブログでも書きました。 早速テキストに書き起こしてくださった方がいます</description>
-    </item>
-    
-    <item>
-      <title>iTunesがクラウド化してiPad/iPhoneのアクティベート出来る様になるかもしれない</title>
-      <link>http://tdtsh.github.io/archives/693/</link>
-      <pubDate>Fri, 18 Jun 2010 15:08:50 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/693/</guid>
-      <description>もしiTunesがクラウド化せず、MacとPCの母艦を許したままだと、そのうちAndroid移行ソフトが出て来て、iPhoneからAndro</description>
-    </item>
-    
-    <item>
-      <title>Access 2010 では DBエンジンに SQL Azure が使える様になる</title>
-      <link>http://tdtsh.github.io/archives/679/</link>
-      <pubDate>Tue, 15 Jun 2010 02:03:26 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/679/</guid>
-      <description>マイクロソフトのAccess 2010では、ODBCを通じてクラウド上のリレーショナルデータベースであるSQL Azureに直接接続可能だと、M</description>
     </item>
     
     <item>
@@ -192,66 +75,12 @@
     </item>
     
     <item>
-      <title>Google App Engine / Java (GAE/J) で独自ドメイン (Google Apps側だけで設定)</title>
-      <link>http://tdtsh.github.io/archives/473/</link>
-      <pubDate>Thu, 26 Nov 2009 17:00:48 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/473/</guid>
-      <description>Google App Engine/Java (以下 GAE/J) にデプロイしたアプリケーションは、appspot.comドメインで、下記の様に公開されます。 http://アプリケーションID</description>
-    </item>
-    
-    <item>
-      <title>GAE/J (Google App Engine for Java) で Apache Velocityを動かす</title>
-      <link>http://tdtsh.github.io/archives/445/</link>
-      <pubDate>Fri, 30 Oct 2009 16:00:17 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/445/</guid>
-      <description>GAE/J で Apache Velocity は動く わたしにとってGAE/Jをガンガン使えるか否かは、Apache Velocityが動くかどうかに強く依存しています。 他のテンプレ</description>
-    </item>
-    
-    <item>
-      <title>GAE (Google App Engine) SDK for Javaで ログの取得 (改訂版)</title>
-      <link>http://tdtsh.github.io/archives/442/</link>
-      <pubDate>Thu, 29 Oct 2009 16:00:09 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/442/</guid>
-      <description>※2012年2月07日 現状にあわせて修正・加筆しました。 Google App Engineのログは、WEB上( appengine.google.com のLogs )で見る事も出来るけど、デバッグには</description>
-    </item>
-    
-    <item>
-      <title>GAE SDK for Java で update 時にcannot find javac executable based on java.home</title>
-      <link>http://tdtsh.github.io/archives/429/</link>
-      <pubDate>Wed, 28 Oct 2009 16:00:22 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/429/</guid>
-      <description>※開発機はWindows XPです。 Google App Engine SDK for javaを使って、コマンドラインでデプロイしようと bin\appcfg.cmd update .\war すると、javac.exeが見つからない</description>
-    </item>
-    
-    <item>
-      <title>Google App Engine SDK for java でデプロイ</title>
-      <link>http://tdtsh.github.io/archives/427/</link>
-      <pubDate>Tue, 27 Oct 2009 16:00:43 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/427/</guid>
-      <description>前回インストールした、Google App Engine SDK for javaを使って、コマンドラインでデプロイしてみる。 参考サイトの例に応用をきかせて、今回は SDKと</description>
-    </item>
-    
-    <item>
       <title>Google App Engine SDK for java のインストール</title>
       <link>http://tdtsh.github.io/archives/424/</link>
       <pubDate>Mon, 26 Oct 2009 16:00:34 +0000</pubDate>
       
       <guid>http://tdtsh.github.io/archives/424/</guid>
       <description>前に書いたEclipseによる開発環境構築以外に、コマンドラインでやる方法もある。 Google App Engine SDK for Java のインストール [前に書いたEclipseによる</description>
-    </item>
-    
-    <item>
-      <title>仮のWEBシステムを、脳内で GAE/J に移行してみる</title>
-      <link>http://tdtsh.github.io/archives/421/</link>
-      <pubDate>Sun, 25 Oct 2009 16:00:15 +0000</pubDate>
-      
-      <guid>http://tdtsh.github.io/archives/421/</guid>
-      <description>脳内で、月間PVが300万PV位のソーシャルメディアを、Google App Engine for Java にのせてみる。 ■ストレージ容量 無償は1GBまで。 コンテンツ、画像</description>
     </item>
     
     <item>
