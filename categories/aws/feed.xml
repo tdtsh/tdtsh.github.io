@@ -6,10 +6,19 @@
     <description>Recent content in Aws on はなたんのブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 10 Jul 2015 00:30:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Apr 2017 15:00:08 +0000</lastBuildDate>
     
 	<atom:link href="http://tdtsh.github.io/categories/aws/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS EC2 の CentOS 7 でホスト名変更</title>
+      <link>http://tdtsh.github.io/archives/4001/</link>
+      <pubDate>Sun, 23 Apr 2017 15:00:08 +0000</pubDate>
+      
+      <guid>http://tdtsh.github.io/archives/4001/</guid>
+      <description>全部ココに書いているけど、一部誤りがあるのでメモを残します。 Amazon EC2 Linux の静的ホスト名 RHEL7 Centos7 hostname変更 sudo vim /etc/hostname yourhostname.your.doma.in hosts変更 sudo vim /etc/hosts 127.0.0.1 yourhostname.your.doma.in localhost.localdomain localhost</description>
+    </item>
     
     <item>
       <title>Node.js から AWS の SES でメール送る</title>
