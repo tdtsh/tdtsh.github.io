@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>XCode9でappiconを指定する - はなたんのブログ</title>
     
-<meta name="description" content="毎回忘れて調べるのでメモ。 アイコンのgenerate 1536x1536 (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウ">
+<meta name="description" content="毎回忘れて調べるのでメモ。 アイコンのgenerate 1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスに">
 
 <meta property="og:title" content="XCode9でappiconを指定する - はなたんのブログ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://tdtsh.github.io/archives/4009/">
 <meta property="og:image" content="http://tdtsh.github.io/images/default.png">
 <meta property="og:site_name" content="はなたんのブログ">
-<meta property="og:description" content="毎回忘れて調べるのでメモ。 アイコンのgenerate 1536x1536 (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウ">
+<meta property="og:description" content="毎回忘れて調べるのでメモ。 アイコンのgenerate 1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスに">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="はなたんのブログ">
 <meta name="twitter:url" content="http://tdtsh.github.io/archives/4009/">
 <meta name="twitter:title" content="XCode9でappiconを指定する - はなたんのブログ">
-<meta name="twitter:description" content="毎回忘れて調べるのでメモ。 アイコンのgenerate 1536x1536 (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウ">
+<meta name="twitter:description" content="毎回忘れて調べるのでメモ。 アイコンのgenerate 1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスに">
 <meta name="twitter:image" content="http://tdtsh.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "毎回忘れて調べるのでメモ。 アイコンのgenerate 1536x1536 (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウ"
+    "description": "毎回忘れて調べるのでメモ。 アイコンのgenerate 1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスに"
   }
 </script>
 
@@ -142,11 +142,11 @@ ga('send', 'pageview');
 
 <h2 id="アイコンのgenerate">アイコンのgenerate</h2>
 
-<p>1536x1536 (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウンロード用リンクを送ってくれる。</p>
+<p>1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウンロード用リンクを送ってくれる。</p>
 
 <p><a href="https://makeappicon.com">makeappicon</a></p>
 
-<h2 id="xcodeへセット">XCodeへセット</h2>
+<h2 id="xcode-へ-appicon-をセット">XCode へ AppIcon をセット</h2>
 
 <p>(XCode 9.2現在)</p>
 
@@ -158,6 +158,31 @@ ga('send', 'pageview');
 
 <p>この手順もうちょっと楽に出来ないか調べたい。
 Titaniumでは命名規則に従ってディレクトリに全部置くだけで良かったので一度判るとあとは楽だった。</p>
+
+<h2 id="splash-のgenerate">Splash のgenerate</h2>
+
+<p>1242px x 2208pxx (72dpi) の画像を作ってアップロードする。入力したメールアドレスにzipファイルを送ってくれる。
+<a href="https://www.appicon.build/">https://www.appicon.build/</a></p>
+
+<h2 id="xcode-へ-launchimage-をセット">XCode へ LaunchImage をセット</h2>
+
+<p>(XCode 9.2現在)</p>
+
+<p>プロジェクトのAssets.xcassetsをクリック</p>
+
+<p>右ペインの下の方の＋をクリック
+[App Icons &amp; Launch Images] - [New iOS Launch Image]
+右ペインのLaunchImageをクリック
+LaunchImage達をドラッグしていく(面倒)</p>
+
+<p>画面サイズ   Xcodeでの表記   対象OS    画像サイズ
+iPhone X    iPhone X Portrait   iOS 11+ 1125 x 2436
+iPhone X Landscape      2436 x 1125
+Retina HD 5.5&rdquo;  iPhone Portrait iOS 8+  1125 x 2436
+Retina HD 4.7&rdquo;          750 × 1334
+Retina HD 5.5&rdquo;  iPhone Landscape    iOS 8+  2436 x 1125
+2x  iPhone Portrait iOS 7+  640 x 960
+Retina 4    iPhone Portrait iOS 7+  640 x 1136</p>
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=tdtsh-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B0777FQSVY&linkId=7d6d635e728efe9268d20c4d64967564"></iframe>
 </div>
