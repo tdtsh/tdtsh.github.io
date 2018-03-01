@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>XCode9でappiconを指定する</title>
+      <title>XCode9でAppIconとLaunchImageを指定する</title>
       <link>http://tdtsh.github.io/archives/4009/</link>
       <pubDate>Sun, 25 Feb 2018 10:00:00 +0900</pubDate>
       
       <guid>http://tdtsh.github.io/archives/4009/</guid>
-      <description>毎回忘れて調べるのでメモ。 アイコンのgenerate 1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスに</description>
+      <description>毎回忘れて調べるのでメモ。 アイコン の generate 1536px x 1536px (72dpi) の画像を作ってmakeappiconにアップロードする。入力したメールアドレスにダウンロード用</description>
     </item>
     
     <item>
